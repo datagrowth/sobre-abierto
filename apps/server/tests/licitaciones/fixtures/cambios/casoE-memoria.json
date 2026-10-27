@@ -1,0 +1,76 @@
+{
+  "_origen": "Fixture sintético del caso E (p-91000080): apartados de la memoria (/oferta/memoria), con textos inventados. Persona A/B…, sin NIF, correo, teléfono ni importes ofertados.",
+  "licitacion": {
+    "id": "p-91000080",
+    "titulo": "Servicio de formación virtual en competencias administrativas y asistenciales y tramitación de la subvención FFI para el personal de Servicios Sanitarios de Ejemplo, S.A.",
+    "expediente": "CAP-27/12",
+    "organo": "Gerencia de Servicios Sanitarios de Ejemplo, S.A.",
+    "presupuesto_sin_iva": 29688.75,
+    "lotes": [
+      {
+        "id": "1",
+        "nombre": "Primeros auxilios y soporte vital básico",
+        "presupuesto_sin_iva": 18522
+      },
+      {
+        "id": "2",
+        "nombre": "Análisis de datos con hojas de cálculo y asistente de IA",
+        "presupuesto_sin_iva": 6063.75
+      },
+      {
+        "id": "3",
+        "nombre": "Gestión documental y archivo electrónico",
+        "presupuesto_sin_iva": 882
+      },
+      {
+        "id": "4",
+        "nombre": "Atención telefónica y trato a personas usuarias: voz, chat y videollamada",
+        "presupuesto_sin_iva": 756
+      },
+      {
+        "id": "5",
+        "nombre": "Seguridad y salud en el puesto de trabajo",
+        "presupuesto_sin_iva": 3150
+      },
+      {
+        "id": "6",
+        "nombre": "Gestión de residuos sanitarios",
+        "presupuesto_sin_iva": 315
+      }
+    ]
+  },
+  "memorias": [
+    {
+      "id": 16,
+      "version": 1,
+      "guion_id": 13,
+      "estado": "ensamblada",
+      "apartados": [
+        {
+          "apartado": 1,
+          "titulo": "Propuesta formativa",
+          "puntos": 0,
+          "estado": "recibido",
+          "caracteres": 11639,
+          "texto": "## 1. Propuesta formativa\n\n### 1.1 Lote 2. Análisis de datos con hojas de cálculo y asistente de IA: justificación y objetivos\n\nLa empresa impartirá al personal de gestión de la empresa pública una acción de teleformación de 60 horas basada en el trabajo diario con datos: limpiar un listado, cruzar dos tablas, calcular indicadores de actividad y presentar un resumen con ayuda de un asistente de IA cuyas respuestas una persona contrasta antes de usarlas. Al terminar, cada participante sabrá estructurar una hoja de cálculo, aplicar fórmulas y tablas dinámicas, formular peticiones claras al asistente y verificar sus resultados con los datos de origen para obtener cifras fiables y reproducibles. Persona H conducirá los ejercicios y corregirá las entregas de este lote.\n\n### 1.2 Lote 2. Programa y distribución de las 60 horas\n\n| Módulo | Horas | Contenidos y producto práctico |\n| --- | --- | --- |\n| 1. Estructura y limpieza de datos | 10 | Tablas, formatos, duplicados y validaciones. Entrega: listado depurado con su registro de cambios. |\n| 2. Fórmulas y funciones | 12 | Funciones de búsqueda, condicionales y de fecha. Entrega: hoja de cálculo de indicadores. |\n| 3. Tablas dinámicas y gráficos | 14 | Resúmenes por categoría, segmentación y gráficos. Entrega: cuadro resumen con su lectura. |\n| 4. Asistente de IA en el análisis | 12 | Peticiones claras, contraste de respuestas y confidencialidad. Entrega: análisis con las correcciones anotadas. |\n| 5. Proyecto final y evaluación | 12 | Informe completo a partir de datos de ejemplo; prueba individual. Entrega: informe final. |\n\n### 1.3 Lote 2. Método, evaluación y materiales\n\nPersona H presentará cada tarea con una demostración breve y un cuaderno de ejercicios descargable; el alumnado lo reproducirá con datos ficticios y entregará el resultado en Aula Abierta. Los cinco productos de módulo pesarán un 50 % y la prueba final otro 50 %. Para superar el curso habrá que acreditar al menos el 80 % de las 60 horas, entregar los cinco productos y obtener 65 sobre 100 en ambas partes. Persona F atenderá las dudas académicas por la mensajería del curso. Al cierre, la empresa pública recibirá los cuadernos, las plantillas y las rúbricas en formato editable.\n\n### 1.4 Lote 4. Atención telefónica y trato a personas usuarias: justificación y objetivos\n\nLa empresa impartirá al equipo de atención al público una acción de teleformación de 60 horas sobre la atención por voz, chat y videollamada en un servicio sanitario. El hilo práctico será una jornada simulada de consultas, desde la recepción de la llamada hasta el registro de la incidencia, la gestión de una queja y la valoración de la atención. Persona J adaptará los ejercicios a las funciones del equipo y revisará las grabaciones de práctica.\n\n### 1.5 Lote 4. Programa y distribución de las 60 horas\n\n| Módulo | Horas | Contenidos y producto práctico |\n| --- | --- | --- |\n| 1. Protocolo y tono de atención | 10 | Saludo, escucha activa, accesibilidad y circuito de derivación. Entrega: guion de atención. |\n| 2. Canales y turnos | 12 | Particularidades de la voz, el chat y la videollamada y organización de turnos. Entrega: cuadrante de atención. |\n| 3. Casos difíciles | 14 | Reclamaciones, personas alteradas y comunicación de malas noticias. Entrega: una grabación de práctica por canal. |\n| 4. Registro y seguimiento | 12 | Gestor de incidencias, cierre de consultas y derivación. Entrega: incidencias registradas y revisadas. |\n| 5. Medición y evaluación | 12 | Tiempos de espera, satisfacción y mejoras. Entrega: informe de servicio y prueba individual. |\n\n### 1.6 Lote 4. Método, evaluación y materiales\n\nPersona J mostrará un ejemplo de cada canal y dará una consigna de práctica por módulo; el alumnado practicará solo en el entorno de simulación y presentará una versión corregida de cada ejercicio. La evaluación seguirá el mismo esquema que el lote 2: 50 % productos, 50 % prueba final, 80 % de las horas y 65 sobre 100. Persona F atenderá las dudas académicas y la empresa pública conservará los guiones, las plantillas y las guías.\n\n### 1.7 Calendario, tutorización y seguimiento de ambos lotes\n\nPersona K acordará con la empresa pública la fecha de inicio de cada grupo, entregará la información para la representación legal de las personas trabajadoras con 12 días de antelación y comunicará el inicio al FFI al menos seis días naturales antes. Las 60 horas se repartirán en 12 jornadas de cinco horas dentro de una ventana de 14 días naturales desde la formalización, de modo que los dos lotes terminen y se evalúen antes del 30 de diciembre de 2027.\n\nPersona F será la tutora titular de ambos lotes de lunes a viernes, de 8:30 a 13:30, hora de Canarias, y responderá en menos de tres horas dentro de ese horario; Persona H cubrirá la suplencia. Persona K consolidará el registro de actividad, las calificaciones y el informe final de cada lote.\n\n| Tramo | Horas por lote | Actividad y responsable |\n| --- | --- | --- |\n| Jornadas 1–4 | 20 h | Módulos 1 y 2 en Aula Abierta; corrige la docente del lote |\n| Jornadas 5–8 | 20 h | Módulos 3 y 4; Persona F sigue los hitos |\n| Jornadas 9–12 | 20 h | Módulo 5 y prueba individual |\n| Cierre | Incluido en las 60 h | Persona K entrega resultados y materiales |"
+        },
+        {
+          "apartado": 2,
+          "titulo": "Plataforma de teleformación",
+          "puntos": 0,
+          "estado": "recibido",
+          "caracteres": 9026,
+          "texto": "## 2. Plataforma de teleformación\n\n### 2.1 Lote 2. Análisis de datos con hojas de cálculo y asistente de IA: acceso del alumnado\n\nEn Aula Abierta 4.x, la empresa creará un aula exclusiva para el personal del lote 2. Persona K gestionará el entorno, alojado en la Unión Europea, y dará de alta una cuenta personal por participante con los datos que entregue la empresa pública. Cada persona accederá solo a su curso. Los recursos y ejercicios estarán abiertos a cualquier hora mientras dure la acción, y la tutoría humana de Persona F atenderá de lunes a viernes, de 8:30 a 13:30 (hora de Canarias), con Persona H como suplente.\n\n### 2.2 Lote 2. Evidencias, evaluación y certificados\n\nAula Abierta anotará para cada participante los accesos, los recursos consultados, los cuestionarios y las entregas. Persona K sacará el informe de conexiones y actividad para justificar la acción ante el FFI, que exige acreditar al menos el 80 % de las horas. Persona H preparará cuestionarios y tareas; al cierre, Persona K activará la descarga del certificado de aprovechamiento para las personas aptas.\n\n### 2.3 Lote 4. Atención telefónica y trato a personas usuarias: acceso del alumnado\n\nEl lote 4 tendrá su propia aula en Aula Abierta 4.x, con cuentas individuales. Persona J subirá los recursos y los ejercicios de protocolo de atención y de revisión de llamadas; las prácticas usarán casos preparados para la formación y no se atenderá a personas usuarias reales. Persona F atenderá las dudas académicas con el mismo horario y plazo que en el lote 2.\n\n### 2.4 Lote 4. Evidencias, evaluación y certificados\n\nEl registro de Aula Abierta recogerá accesos, actividades, intentos y calificaciones del lote 4. Persona K extraerá el informe de participación para el FFI y activará los certificados de las personas aptas al cierre.\n\n### 2.5 Seguimiento de los dos lotes\n\nCada aula tendrá un panel de participación separado por lote. Persona D revisará la evolución del alumnado; el registro de asistencia se sincronizará automáticamente cada día y la empresa pública podrá descargar los datos en CSV, XLSX y JSON. Los avisos configurados enviarán un correo a la coordinación del contrato cuando una persona lleve varios días sin conectarse, y Persona F la contactará desde el aula. Persona D entregará un informe de seguimiento cada diez días y otro al cierre de cada lote.\n\nLa empresa integrará en Aula Abierta un asistente de IA propio, disponible de forma continuada, para resolver dudas de uso y de navegación: entrar en la cuenta, localizar un recurso, subir una entrega o descargar el certificado. Persona K mantendrá sus instrucciones y revisará las consultas que requieran a una persona. El asistente no calificará ejercicios ni modificará registros.\n\n### 2.6 Seguridad, datos y soporte en ambos lotes\n\nPersona K configurará conexiones cifradas, cuentas personales, permisos por rol, copias de seguridad y actualizaciones de Aula Abierta 4.x. El campus de ambos lotes se alojará en la Unión Europea y el equipo solo accederá para impartir, dar soporte, hacer el seguimiento y justificar la formación. La empresa tratará los datos según las instrucciones de la empresa pública y el encargo de tratamiento que se firme, y documentará dónde están los servidores.\n\n| Tipo de dato | Dónde está | Quién accede |\n| --- | --- | --- |\n| Identidad y matrícula | Cuenta de Aula Abierta de cada lote | Persona K, docentes y Persona F |\n| Conexiones y actividad | Registros de Aula Abierta e informe de cada lote | Persona K, Persona F y Persona D |\n| Evaluaciones y certificados | Aula de cada lote | Docente del lote, Persona F y Persona K |\n| Consultas y soporte | Mensajería e incidencias | Docentes, Persona F y Persona K |"
+        },
+        {
+          "apartado": 3,
+          "titulo": "Equipo docente",
+          "puntos": 0,
+          "estado": "recibido",
+          "caracteres": 7161,
+          "texto": "## 3. Equipo docente\n\n### 3.1 Lote 2. Análisis de datos con hojas de cálculo y asistente de IA: docencia\n\nPersona H será la docente principal del lote 2. Es graduada en Matemáticas, tiene un máster en ciencia de datos y una formación específica en hojas de cálculo avanzadas y analítica con asistente de IA, y acumula seis años de experiencia en análisis de datos y transformación digital. Diseñará y conducirá las sesiones, explicará las hojas de cálculo y el asistente a partir de casos de gestión y corregirá las prácticas y la prueba final. También será suplente de la tutoría.\n\n### 3.2 Lote 2. Tutoría y apoyo\n\nPersona F será la tutora académica titular. Es graduada en Matemáticas y máster en matemáticas, con formación complementaria en inteligencia artificial y certificaciones de proveedores tecnológicos, y ha sido profesora y codirectora académica de másteres de ciencia de datos. Atenderá las dudas de lunes a viernes de 8:30 a 13:30, hora de Canarias, con respuesta en menos de tres horas lectivas.\n\nPersona D, graduado y máster en informática, analizará el seguimiento del alumnado y preparará los informes; ha sido instructor de cursos en línea y tiene nueve años de experiencia en plataformas y análisis de datos. Persona K coordinará el contrato y dará soporte técnico al campus durante toda la ejecución, con diez años de experiencia en soluciones de datos e inteligencia artificial.\n\n### 3.3 Lote 4. Atención telefónica y trato a personas usuarias: docencia\n\nPersona J será la docente principal del lote 4. Es graduada en marketing y comunicación y tiene nueve años de experiencia atendiendo, coordinando y evaluando la atención a clientes en empresas de servicios. Su currículo no recoge docencia previa; la experiencia docente del equipo de tutoría corresponde a Persona F. Impartirá las sesiones de voz, chat y videollamada y corregirá los ejercicios del grupo.\n\n### 3.4 Lote 4. Tutoría y apoyo\n\nPersona F será también la tutora titular del lote 4, con el mismo horario y plazo de respuesta, y Persona H ejercerá la suplencia. Persona D preparará los informes de seguimiento y cierre de este lote y Persona K mantendrá la coordinación y el soporte técnico; la impartición corresponderá a Persona J.\n\nLa empresa acreditará la cualificación del profesorado principal de cada lote con copia de los títulos, los certificados relacionados con la materia y el currículo firmado. Cualquier sustitución del profesorado se hará con autorización previa del órgano de contratación y por una persona de cualificación igual o superior."
+        }
+      ]
+    }
+  ]
+}

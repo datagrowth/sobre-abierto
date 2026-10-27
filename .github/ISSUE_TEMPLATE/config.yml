@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Pregunta o duda de uso
+    url: https://github.com/datagrowth/sobre-abierto/discussions/categories/preguntas
+    about: Cómo instalarlo, configurarlo o usarlo. Se responde en Discusiones.
+  - name: Vulnerabilidad de seguridad
+    url: https://github.com/datagrowth/sobre-abierto/security/advisories/new
+    about: 'No abras una issue pública: avisa en privado (ver SECURITY.md).'

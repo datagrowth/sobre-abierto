@@ -1,0 +1,146 @@
+[
+  {
+    "orden": 1,
+    "juez": 1,
+    "doc_1": "memoria_fuerte",
+    "doc_2": "memoria_floja",
+    "total_1": 21.5,
+    "total_2": 15,
+    "maximo": 25,
+    "por_criterio": [
+      {
+        "preferido": "1",
+        "puntos_1": 4.5,
+        "puntos_2": 3
+      },
+      {
+        "preferido": "1",
+        "puntos_1": 5,
+        "puntos_2": 3.5
+      },
+      {
+        "preferido": "1",
+        "puntos_1": 4,
+        "puntos_2": 3
+      },
+      {
+        "preferido": "1",
+        "puntos_1": 3.5,
+        "puntos_2": 2.5
+      },
+      {
+        "preferido": "1",
+        "puntos_1": 4.5,
+        "puntos_2": 3
+      }
+    ]
+  },
+  {
+    "orden": 1,
+    "juez": 2,
+    "doc_1": "memoria_fuerte",
+    "doc_2": "memoria_floja",
+    "total_1": 21,
+    "total_2": 13.5,
+    "maximo": 25,
+    "por_criterio": [
+      {
+        "preferido": "1",
+        "puntos_1": 4,
+        "puntos_2": 2.5
+      },
+      {
+        "preferido": "1",
+        "puntos_1": 5.5,
+        "puntos_2": 3
+      },
+      {
+        "preferido": "1",
+        "puntos_1": 4,
+        "puntos_2": 3.5
+      },
+      {
+        "preferido": "1",
+        "puntos_1": 3,
+        "puntos_2": 2.5
+      },
+      {
+        "preferido": "1",
+        "puntos_1": 4.5,
+        "puntos_2": 2
+      }
+    ]
+  },
+  {
+    "orden": 2,
+    "juez": 1,
+    "doc_1": "memoria_floja",
+    "doc_2": "memoria_fuerte",
+    "total_1": 16,
+    "total_2": 21.5,
+    "maximo": 25,
+    "por_criterio": [
+      {
+        "preferido": "2",
+        "puntos_1": 3.5,
+        "puntos_2": 4.5
+      },
+      {
+        "preferido": "2",
+        "puntos_1": 4,
+        "puntos_2": 5
+      },
+      {
+        "preferido": "2",
+        "puntos_1": 3,
+        "puntos_2": 4.5
+      },
+      {
+        "preferido": "2",
+        "puntos_1": 3,
+        "puntos_2": 3.5
+      },
+      {
+        "preferido": "2",
+        "puntos_1": 2.5,
+        "puntos_2": 4
+      }
+    ]
+  },
+  {
+    "orden": 2,
+    "juez": 2,
+    "doc_1": "memoria_floja",
+    "doc_2": "memoria_fuerte",
+    "total_1": 15.5,
+    "total_2": 22.5,
+    "maximo": 25,
+    "por_criterio": [
+      {
+        "preferido": "2",
+        "puntos_1": 3,
+        "puntos_2": 5
+      },
+      {
+        "preferido": "2",
+        "puntos_1": 4,
+        "puntos_2": 5.5
+      },
+      {
+        "preferido": "2",
+        "puntos_1": 3,
+        "puntos_2": 4
+      },
+      {
+        "preferido": "2",
+        "puntos_1": 2.5,
+        "puntos_2": 3.5
+      },
+      {
+        "preferido": "2",
+        "puntos_1": 3,
+        "puntos_2": 4.5
+      }
+    ]
+  }
+]

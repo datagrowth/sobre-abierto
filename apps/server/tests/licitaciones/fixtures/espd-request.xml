@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!-- Petición del DEUC sintética (ESPD-EDM 1.0.2, como las de la PLACSP), recortada a cinco criterios: órgano y expediente ficticios. -->
+<espd-req:ESPDRequest xmlns:cbc="urn:oasis:names:specification:ubl:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:oasis:names:specification:ubl:schema:xsd:CommonAggregateComponents-2" xmlns:espd-req="urn:grow:names:specification:ubl:schema:xsd:ESPDRequest-1" xmlns:ccv="urn:isa:names:specification:ubl:schema:xsd:CCV-CommonAggregateComponents-1">
+    <cbc:UBLVersionID schemeAgencyID="OASIS-UBL-TC">2.1</cbc:UBLVersionID>
+    <cbc:VersionID schemeAgencyID="EU-COM-GROW">1.0.2</cbc:VersionID>
+    <cbc:ContractFolderID schemeAgencyID="TeD">EXP-0000/2026</cbc:ContractFolderID>
+    <cac:ContractingParty>
+        <cac:Party>
+            <cac:PartyName>
+                <cbc:Name>ÓRGANO DE EJEMPLO</cbc:Name>
+            </cac:PartyName>
+        </cac:Party>
+    </cac:ContractingParty>
+    <ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">005eb9ed-1347-4ca3-bb29-9bc0db64e1ab</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.EXCLUSION.CONVICTIONS.PARTICIPATION_IN_CRIMINAL_ORGANISATION</cbc:TypeCode>
+        <cbc:Name>Participation in a criminal organisation</cbc:Name>
+        <cbc:Description>Has the economic operator itself been the subject of a conviction?</cbc:Description>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7c637c0c-7703-4389-ba52-02997a055bd7</cbc:ID>
+            <ccv:Requirement responseDataType="INDICATOR">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">974c8196-9d1c-419c-9ca9-45bb9f5fd59a</cbc:ID>
+                <cbc:Description>Your answer?</cbc:Description>
+            </ccv:Requirement>
+        </ccv:RequirementGroup>
+    </ccv:Criterion>
+    <ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">b61bbeb7-690e-4a40-bc68-d6d4ecfaa3d4</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.EXCLUSION.CONTRIBUTIONS.PAYMENT_OF_TAXES</cbc:TypeCode>
+        <cbc:Name>Payment of taxes</cbc:Name>
+    </ccv:Criterion>
+    <ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">e00ecf6a-1d3c-4da2-a1d4-5c6a1d6f7b52</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.EXCLUSION.NATIONAL.OTHER</cbc:TypeCode>
+        <cbc:Name>Purely national exclusion grounds &amp; others</cbc:Name>
+    </ccv:Criterion>
+    <ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">499efc97-2ac1-4af2-9e84-323c2ca67747</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.SELECTION.ECONOMIC_FINANCIAL_STANDING.TURNOVER.GENERAL_YEARLY</cbc:TypeCode>
+        <cbc:Name>General yearly turnover</cbc:Name>
+        <ccv:RequirementGroup>
+            <cbc:ID schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">5aacceb3-280e-42f1-b2da-3d8ac7877fe9</cbc:ID>
+            <ccv:Requirement responseDataType="AMOUNT">
+                <cbc:ID schemeID="CriterionRelatedIDs" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">42db0eaa-d2dd-48cb-83ac-38d73cab9b50</cbc:ID>
+                <cbc:Description>Amount</cbc:Description>
+            </ccv:Requirement>
+        </ccv:RequirementGroup>
+    </ccv:Criterion>
+    <ccv:Criterion>
+        <cbc:ID schemeID="CriteriaID" schemeAgencyID="EU-COM-GROW" schemeVersionID="1.0">7d85e333-bbab-49c0-be8d-c36d71a72f5e</cbc:ID>
+        <cbc:TypeCode listID="CriteriaTypeCode" listAgencyID="EU-COM-GROW" listVersionID="1.0.2">CRITERION.OTHER.EO_DATA.LOTS_TENDERED</cbc:TypeCode>
+        <cbc:Name>Tenders for lots</cbc:Name>
+    </ccv:Criterion>
+</espd-req:ESPDRequest>

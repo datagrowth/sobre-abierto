@@ -1,0 +1,337 @@
+{
+  "_origen": "Guion sintético del caso C (lote 3, cinco cursos en teleformación) con el alcance del PPT (pág. 13). Ficticio: cursos, criterios y órgano inventados; valida con GuionBase.",
+  "guion_id": 16,
+  "datos": {
+    "archivos": [
+      {
+        "nombre": "Sobre “A”",
+        "contenido": "Documentación Administrativa",
+        "prohibiciones": [],
+        "firma": "Cada archivo o sobre electrónico debe llevar la firma electrónica de quien representa a la empresa licitadora, y cada documento incluido debe firmarse antes de subirlo al sobre correspondiente.",
+        "documentos": [
+          {
+            "tipo": "deuc",
+            "nombre": "DOCUMENTO EUROPEO ÚNICO DE CONTRATACIÓN (DEUC)",
+            "obligatorio": true,
+            "produce": "persona",
+            "origen": {
+              "modelo": "ANEXO II (instrucciones para cumplimentar el DEUC)",
+              "documento": "PCAP.pdf",
+              "pagina": 11
+            }
+          },
+          {
+            "tipo": "declaracion",
+            "nombre": "DECLARACIÓN RESPONSABLE SOBRE PROHIBICIONES DE CONTRATAR Y PERTENENCIA A GRUPO EMPRESARIAL",
+            "obligatorio": true,
+            "produce": "persona",
+            "origen": {
+              "modelo": "Anexo VI",
+              "documento": "PCAP.pdf",
+              "pagina": 112
+            }
+          },
+          {
+            "tipo": "declaracion",
+            "nombre": "COMPROMISO DE ADSCRIPCIÓN DE LOS MEDIOS PERSONALES Y MATERIALES AL CONTRATO",
+            "obligatorio": true,
+            "produce": "persona",
+            "origen": {
+              "modelo": "Anexo VII",
+              "documento": "PCAP.pdf",
+              "pagina": 114
+            }
+          },
+          {
+            "tipo": "declaracion",
+            "nombre": "COMPROMISO DE CONSTITUIR UNA UNIÓN TEMPORAL DE EMPRESAS, SI PROCEDE",
+            "obligatorio": false,
+            "produce": "persona",
+            "origen": {
+              "modelo": "ANEXO II (declaración responsable de cada empresa integrante)",
+              "documento": "PCAP.pdf",
+              "pagina": 12
+            }
+          },
+          {
+            "tipo": "declaracion",
+            "nombre": "DOCUMENTACIÓN DE EMPRESAS EXTRANJERAS",
+            "obligatorio": false,
+            "produce": "persona",
+            "origen": {
+              "modelo": "Anexo VI",
+              "documento": "PCAP.pdf",
+              "pagina": 112
+            }
+          }
+        ],
+        "documento": "PCAP.pdf",
+        "pagina": 11
+      },
+      {
+        "nombre": "Sobre “B”",
+        "contenido": "Criterios de juicio de valor. Documentación del Anexo IV de este pliego, con todos los elementos que la componen.",
+        "prohibiciones": [
+          "Importante: la propuesta técnica no podrá mencionar ninguno de los aspectos que se valoran con los criterios automáticos; si lo hace, la oferta quedará excluida en ese lote."
+        ],
+        "firma": "Cada archivo o sobre electrónico debe llevar la firma electrónica de quien representa a la empresa licitadora, y cada documento incluido debe firmarse antes de subirlo al sobre correspondiente.",
+        "documentos": [
+          {
+            "tipo": "memoria",
+            "nombre": "PROPUESTA TÉCNICA PARA LOS CURSOS EN TELEFORMACIÓN",
+            "obligatorio": true,
+            "produce": "hermes",
+            "origen": {
+              "modelo": "Anexo IV, LOTE 3",
+              "documento": "PCAP.pdf",
+              "pagina": 97
+            }
+          },
+          {
+            "tipo": "otro",
+            "nombre": "índice numerado del contenido, firmado",
+            "obligatorio": true,
+            "produce": "persona",
+            "origen": {
+              "modelo": "Anexo IV",
+              "documento": "PCAP.pdf",
+              "pagina": 94
+            }
+          }
+        ],
+        "documento": "PCAP.pdf",
+        "pagina": 13
+      },
+      {
+        "nombre": "Sobre “C”",
+        "contenido": "Criterios evaluables mediante fórmulas: proposición económica y oferta sobre los criterios de adjudicación que se valoran con cifras o porcentajes.",
+        "prohibiciones": [],
+        "firma": "Cada archivo o sobre electrónico debe llevar la firma electrónica de quien representa a la empresa licitadora, y cada documento incluido debe firmarse antes de subirlo al sobre correspondiente.",
+        "documentos": [
+          {
+            "tipo": "oferta_economica",
+            "nombre": "ANEXO V.- PROPOSICIÓN ECONÓMICA Y CRITERIOS VALORABLES MEDIANTE FÓRMULAS",
+            "obligatorio": true,
+            "produce": "persona",
+            "origen": {
+              "modelo": "Anexo V, LOTE 3",
+              "documento": "PCAP.pdf",
+              "pagina": 108
+            }
+          },
+          {
+            "tipo": "declaracion",
+            "nombre": "DECLARACIÓN RESPONSABLE SOBRE EL ACCESO REMOTO AL ORDENADOR DE LAS ALUMNAS PARA RESOLVER INCIDENCIAS TÉCNICAS",
+            "obligatorio": false,
+            "produce": "persona",
+            "origen": {
+              "modelo": "Anexo V, LOTE 3, apartado 2 (si se ofrece la grabación)",
+              "documento": "PCAP.pdf",
+              "pagina": 108
+            }
+          }
+        ],
+        "documento": "PCAP.pdf",
+        "pagina": 13
+      }
+    ],
+    "memoria": {
+      "archivo": "Sobre “B”",
+      "titulo_documento": "PROPUESTA TÉCNICA PARA LOS CURSOS EN TELEFORMACIÓN",
+      "limite_paginas": null,
+      "formato": {
+        "otros": "Lugar, fecha y firma del proponente"
+      },
+      "apartados": [
+        {
+          "titulo": "Calendario y planificación de los cursos en teleformación",
+          "puntos": 10,
+          "se_valorara": [
+            "La coherencia del calendario: detalle del cronograma semanal, reparto de los contenidos y equilibrio de la carga de trabajo",
+            "La organización de la formación en el aula virtual: programación, dinámicas de trabajo en línea y actividades",
+            "El seguimiento de la actividad, la evaluación continua y la atención a las alumnas: registro de conexión, canales, compromisos de tutoría y tiempos de respuesta",
+            "El plan de contingencias: sustitución de la tutora, ajustes de calendario y recuperación de la formación"
+          ],
+          "puntos_se_valorara": [
+            3.5,
+            3.5,
+            1.5,
+            1.5
+          ],
+          "escala": [],
+          "documento": "PCAP.pdf",
+          "pagina": 78
+        },
+        {
+          "titulo": "Metodología, recursos didácticos y plataforma de teleformación",
+          "puntos": 15,
+          "se_valorara": [
+            "El enfoque metodológico: dinámicas prácticas y participativas, conexión con la práctica profesional, sistema de tutorías y tiempos de respuesta",
+            "Los recursos didácticos: contenidos digitales interactivos para el autoaprendizaje y la autoevaluación a lo largo del itinerario",
+            "La plataforma propuesta: herramientas de comunicación y de seguimiento, y canal de asistencia técnica para las incidencias de acceso y uso"
+          ],
+          "puntos_se_valorara": [
+            4.5,
+            4.5,
+            6
+          ],
+          "escala": [],
+          "documento": "PCAP.pdf",
+          "pagina": 78
+        },
+        {
+          "titulo": "Mejoras para la empleabilidad de las alumnas",
+          "puntos": 15,
+          "se_valorara": [
+            "Formación complementaria en competencias digitales del sector, con su temario y horas lectivas adicionales",
+            "Módulos complementarios acreditables o carnés profesionales relevantes para el sector",
+            "Acciones de orientación laboral y acompañamiento al terminar el curso para la búsqueda activa de empleo",
+            "Propuestas de intermediación y acuerdos con empresas del sector: bolsa de trabajo, difusión de candidaturas o de perfiles de las alumnas"
+          ],
+          "puntos_se_valorara": [
+            5,
+            5,
+            2.5,
+            2.5
+          ],
+          "escala": [],
+          "documento": "PCAP.pdf",
+          "pagina": 79
+        }
+      ],
+      "advertencias": [
+        "La propuesta deberá tratar, al menos, los contenidos siguientes; si falta alguno, LA PROPUESTA QUEDARÁ EXCLUIDA en este lote por estar incompleta.",
+        "Importante: la propuesta técnica no podrá mencionar ninguno de los aspectos que se valoran con los criterios automáticos; si lo hace, la oferta quedará excluida en ese lote.",
+        "Se valorará la precisión, la claridad y el detalle de la información sobre cada aspecto.",
+        "La mesa de contratación pedirá un informe técnico para valorar la documentación del sobre \"B\", que justificará la puntuación de cada aspecto."
+      ],
+      "documento": "PCAP.pdf",
+      "pagina": 77
+    },
+    "automaticos": [
+      {
+        "criterio": "Ofrecer una herramienta de asistencia remota para resolver las incidencias técnicas de las alumnas durante los cursos, que pida la autorización de la alumna antes de conectarse a su ordenador",
+        "puntos": 3,
+        "como_se_acredita": "Si se ofrece: 3 puntos. Si no se ofrece: 0 puntos. Quien la ofrezca aportará firmada la declaración responsable del anexo V, según la cual cada acceso al ordenador de una alumna contará con su autorización.",
+        "casilla_en": "Anexo V, LOTE 3, apartado 2: «Sí se ofrece» / «No se ofrece» y declaración responsable",
+        "archivo": "Sobre “C”",
+        "marcas": [
+          "asistencia remota",
+          "autorización de la alumna antes de conectarse"
+        ],
+        "documento": "PCAP.pdf",
+        "pagina": 75
+      },
+      {
+        "criterio": "Ampliar el número de alumnas por encima del mínimo del pliego de prescripciones técnicas para los cursos del lote, sin coste añadido para el Consorcio",
+        "puntos": 6,
+        "como_se_acredita": "Por cada alumna por encima del mínimo: 0,20 puntos, hasta 30 alumnas. Si no se amplía: 0 puntos. Anexo V, LOTE 3, apartado 3: «Ofrece N alumnas más» (de 1 a 30) o «No ofrece alumnas adicionales».",
+        "casilla_en": "Anexo V, LOTE 3, apartado 3: «Ofrece [1-30] alumnas más» / «No ofrece alumnas adicionales»",
+        "archivo": "Sobre “C”",
+        "marcas": [
+          "alumnas adicionales",
+          "por encima del mínimo de alumnas"
+        ],
+        "documento": "PCAP.pdf",
+        "pagina": 76
+      },
+      {
+        "criterio": "Ampliar el número de tutores/as docentes por encima del mínimo del pliego de prescripciones técnicas, con los requisitos que fija dicho pliego",
+        "puntos": 6,
+        "como_se_acredita": "Por cada tutor/a docente adicional en cada curso del lote: 2 puntos. Si no se amplía: 0 puntos. Anexo V, LOTE 3, apartado 4: «Ofrece 1, 2 o 3 tutores adicionales» o «No ofrece tutores adicionales». La empresa propuesta como adjudicataria acreditará su titulación y su formación o experiencia en teleformación antes de la adjudicación.",
+        "casilla_en": "Anexo V, LOTE 3, apartado 4: «Ofrece [1-3] tutores adicionales» / «No ofrece tutores adicionales»",
+        "archivo": "Sobre “C”",
+        "marcas": [
+          "tutores/as docentes adicionales",
+          "tutores adicionales",
+          "tutor adicional"
+        ],
+        "documento": "PCAP.pdf",
+        "pagina": 76
+      }
+    ],
+    "oferta_economica": {
+      "formula": "Puntos = X*((A-B) /(A-C))\nSiendo:\n- X, la puntuación máxima del criterio de precio.\n- A, el presupuesto base de licitación.\n- B, el precio ofertado que se valora.\n- C, el menor de estos dos valores:\nEl precio más bajo ofertado, sin contar las ofertas rechazadas por anormalmente bajas.\nEl precio límite para no incurrir en presunción de anormalidad, según el apartado sobre ofertas anormales.",
+      "presupuesto_base": 18557,
+      "impuesto_aparte": "exento",
+      "precio_unitario": {
+        "unidad": "hora",
+        "maximo": 1.54
+      },
+      "umbral_anormalidad": "a) Un solo licitador: su oferta, si baja del presupuesto base de licitación más de 35 puntos porcentuales. PL= PBL-PBL*35/100. b) Dos licitadores: la oferta que baje más de 30 puntos porcentuales de la otra. PL= PMAO-PMAO*30/100. c) Tres o más licitadores: las ofertas que bajen más de 30 puntos porcentuales de la media aritmética de las presentadas. PL= MAPO-MAPO*30/100. Con independencia de lo dicho sobre el precio, si hay más criterios también se presumirán anormales las ofertas que alcancen más del 95% de los puntos máximos de todos los criterios de adjudicación. Como el presupuesto base de licitación es un precio unitario, en ambos casos la referencia son los precios unitarios máximos de licitación.",
+      "modelo": "Anexo V, LOTE 3, apartado 1",
+      "archivo": "Sobre “C”",
+      "documento": "PCAP.pdf",
+      "pagina": 73
+    },
+    "plazo": {
+      "fecha_limite": "2026-10-20T14:00",
+      "canal": "Presentación electrónica a través de la Plataforma de Contratación del Sector Público (herramienta de preparación de ofertas)"
+    },
+    "lotes": [
+      "3"
+    ],
+    "alcance": [
+      {
+        "nombre": "Comercio electrónico para pequeños negocios",
+        "personas_minimas": 40,
+        "horas": 40,
+        "grupos": 1,
+        "semanas": null,
+        "lotes": [
+          "3"
+        ],
+        "documento": "PPT.pdf",
+        "pagina": 13
+      },
+      {
+        "nombre": "Competencias digitales básicas",
+        "personas_minimas": 40,
+        "horas": 40,
+        "grupos": 1,
+        "semanas": null,
+        "lotes": [
+          "3"
+        ],
+        "documento": "PPT.pdf",
+        "pagina": 13
+      },
+      {
+        "nombre": "Inteligencia artificial aplicada a la oficina",
+        "personas_minimas": 60,
+        "horas": 30,
+        "grupos": 1,
+        "semanas": null,
+        "lotes": [
+          "3"
+        ],
+        "documento": "PPT.pdf",
+        "pagina": 13
+      },
+      {
+        "nombre": "Huerto ecológico y jardinería",
+        "personas_minimas": 69,
+        "horas": 50,
+        "grupos": 1,
+        "semanas": null,
+        "lotes": [
+          "3"
+        ],
+        "documento": "PPT.pdf",
+        "pagina": 13
+      },
+      {
+        "nombre": "Reparaciones y mantenimiento básico del hogar",
+        "personas_minimas": 120,
+        "horas": 30,
+        "grupos": 1,
+        "semanas": null,
+        "lotes": [
+          "3"
+        ],
+        "documento": "PPT.pdf",
+        "pagina": 13
+      }
+    ]
+  }
+}

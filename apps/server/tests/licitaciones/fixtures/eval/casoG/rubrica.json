@@ -1,0 +1,141 @@
+{
+  "titulo": "Ayuntamiento de Villaejemplo · CAUCE (IA para quejas y sugerencias): memoria técnica",
+  "criterios": [
+    {
+      "titulo": "1. Comprensión del servicio y diseño funcional",
+      "puntos": 5,
+      "escala": [
+        {
+          "puntos": 5,
+          "descripcion": "Muy bueno (100 %). Propuesta adaptada al Ayuntamiento, completa y realizable; explica la ejecución paso a paso, con responsables, evidencias y riesgos, y mejora lo mínimo exigido."
+        },
+        {
+          "puntos": 3.75,
+          "descripcion": "Bueno (75 %). Propuesta completa en lo principal y concreta, con algún aspecto secundario poco desarrollado."
+        },
+        {
+          "puntos": 2.5,
+          "descripcion": "Suficiente (50 %). Propuesta correcta pero básica o en parte genérica; habrá que concretarla durante la ejecución."
+        },
+        {
+          "puntos": 1.25,
+          "descripcion": "Escaso (25 %). Propuesta incompleta o casi solo declarativa; no deja claro cómo se ejecutará ni cómo se comprobará."
+        },
+        {
+          "puntos": 0,
+          "descripcion": "Sin contenido valorable (0 %). No aporta información suficiente, contradice el pliego de prescripciones técnicas o se limita a copiarlo."
+        }
+      ]
+    },
+    {
+      "titulo": "2. Arquitectura, modelos de IA y protección de datos",
+      "puntos": 6,
+      "escala": [
+        {
+          "puntos": 6,
+          "descripcion": "Muy bueno (100 %). Propuesta adaptada al Ayuntamiento, completa y realizable; explica la ejecución paso a paso, con responsables, evidencias y riesgos, y mejora lo mínimo exigido."
+        },
+        {
+          "puntos": 4.5,
+          "descripcion": "Bueno (75 %). Propuesta completa en lo principal y concreta, con algún aspecto secundario poco desarrollado."
+        },
+        {
+          "puntos": 3,
+          "descripcion": "Suficiente (50 %). Propuesta correcta pero básica o en parte genérica; habrá que concretarla durante la ejecución."
+        },
+        {
+          "puntos": 1.5,
+          "descripcion": "Escaso (25 %). Propuesta incompleta o casi solo declarativa; no deja claro cómo se ejecutará ni cómo se comprobará."
+        },
+        {
+          "puntos": 0,
+          "descripcion": "Sin contenido valorable (0 %). No aporta información suficiente, contradice el pliego de prescripciones técnicas o se limita a copiarlo."
+        }
+      ]
+    },
+    {
+      "titulo": "3. Plan de trabajo, calidad y pruebas",
+      "puntos": 5,
+      "escala": [
+        {
+          "puntos": 5,
+          "descripcion": "Muy bueno (100 %). Propuesta adaptada al Ayuntamiento, completa y realizable; explica la ejecución paso a paso, con responsables, evidencias y riesgos, y mejora lo mínimo exigido."
+        },
+        {
+          "puntos": 3.75,
+          "descripcion": "Bueno (75 %). Propuesta completa en lo principal y concreta, con algún aspecto secundario poco desarrollado."
+        },
+        {
+          "puntos": 2.5,
+          "descripcion": "Suficiente (50 %). Propuesta correcta pero básica o en parte genérica; habrá que concretarla durante la ejecución."
+        },
+        {
+          "puntos": 1.25,
+          "descripcion": "Escaso (25 %). Propuesta incompleta o casi solo declarativa; no deja claro cómo se ejecutará ni cómo se comprobará."
+        },
+        {
+          "puntos": 0,
+          "descripcion": "Sin contenido valorable (0 %). No aporta información suficiente, contradice el pliego de prescripciones técnicas o se limita a copiarlo."
+        }
+      ]
+    },
+    {
+      "titulo": "4. Formación, documentación y continuidad",
+      "puntos": 4,
+      "escala": [
+        {
+          "puntos": 4,
+          "descripcion": "Muy bueno (100 %). Propuesta adaptada al Ayuntamiento, completa y realizable; explica la ejecución paso a paso, con responsables, evidencias y riesgos, y mejora lo mínimo exigido."
+        },
+        {
+          "puntos": 3,
+          "descripcion": "Bueno (75 %). Propuesta completa en lo principal y concreta, con algún aspecto secundario poco desarrollado."
+        },
+        {
+          "puntos": 2,
+          "descripcion": "Suficiente (50 %). Propuesta correcta pero básica o en parte genérica; habrá que concretarla durante la ejecución."
+        },
+        {
+          "puntos": 1,
+          "descripcion": "Escaso (25 %). Propuesta incompleta o casi solo declarativa; no deja claro cómo se ejecutará ni cómo se comprobará."
+        },
+        {
+          "puntos": 0,
+          "descripcion": "Sin contenido valorable (0 %). No aporta información suficiente, contradice el pliego de prescripciones técnicas o se limita a copiarlo."
+        }
+      ]
+    },
+    {
+      "titulo": "5. Prototipo de las pantallas",
+      "puntos": 5,
+      "escala": [
+        {
+          "puntos": 5,
+          "descripcion": "Muy bueno (100 %). Propuesta adaptada al Ayuntamiento, completa y realizable; explica la ejecución paso a paso, con responsables, evidencias y riesgos, y mejora lo mínimo exigido."
+        },
+        {
+          "puntos": 3.75,
+          "descripcion": "Bueno (75 %). Propuesta completa en lo principal y concreta, con algún aspecto secundario poco desarrollado."
+        },
+        {
+          "puntos": 2.5,
+          "descripcion": "Suficiente (50 %). Propuesta correcta pero básica o en parte genérica; habrá que concretarla durante la ejecución."
+        },
+        {
+          "puntos": 1.25,
+          "descripcion": "Escaso (25 %). Propuesta incompleta o casi solo declarativa; no deja claro cómo se ejecutará ni cómo se comprobará."
+        },
+        {
+          "puntos": 0,
+          "descripcion": "Sin contenido valorable (0 %). No aporta información suficiente, contradice el pliego de prescripciones técnicas o se limita a copiarlo."
+        }
+      ]
+    }
+  ],
+  "advertencias": [
+    "La memoria seguirá el orden de los criterios siguientes, con un apartado por criterio.",
+    "Cada apartado explicará qué se hará, quién lo hará, cuándo, con qué entregables y cómo comprobará el Ayuntamiento que se ha hecho.",
+    "No puntúan la copia del pliego de prescripciones técnicas, las promesas genéricas ni la experiencia de la empresa que no se traduzca en la solución ofertada.",
+    "Cada criterio se puntúa con uno de estos cinco niveles sobre su máximo:"
+  ]
+}

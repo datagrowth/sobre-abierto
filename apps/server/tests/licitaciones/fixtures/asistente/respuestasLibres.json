@@ -1,0 +1,272 @@
+[
+  {
+    "caso": "director-fuera",
+    "oferta": "casoF",
+    "pregunta": "equipo:director:-",
+    "texto": "Habrá que buscar a alguien fuera, no tenemos a nadie con 5 años en medios",
+    "esperado": {
+      "opcion": "contratar"
+    }
+  },
+  {
+    "caso": "director-contratamos",
+    "oferta": "casoF",
+    "pregunta": "equipo:director:-",
+    "texto": "Contratamos",
+    "esperado": {
+      "opcion": "contratar"
+    }
+  },
+  {
+    "caso": "director-fichar",
+    "oferta": "casoF",
+    "pregunta": "equipo:director:-",
+    "texto": "Ninguno de los nuestros llega, toca fichar a alguien",
+    "esperado": {
+      "opcion": "contratar"
+    }
+  },
+  {
+    "caso": "analista-externa",
+    "oferta": "casoF",
+    "pregunta": "equipo:analist:-",
+    "texto": "Lo cubriremos con una contratación externa",
+    "esperado": {
+      "opcion": "contratar"
+    }
+  },
+  {
+    "caso": "analista-manana",
+    "oferta": "casoF",
+    "pregunta": "equipo:analist:-",
+    "texto": "eso lo decido mañana",
+    "esperado": {
+      "entendido": false
+    }
+  },
+  {
+    "caso": "coordinador-d",
+    "oferta": "casoB",
+    "pregunta": "equipo:coordinador:-",
+    "texto": "Persona D, que tiene la experiencia en gestión de proyectos",
+    "esperado": {
+      "persona": "Persona D"
+    }
+  },
+  {
+    "caso": "coordinador-g",
+    "oferta": "casoB",
+    "pregunta": "equipo:coordinador:-",
+    "texto": "La coordinación que la lleve Persona G",
+    "esperado": {
+      "persona": "Persona G"
+    }
+  },
+  {
+    "caso": "coordinador-d-parcial",
+    "oferta": "casoB",
+    "pregunta": "equipo:coordinador:-",
+    "texto": "Mejor que coordine Persona D, a tiempo parcial",
+    "esperado": {
+      "persona": "Persona D"
+    }
+  },
+  {
+    "caso": "formador-d",
+    "oferta": "casoB",
+    "pregunta": "equipo:formador:-",
+    "texto": "Persona D",
+    "esperado": {
+      "persona": "Persona D"
+    }
+  },
+  {
+    "caso": "formador-contratar",
+    "oferta": "casoB",
+    "pregunta": "equipo:formador:-",
+    "texto": "Ninguno tiene las 150 horas, hay que contratar a un formador",
+    "esperado": {
+      "opcion": "contratar"
+    }
+  },
+  {
+    "caso": "monitorizacion-no",
+    "oferta": "casoF",
+    "pregunta": "automatico:experiencia acreditada en auditorias de accesibilidad web y en la redaccion de informes tecnicos:-",
+    "texto": "No, no tenemos esa experiencia acreditada",
+    "esperado": {
+      "acogerse": false
+    }
+  },
+  {
+    "caso": "monitorizacion-si",
+    "oferta": "casoF",
+    "pregunta": "automatico:experiencia acreditada en auditorias de accesibilidad web y en la redaccion de informes tecnicos:-",
+    "texto": "Sí, lo acreditamos con certificados de buena ejecución de dos contratos anteriores",
+    "esperado": {
+      "acogerse": true
+    }
+  },
+  {
+    "caso": "sociales-si",
+    "oferta": "casoF",
+    "pregunta": "automatico:criterio social de formacion del personal adscrito:-",
+    "texto": "Sí, hacemos las dos actividades formativas",
+    "esperado": {
+      "acogerse": true
+    }
+  },
+  {
+    "caso": "sociales-no",
+    "oferta": "casoF",
+    "pregunta": "automatico:criterio social de formacion del personal adscrito:-",
+    "texto": "no nos comprometemos a eso",
+    "esperado": {
+      "acogerse": false
+    }
+  },
+  {
+    "caso": "fuentes-no",
+    "oferta": "casoF",
+    "pregunta": "automatico:capacidades tecnicas y herramientas de evaluacion:-",
+    "texto": "Solo tenemos dos de las capacidades y no las podemos acreditar, mejor no",
+    "esperado": {
+      "acogerse": false
+    }
+  },
+  {
+    "caso": "fuentes-si",
+    "oferta": "casoF",
+    "pregunta": "automatico:capacidades tecnicas y herramientas de evaluacion:-",
+    "texto": "adelante, nos acogemos: lo acreditamos con la ficha técnica de la plataforma",
+    "esperado": {
+      "acogerse": true
+    }
+  },
+  {
+    "caso": "exportacion-si",
+    "oferta": "casoE",
+    "pregunta": "automatico:formatos de descarga de los registros de actividad:-",
+    "texto": "Sí, el campus descarga en CSV y Excel, consta en su ficha técnica",
+    "esperado": {
+      "acogerse": true
+    }
+  },
+  {
+    "caso": "frecuencia-no",
+    "oferta": "casoE",
+    "pregunta": "automatico:frecuencia de sincronizacion del registro de asistencia:-",
+    "texto": "No podemos garantizar la sincronización diaria",
+    "esperado": {
+      "acogerse": false
+    }
+  },
+  {
+    "caso": "alertas-si",
+    "oferta": "casoE",
+    "pregunta": "automatico:sistema de avisos automaticos de inactividad:-",
+    "texto": "sí",
+    "esperado": {
+      "acogerse": true
+    }
+  },
+  {
+    "caso": "soporte-ia-no",
+    "oferta": "casoE",
+    "pregunta": "automatico:asistente virtual de consultas con disponibilidad continua:-",
+    "texto": "Quítalo, no lo ofrecemos",
+    "esperado": {
+      "acogerse": false
+    }
+  },
+  {
+    "caso": "volumen-si",
+    "oferta": "casoE",
+    "pregunta": "automatico:volumen de senales automaticas de inactividad del alumnado:-",
+    "texto": "Me equivoqué en la nota: sí nos acogemos, lo acredita el informe del campus",
+    "esperado": {
+      "acogerse": true
+    }
+  },
+  {
+    "caso": "auditoria-no",
+    "oferta": "casoE",
+    "pregunta": "automatico:registro de trazabilidad de la atencion tutorial:-",
+    "texto": "no",
+    "esperado": {
+      "acogerse": false
+    }
+  },
+  {
+    "caso": "respuesta-si",
+    "oferta": "casoE",
+    "pregunta": "automatico:compromiso de tiempo de respuesta tutorial (prontitud):-",
+    "texto": "vale, nos comprometemos a ese tiempo de respuesta",
+    "esperado": {
+      "acogerse": true
+    }
+  },
+  {
+    "caso": "informes-no",
+    "oferta": "casoE",
+    "pregunta": "automatico:periodicidad de entrega de informes de seguimiento ejecutivos:-",
+    "texto": "No, que nos sale caro",
+    "esperado": {
+      "acogerse": false
+    }
+  },
+  {
+    "caso": "informes-duda",
+    "oferta": "casoE",
+    "pregunta": "automatico:periodicidad de entrega de informes de seguimiento ejecutivos:-",
+    "texto": "¿esto puntúa mucho?",
+    "esperado": {
+      "entendido": false
+    }
+  },
+  {
+    "caso": "remota-si",
+    "oferta": "casoC",
+    "pregunta": "automatico:ofrecer la grabacion de las tutorias por videoconferencia y ponerla a disposicion del participante, con su consentimiento previo, para que pueda repasarla:-",
+    "texto": "Sí, grabamos las tutorías y las dejamos disponibles, siempre con consentimiento previo",
+    "esperado": {
+      "acogerse": true
+    }
+  },
+  {
+    "caso": "alumnas-no",
+    "oferta": "casoC",
+    "pregunta": "automatico:incorporar participantes por encima del minimo exigido por el pliego de prescripciones tecnicas para los cursos de este lote, sin coste adicional para la diputacion de villaejemplo:-",
+    "texto": "no, sin coste adicional no nos sale",
+    "esperado": {
+      "acogerse": false
+    }
+  },
+  {
+    "caso": "tutores-duda",
+    "oferta": "casoC",
+    "pregunta": "automatico:incorporar docentes por encima del minimo del pliego de prescripciones tecnicas, que cumplan los requisitos curriculares fijados en el:-",
+    "texto": "¿cuánto nos costaría eso?",
+    "esperado": {
+      "entendido": false
+    }
+  },
+  {
+    "caso": "coordinacion-f",
+    "oferta": "casoC",
+    "pregunta": "equipo:coordinador:3",
+    "texto": "Persona F",
+    "esperado": {
+      "persona": "Persona F"
+    }
+  },
+  {
+    "caso": "coordinacion-delegada",
+    "oferta": "casoC",
+    "pregunta": "equipo:coordinador:3",
+    "texto": "que coordine quien diga la gerencia",
+    "esperado": {
+      "entendido": false
+    }
+  }
+]

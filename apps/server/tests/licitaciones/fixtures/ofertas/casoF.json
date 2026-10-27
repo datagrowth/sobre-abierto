@@ -1,0 +1,321 @@
+{
+  "_origen": "Fixture sintético: estructura de una oferta de prueba con textos inventados; Persona A/B…, sin NIF, correo, teléfono, notas ni importes ofertados.",
+  "oferta": "casoF",
+  "licitacion_id": "p-91000780",
+  "capturado_en": "2027-10-13T20:34:59+00:00",
+  "licitacion": {
+    "titulo": "Servicio de auditoría de accesibilidad y usabilidad de los portales web de la Sociedad de Desarrollo de Villaejemplo.",
+    "estado": "descartada",
+    "fecha_limite": "2027-10-15T23:59:00",
+    "presupuesto": 30261,
+    "lotes": [],
+    "lotes_interes": []
+  },
+  "pliegos": [
+    {
+      "nombre": "PCAP.pdf",
+      "clase": "pcap"
+    },
+    {
+      "nombre": "PPT.pdf",
+      "clase": "ppt"
+    },
+    {
+      "nombre": "Cuadro de condiciones.pdf",
+      "clase": "adicional"
+    }
+  ],
+  "guiones_anteriores": [],
+  "respuesta_oferta": {
+    "guion": {
+      "id": 3,
+      "version": 1,
+      "ficha_id": 239,
+      "datos": {
+        "archivos": [
+          {
+            "nombre": "Sobre electrónico número uno (1)",
+            "contenido": "DEUC y la documentación de los criterios sujetos a juicio de valor: la memoria técnica.",
+            "prohibiciones": [
+              "En el sobre electrónico nº 1 no puede aparecer información que permita conocer los criterios valorables mediante fórmulas; hacerlo puede suponer la exclusión del licitador del procedimiento."
+            ],
+            "firma": "Firma de quien represente al licitador; tanto el DEUC como la memoria van firmados.",
+            "documentos": [
+              {
+                "tipo": "deuc",
+                "nombre": "Declaración responsable en el formulario del Documento Europeo Único de Contratación (DEUC)",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "DEUC",
+                  "documento": "Cuadro de condiciones.pdf",
+                  "pagina": 5
+                }
+              },
+              {
+                "tipo": "memoria",
+                "nombre": "Memoria técnica",
+                "obligatorio": true,
+                "produce": "hermes",
+                "origen": {
+                  "documento": "Cuadro de condiciones.pdf",
+                  "pagina": 6
+                }
+              }
+            ],
+            "documento": "Cuadro de condiciones.pdf",
+            "pagina": 5
+          },
+          {
+            "nombre": "Sobre electrónico número dos (2)",
+            "contenido": "Oferta económica y resto de criterios valorables mediante fórmulas, según el modelo del Anexo II, con la documentación que los acredite cuando se exige.",
+            "prohibiciones": [],
+            "documentos": [
+              {
+                "tipo": "oferta_economica",
+                "nombre": "ANEXO II. MODELO DE OFERTA ECONÓMICA Y DE CRITERIOS AUTOMÁTICOS",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "Anexo II",
+                  "documento": "Cuadro de condiciones.pdf",
+                  "pagina": 19
+                }
+              },
+              {
+                "tipo": "acreditacion",
+                "nombre": "Certificados de buena ejecución que acreditan la experiencia puntuable del equipo",
+                "obligatorio": false,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "Anexo II, justificantes que exige el criterio A.2",
+                  "documento": "Cuadro de condiciones.pdf",
+                  "pagina": 20
+                }
+              },
+              {
+                "tipo": "acreditacion",
+                "nombre": "Licencia, certificado del proveedor o declaración responsable que acredite las capacidades técnicas",
+                "obligatorio": false,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "Anexo II, justificantes que exige el criterio A.4",
+                  "documento": "Cuadro de condiciones.pdf",
+                  "pagina": 22
+                }
+              }
+            ],
+            "documento": "Cuadro de condiciones.pdf",
+            "pagina": 7
+          }
+        ],
+        "memoria": {
+          "archivo": "Sobre electrónico número uno (1)",
+          "titulo_documento": "Memoria técnica",
+          "limite_paginas": 10,
+          "limite_detalle": "La memoria no superará diez (10) páginas numeradas en formato A4 y letra de once (11) puntos; no se valorará nada a partir de la página once (11).",
+          "formato": {
+            "tamano_letra": 11,
+            "otros": "A4 con páginas numeradas."
+          },
+          "apartados": [
+            {
+              "titulo": "Metodología de auditoría y priorización de hallazgos",
+              "puntos": 12,
+              "se_valorara": [
+                "la combinación de pruebas automáticas y revisión manual según WCAG 2.2 nivel AA",
+                "el criterio para clasificar la gravedad y priorizar los hallazgos",
+                "el método para no repetir el mismo fallo en páginas con plantilla común",
+                "el procedimiento para verificar las correcciones frente al informe previo",
+                "su apoyo en estándares y guías reconocidas, como WCAG 2.2, EN 301 549 y la metodología WCAG-EM"
+              ],
+              "escala": [
+                {
+                  "puntos": 12,
+                  "descripcion": "Excelente (100 %): trata todos los aspectos del subcriterio de forma concreta para los portales de la Sociedad de Desarrollo, con parámetros o ejemplos."
+                },
+                {
+                  "puntos": 8.4,
+                  "descripcion": "Bueno (70 %): trata todos los aspectos, pero de forma genérica."
+                },
+                {
+                  "puntos": 4.8,
+                  "descripcion": "Suficiente (40 %): omite algún aspecto o lo trata de forma superficial."
+                },
+                {
+                  "puntos": 0,
+                  "descripcion": "Insuficiente (0 %): no aborda el subcriterio o contradice el pliego."
+                }
+              ],
+              "documento": "Cuadro de condiciones.pdf",
+              "pagina": 15
+            },
+            {
+              "titulo": "Herramientas de evaluación",
+              "puntos": 6,
+              "se_valorara": [
+                "su adecuación a los portales de la Sociedad de Desarrollo (turismo, trámites, empresas, etc.)",
+                "la comparación razonada de ventajas e inconvenientes frente a otras herramientas del mercado"
+              ],
+              "escala": [
+                {
+                  "puntos": 6,
+                  "descripcion": "Excelente (100 %): trata todos los aspectos del subcriterio de forma concreta para los portales de la Sociedad de Desarrollo, con parámetros o ejemplos."
+                },
+                {
+                  "puntos": 4.2,
+                  "descripcion": "Bueno (70 %): trata todos los aspectos, pero de forma genérica."
+                },
+                {
+                  "puntos": 2.4,
+                  "descripcion": "Suficiente (40 %): omite algún aspecto o lo trata de forma superficial."
+                },
+                {
+                  "puntos": 0,
+                  "descripcion": "Insuficiente (0 %): no aborda el subcriterio o contradice el pliego."
+                }
+              ],
+              "documento": "Cuadro de condiciones.pdf",
+              "pagina": 15
+            },
+            {
+              "titulo": "Aseguramiento de calidad y seguimiento de correcciones",
+              "puntos": 4,
+              "se_valorara": [
+                "los controles de revisión humana",
+                "la estructura del anexo de evidencias",
+                "la reproducibilidad de las pruebas"
+              ],
+              "escala": [
+                {
+                  "puntos": 4,
+                  "descripcion": "Excelente (100 %): trata todos los aspectos del subcriterio de forma concreta para los portales de la Sociedad de Desarrollo, con parámetros o ejemplos."
+                },
+                {
+                  "puntos": 2.8,
+                  "descripcion": "Bueno (70 %): trata todos los aspectos, pero de forma genérica."
+                },
+                {
+                  "puntos": 1.6,
+                  "descripcion": "Suficiente (40 %): omite algún aspecto o lo trata de forma superficial."
+                },
+                {
+                  "puntos": 0,
+                  "descripcion": "Insuficiente (0 %): no aborda el subcriterio o contradice el pliego."
+                }
+              ],
+              "documento": "Cuadro de condiciones.pdf",
+              "pagina": 15
+            },
+            {
+              "titulo": "Modelo de informe, ficha ejecutiva y panel de seguimiento",
+              "puntos": 3,
+              "se_valorara": [
+                "la claridad y utilidad del modelo de informe, de la ficha ejecutiva y del panel de seguimiento para decidir qué corregir primero"
+              ],
+              "escala": [
+                {
+                  "puntos": 3,
+                  "descripcion": "Excelente (100 %): trata todos los aspectos del subcriterio de forma concreta para los portales de la Sociedad de Desarrollo, con parámetros o ejemplos."
+                },
+                {
+                  "puntos": 2.1,
+                  "descripcion": "Bueno (70 %): trata todos los aspectos, pero de forma genérica."
+                },
+                {
+                  "puntos": 1.2,
+                  "descripcion": "Suficiente (40 %): omite algún aspecto o lo trata de forma superficial."
+                },
+                {
+                  "puntos": 0,
+                  "descripcion": "Insuficiente (0 %): no aborda el subcriterio o contradice el pliego."
+                }
+              ],
+              "documento": "Cuadro de condiciones.pdf",
+              "pagina": 15
+            }
+          ],
+          "advertencias": [
+            "La memoria respetará las condiciones mínimas del Pliego de Prescripciones Técnicas; se valorarán el orden, la concreción y la claridad, y la coherencia entre objetivos, medios, mejoras, resultados y control.",
+            "Las ofertas que no lleguen a 12,5 puntos en este criterio quedarán excluidas (art. 146.3 LCSP).",
+            "No se valorará la información que aparezca desde la página once (11).",
+            "En el sobre electrónico nº 1 no puede aparecer información que permita conocer los criterios valorables mediante fórmulas; hacerlo puede suponer la exclusión del licitador del procedimiento."
+          ],
+          "documento": "Cuadro de condiciones.pdf",
+          "pagina": 6
+        },
+        "automaticos": [
+          {
+            "criterio": "Experiencia acreditada en auditorías de accesibilidad web y en la redacción de informes técnicos",
+            "puntos": 15,
+            "como_se_acredita": "Se valoran hasta tres profesionales adscritos a la ejecución, cada uno en un solo tramo a elección del licitador; la puntuación es la suma de los tres, con un máximo de 15 puntos. Se acredita con certificados de buena ejecución que identifiquen el servicio y la participación individual de la persona. Sin acreditación válida se puntúa 0; no cabe subsanación ni aclaración.",
+            "casilla_en": "Anexo II, apartado 2: casilla de cada tramo y campos con nombre, titulación y años exactos de cada profesional",
+            "archivo": "Sobre electrónico número dos (2)",
+            "marcas": [
+              "experiencia profesional",
+              "10 anos",
+              "5 anos",
+              "auditoria de accesibilidad",
+              "certificados de buena ejecucion"
+            ],
+            "documento": "Cuadro de condiciones.pdf",
+            "pagina": 13
+          },
+          {
+            "criterio": "Criterio social de formación del personal adscrito",
+            "puntos": 5,
+            "como_se_acredita": "Compromiso de realizar al menos dos actividades formativas distintas, de una hora como mínimo cada una, relacionadas con el objeto del contrato y dirigidas al personal adscrito, como mínimo en cada año de ejecución.",
+            "casilla_en": "Anexo II, apartado 3, casilla «Asumo el compromiso formativo»",
+            "archivo": "Sobre electrónico número dos (2)",
+            "marcas": [
+              "actividades de formacion",
+              "formacion del personal",
+              "dos actividades",
+              "una hora"
+            ],
+            "documento": "Cuadro de condiciones.pdf",
+            "pagina": 13
+          },
+          {
+            "criterio": "Capacidades técnicas y herramientas de evaluación",
+            "puntos": 10,
+            "como_se_acredita": "Se otorgan 2,5 puntos por cada capacidad acreditada. Se acredita con contrato de licencia o suscripción, o certificado del proveedor vigente al cierre del plazo, que nombre la capacidad concreta; si la herramienta es de desarrollo propio, con una declaración responsable que describa técnicamente sus funciones.",
+            "casilla_en": "Anexo II, apartado 4, casillas a), b), c) y d) y nombre de la herramienta acreditada",
+            "archivo": "Sobre electrónico número dos (2)",
+            "marcas": [
+              "WCAG 2.2",
+              "analizador automatico",
+              "lector de pantalla",
+              "JAWS",
+              "pruebas con usuarios",
+              "12 meses",
+              "vision artificial",
+              "deteccion automatica de contraste"
+            ],
+            "documento": "Cuadro de condiciones.pdf",
+            "pagina": 14
+          }
+        ],
+        "oferta_economica": {
+          "formula": "La puntuación máxima se asigna a la oferta admitida más barata y las demás se puntúan con la fórmula logarítmica Pi = Pmax · (1 + log₁₀(Omin / Oi)), donde Pi es la puntuación de la oferta valorada, Pmax la puntuación máxima del criterio de precio, Omin la oferta admitida más económica y Oi la oferta valorada, calculadas sobre el precio unitario por informe. No habrá puntuaciones negativas (mínimo 0 puntos) y el resultado se redondeará a dos decimales.",
+          "presupuesto_base": 30261,
+          "impuesto_aparte": "IGIC",
+          "umbral_anormalidad": null,
+          "modelo": "Anexo II",
+          "archivo": "Sobre electrónico número dos (2)",
+          "documento": "Cuadro de condiciones.pdf",
+          "pagina": 12
+        },
+        "plazo": {
+          "fecha_limite": "2027-10-15T23:59",
+          "canal": "Presentación solo por vía electrónica en la Plataforma de Contratación del Sector Público (PLACSP), con la herramienta de preparación y presentación de ofertas."
+        },
+        "lotes": []
+      }
+    },
+    "lotes_cambiados": false,
+    "guion_cambiado": false,
+    "decisiones": null,
+    "memorias": []
+  }
+}

@@ -1,0 +1,27 @@
+name: Propuesta de mejora
+description: Una función nueva o un cambio en algo que ya existe
+labels: [mejora]
+body:
+  - type: textarea
+    id: problema
+    attributes:
+      label: Qué problema resuelve
+      description: Cuéntanos qué intentas hacer y qué te lo impide hoy. Primero el problema, luego la solución.
+    validations:
+      required: true
+  - type: textarea
+    id: propuesta
+    attributes:
+      label: Qué propones
+    validations:
+      required: true
+  - type: textarea
+    id: alternativas
+    attributes:
+      label: Alternativas que has considerado
+  - type: checkboxes
+    id: ayuda
+    attributes:
+      label: ¿Podrías ayudar?
+      options:
+        - label: Me gustaría implementarlo yo (lee antes CONTRIBUTING.md)

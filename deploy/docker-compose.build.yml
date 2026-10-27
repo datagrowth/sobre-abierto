@@ -1,0 +1,14 @@
+# Compila las imágenes desde este código en vez de descargarlas de GHCR (desarrollo, forks):
+#   docker compose -f docker-compose.yml -f deploy/docker-compose.build.yml up -d --build
+services:
+  hermes-init:
+    build: ./infra/hermes-init
+    pull_policy: build
+  monitor:
+    build:
+      context: .
+      dockerfile: infra/Dockerfile
+    pull_policy: build
+  drive-sync:
+    build: ./infra/drive-sync
+    pull_policy: build

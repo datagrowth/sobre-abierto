@@ -1,0 +1,11 @@
+{
+  "veredicto": "faltan_decisiones",
+  "impide": [
+    "empresa:-:domicilio"
+  ],
+  "tu": [
+    "precio:2",
+    "empresa:-:domicilio"
+  ],
+  "primer_bloqueo": "precio:2"
+}

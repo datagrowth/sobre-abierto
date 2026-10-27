@@ -1,0 +1,14 @@
+{
+  "veredicto": "no_presentable",
+  "impide": [
+    "excluyente_vs_perfil:-:ens",
+    "excluyente_alternativa:-:a1-d21",
+    "empresa:-:domicilio"
+  ],
+  "tu": [
+    "excluyente_alternativa:-:a1-d21",
+    "precio:1",
+    "empresa:-:domicilio"
+  ],
+  "primer_bloqueo": "excluyente_vs_perfil:-:ens"
+}

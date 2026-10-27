@@ -1,0 +1,539 @@
+{
+  "_origen": "Fixture sintético: oferta de prueba inventada de principio a fin; Persona A/B…, sin NIF, correo, teléfono, notas ni importes ofertados.",
+  "oferta": "casoB",
+  "licitacion_id": "p-91000740",
+  "capturado_en": "2027-10-13T20:34:51+00:00",
+  "licitacion": {
+    "titulo": "Servicio de formación en análisis de datos y automatización de procesos para el personal de la entidad",
+    "estado": "en_preparacion",
+    "fecha_limite": "2027-10-18T14:00:00",
+    "presupuesto": 97216,
+    "lotes": [
+      {
+        "id": "1",
+        "nombre": "Análisis de datos con hojas de cálculo",
+        "importe": 26880
+      },
+      {
+        "id": "2",
+        "nombre": "Bases de datos y consultas SQL: nivel inicial",
+        "importe": 23968
+      },
+      {
+        "id": "3",
+        "nombre": "Visualización de información y cuadros de mando",
+        "importe": 14784
+      },
+      {
+        "id": "4",
+        "nombre": "Automatización de tareas repetitivas con scripts",
+        "importe": 14784
+      },
+      {
+        "id": "5",
+        "nombre": "Calidad y gobierno del dato",
+        "importe": 16800
+      }
+    ],
+    "lotes_interes": [
+      "1"
+    ]
+  },
+  "pliegos": [
+    {
+      "nombre": "PCAP firmado.pdf",
+      "clase": "pcap"
+    },
+    {
+      "nombre": "PPT firmado.pdf",
+      "clase": "ppt"
+    },
+    {
+      "nombre": "espd-request.xml",
+      "clase": "adicional"
+    },
+    {
+      "nombre": "espd-request.pdf",
+      "clase": "adicional"
+    },
+    {
+      "nombre": "README.txt",
+      "clase": "adicional"
+    },
+    {
+      "nombre": "Anuncio de Licitación 28-09-2027 0947.pdf",
+      "clase": "anuncio"
+    },
+    {
+      "nombre": "Pliego 28-09-2027 0947.pdf",
+      "clase": "anuncio"
+    },
+    {
+      "nombre": "Memoria justificativa 28-09-2027 0941",
+      "clase": "otro"
+    },
+    {
+      "nombre": "Documento de aprobación del expediente 28-09-2027 0943",
+      "clase": "otro"
+    }
+  ],
+  "guiones_anteriores": [],
+  "respuesta_oferta": {
+    "guion": {
+      "id": 14,
+      "version": 2,
+      "ficha_id": 249,
+      "datos": {
+        "archivos": [
+          {
+            "nombre": "SOBRE O ARCHIVO ÚNICO",
+            "contenido": "Documentación que acredita los requisitos previos; PROPOSICIÓN ECONÓMICA SEGÚN EL ANEXO III; PROPOSICIÓN TÉCNICA CON LOS CRITERIOS EVALUABLES POR FÓRMULA SEGÚN EL ANEXO III Bis.",
+            "prohibiciones": [
+              "Las propuestas técnicas que omitan documentación pedida, incumplan las prescripciones técnicas mínimas del PPT o del PCAP o no lleguen a un mínimo exigido se tendrán por no presentadas a efectos de valoración.",
+              "Solo puede incluirse en el sobre único la documentación de los criterios evaluables por fórmula. Si aparece en otro sobre, la oferta queda fuera de la licitación."
+            ],
+            "firma": "Cada archivo o sobre electrónico lo firma electrónicamente quien represente a la empresa licitadora, y los documentos que contiene deben ir firmados a mano o electrónicamente.",
+            "documentos": [
+              {
+                "tipo": "acreditacion",
+                "nombre": "Certificado de inscripción en el Registro Oficial de Licitadores y Empresas Clasificadas del Sector Público (ROLECE)",
+                "obligatorio": true,
+                "produce": "persona"
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "ANEXO IX DECLARACIÓN RESPONSABLE DE VIGENCIA DE LOS DATOS DEL ROLECE",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO IX",
+                  "documento": "PCAP firmado.pdf",
+                  "pagina": 126
+                }
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "ANEXO II DECLARACIÓN DE NO ESTAR INCURSO EN PROHIBICIÓN DE CONTRATAR",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO II",
+                  "documento": "PCAP firmado.pdf",
+                  "pagina": 99
+                }
+              },
+              {
+                "tipo": "deuc",
+                "nombre": "Documento Europeo Único de Contratación (DEUC)",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "espd-request.pdf",
+                  "documento": "DEUC - espd-request.pdf",
+                  "pagina": 1
+                }
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "ANEXO VI DECLARACIÓN DE GRUPO EMPRESARIAL",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO VI",
+                  "documento": "PCAP firmado.pdf",
+                  "pagina": 123
+                }
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "ANEXO V DATOS DEL LICITADOR PARA NOTIFICACIONES",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO V",
+                  "documento": "PCAP firmado.pdf",
+                  "pagina": 121
+                }
+              },
+              {
+                "tipo": "oferta_economica",
+                "nombre": "ANEXO III LOTE 1. PROPOSICIÓN ECONÓMICA",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO III LOTE 1",
+                  "documento": "PCAP firmado.pdf",
+                  "pagina": 100
+                }
+              },
+              {
+                "tipo": "oferta_economica",
+                "nombre": "ANEXO III LOTE 2. PROPOSICIÓN ECONÓMICA",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO III LOTE 2",
+                  "documento": "PCAP firmado.pdf",
+                  "pagina": 102
+                }
+              },
+              {
+                "tipo": "oferta_economica",
+                "nombre": "ANEXO III LOTE 3. PROPOSICIÓN ECONÓMICA",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO III LOTE 3",
+                  "documento": "PCAP firmado.pdf",
+                  "pagina": 104
+                }
+              },
+              {
+                "tipo": "oferta_economica",
+                "nombre": "ANEXO III LOTE 4. PROPOSICIÓN ECONÓMICA",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO III LOTE 4",
+                  "documento": "PCAP firmado.pdf",
+                  "pagina": 106
+                }
+              },
+              {
+                "tipo": "oferta_economica",
+                "nombre": "ANEXO III LOTE 5. PROPOSICIÓN ECONÓMICA",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO III LOTE 5",
+                  "documento": "PCAP firmado.pdf",
+                  "pagina": 108
+                }
+              },
+              {
+                "tipo": "otro",
+                "nombre": "ANEXO III BIS LOTE 1. PROPOSICIÓN DE CRITERIOS TÉCNICOS EVALUABLES POR FÓRMULA",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO III BIS LOTE 1",
+                  "documento": "PCAP firmado.pdf",
+                  "pagina": 110
+                }
+              },
+              {
+                "tipo": "otro",
+                "nombre": "ANEXO III BIS LOTE 2. PROPOSICIÓN DE CRITERIOS TÉCNICOS EVALUABLES POR FÓRMULA",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO III BIS LOTE 2",
+                  "documento": "PCAP firmado.pdf",
+                  "pagina": 112
+                }
+              },
+              {
+                "tipo": "otro",
+                "nombre": "ANEXO III BIS LOTE 3. PROPOSICIÓN DE CRITERIOS TÉCNICOS EVALUABLES POR FÓRMULA",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO III BIS LOTE 3",
+                  "documento": "PCAP firmado.pdf",
+                  "pagina": 114
+                }
+              },
+              {
+                "tipo": "otro",
+                "nombre": "ANEXO III BIS LOTE 4. PROPOSICIÓN DE CRITERIOS TÉCNICOS EVALUABLES POR FÓRMULA",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO III BIS LOTE 4",
+                  "documento": "PCAP firmado.pdf",
+                  "pagina": 116
+                }
+              },
+              {
+                "tipo": "otro",
+                "nombre": "ANEXO III BIS LOTE 5. PROPOSICIÓN DE CRITERIOS TÉCNICOS EVALUABLES POR FÓRMULA",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO III BIS LOTE 5",
+                  "documento": "PCAP firmado.pdf",
+                  "pagina": 118
+                }
+              },
+              {
+                "tipo": "acreditacion",
+                "nombre": "Currículum, titulación, vida laboral y certificados de formación del profesorado",
+                "obligatorio": true,
+                "produce": "persona",
+                "notas": "Una persona formadora por lote; declaración responsable firmada de años de docencia, horas y experiencia profesional; índice que identifique la documentación de cada perfil. PCAP, págs. 23-25 y Anexo III BIS, págs. 111, 113, 115, 117 y 119."
+              },
+              {
+                "tipo": "acreditacion",
+                "nombre": "Currículum de la persona coordinadora del contrato",
+                "obligatorio": true,
+                "produce": "persona",
+                "notas": "Titulación superior y tres años en gestión de proyectos; PCAP, pág. 21."
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "Declaración responsable de los medios materiales",
+                "obligatorio": true,
+                "produce": "persona",
+                "notas": "O compromiso de adquisición; PCAP, págs. 22-23."
+              },
+              {
+                "tipo": "acreditacion",
+                "nombre": "Certificado de Conformidad con el ENS de categoría MEDIA",
+                "obligatorio": true,
+                "produce": "persona",
+                "notas": "Como alternativa, el Anexo XIV o un informe de auditoría con evidencias equivalentes dentro del alcance; PCAP, págs. 18 y 56."
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "ANEXO XIV. AUTOEVALUACIÓN DEL ENS",
+                "obligatorio": false,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO XIV",
+                  "documento": "PCAP firmado.pdf",
+                  "pagina": 147
+                },
+                "notas": "Vía alternativa si no se aporta el certificado ENS; PCAP, pág. 18."
+              },
+              {
+                "tipo": "acreditacion",
+                "nombre": "Certificado de estar al corriente en el cumplimiento de las obligaciones tributarias",
+                "obligatorio": true,
+                "produce": "persona"
+              },
+              {
+                "tipo": "acreditacion",
+                "nombre": "Certificado de estar al corriente en el cumplimiento de las obligaciones con la Seguridad Social",
+                "obligatorio": true,
+                "produce": "persona"
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "ANEXO IV DECLARACIÓN SOBRE DATOS DEL PERSONAL EXTERNO",
+                "obligatorio": false,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO IV",
+                  "documento": "PCAP firmado.pdf",
+                  "pagina": 120
+                },
+                "notas": "Solo si hay personal externo; PCAP, pág. 68."
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "ANEXO VII DECLARACIÓN DE SUBCONTRATACIÓN",
+                "obligatorio": false,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO VII",
+                  "documento": "PCAP firmado.pdf",
+                  "pagina": 124
+                },
+                "notas": "Solo si se propone subcontratar; el Anexo VIII no sirve para preparar la oferta."
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "ANEXO X COMPROMISO DE CONSTITUCIÓN DE UTE",
+                "obligatorio": false,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO X",
+                  "documento": "PCAP firmado.pdf",
+                  "pagina": 127
+                },
+                "notas": "Solo si concurre una UTE; el modelo cita por error otro expediente, 2027-00918."
+              }
+            ],
+            "documento": "PCAP firmado.pdf",
+            "pagina": 66
+          }
+        ],
+        "memoria": null,
+        "automaticos": [
+          {
+            "criterio": "C1. Años de docencia previa del profesorado en la materia del lote",
+            "puntos": 15,
+            "como_se_acredita": "Anexo III BIS, valor ofertado; CV detallado, declaración responsable firmada y vida laboral. 1.C1 = 15 x (T – 2) / 3; más de 5 años: máximo. 2.C1 = 15 x (T – 2) / 4; 3.C1 = 15 x (T – 2) / 4; más de seis (6) años: máximo. 4.C1 = 15 x (T – 2) / 8; 5.C1 = 15 x (T – 2) / 8; más de diez (10) años: máximo. T: años en formato decimal, con dos decimales como mucho. PCAP, págs. 38, 41, 44, 47 y 51.",
+            "casilla_en": "Anexo III Bis, lote 1: 1.C1; lote 2: 2.C1; lote 3: 3.C1; lote 4: 4.C1; lote 5: 5.C1 (valor que ofrece la empresa)",
+            "archivo": "SOBRE O ARCHIVO ÚNICO",
+            "marcas": [
+              "docencia previa del profesorado",
+              "años de docencia en la materia"
+            ],
+            "documento": "PCAP firmado.pdf",
+            "pagina": 38
+          },
+          {
+            "criterio": "C2. Horas de docencia acreditadas en la materia del lote",
+            "puntos": 15,
+            "como_se_acredita": "Anexo III BIS, valor ofertado; CV detallado, declaración responsable firmada con curso, destinatarios, fechas y horas; vida laboral. 1.C2 = 15 x (H – 150) / 150; más de 300 horas: máximo. 2.C2 = 15 x (H – 250) / 250; 3.C2 = 15 x (H – 250) / 250; más de 500 horas: máximo. 4.C2 = 15 x (H –250 ) / 350; más de 600 horas: máximo. 5.C2 = 15 x (H – 300) / 300; más de 600 horas: máximo. PCAP, págs. 38, 41-42, 44-45, 48 y 51.",
+            "casilla_en": "Anexo III Bis, lote 1: 1.C2; lote 2: 2.C2; lote 3: 3.C2; lote 4: 4.C2; lote 5: 5.C2 (valor que ofrece la empresa)",
+            "archivo": "SOBRE O ARCHIVO ÚNICO",
+            "marcas": [
+              "horas de docencia en la materia",
+              "horas de docencia acreditadas"
+            ],
+            "documento": "PCAP firmado.pdf",
+            "pagina": 38
+          },
+          {
+            "criterio": "C3. Experiencia profesional fuera de la docencia en la materia del lote",
+            "puntos": 15,
+            "como_se_acredita": "Anexo III BIS, valor ofertado; CV detallado y declaración responsable firmada con proyectos, entidad, periodos y funciones. 1.C3 = 15 × (P – 2) / 3; más de 5 años: máximo. 2.C3 = 15 × (P – 3) / 7; 3.C3 = 15 × (P – 3) /7; 4.C3 = 15 × (P – 3 ) / 7; 5.C3 = 15 × (P –3) / 7; más de diez (10) años: máximo. P: años de experiencia profesional ajena a la docencia en la materia del lote. PCAP, págs. 39, 42, 45, 48 y 51.",
+            "casilla_en": "Anexo III Bis, lote 1: 1.C3; lote 2: 2.C3; lote 3: 3.C3; lote 4: 4.C3; lote 5: 5.C3 (valor que ofrece la empresa)",
+            "archivo": "SOBRE O ARCHIVO ÚNICO",
+            "marcas": [
+              "experiencia profesional ajena a la docencia",
+              "proyectos no docentes"
+            ],
+            "documento": "PCAP firmado.pdf",
+            "pagina": 39
+          },
+          {
+            "criterio": "C4. Titulaciones y certificaciones del profesorado",
+            "puntos": 5,
+            "como_se_acredita": "Anexo III BIS, casilla C4 del lote; títulos y certificados, o declaración responsable con las certificaciones disponibles. Ninguna certificación afín: se admite; 1 acreditable: 2 puntos; 2 acreditables: 4 puntos; 3 o más: 5 puntos. Deben ser de materias afines al lote. PCAP, págs. 39, 42, 45, 48 y 51-52.",
+            "casilla_en": "Anexo III Bis, lote 1: 1.C4; lote 2: 2.C4; lote 3: 3.C4; lote 4: 4.C4; lote 5: 5.C4 (valor que ofrece la empresa)",
+            "archivo": "SOBRE O ARCHIVO ÚNICO",
+            "marcas": [
+              "certificaciones del profesorado",
+              "certificaciones que se pueden acreditar"
+            ],
+            "documento": "PCAP firmado.pdf",
+            "pagina": 39
+          },
+          {
+            "criterio": "C5. Aula virtual y acceso a los materiales",
+            "puntos": 5,
+            "como_se_acredita": "Declaración responsable de la empresa sobre el aula virtual y los contenidos y documentos que tendrá el alumnado; Anexo III BIS C5 de cada lote. Sin aula: 0 puntos; acceso mientras dura el curso: 2 puntos; acceso durante el curso y después, en modo consulta: 5 puntos. PCAP, págs. 40, 43, 46, 49-50 y 52-53.",
+            "casilla_en": "Anexo III Bis, lote 1: 1.C5; lote 2: 2.C5; lote 3: 3.C5; lote 4: 4.C5; lote 5: 5.C5 (valor que ofrece la empresa)",
+            "archivo": "SOBRE O ARCHIVO ÚNICO",
+            "marcas": [
+              "acceso posterior en modo consulta",
+              "aula virtual"
+            ],
+            "documento": "PCAP firmado.pdf",
+            "pagina": 40
+          },
+          {
+            "criterio": "C6. Reserva de plazas en ediciones abiertas",
+            "puntos": 5,
+            "como_se_acredita": "Anexo III BIS, casilla C6 del lote; reserva de plazas sin cubrir en ediciones abiertas del proveedor (hasta cinco por edición), que pueden ocuparse con personal de la entidad en otra convocatoria del contratista. Sin reserva: 0 puntos; con reserva: 5 puntos. Calendario de convocatorias del proveedor, según el apartado 8 del PPT. PCAP, págs. 40-41, 43-44, 47, 50 y 53.",
+            "casilla_en": "Anexo III Bis, lote 1: 1.C6; lote 2: 2.C6; lote 3: 3.C6; lote 4: 4.C6; lote 5: 5.C6 (valor que ofrece la empresa)",
+            "archivo": "SOBRE O ARCHIVO ÚNICO",
+            "marcas": [
+              "reserva de plazas",
+              "vacantes no cubiertas"
+            ],
+            "documento": "PCAP firmado.pdf",
+            "pagina": 40
+          }
+        ],
+        "oferta_economica": {
+          "formula": "COEi = PMED / P, donde PMED es el precio medio de las ofertas y P el precio de la oferta valorada. El precio medio es la media aritmética de los precios ofertados, sin contar las ofertas anormalmente bajas. La oferta con el mayor coeficiente (COEmax) recibe la puntuación máxima y las demás la puntuación económica PE = (COEi / COEmax) X puntuación máxima. Ese máximo es de 40 puntos en cada lote. ANEXO III: precio unitario por edición ofertado × número de ediciones; lote 1: 6 ediciones, máximo 4.480,00 €/edición; 2: 2 básicas, máximo 5.040,00 €/edición, y 2 intermedias, máximo 6.944,00 €/edición; 3: 2 ediciones, máximo 7.392,00 €/edición; 4: 2 ediciones, máximo 7.392,00 €/edición; 5: 2 ediciones, máximo 8.400,00 €/edición. PCAP, págs. 9-10, 54 y 100-109.",
+          "presupuesto_base": 97216,
+          "impuesto_aparte": "IVA",
+          "precio_unitario": {
+            "unidad": "edición",
+            "maximo": null
+          },
+          "umbral_anormalidad": "Se presumen anormalmente bajas, en principio, las ofertas que, con un solo licitador, rebajen el importe máximo en más de 30 puntos porcentuales y, con varios, las que se alejen más de 20 puntos porcentuales de la baja media.",
+          "modelo": "ANEXO III LOTE 1; ANEXO III LOTE 2; ANEXO III LOTE 3; ANEXO III LOTE 4; ANEXO III LOTE 5. PROPOSICIÓN ECONÓMICA",
+          "archivo": "SOBRE O ARCHIVO ÚNICO",
+          "documento": "PCAP firmado.pdf",
+          "pagina": 54
+        },
+        "plazo": {
+          "fecha_limite": "2027-10-18T14:00",
+          "canal": "Herramienta de preparación y presentación de ofertas de la Plataforma de Contratación del Sector Público (https://contrataciondelestado.es)"
+        },
+        "lotes": [
+          "1",
+          "2",
+          "3",
+          "4",
+          "5"
+        ]
+      }
+    },
+    "lotes_cambiados": false,
+    "guion_cambiado": false,
+    "decisiones": {
+      "guion_id": 14,
+      "datos": {
+        "lotes": [
+          "1"
+        ],
+        "equipo": [
+          {
+            "persona_id": 1001,
+            "rol_en_la_oferta": "Rol 1 de la oferta",
+            "lotes": []
+          },
+          {
+            "persona_id": 1001,
+            "rol_en_la_oferta": "Rol 2 de la oferta",
+            "lotes": []
+          }
+        ],
+        "automaticos": [
+          {
+            "criterio": "C1. Años de docencia previa del profesorado en la materia del lote",
+            "lote": null,
+            "nos_acogemos": true,
+            "tramo": "C1. Años de docencia previa del profesorado en la materia del lote"
+          },
+          {
+            "criterio": "C2. Horas de docencia acreditadas en la materia del lote",
+            "lote": null,
+            "nos_acogemos": false,
+            "tramo": null
+          },
+          {
+            "criterio": "C3. Experiencia profesional fuera de la docencia en la materia del lote",
+            "lote": null,
+            "nos_acogemos": true,
+            "tramo": "C3. Experiencia profesional fuera de la docencia en la materia del lote"
+          },
+          {
+            "criterio": "C4. Titulaciones y certificaciones del profesorado",
+            "lote": null,
+            "nos_acogemos": true,
+            "tramo": "C4. Titulaciones y certificaciones del profesorado"
+          },
+          {
+            "criterio": "C5. Aula virtual y acceso a los materiales",
+            "lote": null,
+            "nos_acogemos": false,
+            "tramo": null
+          },
+          {
+            "criterio": "C6. Reserva de plazas en ediciones abiertas",
+            "lote": null,
+            "nos_acogemos": false,
+            "tramo": null
+          }
+        ],
+        "ofertas": [
+          {
+            "lote": "1",
+            "pendiente": true,
+            "importe": null,
+            "unitarios": []
+          }
+        ]
+      }
+    },
+    "memorias": []
+  }
+}

@@ -1,0 +1,1110 @@
+{
+  "_origen": "Fixture sintético: estructura de una oferta de prueba con textos, equipo y memorias inventados; Persona A/B… y Persona R, NIF ficticios, sin correo, teléfono ni importes ofertados.",
+  "id": "p-91000780",
+  "ahora": "2027-10-13T20:34:59.000Z",
+  "licitacion": {
+    "titulo": "Servicio de auditoría de accesibilidad y usabilidad de los portales web de la Sociedad de Desarrollo de Villaejemplo.",
+    "expediente": "CTR-2026-0093",
+    "organo": {
+      "nombre": "Consejero Delegado de la Sociedad de Desarrollo de Villaejemplo, S.A.U.",
+      "nif": "A00572321",
+      "dir3": null,
+      "ciudad": "Villaejemplo (Canarias)"
+    },
+    "presupuesto_sin_iva": 30261,
+    "valor_estimado": 90783,
+    "cpvs": [
+      "79311410",
+      "79311400",
+      "79311000"
+    ],
+    "lotes": [],
+    "fecha_limite": "2027-10-15T23:59:00",
+    "fecha_solicitud": null,
+    "presentacion": {
+      "codigo": null,
+      "maximo_lotes": null,
+      "maximo_adjudicables": null,
+      "combinacion": null
+    },
+    "criterios": [
+      {
+        "tipo": "OBJ",
+        "descripcion": "Experiencia acreditada en auditorías de accesibilidad web y en la redacción de informes técnicos",
+        "peso": 15,
+        "nota": "Cada licitador presentará su propuesta conforme a lo que fijan el PCAP y los anexos del expediente"
+      },
+      {
+        "tipo": "OBJ",
+        "descripcion": "Capacidad técnica y herramientas",
+        "peso": 10,
+        "nota": "Cada licitador presentará su propuesta conforme a lo que fijan el PCAP y los anexos del expediente"
+      },
+      {
+        "tipo": "SUBJ",
+        "descripcion": "Enfoque técnico y plan de auditoría",
+        "peso": 25,
+        "nota": "Cada licitador presentará su propuesta conforme a lo que fijan el PCAP y los anexos del expediente"
+      },
+      {
+        "tipo": "OBJ",
+        "descripcion": "Actualización formativa del equipo",
+        "peso": 5,
+        "nota": "Cada licitador presentará su compromiso en los términos y con los límites que fija el PCAP del expediente."
+      },
+      {
+        "tipo": "OBJ",
+        "descripcion": "Oferta económica",
+        "peso": 45,
+        "nota": "Cada licitador presentará su oferta económica según el modelo del PCAP y de los anexos del expediente"
+      }
+    ],
+    "requisitos": [
+      {
+        "clase": "tecnica",
+        "codigo": "OSR-COMPTASK",
+        "descripcion": "Declaración responsable en formato DEUC con la que cada licitador afirma que cumple las condiciones de solvencia del expediente.",
+        "umbral": null,
+        "lote": null
+      },
+      {
+        "clase": "financiera",
+        "codigo": "5",
+        "descripcion": "Declaración responsable en formato DEUC con la que cada licitador afirma que cumple las condiciones de solvencia del expediente.",
+        "umbral": null,
+        "lote": null
+      },
+      {
+        "clase": "declaracion",
+        "codigo": "1",
+        "descripcion": "Capacidad de obrar",
+        "umbral": null,
+        "lote": null
+      }
+    ]
+  },
+  "oportunidad": {
+    "estado": "descartada",
+    "lotes_interes": [],
+    "motivo_descarte": "Sin solvencia técnica mínima: no tenemos director/a con 5 años en auditoría de accesibilidad web o evaluación de usabilidad ni analista con 3 años en pruebas de usabilidad o analítica web, y no se puede subcontratar"
+  },
+  "ficha": {
+    "id": 239,
+    "datos": {
+      "resumen": "Servicio sin lotes de auditoría de accesibilidad (WCAG 2.2) de los portales web de la Sociedad: informes por encargo, informe anual consolidado y panel de seguimiento en línea. PBL anual 32.379,27 € IGIC incluido; VE 90.783,00 € sin IGIC con prórrogas. Precio unitario máximo 1.513,05 € por informe sin IGIC, sin mínimo de encargos. Pide método reproducible, revisión humana y seguimiento de las correcciones (PPT págs. 2-7; CC págs. 8-15).",
+      "requisitos": [
+        {
+          "tipo": "solvencia_economica",
+          "descripcion": "Facturación anual en servicios del ámbito del contrato, en el mejor ejercicio disponible; con menos de 3 ejercicios cerrados se toma el de mayor volumen.",
+          "excluyente": true,
+          "valor_exigido": "≥45.391,50 € sin impuestos (1,5 veces el valor estimado anual)",
+          "cumple": "si",
+          "fuente": "perfil.volumen_negocio, ejercicio 2025: 268.420,15 €",
+          "justificacion": "Supera el umbral, pero no consta qué parte de la facturación corresponde a servicios de accesibilidad y usabilidad web; falta ese dato.",
+          "documento": "Cuadro de condiciones.pdf",
+          "pagina": 8
+        },
+        {
+          "tipo": "solvencia_tecnica",
+          "descripcion": "Servicios análogos de los tres últimos años por un importe acumulado ≥70% de la anualidad media; solo se exige a empresas que no sean de nueva creación.",
+          "excluyente": true,
+          "valor_exigido": "≥70% de la anualidad media salvo empresas de nueva creación, exentas de forma expresa",
+          "cumple": "si",
+          "fuente": "perfil.fecha_constitucion 2023-03-14; perfil.notas: nueva creación hasta marzo de 2028",
+          "justificacion": "El pliego exime a las empresas de nueva creación de acreditar servicios análogos, pero no de adscribir los dos perfiles personales.",
+          "documento": "Cuadro de condiciones.pdf",
+          "pagina": 9
+        },
+        {
+          "tipo": "medios_personales",
+          "descripcion": "Director/a técnico/a: titulación universitaria y ≥5 años en auditoría de accesibilidad web o evaluación de usabilidad.",
+          "excluyente": true,
+          "valor_exigido": "Un perfil con grado universitario y ≥5 años experiencia específica",
+          "cumple": "si",
+          "fuente": "colaboradores: 7 de 11 cumplen los mínimos que se leen del requisito",
+          "justificacion": "Falta comprobar la experiencia en la materia y la disponibilidad real; las coincidencias solo cubren los mínimos genéricos.",
+          "documento": "Cuadro de condiciones.pdf",
+          "pagina": 11
+        },
+        {
+          "tipo": "medios_personales",
+          "descripcion": "Analista de datos: titulación universitaria en Estadística, Informática, Matemáticas, Ingeniería, Psicología o similar y ≥3 años en pruebas de usabilidad/analítica web.",
+          "excluyente": true,
+          "valor_exigido": "Un perfil con titulación afín y ≥3 años experiencia específica",
+          "cumple": "si",
+          "fuente": "colaboradores: 9 de 12 cumplen los mínimos que se leen del requisito",
+          "justificacion": "Falta comprobar la experiencia en pruebas de usabilidad y analítica web y la adscripción; no se da por acreditado solo por los años totales.",
+          "documento": "Cuadro de condiciones.pdf",
+          "pagina": 11
+        },
+        {
+          "tipo": "medios_materiales",
+          "descripcion": "Medios personales y materiales suficientes, detallados en la oferta; su adscripción efectiva es obligación esencial.",
+          "excluyente": true,
+          "valor_exigido": "Medios suficientes y detallados en la oferta",
+          "cumple": "dudoso",
+          "fuente": "perfil-licitaciones.md: capacidad en datos/BI/IA; sin inventario de licencias ni de herramientas de accesibilidad",
+          "justificacion": "No consta acceso a herramientas de evaluación de accesibilidad ni el compromiso de adscribir medios adecuados.",
+          "documento": "Cuadro de condiciones.pdf",
+          "pagina": 11
+        },
+        {
+          "tipo": "otro",
+          "descripcion": "No ser adjudicataria del contrato de desarrollo de los portales ni empresa vinculada a ella.",
+          "excluyente": true,
+          "valor_exigido": "Ni adjudicataria ni vinculada a ella",
+          "cumple": "dudoso",
+          "fuente": "el perfil no dice si Analítica Ejemplo o alguna vinculada desarrolló los portales",
+          "justificacion": "Hay que confirmar expresamente esa incompatibilidad.",
+          "documento": "PPT.pdf",
+          "pagina": 2
+        },
+        {
+          "tipo": "otro",
+          "descripcion": "Declarar que no hay conflicto de intereses y abstenerse de prestar servicios de desarrollo o mantenimiento de los portales auditados durante la ejecución.",
+          "excluyente": true,
+          "valor_exigido": "Sin conflicto de intereses y con abstención",
+          "cumple": "dudoso",
+          "fuente": "perfil-licitaciones.md: ofrece desarrollo web y marketing; no identifica los portales a auditar",
+          "justificacion": "Falta cotejar los servicios y clientes con los portales auditados y confirmar que Analítica Ejemplo puede abstenerse.",
+          "documento": "PPT.pdf",
+          "pagina": 5
+        },
+        {
+          "tipo": "seguro",
+          "descripcion": "Póliza de responsabilidad civil acorde con la actividad; el pliego no concreta el importe.",
+          "excluyente": false,
+          "valor_exigido": "Póliza de RC exigible, importe sin fijar",
+          "cumple": "no",
+          "fuente": "perfil.seguro_rc: sin seguro",
+          "justificacion": "Hoy no hay seguro contratado; el perfil dice que se contrataría si se gana. El seguro no es excluyente.",
+          "documento": "PCAP.pdf",
+          "pagina": 7
+        },
+        {
+          "tipo": "subcontratacion",
+          "descripcion": "Se admite integrar la solvencia técnica con medios de otras entidades mediante compromiso, pero la experiencia solo cuenta si esas entidades ejecutan el servicio; Analítica Ejemplo concurre en solitario.",
+          "excluyente": false,
+          "cumple": "si",
+          "fuente": "perfil.notas: la empresa concurre siempre sola",
+          "justificacion": "Concurrir sola coincide con lo declarado; hacen falta los perfiles y medios adscritos de verdad.",
+          "documento": "Cuadro de condiciones.pdf",
+          "pagina": 10
+        },
+        {
+          "tipo": "idioma",
+          "descripcion": "El pliego no fija un idioma; los informes y la comunicación serán en castellano.",
+          "excluyente": false,
+          "valor_exigido": "Castellano",
+          "cumple": "si",
+          "fuente": "perfil.idiomas: es, en",
+          "justificacion": "La empresa trabaja habitualmente en castellano.",
+          "documento": "PPT.pdf",
+          "pagina": 2
+        },
+        {
+          "tipo": "lugar_ejecucion",
+          "descripcion": "Auditoría remota de los portales; el pliego no exige presencia continuada ni sede obligatoria.",
+          "excluyente": false,
+          "cumple": "si",
+          "fuente": "plataforma_empresa.nuts_sede ES70; el perfil sitúa la sede en Canarias",
+          "justificacion": "Mismo territorio que el órgano contratante; el servicio se describe como auditoría e informes.",
+          "documento": "PPT.pdf",
+          "pagina": 2
+        },
+        {
+          "tipo": "otro",
+          "descripcion": "Acreditar cuatro capacidades técnicas en la oferta; puntúan, pero no son mínimo de admisión.",
+          "excluyente": false,
+          "valor_exigido": "Cuatro capacidades a 2,5 puntos cada una",
+          "cumple": "dudoso",
+          "fuente": "perfil-licitaciones.md: herramientas de IA/datos; no identifica licencias de analizador WCAG, lector de pantalla ni plataforma de pruebas con usuarios",
+          "justificacion": "Sin licencias ni certificados concretos no hay evidencia. Sin acreditar se puntúa cero en el criterio; no es un mínimo de solvencia.",
+          "documento": "Cuadro de condiciones.pdf",
+          "pagina": 14
+        },
+        {
+          "tipo": "otro",
+          "descripcion": "Dos actividades formativas distintas al año, de una hora como mínimo, dirigidas al personal adscrito.",
+          "excluyente": false,
+          "valor_exigido": "2 actividades al año de ≥1 hora",
+          "cumple": "dudoso",
+          "fuente": "perfil-licitaciones.md: la empresa imparte formación en datos/IA; no hay compromiso anual registrado",
+          "justificacion": "Falta formular el compromiso formativo y su calendario por anualidad.",
+          "documento": "Cuadro de condiciones.pdf",
+          "pagina": 13
+        },
+        {
+          "tipo": "lugar_ejecucion",
+          "descripcion": "Entregar informes de auditoría y un panel de seguimiento de correcciones consultable 24/7 con los resultados de los portales de la Sociedad de Desarrollo.",
+          "excluyente": false,
+          "cumple": "si",
+          "fuente": "perfil-licitaciones.md: servicios de datos/IA, BI, estadística aplicada y paneles de control",
+          "justificacion": "El objeto encaja con la analítica y el BI declarados; la disponibilidad de herramientas de accesibilidad se valida aparte.",
+          "documento": "PPT.pdf",
+          "pagina": 2
+        },
+        {
+          "tipo": "ute",
+          "descripcion": "Suma de servicios y porcentajes de participación si se concurre en UTE.",
+          "excluyente": false,
+          "cumple": "no_aplica",
+          "fuente": "perfil.notas: la empresa concurre siempre sola",
+          "justificacion": "La empresa no concurre en UTE.",
+          "documento": "Cuadro de condiciones.pdf",
+          "pagina": 9
+        }
+      ],
+      "criterios": [
+        {
+          "descripcion": "Precio unitario por informe, con fórmula logarítmica",
+          "peso": 45,
+          "tipo": "formula",
+          "pagina": 12
+        },
+        {
+          "descripcion": "Experiencia acreditada de hasta tres profesionales en auditoría de accesibilidad e informes técnicos; tramos de 6, 5 y 4 puntos por perfil, máximo 15",
+          "peso": 15,
+          "tipo": "formula",
+          "pagina": 13
+        },
+        {
+          "descripcion": "Formación anual: dos actividades diferentes de al menos una hora",
+          "peso": 5,
+          "tipo": "formula",
+          "pagina": 13
+        },
+        {
+          "descripcion": "Capacidades técnicas: cuatro a 2,5 puntos cada una (analizador automático WCAG 2.2; lector de pantalla comercial; pruebas con usuarios con histórico de 12 meses; detección automática de contraste por visión artificial)",
+          "peso": 10,
+          "tipo": "formula",
+          "pagina": 14
+        },
+        {
+          "descripcion": "Enfoque técnico y plan de auditoría; mínimo eliminatorio 12,5/25; memoria técnica propia",
+          "peso": 25,
+          "tipo": "juicio_valor",
+          "subcriterios": [
+            {
+              "descripcion": "Metodología de auditoría y priorización de hallazgos",
+              "peso": 12
+            },
+            {
+              "descripcion": "Herramientas de evaluación y comparación",
+              "peso": 6
+            },
+            {
+              "descripcion": "Aseguramiento de calidad y seguimiento de correcciones",
+              "peso": 4
+            },
+            {
+              "descripcion": "Modelo de informe, ficha ejecutiva y panel de seguimiento",
+              "peso": 3
+            }
+          ],
+          "pagina": 15
+        }
+      ],
+      "documentacion": [
+        {
+          "sobre": "Sobre electrónico 1",
+          "documento": "DEUC y memoria técnica de hasta 10 páginas A4 en cuerpo 11, sin datos de los criterios automáticos",
+          "obligatorio": true,
+          "pagina": 6
+        },
+        {
+          "sobre": "Sobre electrónico 2",
+          "documento": "Oferta económica y criterios automáticos según el Anexo II",
+          "obligatorio": true,
+          "pagina": 7
+        },
+        {
+          "sobre": "Sobre electrónico 2",
+          "documento": "Acreditación vigente de las capacidades técnicas (licencia, suscripción, certificado o declaración técnica si es desarrollo propio)",
+          "obligatorio": true,
+          "pagina": 14
+        },
+        {
+          "sobre": "Sobre electrónico 2",
+          "documento": "Certificados de buena ejecución de la experiencia puntuable de los profesionales",
+          "obligatorio": false,
+          "pagina": 13
+        },
+        {
+          "sobre": "Requerimiento a la propuesta de adjudicación",
+          "documento": "Certificados tributarios y de Seguridad Social, declaración de prevención de riesgos y adscripción de medios, a requerimiento de la propuesta de adjudicación",
+          "obligatorio": true,
+          "pagina": 11
+        }
+      ],
+      "hitos": [
+        {
+          "hito": "Fin de presentación",
+          "fecha": "2027-10-15T23:59:00",
+          "detalle": "Fecha definitiva comunicada en el anuncio de licitación",
+          "pagina": 8
+        },
+        {
+          "hito": "Consultas",
+          "detalle": "Consultas hasta 10 días naturales antes del cierre; la respuesta se publica al menos 5 días antes del cierre",
+          "pagina": 8
+        },
+        {
+          "hito": "Informe de auditoría",
+          "detalle": "Máximo de 15 días hábiles desde cada encargo o desde recibir la documentación complementaria",
+          "pagina": 5
+        },
+        {
+          "hito": "Informe anual consolidado",
+          "detalle": "Durante el mes posterior al cierre de cada anualidad",
+          "pagina": 5
+        },
+        {
+          "hito": "Panel de seguimiento",
+          "detalle": "Panel actualizado en 5 días hábiles tras la conformidad; acceso 24/7 para 3 usuarios como mínimo",
+          "pagina": 5
+        },
+        {
+          "hito": "Duración",
+          "detalle": "Duración de 1 año; el valor estimado cuenta hasta dos prórrogas anuales",
+          "pagina": 7
+        }
+      ],
+      "garantias": [
+        {
+          "tipo": "provisional",
+          "descripcion": "No se exige garantía provisional",
+          "pagina": 4
+        },
+        {
+          "tipo": "definitiva",
+          "descripcion": "5% del presupuesto base sin IGIC, a cargo de la propuesta de adjudicación",
+          "porcentaje": 5,
+          "pagina": 4
+        },
+        {
+          "tipo": "complementaria",
+          "descripcion": "No se exige garantía complementaria",
+          "pagina": 4
+        }
+      ],
+      "penalizaciones": [
+        {
+          "descripcion": "Retraso en la entrega de un informe: 1% del precio del informe por cada día hábil",
+          "pagina": 5
+        },
+        {
+          "descripcion": "Ejecución defectuosa o incumplimiento de compromisos de la oferta: 10% del precio del contrato sin IGIC",
+          "pagina": 17
+        },
+        {
+          "descripcion": "Incumplir una obligación esencial: 10% del precio del contrato sin IGIC",
+          "pagina": 17
+        }
+      ],
+      "riesgos": [
+        {
+          "descripcion": "Dos perfiles obligatorios: la búsqueda solo da candidatos por mínimos genéricos, sin experiencia confirmada en accesibilidad ni en pruebas de usabilidad.",
+          "gravedad": "alta"
+        },
+        {
+          "descripcion": "La facturación total supera el umbral, pero no se conoce la parte que corresponde al ámbito del contrato.",
+          "gravedad": "media"
+        },
+        {
+          "descripcion": "Quedan por confirmar la incompatibilidad contractual y los conflictos con los portales auditados; incumplir la abstención puede resolver el contrato.",
+          "gravedad": "alta"
+        },
+        {
+          "descripcion": "Herramientas y capacidades sin acreditar: sin documentación puntúan cero.",
+          "gravedad": "media"
+        },
+        {
+          "descripcion": "Un enfoque técnico por debajo de 12,5/25 excluye; la memoria se limita a 10 páginas.",
+          "gravedad": "alta"
+        },
+        {
+          "descripcion": "Plazos de entrega cortos y penalidades por retraso; sin volumen mínimo de encargos.",
+          "gravedad": "media"
+        },
+        {
+          "descripcion": "Antecedente: edición anterior con una oferta, adjudicada a Estudio Web Ejemplo, S.L.; es un indicio, no una prueba.",
+          "gravedad": "media"
+        }
+      ],
+      "recomendacion": {
+        "decision": "revisar",
+        "motivo": "Confirmar la experiencia de los dos perfiles en la materia, la facturación en el ámbito, las herramientas acreditables y la ausencia de conflictos. No hay incumplimiento excluyente demostrado; la excepción de empresa nueva se aplica a los servicios análogos."
+      },
+      "senales_pliego": [
+        {
+          "tipo": "juicio_valor_favorece",
+          "descripcion": "La puntuación máxima exige concretar la auditoría sobre los portales de la Sociedad de Desarrollo, lo que puede favorecer a quien ya los conoce.",
+          "cita": "trata todos los aspectos del subcriterio de forma concreta para los portales de la Sociedad de Desarrollo, con parámetros o ejemplos.",
+          "documento": "Cuadro de condiciones.pdf",
+          "pagina": 15
+        },
+        {
+          "tipo": "tecnologia_especifica",
+          "descripcion": "Capacidad específica de detección automática de contraste mediante visión artificial, junto con un histórico de pruebas con usuarios; requiere herramientas especializadas.",
+          "cita": "tecnología de visión artificial que detecte de forma automatizada los fallos de contraste y de estructura en capturas y vídeos",
+          "documento": "Cuadro de condiciones.pdf",
+          "pagina": 14
+        }
+      ],
+      "cobertura": [
+        {
+          "tema": "solvencia_economica",
+          "estado": "en_requisitos"
+        },
+        {
+          "tema": "solvencia_tecnica",
+          "estado": "en_requisitos"
+        },
+        {
+          "tema": "clasificacion",
+          "estado": "no_lo_pide",
+          "documento": "Cuadro de condiciones.pdf",
+          "pagina": 8
+        },
+        {
+          "tema": "medios_personales",
+          "estado": "en_requisitos"
+        },
+        {
+          "tema": "medios_materiales",
+          "estado": "en_requisitos"
+        },
+        {
+          "tema": "certificaciones",
+          "estado": "no_lo_pide",
+          "documento": "Cuadro de condiciones.pdf",
+          "pagina": 11
+        },
+        {
+          "tema": "habilitacion",
+          "estado": "no_lo_pide",
+          "documento": "PCAP.pdf",
+          "pagina": 7
+        },
+        {
+          "tema": "subcontratacion",
+          "estado": "en_requisitos"
+        },
+        {
+          "tema": "idioma",
+          "estado": "no_lo_pide",
+          "documento": "PPT.pdf",
+          "pagina": 2
+        },
+        {
+          "tema": "seguro",
+          "estado": "en_requisitos"
+        },
+        {
+          "tema": "visita_obligatoria",
+          "estado": "no_lo_pide",
+          "documento": "PCAP.pdf",
+          "pagina": 8
+        },
+        {
+          "tema": "lugar_ejecucion",
+          "estado": "en_requisitos"
+        }
+      ],
+      "verificaciones": [
+        {
+          "indice": 0,
+          "regla": "solvencia_economica",
+          "resultado_ia": "dudoso",
+          "resultado": "si",
+          "fuente": "perfil.volumen_negocio, ejercicio 2025: 268.420,15 €",
+          "detalle": "Umbral 45.391,50 €; el mejor de los tres últimos ejercicios es 268.420,15 € (2025)."
+        },
+        {
+          "indice": 2,
+          "regla": "medios_personales",
+          "resultado_ia": "dudoso",
+          "resultado": "si",
+          "fuente": "colaboradores: 7 de 11 cumplen los mínimos que se leen del requisito",
+          "detalle": "Hay colaboradores con los años, la titulación, la certificación y el idioma que se piden (ver Equipo)."
+        },
+        {
+          "indice": 3,
+          "regla": "medios_personales",
+          "resultado_ia": "dudoso",
+          "resultado": "si",
+          "fuente": "colaboradores: 9 de 12 cumplen los mínimos que se leen del requisito",
+          "detalle": "Hay colaboradores con los años, la titulación, la certificación y el idioma que se piden (ver Equipo)."
+        },
+        {
+          "indice": 7,
+          "regla": "seguro",
+          "resultado_ia": "no",
+          "resultado": "no",
+          "fuente": "perfil.seguro_rc: sin seguro",
+          "detalle": "No hay seguro de responsabilidad civil: se contrata si se decide concurrir (nunca descarta por sí solo)."
+        },
+        {
+          "indice": 8,
+          "regla": "subcontratacion",
+          "resultado_ia": "si",
+          "resultado": "si",
+          "fuente": "perfil.notas: la empresa concurre siempre sola",
+          "detalle": "El servicio se presta íntegramente con medios propios."
+        },
+        {
+          "indice": 9,
+          "regla": "idioma",
+          "resultado_ia": "si",
+          "resultado": "si",
+          "fuente": "perfil.idiomas: es, en",
+          "detalle": null
+        },
+        {
+          "indice": 14,
+          "regla": "ute",
+          "resultado_ia": "no_aplica",
+          "resultado": "no_aplica",
+          "fuente": "perfil.notas: la empresa concurre siempre sola",
+          "detalle": null
+        }
+      ],
+      "calidad": {
+        "puntuacion": 93,
+        "requisitos": 15,
+        "excluyentes": 7,
+        "dudosos_pct": 33,
+        "con_pagina_pct": 100,
+        "excluyentes_con_cita_pct": 100,
+        "cobertura_checklist_pct": 100,
+        "cobertura_placsp_pct": 100,
+        "corregidos_por_codigo": 3,
+        "avisos": []
+      }
+    },
+    "creada_en": "2027-10-04T15:22:46.777Z",
+    "version_prompt": 2
+  },
+  "guiones": [
+    {
+      "id": 3,
+      "version": 1,
+      "ficha_id": 239,
+      "datos": {
+        "archivos": [
+          {
+            "nombre": "Sobre electrónico número uno (1)",
+            "contenido": "DEUC y la documentación de los criterios sujetos a juicio de valor: la memoria técnica.",
+            "prohibiciones": [
+              "En el sobre electrónico nº 1 no puede aparecer información que permita conocer los criterios valorables mediante fórmulas; hacerlo puede suponer la exclusión del licitador del procedimiento."
+            ],
+            "firma": "Firma de quien represente al licitador; tanto el DEUC como la memoria van firmados.",
+            "documentos": [
+              {
+                "tipo": "deuc",
+                "nombre": "Declaración responsable en el formulario del Documento Europeo Único de Contratación (DEUC)",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "DEUC",
+                  "documento": "Cuadro de condiciones.pdf",
+                  "pagina": 5
+                }
+              },
+              {
+                "tipo": "memoria",
+                "nombre": "Memoria técnica",
+                "obligatorio": true,
+                "produce": "hermes",
+                "origen": {
+                  "documento": "Cuadro de condiciones.pdf",
+                  "pagina": 6
+                }
+              }
+            ],
+            "documento": "Cuadro de condiciones.pdf",
+            "pagina": 5
+          },
+          {
+            "nombre": "Sobre electrónico número dos (2)",
+            "contenido": "Oferta económica y resto de criterios valorables mediante fórmulas, según el modelo del Anexo II, con la documentación que los acredite cuando se exige.",
+            "prohibiciones": [],
+            "documentos": [
+              {
+                "tipo": "oferta_economica",
+                "nombre": "ANEXO II. MODELO DE OFERTA ECONÓMICA Y DE CRITERIOS AUTOMÁTICOS",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "Anexo II",
+                  "documento": "Cuadro de condiciones.pdf",
+                  "pagina": 19
+                }
+              },
+              {
+                "tipo": "acreditacion",
+                "nombre": "Certificados de buena ejecución que acreditan la experiencia puntuable del equipo",
+                "obligatorio": false,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "Anexo II, justificantes que exige el criterio A.2",
+                  "documento": "Cuadro de condiciones.pdf",
+                  "pagina": 20
+                }
+              },
+              {
+                "tipo": "acreditacion",
+                "nombre": "Licencia, certificado del proveedor o declaración responsable que acredite las capacidades técnicas",
+                "obligatorio": false,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "Anexo II, justificantes que exige el criterio A.4",
+                  "documento": "Cuadro de condiciones.pdf",
+                  "pagina": 22
+                }
+              }
+            ],
+            "documento": "Cuadro de condiciones.pdf",
+            "pagina": 7
+          }
+        ],
+        "memoria": {
+          "archivo": "Sobre electrónico número uno (1)",
+          "titulo_documento": "Memoria técnica",
+          "limite_paginas": 10,
+          "limite_detalle": "La memoria no superará diez (10) páginas numeradas en formato A4 y letra de once (11) puntos; no se valorará nada a partir de la página once (11).",
+          "formato": {
+            "tamano_letra": 11,
+            "otros": "A4 con páginas numeradas."
+          },
+          "apartados": [
+            {
+              "titulo": "Metodología de auditoría y priorización de hallazgos",
+              "puntos": 12,
+              "se_valorara": [
+                "la combinación de pruebas automáticas y revisión manual según WCAG 2.2 nivel AA",
+                "el criterio para clasificar la gravedad y priorizar los hallazgos",
+                "el método para no repetir el mismo fallo en páginas con plantilla común",
+                "el procedimiento para verificar las correcciones frente al informe previo",
+                "su apoyo en estándares y guías reconocidas, como WCAG 2.2, EN 301 549 y la metodología WCAG-EM"
+              ],
+              "escala": [
+                {
+                  "puntos": 12,
+                  "descripcion": "Excelente (100 %): trata todos los aspectos del subcriterio de forma concreta para los portales de la Sociedad de Desarrollo, con parámetros o ejemplos."
+                },
+                {
+                  "puntos": 8.4,
+                  "descripcion": "Bueno (70 %): trata todos los aspectos, pero de forma genérica."
+                },
+                {
+                  "puntos": 4.8,
+                  "descripcion": "Suficiente (40 %): omite algún aspecto o lo trata de forma superficial."
+                },
+                {
+                  "puntos": 0,
+                  "descripcion": "Insuficiente (0 %): no aborda el subcriterio o contradice el pliego."
+                }
+              ],
+              "documento": "Cuadro de condiciones.pdf",
+              "pagina": 15
+            },
+            {
+              "titulo": "Herramientas de evaluación",
+              "puntos": 6,
+              "se_valorara": [
+                "su adecuación a los portales de la Sociedad de Desarrollo (turismo, trámites, empresas, etc.)",
+                "la comparación razonada de ventajas e inconvenientes frente a otras herramientas del mercado"
+              ],
+              "escala": [
+                {
+                  "puntos": 6,
+                  "descripcion": "Excelente (100 %): trata todos los aspectos del subcriterio de forma concreta para los portales de la Sociedad de Desarrollo, con parámetros o ejemplos."
+                },
+                {
+                  "puntos": 4.2,
+                  "descripcion": "Bueno (70 %): trata todos los aspectos, pero de forma genérica."
+                },
+                {
+                  "puntos": 2.4,
+                  "descripcion": "Suficiente (40 %): omite algún aspecto o lo trata de forma superficial."
+                },
+                {
+                  "puntos": 0,
+                  "descripcion": "Insuficiente (0 %): no aborda el subcriterio o contradice el pliego."
+                }
+              ],
+              "documento": "Cuadro de condiciones.pdf",
+              "pagina": 15
+            },
+            {
+              "titulo": "Aseguramiento de calidad y seguimiento de correcciones",
+              "puntos": 4,
+              "se_valorara": [
+                "los controles de revisión humana",
+                "la estructura del anexo de evidencias",
+                "la reproducibilidad de las pruebas"
+              ],
+              "escala": [
+                {
+                  "puntos": 4,
+                  "descripcion": "Excelente (100 %): trata todos los aspectos del subcriterio de forma concreta para los portales de la Sociedad de Desarrollo, con parámetros o ejemplos."
+                },
+                {
+                  "puntos": 2.8,
+                  "descripcion": "Bueno (70 %): trata todos los aspectos, pero de forma genérica."
+                },
+                {
+                  "puntos": 1.6,
+                  "descripcion": "Suficiente (40 %): omite algún aspecto o lo trata de forma superficial."
+                },
+                {
+                  "puntos": 0,
+                  "descripcion": "Insuficiente (0 %): no aborda el subcriterio o contradice el pliego."
+                }
+              ],
+              "documento": "Cuadro de condiciones.pdf",
+              "pagina": 15
+            },
+            {
+              "titulo": "Modelo de informe, ficha ejecutiva y panel de seguimiento",
+              "puntos": 3,
+              "se_valorara": [
+                "la claridad y utilidad del modelo de informe, de la ficha ejecutiva y del panel de seguimiento para decidir qué corregir primero"
+              ],
+              "escala": [
+                {
+                  "puntos": 3,
+                  "descripcion": "Excelente (100 %): trata todos los aspectos del subcriterio de forma concreta para los portales de la Sociedad de Desarrollo, con parámetros o ejemplos."
+                },
+                {
+                  "puntos": 2.1,
+                  "descripcion": "Bueno (70 %): trata todos los aspectos, pero de forma genérica."
+                },
+                {
+                  "puntos": 1.2,
+                  "descripcion": "Suficiente (40 %): omite algún aspecto o lo trata de forma superficial."
+                },
+                {
+                  "puntos": 0,
+                  "descripcion": "Insuficiente (0 %): no aborda el subcriterio o contradice el pliego."
+                }
+              ],
+              "documento": "Cuadro de condiciones.pdf",
+              "pagina": 15
+            }
+          ],
+          "advertencias": [
+            "La memoria respetará las condiciones mínimas del Pliego de Prescripciones Técnicas; se valorarán el orden, la concreción y la claridad, y la coherencia entre objetivos, medios, mejoras, resultados y control.",
+            "Las ofertas que no lleguen a 12,5 puntos en este criterio quedarán excluidas (art. 146.3 LCSP).",
+            "No se valorará la información que aparezca desde la página once (11).",
+            "En el sobre electrónico nº 1 no puede aparecer información que permita conocer los criterios valorables mediante fórmulas; hacerlo puede suponer la exclusión del licitador del procedimiento."
+          ],
+          "documento": "Cuadro de condiciones.pdf",
+          "pagina": 6
+        },
+        "automaticos": [
+          {
+            "criterio": "Experiencia acreditada en auditorías de accesibilidad web y en la redacción de informes técnicos",
+            "puntos": 15,
+            "como_se_acredita": "Se valoran hasta tres profesionales adscritos a la ejecución, cada uno en un solo tramo a elección del licitador; la puntuación es la suma de los tres, con un máximo de 15 puntos. Se acredita con certificados de buena ejecución que identifiquen el servicio y la participación individual de la persona. Sin acreditación válida se puntúa 0; no cabe subsanación ni aclaración.",
+            "casilla_en": "Anexo II, apartado 2: casilla de cada tramo y campos con nombre, titulación y años exactos de cada profesional",
+            "archivo": "Sobre electrónico número dos (2)",
+            "marcas": [
+              "experiencia profesional",
+              "10 anos",
+              "5 anos",
+              "auditoria de accesibilidad",
+              "certificados de buena ejecucion"
+            ],
+            "documento": "Cuadro de condiciones.pdf",
+            "pagina": 13
+          },
+          {
+            "criterio": "Criterio social de formación del personal adscrito",
+            "puntos": 5,
+            "como_se_acredita": "Compromiso de realizar al menos dos actividades formativas distintas, de una hora como mínimo cada una, relacionadas con el objeto del contrato y dirigidas al personal adscrito, como mínimo en cada año de ejecución.",
+            "casilla_en": "Anexo II, apartado 3, casilla «Asumo el compromiso formativo»",
+            "archivo": "Sobre electrónico número dos (2)",
+            "marcas": [
+              "actividades de formacion",
+              "formacion del personal",
+              "dos actividades",
+              "una hora"
+            ],
+            "documento": "Cuadro de condiciones.pdf",
+            "pagina": 13
+          },
+          {
+            "criterio": "Capacidades técnicas y herramientas de evaluación",
+            "puntos": 10,
+            "como_se_acredita": "Se otorgan 2,5 puntos por cada capacidad acreditada. Se acredita con contrato de licencia o suscripción, o certificado del proveedor vigente al cierre del plazo, que nombre la capacidad concreta; si la herramienta es de desarrollo propio, con una declaración responsable que describa técnicamente sus funciones.",
+            "casilla_en": "Anexo II, apartado 4, casillas a), b), c) y d) y nombre de la herramienta acreditada",
+            "archivo": "Sobre electrónico número dos (2)",
+            "marcas": [
+              "WCAG 2.2",
+              "analizador automatico",
+              "lector de pantalla",
+              "JAWS",
+              "pruebas con usuarios",
+              "12 meses",
+              "vision artificial",
+              "deteccion automatica de contraste"
+            ],
+            "documento": "Cuadro de condiciones.pdf",
+            "pagina": 14
+          }
+        ],
+        "oferta_economica": {
+          "formula": "La puntuación máxima se asigna a la oferta admitida más barata y las demás se puntúan con la fórmula logarítmica Pi = Pmax · (1 + log₁₀(Omin / Oi)), donde Pi es la puntuación de la oferta valorada, Pmax la puntuación máxima del criterio de precio, Omin la oferta admitida más económica y Oi la oferta valorada, calculadas sobre el precio unitario por informe. No habrá puntuaciones negativas (mínimo 0 puntos) y el resultado se redondeará a dos decimales.",
+          "presupuesto_base": 30261,
+          "impuesto_aparte": "IGIC",
+          "umbral_anormalidad": null,
+          "modelo": "Anexo II",
+          "archivo": "Sobre electrónico número dos (2)",
+          "documento": "Cuadro de condiciones.pdf",
+          "pagina": 12
+        },
+        "plazo": {
+          "fecha_limite": "2027-10-15T23:59",
+          "canal": "Presentación solo por vía electrónica en la Plataforma de Contratación del Sector Público (PLACSP), con la herramienta de preparación y presentación de ofertas."
+        },
+        "lotes": []
+      },
+      "creado_en": "2027-10-05T09:56:00.153Z"
+    }
+  ],
+  "decisiones": null,
+  "propuesta": {
+    "guion_id": 3,
+    "creada_en": "2027-10-12T19:13:49.584Z",
+    "agente": "oferta-licitaciones",
+    "avisos": [],
+    "datos": {
+      "lotes": [],
+      "equipo": [
+        {
+          "persona_id": 1003,
+          "rol_en_la_oferta": "Director/a técnico/a",
+          "motivo": "Persona J: grado en marketing y comunicación; 9 años de experiencia profesional con diseño de contenidos web y seguimiento de métricas de campañas en varias agencias (CV, págs. 1-2). Es el perfil más afín a usabilidad, pero el CV no desglosa cinco años específicos de auditoría de accesibilidad ni de evaluación de usabilidad; confirmar proyectos, fechas y disponibilidad."
+        },
+        {
+          "persona_id": 1001,
+          "rol_en_la_oferta": "Analista de datos",
+          "motivo": "Persona F: grado y máster en matemáticas y 7 años de experiencia profesional; ha diseñado indicadores y paneles de control (CV, págs. 1 y 3-4). No consta que tres años sean de pruebas de usabilidad o analítica web: verificar proyectos y fechas antes de acreditar la solvencia."
+        }
+      ],
+      "automaticos": [
+        {
+          "criterio": "Experiencia acreditada en auditorías de accesibilidad web y en la redacción de informes técnicos",
+          "lote": null,
+          "tipo": "acreditacion",
+          "nos_acogemos": false,
+          "tramo": null,
+          "cumple": "falta_dato",
+          "motivo": "El CV de Persona J documenta diseño de contenidos y métricas de campañas, pero no años exactos de auditoría de accesibilidad ni certificados de buena ejecución con participación individual. Tampoco hay profesionales para repartir los tramos ≥10 años (6 puntos), ≥5 años (5) y >1 y <5 años (4) sin repetir persona. Preparar proyectos, fechas y certificados para el Anexo II, apartado 2; el CC, pág. 13, no admite subsanación."
+        },
+        {
+          "criterio": "Criterio social de formación del personal adscrito",
+          "lote": null,
+          "tipo": "compromiso",
+          "nos_acogemos": true,
+          "tramo": null,
+          "nivel": "Dos actividades distintas como mínimo cada año de ejecución, de una hora cada una, ligadas al objeto y para el personal adscrito",
+          "motivo": "Se asume íntegro el compromiso de formación anual del Cuadro de condiciones.pdf, pág. 13; quien lleva la oferta debe programar las actividades y marcar la casilla del Anexo II, apartado 3."
+        },
+        {
+          "criterio": "Capacidades técnicas y herramientas de evaluación",
+          "lote": null,
+          "tipo": "acreditacion",
+          "nos_acogemos": false,
+          "tramo": null,
+          "cumple": "falta_dato",
+          "motivo": "Ni el perfil de empresa ni los CV acreditan un analizador automático WCAG 2.2, un lector de pantalla comercial, pruebas con usuarios con histórico de 12 meses ni detección automática de contraste por visión artificial. Registrar en Ajustes › Empresa las licencias realmente disponibles, con proveedor y vigencia; sin ello no marcar las casillas a)-d) del Anexo II, apartado 4 (Cuadro de condiciones.pdf, págs. 13-14)."
+        }
+      ],
+      "herramientas": [
+        "Python",
+        "R",
+        "Streamlit"
+      ],
+      "enfoque": "Objeto: auditar la accesibilidad y la usabilidad de los portales web de la Sociedad y seguir la corrección de los hallazgos (PPT.pdf, págs. 2-6). En «Metodología de auditoría y priorización de hallazgos» (Cuadro de condiciones.pdf, pág. 15), un ejemplo por portal y plantilla: pruebas automáticas fechadas, revisión manual documentada, criterio fijo de gravedad, agrupación de fallos repetidos y comprobación frente al informe previo, sin afirmar cumplimientos no verificados. En «Herramientas de evaluación», qué hacen Python y Streamlit en la extracción, el control, el cálculo y la visualización, y sus límites frente a otras opciones. En «Aseguramiento de calidad y seguimiento de correcciones», revisión humana de muestras, registro de herramientas y parámetros y anexo de evidencias. En «Modelo de informe, ficha ejecutiva y panel de seguimiento», tablas de hallazgos previstos y corregidos, gravedad y esfuerzo por portal, recomendación motivada y exportación abierta. Nunca citar en la memoria del sobre 1 el equipo puntuable, su experiencia, la formación ofrecida ni las capacidades técnicas puntuables: van en el sobre 2 (Cuadro de condiciones.pdf, págs. 5-7, 13-15). Concreción en 10 páginas: menos de 12,5/25 excluye.",
+      "resumen": "Sin lotes: Persona J como directora técnica y Persona F como analista, condicionadas a probar los años de experiencia específica (CC, pág. 11) y su adscripción. Formación anual al máximo; la experiencia puntuable y las cuatro capacidades técnicas no se marcan sin acreditación. Confirmar certificados, herramientas y licencias, facturación en el ámbito, incompatibilidad y conflictos antes de guardar."
+    }
+  },
+  "memorias": [],
+  "documentos": [
+    {
+      "clave": "a1-d1",
+      "nombre": "Declaración responsable en el formulario del Documento Europeo Único de Contratación (DEUC)",
+      "estado": "pendiente",
+      "ruta": null,
+      "ruta_pdf": null,
+      "nota": null,
+      "actualizado_en": "2027-10-13T20:34:59.000Z"
+    },
+    {
+      "clave": "a1-d2",
+      "nombre": "Memoria técnica",
+      "estado": "pendiente",
+      "ruta": null,
+      "ruta_pdf": null,
+      "nota": null,
+      "actualizado_en": "2027-10-13T20:34:59.000Z"
+    },
+    {
+      "clave": "a2-d1",
+      "nombre": "ANEXO II. MODELO DE OFERTA ECONÓMICA Y DE CRITERIOS AUTOMÁTICOS",
+      "estado": "pendiente",
+      "ruta": null,
+      "ruta_pdf": null,
+      "nota": null,
+      "actualizado_en": "2027-10-13T20:34:59.000Z"
+    },
+    {
+      "clave": "a2-d2",
+      "nombre": "Certificados de buena ejecución que acreditan la experiencia puntuable del equipo",
+      "estado": "pendiente",
+      "ruta": null,
+      "ruta_pdf": null,
+      "nota": null,
+      "actualizado_en": "2027-10-13T20:34:59.000Z"
+    },
+    {
+      "clave": "a2-d3",
+      "nombre": "Licencia, certificado del proveedor o declaración responsable que acredite las capacidades técnicas",
+      "estado": "pendiente",
+      "ruta": null,
+      "ruta_pdf": null,
+      "nota": null,
+      "actualizado_en": "2027-10-13T20:34:59.000Z"
+    }
+  ],
+  "pliegos": [
+    {
+      "nombre": "PCAP.pdf",
+      "clase": "pcap",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "PPT.pdf",
+      "clase": "ppt",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Cuadro de condiciones.pdf",
+      "clase": "adicional",
+      "estado": "descargado"
+    }
+  ],
+  "perfil": {
+    "nif": "B12345674",
+    "nombre": "ANALÍTICA EJEMPLO, S.L.",
+    "domicilio": null,
+    "representante": {
+      "nombre": "Persona R",
+      "nif": "12345678Z",
+      "cargo": "Administrador solidario"
+    },
+    "contacto": {
+      "email": null,
+      "telefono": null
+    },
+    "clasificaciones": [],
+    "volumen_negocio": [
+      {
+        "anio": 2024,
+        "importe": 152310.72
+      },
+      {
+        "anio": 2025,
+        "importe": 268420.15
+      }
+    ],
+    "certificaciones": [],
+    "seguro_rc": null,
+    "plantilla_media": 4,
+    "anios_actividad": 3,
+    "cpv_experiencia": [
+      "72",
+      "805"
+    ],
+    "mayor_contrato_similar": 174905.36,
+    "notas": "ROLECE: inscrita desde el 17/03/2026, sin clasificación ni prohibiciones para contratar. Centro de formación acreditado por el servicio público de empleo autonómico (22 especialidades en datos, IA, Power BI, SQL, Python y big data). Empresa de nueva creación (art. 90.4 LCSP) hasta marzo de 2028. Sin ISO ni ENS; solo certificaciones individuales de Microsoft (AI-900, AZ-900, DP-900). Sin seguro de RC contratado: se contrata si se gana. Concurre siempre en solitario. Mayor contrato similar: un cliente privado (en curso).",
+    "fecha_constitucion": "2023-03-14",
+    "tamano": "micro",
+    "idiomas": [
+      "es",
+      "en"
+    ]
+  },
+  "personas": [
+    {
+      "persona_id": 1003,
+      "nombre": "Persona J",
+      "tipo": "interno",
+      "rol": "Marketing digital",
+      "titulaciones": [
+        "Máster de área general",
+        "Grado en marketing y comunicación"
+      ],
+      "certificaciones": [],
+      "anios_experiencia": 8,
+      "sectores": [
+        "marketing digital",
+        "comercio y turismo",
+        "industria y logística",
+        "arquitectura"
+      ],
+      "cpv": [],
+      "tecnologias": [
+        "CRM",
+        "Google Analytics",
+        "SEO"
+      ],
+      "idiomas": [],
+      "disponibilidad": "disponible",
+      "activo": true
+    },
+    {
+      "persona_id": 1001,
+      "nombre": "Persona F",
+      "tipo": "interno",
+      "rol": "Dirección; Ciencia de datos",
+      "titulaciones": [
+        "Máster en matemáticas",
+        "Curso en economía y empresa",
+        "Grado en matemáticas"
+      ],
+      "certificaciones": [
+        "Curso de inteligencia artificial (IA)",
+        "Certificado de inglés B2",
+        "Certificación Azure de inteligencia artificial (IA)",
+        "Certificación Azure"
+      ],
+      "anios_experiencia": 5,
+      "sectores": [
+        "comercio y turismo",
+        "servicios financieros",
+        "industria y logística",
+        "salud y seguridad",
+        "administración pública"
+      ],
+      "cpv": [],
+      "tecnologias": [
+        "R",
+        "Python",
+        "Machine Learning",
+        "Deep Learning",
+        "Data Science",
+        "Data Analytics",
+        "cuadros de mando",
+        "KPIs"
+      ],
+      "idiomas": [],
+      "disponibilidad": "disponible",
+      "activo": true
+    }
+  ]
+}

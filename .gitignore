@@ -1,0 +1,82 @@
+# ─── Secretos y configuración local ───────────────────────────────
+# Cualquier .env menos las plantillas (.env.example, .env.dev.example).
+.env
+.env.*
+!.env.example
+!.env.dev.example
+*.local
+
+# Claves y certificados
+*.pem
+*.key
+*.p12
+*.pfx
+*.crt
+id_rsa*
+id_ed25519*
+
+# Configs con rutas personales (se crean desde Ajustes)
+hermes-vault.config.json
+
+# ─── Datos de ejecución ───────────────────────────────────────────
+# Bases de datos y carpeta de datos de la plataforma (PLATAFORMA_DATA_DIR)
+.plataforma/
+*.db
+*.db-journal
+*.db-shm
+*.db-wal
+*.sqlite
+*.sqlite3
+
+# Biblioteca de Conocimiento en local (VAULT_PATH)
+/vault/
+
+# Configuración de rclone (lleva el token de Google Drive)
+rclone.conf
+
+# Override local de Compose
+docker-compose.override.yml
+
+# ─── Compilación y dependencias ───────────────────────────────────
+node_modules/
+dist/
+dist-ssr/
+build/
+coverage/
+*.tsbuildinfo
+.eslintcache
+.cache/
+.vite/
+*.tgz
+
+# ─── Pruebas ──────────────────────────────────────────────────────
+# Resultados de Playwright (npm run e2e)
+test-results/
+playwright-report/
+# Capturas de referencia de visual.spec.js: cada máquina genera las suyas (docs/desarrollo.md)
+apps/web/e2e/*-snapshots/
+
+# ─── Registros y temporales ───────────────────────────────────────
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+/tmp/
+*.tmp
+*.bak
+
+# ─── Editores y sistema operativo ─────────────────────────────────
+.vscode/*
+!.vscode/extensions.json
+.idea/
+*.suo
+*.sw?
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# ─── Herramientas de agentes ──────────────────────────────────────
+# Ajustes y memoria locales de cada persona; las instrucciones compartidas están en CLAUDE.md.
+.claude/
+.cursor/

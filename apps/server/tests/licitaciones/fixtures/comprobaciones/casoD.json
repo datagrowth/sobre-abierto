@@ -1,0 +1,1177 @@
+{
+  "_origen": "Fixture sintético: licitación inventada para una oferta de prueba (organismo, expediente, lotes, criterios, anexos, fechas y textos); Persona A/B… y Persona R, NIF ficticios, sin correo, teléfono ni importes ofertados.",
+  "id": "p-91000880",
+  "ahora": "2027-10-13T20:34:57.000Z",
+  "licitacion": {
+    "titulo": "Servicios para la ejecución del Programa de Capacitación en Conservación y Gestión Documental dirigido al personal de archivos y bibliotecas de las entidades locales de la isla.",
+    "expediente": "CP-0417/2027",
+    "organo": {
+      "nombre": "Consorcio Insular de Archivos y Patrimonio de Isla Muestra, S.A.",
+      "nif": "A00279976",
+      "dir3": null,
+      "ciudad": "Puerto Muestra (Canarias)"
+    },
+    "presupuesto_sin_iva": 42610.86,
+    "valor_estimado": 42610.86,
+    "cpvs": [
+      "80521000",
+      "79952000",
+      "63510000",
+      "72500000"
+    ],
+    "lotes": [
+      {
+        "id": "1",
+        "nombre": "Diseño, impartición y logística de las dos jornadas presenciales de la edición 2027 del programa de capacitación en conservación y gestión documental.",
+        "presupuesto_sin_iva": 35864.85,
+        "cpvs": [
+          "80521000",
+          "63510000",
+          "79952000",
+          "72500000"
+        ]
+      },
+      {
+        "id": "2",
+        "nombre": "Puesta en marcha de un campus virtual de aprendizaje para la formación continua del personal de archivos y bibliotecas.",
+        "presupuesto_sin_iva": 6746.01,
+        "cpvs": [
+          "80521000",
+          "79952000",
+          "63510000",
+          "72500000"
+        ]
+      }
+    ],
+    "fecha_limite": "2027-10-25T23:59:00",
+    "fecha_solicitud": null,
+    "presentacion": {
+      "codigo": "3",
+      "maximo_lotes": 2,
+      "maximo_adjudicables": 2,
+      "combinacion": null
+    },
+    "criterios": [],
+    "requisitos": [
+      {
+        "clase": "declaracion",
+        "codigo": "1",
+        "descripcion": "Capacidad de obrar",
+        "umbral": null,
+        "lote": null
+      },
+      {
+        "clase": "declaracion",
+        "codigo": "2",
+        "descripcion": "Ausencia de prohibición para contratar",
+        "umbral": null,
+        "lote": null
+      }
+    ]
+  },
+  "oportunidad": {
+    "estado": "en_preparacion",
+    "lotes_interes": [
+      "2"
+    ],
+    "motivo_descarte": null
+  },
+  "ficha": {
+    "id": 323,
+    "datos": {
+      "resumen": "Dos lotes: el lote 1 organiza dos jornadas presenciales de capacitación en conservación preventiva y digitalización de fondos en una isla no capitalina, con desplazamientos, catering, medios audiovisuales, taller práctico e informe final; el lote 2 pone en marcha un campus virtual con Chamilo o un LMS equivalente de código abierto. Presupuesto sin IGIC: lote 1 35.864,85 € y lote 2 6.746,01 €; ejecución desde la formalización hasta el 27/12/2027, con mantenimiento obligatorio del lote 2 hasta esa fecha (PCAP, págs. 7 y 11; PCT, págs. 6-16 y 28).",
+      "requisitos": [
+        {
+          "tipo": "otro",
+          "descripcion": "Capacidad de obrar y objeto social que comprenda la prestación; declaración responsable de constitución válida y de representación.",
+          "excluyente": true,
+          "cumple": "si",
+          "fuente": "perfil-licitaciones.md: Analítica Ejemplo, S.L.; actividades declaradas en datos, formación y software; perfil_empresa identifica al representante.",
+          "justificacion": "La sociedad está constituida y sus actividades de formación y de software encajan con los dos objetos. La documentación acreditativa se aportaría si se pide.",
+          "documento": "PCAP.pdf",
+          "pagina": 4
+        },
+        {
+          "tipo": "otro",
+          "descripcion": "No estar incursa en prohibición de contratar; las empresas de 50 o más personas en plantilla deben contar con Plan de Igualdad inscrito.",
+          "excluyente": true,
+          "cumple": "si",
+          "fuente": "plataforma_empresa.notas: ROLECE sin prohibiciones; plantilla media 4; perfil-licitaciones.md: menos de 50 trabajadores.",
+          "justificacion": "El perfil no refleja prohibiciones y la plantilla queda por debajo del umbral que obliga a inscribir un Plan de Igualdad.",
+          "documento": "PCAP.pdf",
+          "pagina": 5
+        },
+        {
+          "tipo": "solvencia_economica",
+          "descripcion": "No se pide acreditar solvencia económica ni financiera, al tratarse de un procedimiento abierto simplificado abreviado.",
+          "excluyente": false,
+          "cumple": "no_aplica",
+          "justificacion": "El PCAP dispensa de acreditar la solvencia.",
+          "documento": "PCAP.pdf",
+          "pagina": 5
+        },
+        {
+          "tipo": "solvencia_tecnica",
+          "descripcion": "No se pide acreditar solvencia técnica ni profesional, al tratarse de un procedimiento abierto simplificado abreviado.",
+          "excluyente": false,
+          "cumple": "no_aplica",
+          "justificacion": "El PCAP dispensa de acreditar la solvencia.",
+          "documento": "PCAP.pdf",
+          "pagina": 5
+        },
+        {
+          "tipo": "clasificacion",
+          "descripcion": "No se exige clasificación empresarial.",
+          "excluyente": false,
+          "cumple": "no_aplica",
+          "justificacion": "El pliego no pide clasificación.",
+          "documento": "PCAP.pdf",
+          "pagina": 6
+        },
+        {
+          "tipo": "medios_personales",
+          "descripcion": "Adscripción obligatoria en el lote 1 de al menos dos personas para impartir el taller práctico de digitalización; cada una debe acreditar titulación en archivística, documentación o historia y una experiencia profesional mínima de 3 años en tratamiento de fondos documentales; CVs y pruebas documentales con la oferta.",
+          "excluyente": true,
+          "valor_exigido": "2 personas; titulación pertinente y ≥3 años de experiencia cada una",
+          "cumple": "dudoso",
+          "fuente": "colaboradores_buscar: una sola persona figura con los mínimos; sin candidatos externos.",
+          "justificacion": "La búsqueda encuentra solo una persona con los mínimos y el pliego pide dos. Falta localizar y verificar a una segunda con titulación y tres años de experiencia en fondos documentales; la elegida debe acreditarse con documentos.",
+          "documento": "PCT.pdf",
+          "pagina": 15,
+          "lote": "1"
+        },
+        {
+          "tipo": "medios_personales",
+          "descripcion": "Personal de apoyo durante las jornadas presenciales: logística y catering, técnico audiovisual y moderación.",
+          "excluyente": false,
+          "cumple": "dudoso",
+          "justificacion": "El PCT pide estos perfiles de apoyo pero no fija cantidad ni datos de las personas; falta confirmar quién cubre cada función.",
+          "documento": "PCT.pdf",
+          "pagina": 8,
+          "lote": "1"
+        },
+        {
+          "tipo": "medios_materiales",
+          "descripcion": "Lote 1: espacios, mobiliario y auxiliares, equipos audiovisuales y tecnológicos, cobertura audiovisual con entrega de brutos, 40 fotografías editadas, vídeo-resumen, catering, materiales y traslados; seguro para actividad de hasta 40 participantes.",
+          "excluyente": false,
+          "cumple": "dudoso",
+          "justificacion": "El perfil acredita servicios de formación, pero no confirma capacidad ni costes de transporte, catering, audiovisuales, producción de vídeo y materiales para cubrir el conjunto.",
+          "documento": "PCT.pdf",
+          "pagina": 11,
+          "lote": "1"
+        },
+        {
+          "tipo": "medios_materiales",
+          "descripcion": "Lote 2: instalar y configurar Chamilo o un LMS equivalente de código abierto en la infraestructura de la entidad contratante, con acceso web, diseño adaptable, certificado SSL, copias periódicas y capacidad para al menos 40 usuarios; configurar usuarios, cursos, contenidos, evaluación, mensajería, exportación e interoperabilidad.",
+          "excluyente": false,
+          "cumple": "dudoso",
+          "justificacion": "El perfil declara desarrollo de software e infraestructura en la nube, pero no acredita una instalación previa de Chamilo ni confirma todos los requisitos de funcionalidad, seguridad y capacidad. Hay que validar la solución y la infraestructura del cliente.",
+          "documento": "PCT.pdf",
+          "pagina": 16,
+          "lote": "2"
+        },
+        {
+          "tipo": "medios_materiales",
+          "descripcion": "Lote 1: entregar al menos 40 unidades de cada producto mínimo del kit de conservación (guantes de algodón y caja de archivo libre de ácido), con impresión monocroma; la papelería debe cumplir las características de papel reciclado del pliego.",
+          "excluyente": false,
+          "cumple": "dudoso",
+          "justificacion": "El perfil no refleja disponibilidad, proveedor, coste ni capacidad de suministro del kit y de la papelería exigidos.",
+          "documento": "PCT.pdf",
+          "pagina": 14,
+          "lote": "1"
+        },
+        {
+          "tipo": "medios_materiales",
+          "descripcion": "Lote 2: formación mínima de 8 horas al personal de la entidad contratante, con manual de administración y documentación para la gestión autónoma; mantenimiento y disponibilidad mensual mínima del 99,5 %, con atención de incidencias en los plazos fijados.",
+          "excluyente": false,
+          "cumple": "dudoso",
+          "justificacion": "El perfil acredita formación en tecnología, pero no demuestra capacidad de disponibilidad mensual ni de acuerdo de nivel de servicio; falta definir el plan operativo y confirmar los plazos.",
+          "documento": "PCT.pdf",
+          "pagina": 22,
+          "lote": "2"
+        },
+        {
+          "tipo": "certificacion",
+          "descripcion": "No se exige ISO, ENS ni otra certificación empresarial concreta.",
+          "excluyente": false,
+          "cumple": "no",
+          "fuente": "perfil.notas",
+          "justificacion": "El pliego no pide certificaciones corporativas en los apartados técnicos ni administrativos revisados.",
+          "documento": "PCT.pdf",
+          "pagina": 16
+        },
+        {
+          "tipo": "habilitacion",
+          "descripcion": "El pliego no establece una habilitación profesional específica en los apartados revisados.",
+          "excluyente": false,
+          "cumple": "no_aplica",
+          "justificacion": "Los apartados revisados no piden más habilitación que la capacidad de obrar.",
+          "documento": "PCAP.pdf",
+          "pagina": 4
+        },
+        {
+          "tipo": "seguro",
+          "descripcion": "Lote 1: contar con un seguro que cubra la actividad formativa y los daños materiales y personales de hasta 40 participantes, según la normativa vigente.",
+          "excluyente": false,
+          "cumple": "no",
+          "fuente": "perfil.seguro_rc: sin seguro",
+          "justificacion": "No hay seguro contratado; el pliego exige cobertura para la actividad y las personas participantes. No se trata como requisito excluyente.",
+          "documento": "PCT.pdf",
+          "pagina": 11,
+          "lote": "1"
+        },
+        {
+          "tipo": "subcontratacion",
+          "descripcion": "Declarar en el Anexo I si se subcontrata, con parte, porcentaje, importe y empresa; el pliego no prohíbe subcontratar de forma expresa.",
+          "excluyente": false,
+          "cumple": "si",
+          "fuente": "perfil.notas: concurre en solitario",
+          "justificacion": "La empresa concurre sola; subcontratar no está prohibido, pero si se hace hay que declararlo con el modelo.",
+          "documento": "Anexo I.pdf",
+          "pagina": 2
+        },
+        {
+          "tipo": "ute",
+          "descripcion": "Se admite UTE, con compromiso de constitución si se concurre en agrupación; no se puede presentar a la vez en solitario y en UTE.",
+          "excluyente": false,
+          "cumple": "no_aplica",
+          "fuente": "perfil.notas: concurre en solitario",
+          "justificacion": "La empresa concurriría sola; la regla de constitución de la UTE no le afecta.",
+          "documento": "PCAP.pdf",
+          "pagina": 29
+        },
+        {
+          "tipo": "idioma",
+          "descripcion": "Toda la documentación debe presentarse en castellano; las traducciones han de ser oficiales.",
+          "excluyente": true,
+          "valor_exigido": "Castellano",
+          "cumple": "si",
+          "fuente": "perfil.idiomas: es, en",
+          "justificacion": "El perfil recoge el español, que cumple la exigencia.",
+          "documento": "PCAP.pdf",
+          "pagina": 30
+        },
+        {
+          "tipo": "lugar_ejecucion",
+          "descripcion": "Lote 1: jornadas presenciales en una isla no capitalina, en el entorno de su capital; incluyen desplazamientos y logística insular.",
+          "excluyente": false,
+          "cumple": "si",
+          "fuente": "perfil-licitaciones.md: domicilio y ámbito de actuación en Canarias.",
+          "justificacion": "La ejecución es en Canarias, ámbito declarado de actuación de la empresa.",
+          "documento": "PCT.pdf",
+          "pagina": 7,
+          "lote": "1"
+        },
+        {
+          "tipo": "lugar_ejecucion",
+          "descripcion": "Lote 2: campus virtual instalado en un servidor de la entidad contratante; coordinación con su personal técnico.",
+          "excluyente": false,
+          "cumple": "si",
+          "fuente": "perfil-licitaciones.md: software a medida, infraestructura en la nube y trabajo con Azure y AWS.",
+          "justificacion": "El trabajo técnico puede hacerse de forma coordinada sobre la infraestructura del cliente; el perfil declara capacidad de desarrollo e infraestructura.",
+          "documento": "PCT.pdf",
+          "pagina": 20,
+          "lote": "2"
+        },
+        {
+          "tipo": "otro",
+          "descripcion": "Lote 1: taller práctico de digitalización de fondos de al menos 4 horas lectivas, además de organizar y ejecutar las dos jornadas y entregar el informe final y los materiales.",
+          "excluyente": false,
+          "cumple": "dudoso",
+          "justificacion": "La formación propia declarada se centra en datos, IA, Power BI, SQL, Python y big data; el perfil no acredita contenidos de conservación ni de digitalización de fondos, ni la logística integral.",
+          "documento": "PCT.pdf",
+          "pagina": 14,
+          "lote": "1"
+        },
+        {
+          "tipo": "otro",
+          "descripcion": "Lote 2: cumplimiento del RGPD y la LOPDGDD y medidas de control de acceso, HTTPS, registros, integridad, confidencialidad y disponibilidad, borrado de cuentas y copias de seguridad.",
+          "excluyente": false,
+          "cumple": "dudoso",
+          "justificacion": "El perfil declara cumplir el RGPD, pero no acredita que estén implantadas todas las medidas ni da datos concretos de seguridad y alojamiento.",
+          "documento": "PCT.pdf",
+          "pagina": 19,
+          "lote": "2"
+        },
+        {
+          "tipo": "otro",
+          "descripcion": "Lote 1: personalizar a color el kit de bienvenida y la documentación (cuaderno, lápiz, carpeta y cordón) para un máximo de 40 personas.",
+          "excluyente": false,
+          "cumple": "dudoso",
+          "justificacion": "El perfil no confirma recursos de impresión ni de compra; falta consultar a proveedor y presupuestar.",
+          "documento": "PCT.pdf",
+          "pagina": 14,
+          "lote": "1"
+        },
+        {
+          "tipo": "otro",
+          "descripcion": "Lote 2: mantenimiento obligatorio hasta el 27/12/2027 desde la puesta en producción; accesibilidad WCAG 2.1 AA en lo posible y EN 301 549, reversibilidad y entrega de datos, configuración y documentación.",
+          "excluyente": false,
+          "cumple": "dudoso",
+          "justificacion": "No consta que la accesibilidad, el acuerdo de nivel de servicio ni el plan de reversibilidad estén resueltos; hay que concretarlos en la solución.",
+          "documento": "PCT.pdf",
+          "pagina": 23,
+          "lote": "2"
+        }
+      ],
+      "criterios": [
+        {
+          "descripcion": "Lote 1: mejora económica (sin baja 0 puntos; mayor baja 50; el resto por interpolación lineal; P = 50 × (BO – B) ÷ (BO – BMAX))",
+          "peso": 50,
+          "tipo": "formula",
+          "pagina": 13
+        },
+        {
+          "descripcion": "Lote 1: personalización a color del kit de bienvenida y de la documentación entregada",
+          "peso": 10,
+          "tipo": "formula",
+          "pagina": 14
+        },
+        {
+          "descripcion": "Lote 1: ediciones impresas adicionales: guía de conservación, 40 unidades 4 puntos; guía y póster, 40 unidades de cada una 10 puntos",
+          "peso": 10,
+          "tipo": "formula",
+          "pagina": 15
+        },
+        {
+          "descripcion": "Lote 1: prácticas formativas adicionales para el taller: 2 prácticas 6 puntos; 4: 12; 6: 20; 8: 30",
+          "peso": 30,
+          "tipo": "formula",
+          "pagina": 16
+        },
+        {
+          "descripcion": "Lote 2: mejora económica (sin baja 0 puntos; mayor baja 55; el resto por interpolación lineal; P = 55 × (BO – B) ÷ (BO – BMAX))",
+          "peso": 55,
+          "tipo": "formula",
+          "pagina": 21
+        },
+        {
+          "descripcion": "Lote 2: mantenimiento adicional: 4 meses desde el 28/12/2027 8 puntos; 8 meses 16 puntos",
+          "peso": 16,
+          "tipo": "formula",
+          "pagina": 23
+        },
+        {
+          "descripcion": "Lote 2: itinerarios de autoformación: 2 itinerarios 6 puntos; 4: 12; 6: 18",
+          "peso": 18,
+          "tipo": "formula",
+          "pagina": 24
+        },
+        {
+          "descripcion": "Lote 2: ampliación de la formación: 2 horas 3 puntos; 4 horas 6; 8 horas 11",
+          "peso": 11,
+          "tipo": "formula",
+          "pagina": 25
+        }
+      ],
+      "documentacion": [
+        {
+          "sobre": "Archivo electrónico único",
+          "documento": "Anexo I: declaración responsable y oferta económica por lote, con el IGIC desglosado",
+          "obligatorio": true,
+          "pagina": 28
+        },
+        {
+          "sobre": "Archivo electrónico único",
+          "documento": "Anexo II: compromiso de personalización del kit y la documentación, lote 1 criterio 2B1",
+          "obligatorio": true,
+          "pagina": 28
+        },
+        {
+          "sobre": "Archivo electrónico único",
+          "documento": "Anexo III: compromiso de ediciones impresas adicionales, lote 1 criterio 2B2",
+          "obligatorio": true,
+          "pagina": 28
+        },
+        {
+          "sobre": "Archivo electrónico único",
+          "documento": "Anexo IV: compromiso de prácticas formativas adicionales, lote 1 criterio 2B3",
+          "obligatorio": true,
+          "pagina": 28
+        },
+        {
+          "sobre": "Archivo electrónico único",
+          "documento": "Anexo V: compromiso de mantenimiento adicional, lote 2 criterio 2B1",
+          "obligatorio": true,
+          "pagina": 28
+        },
+        {
+          "sobre": "Archivo electrónico único",
+          "documento": "Anexo VI: compromiso de itinerarios de autoformación, lote 2 criterio 2B2",
+          "obligatorio": true,
+          "pagina": 29
+        },
+        {
+          "sobre": "Archivo electrónico único",
+          "documento": "Anexo VII: compromiso de ampliación de la formación, lote 2 criterio 2B3",
+          "obligatorio": true,
+          "pagina": 29
+        },
+        {
+          "sobre": "Archivo electrónico único",
+          "documento": "Anexo VIII: compromiso de adscripción de personal, lote 1, con CV y acreditación de titulación y experiencia de las dos personas",
+          "obligatorio": true,
+          "pagina": 29
+        },
+        {
+          "sobre": "Archivo electrónico único",
+          "documento": "Certificados de titulación y experiencia de las personas del taller, que se aportan con la oferta",
+          "obligatorio": true,
+          "pagina": 6
+        },
+        {
+          "sobre": "Archivo electrónico único",
+          "documento": "Capacidad de obrar, representación y ausencia de prohibiciones: se aportan al requerirlas a la licitadora propuesta",
+          "obligatorio": true,
+          "pagina": 34
+        }
+      ],
+      "hitos": [
+        {
+          "hito": "Fin de presentación",
+          "fecha": "2027-10-25T23:59"
+        },
+        {
+          "hito": "Formalización y comienzo de la ejecución",
+          "detalle": "La ejecución arranca con la formalización; la ficha de la PLACSP estima el periodo del 22/11/2027 al 27/12/2027.",
+          "pagina": 28
+        },
+        {
+          "hito": "Fin máximo de ejecución",
+          "fecha": "2027-12-27",
+          "pagina": 28
+        },
+        {
+          "hito": "Lote 2: comienzo del mantenimiento voluntario puntuable",
+          "fecha": "2027-12-28",
+          "detalle": "Periodo ofertable de 4 u 8 meses; independiente de la garantía.",
+          "pagina": 22
+        }
+      ],
+      "garantias": [],
+      "penalizaciones": [],
+      "riesgos": [
+        {
+          "descripcion": "Lote 1: una sola persona reúne los mínimos para el taller de digitalización y el pliego exige dos.",
+          "gravedad": "alta"
+        },
+        {
+          "descripcion": "Lote 1: riesgo operativo y de coste por desplazamientos, audiovisuales, catering, material impreso, kit y seguro para hasta 40 participantes.",
+          "gravedad": "alta"
+        },
+        {
+          "descripcion": "Lote 2: requisitos amplios de Chamilo, protección de datos, accesibilidad, disponibilidad del 99,5 %, incidencias y reversibilidad en poco plazo.",
+          "gravedad": "media"
+        },
+        {
+          "descripcion": "El seguro de la actividad del lote 1 no está contratado; el PCAP no pide garantía provisional ni definitiva.",
+          "gravedad": "media"
+        }
+      ],
+      "recomendacion": {
+        "decision": "revisar",
+        "motivo": "No se pide solvencia ni clasificación y no hay barrera automática. Antes de decidir, confirmar la segunda persona acreditada para el taller del lote 1 y el coste de su logística. En el lote 2, validar Chamilo, seguridad, disponibilidad, accesibilidad y capacidad de ejecución hasta el 27/12/2027."
+      },
+      "presentacion_lotes": {
+        "regla": "uno_o_varios",
+        "maximo_lotes": 2,
+        "detalle": "El PCT permite concurrir a uno o a los dos lotes; el PCAP fija un máximo de dos lotes adjudicables.",
+        "documento": "PCT.pdf",
+        "pagina": 5
+      },
+      "senales_pliego": [
+        {
+          "tipo": "tecnologia_especifica",
+          "descripcion": "El lote 2 menciona Chamilo o un LMS equivalente de código abierto; se admite la equivalencia, así que no es una marca obligatoria y exclusiva.",
+          "cita": "Chamilo o en otro sistema de gestión del aprendizaje (LMS) equivalente de código abierto",
+          "documento": "PCT.pdf",
+          "pagina": 16,
+          "lote": "2"
+        }
+      ],
+      "cobertura": [
+        {
+          "tema": "solvencia_economica",
+          "estado": "no_lo_pide",
+          "documento": "PCAP.pdf",
+          "pagina": 5
+        },
+        {
+          "tema": "solvencia_tecnica",
+          "estado": "no_lo_pide",
+          "documento": "PCAP.pdf",
+          "pagina": 5
+        },
+        {
+          "tema": "clasificacion",
+          "estado": "no_lo_pide",
+          "documento": "PCAP.pdf",
+          "pagina": 6
+        },
+        {
+          "tema": "medios_personales",
+          "estado": "en_requisitos"
+        },
+        {
+          "tema": "medios_materiales",
+          "estado": "en_requisitos"
+        },
+        {
+          "tema": "certificaciones",
+          "estado": "no_lo_pide",
+          "documento": "PCT.pdf",
+          "pagina": 16
+        },
+        {
+          "tema": "habilitacion",
+          "estado": "no_encontrado",
+          "detalle": "No se halló una habilitación profesional específica en los pasajes revisados."
+        },
+        {
+          "tema": "subcontratacion",
+          "estado": "en_requisitos"
+        },
+        {
+          "tema": "idioma",
+          "estado": "en_requisitos"
+        },
+        {
+          "tema": "seguro",
+          "estado": "en_requisitos"
+        },
+        {
+          "tema": "visita_obligatoria",
+          "estado": "no_encontrado",
+          "detalle": "No se halló visita obligatoria en los pasajes revisados."
+        },
+        {
+          "tema": "lugar_ejecucion",
+          "estado": "en_requisitos"
+        }
+      ],
+      "verificaciones": [
+        {
+          "indice": 11,
+          "regla": "certificacion",
+          "resultado_ia": "no_aplica",
+          "resultado": "no",
+          "fuente": "perfil.notas",
+          "detalle": "No tenemos: ENS (Esquema Nacional de Seguridad)."
+        },
+        {
+          "indice": 13,
+          "regla": "seguro",
+          "resultado_ia": "no",
+          "resultado": "no",
+          "fuente": "perfil.seguro_rc: sin seguro",
+          "detalle": "No tenemos seguro de responsabilidad civil: se contrata si se decide concurrir (nunca descarta)."
+        },
+        {
+          "indice": 14,
+          "regla": "subcontratacion",
+          "resultado_ia": "si",
+          "resultado": "si",
+          "fuente": "perfil.notas: concurre en solitario",
+          "detalle": "Ejecutamos todo con medios propios."
+        },
+        {
+          "indice": 15,
+          "regla": "ute",
+          "resultado_ia": "no_aplica",
+          "resultado": "no_aplica",
+          "fuente": "perfil.notas: concurre en solitario",
+          "detalle": null
+        },
+        {
+          "indice": 16,
+          "regla": "idioma",
+          "resultado_ia": "si",
+          "resultado": "si",
+          "fuente": "perfil.idiomas: es, en",
+          "detalle": null
+        }
+      ],
+      "calidad": {
+        "puntuacion": 91,
+        "requisitos": 23,
+        "excluyentes": 4,
+        "dudosos_pct": 43,
+        "con_pagina_pct": 100,
+        "excluyentes_con_cita_pct": 100,
+        "cobertura_checklist_pct": 100,
+        "cobertura_placsp_pct": 100,
+        "corregidos_por_codigo": 1,
+        "avisos": []
+      }
+    },
+    "creada_en": "2027-10-08T19:07:04.806Z",
+    "version_prompt": 2
+  },
+  "guiones": [
+    {
+      "id": 17,
+      "version": 3,
+      "ficha_id": 323,
+      "datos": {
+        "archivos": [
+          {
+            "nombre": "Sobre Único",
+            "contenido": "Documentación administrativa y criterios de valoración automática",
+            "prohibiciones": [
+              "No se admiten variantes ni alternativas a lo ofertado.",
+              "El precio ofertado no podrá superar el valor estimado de cada lote fijado en el pliego y deberá indicar, como partida aparte, el importe del Impuesto General Indirecto Canario (IGIC) repercutible, según el artículo 139.4 LCSP."
+            ],
+            "firma": "firma electrónica de la persona licitadora o de quien la represente",
+            "documentos": [
+              {
+                "tipo": "oferta_economica",
+                "nombre": "DECLARACIÓN RESPONSABLE Y OFERTA ECONÓMICA",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO I",
+                  "documento": "Anexo I.pdf",
+                  "pagina": 1
+                }
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "CARTA DE COMPROMISO – MANTENIMIENTO ADICIONAL DEL CAMPUS VIRTUAL",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO V",
+                  "documento": "Anexo V.pdf",
+                  "pagina": 1
+                }
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "CARTA DE COMPROMISO – ITINERARIOS DE AUTOFORMACIÓN",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO VI",
+                  "documento": "Anexo VI.pdf",
+                  "pagina": 1
+                }
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "CARTA DE COMPROMISO – AMPLIACIÓN DE LA FORMACIÓN",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO VII",
+                  "documento": "Anexo VII.pdf",
+                  "pagina": 1
+                }
+              }
+            ],
+            "documento": "PCAP.pdf",
+            "pagina": 28
+          }
+        ],
+        "memoria": null,
+        "automaticos": [
+          {
+            "criterio": "Mantenimiento adicional del campus virtual",
+            "puntos": 16,
+            "como_se_acredita": "Los puntos se otorgarán por tramos: • 8 puntos a las ofertas que, como mínimo, ofrezcan un periodo de mantenimiento correctivo de cuatro (4) meses, a contar desde el 28 de diciembre de 2027. • 16 puntos a las ofertas que, como mínimo, ofrezcan un periodo de mantenimiento correctivo de ocho (8) meses, a contar desde el 28 de diciembre de 2027. No se puntuarán ofrecimientos genéricos de asistencia que no fijen de forma expresa el periodo comprometido.",
+            "casilla_en": "ANEXO V: Mantenimiento adicional del campus virtual de cuatro (4) meses / ocho (8) meses / No se compromete",
+            "archivo": "Sobre Único",
+            "marcas": [
+              "mantenimiento adicional de cuatro meses",
+              "mantenimiento adicional de ocho meses"
+            ],
+            "documento": "PCAP.pdf",
+            "pagina": 23
+          },
+          {
+            "criterio": "Itinerarios de autoformación",
+            "puntos": 18,
+            "como_se_acredita": "El baremo es el siguiente: • Dos (2) itinerarios de autoformación: 6 puntos. • Cuatro (4) itinerarios de autoformación: 12 puntos. • Seis (6) itinerarios de autoformación: 18 puntos. La licitadora indicará de forma expresa el número y el tema de los itinerarios que se compromete a elaborar.",
+            "casilla_en": "ANEXO VI: Oferta de dos (2) / cuatro (4) / seis (6) itinerarios de autoformación / No se compromete",
+            "archivo": "Sobre Único",
+            "marcas": [
+              "itinerarios de autoformación"
+            ],
+            "documento": "PCAP.pdf",
+            "pagina": 24
+          },
+          {
+            "criterio": "Ampliación de las sesiones de formación",
+            "puntos": 11,
+            "como_se_acredita": "El baremo es el siguiente: • 3 puntos a las ofertas que amplíen en dos (2) horas la formación. • 6 puntos a las que la amplíen en cuatro (4) horas. • 11 puntos a las que la amplíen en ocho (8) horas. No se admiten compromisos genéricos o indeterminados. La licitadora indicará de forma expresa las horas de formación que se compromete a impartir.",
+            "casilla_en": "ANEXO VII: Ampliación de dos (2) / cuatro (4) / ocho (8) horas de formación / No se compromete",
+            "archivo": "Sobre Único",
+            "marcas": [
+              "ampliación de las sesiones de formación"
+            ],
+            "documento": "PCAP.pdf",
+            "pagina": 25
+          }
+        ],
+        "oferta_economica": {
+          "formula": "P = 55 × (BO – B) ÷ (BO – BMAX)",
+          "presupuesto_base": 6746.01,
+          "impuesto_aparte": "IGIC",
+          "umbral_anormalidad": "Con un único licitador, se presumirá anormal la oferta que, sin IGIC, baje más de un veinticinco por ciento (25 %) el valor estimado del lote. Con dos licitadores, la de menor cuantía que baje más de un veinte por ciento (20 %) respecto del precio del otro. Con tres o más, las ofertas que, sin IGIC, bajen más de un diez por ciento (10 %) respecto de la media aritmética de los precios ofertados.",
+          "modelo": "ANEXO I, Lote 2: IMPORTE SIN IGIC / IGIC / IMPORTE TOTAL CON IGIC",
+          "archivo": "Sobre Único",
+          "documento": "PCAP.pdf",
+          "pagina": 32
+        },
+        "plazo": {
+          "fecha_limite": "2027-10-25T23:59",
+          "canal": "Presentación electrónica de la oferta a través de la PLACSP"
+        },
+        "lotes": [
+          "2"
+        ]
+      },
+      "creado_en": "2027-10-13T11:09:44.764Z"
+    }
+  ],
+  "decisiones": {
+    "guion_id": 15,
+    "actualizada_en": "2027-10-13T10:20:02.261Z",
+    "datos": {
+      "lotes": [
+        "2"
+      ],
+      "equipo": [
+        {
+          "persona_id": 1005,
+          "rol_en_la_oferta": "Instalación, administración y mantenimiento del campus virtual Chamilo (lote 2)",
+          "dedicacion": "Parcial: implantación y ocho meses de mantenimiento",
+          "lotes": []
+        },
+        {
+          "persona_id": 1001,
+          "rol_en_la_oferta": "Formación al personal designado por la entidad contratante e itinerarios de autoformación (lote 2)",
+          "dedicacion": "Parcial: 16 horas de formación y elaboración de itinerarios",
+          "lotes": []
+        }
+      ],
+      "automaticos": [
+        {
+          "criterio": "2B1.- Personalización del kit de bienvenida y de la documentación entregada a las personas participantes descritos en el epígrafe 3.2.4 del Pliego de Condiciones Técnicas sin coste adicional",
+          "lote": null,
+          "nos_acogemos": false,
+          "tramo": null,
+          "nota": "Personalización a color de los elementos indicados. Lote 1, máximo: cuaderno, lápiz, carpeta y cordón identificativo, 40 unidades de cada uno con la imagen de la entidad contratante (PCAP.pdf, pág. 14; Anexo II). Confirmar proveedor y coste antes de guardar."
+        },
+        {
+          "criterio": "2B2.- Incorporación de ediciones impresas adicionales a las descritas en el epígrafe 3.2.4 del Pliego de Condiciones Técnicas sin coste adicional",
+          "lote": null,
+          "nos_acogemos": false,
+          "tramo": null,
+          "nota": "Dos ediciones impresas adicionales (guía de conservación y póster de buenas prácticas) a color, al menos 40 unidades de cada una. Lote 1, tramo máximo de 10 puntos, sin coste adicional (PCAP.pdf, págs. 14-15; Anexo III). Verificar el suministro."
+        },
+        {
+          "criterio": "2B3.- Oferta de prácticas formativas vinculadas al taller de digitalización de fondos sin coste adicional",
+          "lote": null,
+          "nos_acogemos": false,
+          "tramo": null,
+          "nota": "Ocho prácticas o ejercicios guiados. Lote 1, máximo de 30 puntos (PCAP.pdf, pág. 16; Anexo IV). Ocho piezas independientes del dossier básico, validadas con las dos personas formadoras."
+        },
+        {
+          "criterio": "2B1. – Mantenimiento adicional del campus virtual",
+          "lote": null,
+          "nos_acogemos": true,
+          "tramo": null,
+          "nota": "Ocho meses de mantenimiento desde la puesta en marcha"
+        },
+        {
+          "criterio": "2B2. – Itinerarios de autoformación",
+          "lote": null,
+          "nos_acogemos": true,
+          "tramo": null,
+          "nota": "Seis itinerarios de autoformación"
+        },
+        {
+          "criterio": "2B3. – Ampliación de las sesiones de formación",
+          "lote": null,
+          "nos_acogemos": true,
+          "tramo": null,
+          "nota": "Ocho horas adicionales de formación"
+        }
+      ],
+      "herramientas": [
+        "Chamilo 1.11"
+      ],
+      "enfoque": "Solo lote 2: puesta en marcha de un campus virtual Chamilo para la formación del personal de archivos y bibliotecas, con mantenimiento, itinerarios de autoformación y formación al personal de la entidad contratante. No hay memoria valorable: todo se oferta en los anexos.",
+      "ofertas": [
+        {
+          "lote": "2",
+          "pendiente": true,
+          "importe": null,
+          "unitarios": []
+        }
+      ]
+    }
+  },
+  "propuesta": {
+    "guion_id": 17,
+    "creada_en": "2027-10-13T11:11:11.444Z",
+    "agente": "oferta-licitaciones",
+    "avisos": [],
+    "datos": {
+      "lotes": [
+        "2"
+      ],
+      "equipo": [
+        {
+          "persona_id": 1005,
+          "rol_en_la_oferta": "Responsable técnico de instalación, configuración y mantenimiento del campus virtual",
+          "dedicacion": "Parcial durante la implantación y el periodo de mantenimiento ofertado",
+          "motivo": "Persona K, dirección técnica, más de diez años en ingeniería de datos e infraestructuras (CV, págs. 1-3); disponibilidad parcial. No constan proyectos con Chamilo ni cobertura del acuerdo de nivel de servicio: confirmar antes de guardar."
+        },
+        {
+          "persona_id": 1001,
+          "rol_en_la_oferta": "Responsable de la formación inicial y del traspaso al personal designado por la entidad contratante",
+          "dedicacion": "Parcial, para formación, documentación e itinerarios",
+          "motivo": "Persona F tiene docencia en programas tecnológicos y dirección académica, y está disponible (CV, págs. 1-2). No consta experiencia con Chamilo; comprobarla antes de asignarle la formación sobre el LMS."
+        }
+      ],
+      "automaticos": [
+        {
+          "criterio": "Mantenimiento adicional del campus virtual",
+          "lote": null,
+          "tipo": "compromiso",
+          "nos_acogemos": true,
+          "tramo": null,
+          "nivel": "Periodo de mantenimiento de ocho (8) meses, a contar desde el 28 de diciembre de 2027",
+          "motivo": "Tramo máximo de 16 puntos (PCAP.pdf, pág. 23; Anexo V, pág. 1). Exige mantenimiento real después del obligatorio hasta el 27/12/2027, con copias y atención de incidencias; confirmar cobertura y coste de ocho meses, incluida la intervención crítica en 4 h y la resolución en 48 h (PCT, págs. 24-25)."
+        },
+        {
+          "criterio": "Itinerarios de autoformación",
+          "lote": null,
+          "tipo": "compromiso",
+          "nos_acogemos": true,
+          "tramo": null,
+          "nivel": "Oferta de seis (6) itinerarios de autoformación",
+          "motivo": "Tramo máximo de 18 puntos (PCAP.pdf, pág. 24; Anexo VI, pág. 1). Seis itinerarios diferenciados: primeros pasos, gestión de cursos, evaluación, comunicación con el alumnado, informes y buenas prácticas, distintos del manual de administración obligatorio (PCT, pág. 22)."
+        },
+        {
+          "criterio": "Ampliación de las sesiones de formación",
+          "lote": null,
+          "tipo": "compromiso",
+          "nos_acogemos": true,
+          "tramo": null,
+          "nivel": "Ampliación de ocho (8) horas de formación",
+          "motivo": "Tramo máximo de 11 puntos (PCAP.pdf, pág. 25; Anexo VII, pág. 1): ocho horas más sobre las ocho mínimas (PCT, pág. 22). Confirmar formador y agenda antes del 27/12/2027."
+        }
+      ],
+      "herramientas": [],
+      "enfoque": "El lote 2 pide poner en marcha un LMS Chamilo o equivalente abierto en el servidor de la entidad contratante, con usuarios, cursos, evaluación, mensajería y formación; no incluye elaborar contenidos (PCT.pdf, págs. 16-17). El guion 17 no tiene memoria: las prestaciones y los tramos se revisan en el Sobre Único y los Anexos V-VII. Plantear configuración de roles y cursos, pruebas de uso con 40 usuarios, seguridad, copias, accesibilidad y aceptación con un curso de prueba antes del 27/12/2027 (PCT, págs. 19-28), y un traspaso para que el cliente administre el campus con autonomía. No prometer alojamiento externo, contenidos didácticos, un campus ya implantado, experiencia acreditada con Chamilo ni el acuerdo de nivel de servicio sin validarlo.",
+      "resumen": "Solo lote 2; guion 17 sin memoria, dos personas propuestas y tres compromisos al tramo máximo, sin precio. Antes de guardar, confirmar la experiencia de Persona K en implantación de LMS y la formación práctica de Persona F, además del coste del mantenimiento de ocho meses, los seis itinerarios y las ocho horas extra. Frente a las decisiones del guion 15, se quitan los criterios del lote 1, se ajustan los nombres y periodos de los tres criterios del lote 2 y se dejan vacías las herramientas: Chamilo 1.11 no consta como herramienta ya utilizada."
+    }
+  },
+  "memorias": [],
+  "documentos": [
+    {
+      "clave": "a1-d1",
+      "nombre": "DECLARACIÓN RESPONSABLE Y OFERTA ECONÓMICA",
+      "estado": "pendiente",
+      "ruta": null,
+      "ruta_pdf": null,
+      "nota": null,
+      "actualizado_en": "2027-10-13T20:34:57.000Z"
+    },
+    {
+      "clave": "a1-d2",
+      "nombre": "CARTA DE COMPROMISO – MANTENIMIENTO ADICIONAL DEL CAMPUS VIRTUAL",
+      "estado": "pendiente",
+      "ruta": null,
+      "ruta_pdf": null,
+      "nota": null,
+      "actualizado_en": "2027-10-13T20:34:57.000Z"
+    },
+    {
+      "clave": "a1-d3",
+      "nombre": "CARTA DE COMPROMISO – ITINERARIOS DE AUTOFORMACIÓN",
+      "estado": "pendiente",
+      "ruta": null,
+      "ruta_pdf": null,
+      "nota": null,
+      "actualizado_en": "2027-10-13T20:34:57.000Z"
+    },
+    {
+      "clave": "a1-d4",
+      "nombre": "CARTA DE COMPROMISO – AMPLIACIÓN DE LA FORMACIÓN",
+      "estado": "pendiente",
+      "ruta": null,
+      "ruta_pdf": null,
+      "nota": null,
+      "actualizado_en": "2027-10-13T20:34:57.000Z"
+    }
+  ],
+  "pliegos": [
+    {
+      "nombre": "PCAP.pdf",
+      "clase": "pcap",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "PCT.pdf",
+      "clase": "ppt",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Anexo VI.pdf",
+      "clase": "adicional",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Anexo VII.pdf",
+      "clase": "adicional",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Anexo III.pdf",
+      "clase": "adicional",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Anexo I.pdf",
+      "clase": "adicional",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Anexo II.pdf",
+      "clase": "adicional",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Anexo VIII Compromiso de adscripcion de personal.pdf",
+      "clase": "adicional",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Anexo IV.pdf",
+      "clase": "adicional",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Anexo V.pdf",
+      "clase": "adicional",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Anuncio de licitacion 08-10-2027 1007.pdf",
+      "clase": "anuncio",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Pliego firmado 08-10-2027 1008.pdf",
+      "clase": "anuncio",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Resolucion de aprobacion 08-10-2027 1003",
+      "clase": "otro",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Anuncio de licitacion 08-10-2027 1003",
+      "clase": "otro",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Anexo VIII Compromiso de adscripcion de personal 08-10-2027 1004",
+      "clase": "otro",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Anexo III 08-10-2027 1004",
+      "clase": "otro",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Anexo V 08-10-2027 1004",
+      "clase": "otro",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "PCAP 08-10-2027 1004",
+      "clase": "otro",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Anexo I 08-10-2027 1005",
+      "clase": "otro",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Anexo II 08-10-2027 1005",
+      "clase": "otro",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Anexo IV 08-10-2027 1005",
+      "clase": "otro",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Anexo VI 08-10-2027 1005",
+      "clase": "otro",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Informe de justificacion 08-10-2027 1006",
+      "clase": "otro",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Designacion de responsable 08-10-2027 1006",
+      "clase": "otro",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "PCT 08-10-2027 1006",
+      "clase": "otro",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Resolucion de inicio del expediente 08-10-2027 1007",
+      "clase": "otro",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Anexo VII 08-10-2027 1007",
+      "clase": "otro",
+      "estado": "descargado"
+    }
+  ],
+  "perfil": {
+    "nif": "B12345674",
+    "nombre": "ANALÍTICA EJEMPLO, S.L.",
+    "domicilio": null,
+    "representante": {
+      "nombre": "Persona R",
+      "nif": "12345678Z",
+      "cargo": "Administrador solidario"
+    },
+    "contacto": {
+      "email": null,
+      "telefono": null
+    },
+    "clasificaciones": [],
+    "volumen_negocio": [
+      {
+        "anio": 2024,
+        "importe": 152310.72
+      },
+      {
+        "anio": 2025,
+        "importe": 268420.15
+      }
+    ],
+    "certificaciones": [],
+    "seguro_rc": null,
+    "plantilla_media": 4,
+    "anios_actividad": 3,
+    "cpv_experiencia": [
+      "72",
+      "805"
+    ],
+    "mayor_contrato_similar": 174905.36,
+    "notas": "ROLECE: inscrita desde el 17/03/2026, sin clasificación ni prohibiciones para contratar. Centro de formación acreditado por el servicio público de empleo autonómico (22 especialidades en datos, IA, Power BI, SQL, Python y big data). Empresa de nueva creación (art. 90.4 LCSP) hasta marzo de 2028. Sin ISO ni ENS; solo certificaciones individuales de Microsoft (AI-900, AZ-900, DP-900). Sin seguro de RC contratado: se contrata si se gana. Concurre siempre en solitario. Mayor contrato similar: un cliente privado (en curso).",
+    "fecha_constitucion": "2023-03-14",
+    "tamano": "micro",
+    "idiomas": [
+      "es",
+      "en"
+    ]
+  },
+  "personas": [
+    {
+      "persona_id": 1005,
+      "nombre": "Persona K",
+      "tipo": "interno",
+      "rol": "Dirección; Ingeniería de datos",
+      "titulaciones": [
+        "Grado de área general",
+        "Curso en ciencia de datos",
+        "Curso en marketing y comunicación",
+        "Curso en economía y empresa"
+      ],
+      "certificaciones": [
+        "Curso de inteligencia artificial (IA)",
+        "Certificación Azure de inteligencia artificial (IA)",
+        "Certificación Azure"
+      ],
+      "anios_experiencia": 10,
+      "sectores": [
+        "tecnología de datos",
+        "inteligencia artificial",
+        "comercio y turismo",
+        "salud"
+      ],
+      "cpv": [],
+      "tecnologias": [
+        "Python",
+        "Apache Spark",
+        "SQL",
+        "AWS",
+        "Snowflake",
+        "ETL",
+        "Machine Learning",
+        "NLP"
+      ],
+      "idiomas": [
+        {
+          "idioma": "Español",
+          "nivel": "nativo"
+        },
+        {
+          "idioma": "Inglés",
+          "nivel": "C1"
+        }
+      ],
+      "disponibilidad": "parcial",
+      "activo": true
+    },
+    {
+      "persona_id": 1001,
+      "nombre": "Persona F",
+      "tipo": "interno",
+      "rol": "Dirección; Ciencia de datos",
+      "titulaciones": [
+        "Máster en matemáticas",
+        "Curso en economía y empresa",
+        "Grado en matemáticas"
+      ],
+      "certificaciones": [
+        "Curso de inteligencia artificial (IA)",
+        "Certificado de inglés B2",
+        "Certificación Azure de inteligencia artificial (IA)",
+        "Certificación Azure"
+      ],
+      "anios_experiencia": 5,
+      "sectores": [
+        "comercio y turismo",
+        "servicios financieros",
+        "industria y logística",
+        "salud y seguridad",
+        "administración pública"
+      ],
+      "cpv": [],
+      "tecnologias": [
+        "R",
+        "Python",
+        "Machine Learning",
+        "Deep Learning",
+        "Data Science",
+        "Data Analytics",
+        "cuadros de mando",
+        "KPIs"
+      ],
+      "idiomas": [],
+      "disponibilidad": "disponible",
+      "activo": true
+    }
+  ]
+}

@@ -1,0 +1,569 @@
+{
+  "_origen": "Fixture sintético: estructura de una oferta de prueba con textos inventados; Persona A/B…, sin NIF, correo, teléfono, notas ni importes ofertados.",
+  "oferta": "casoE",
+  "licitacion_id": "p-91000080",
+  "capturado_en": "2027-10-13T20:34:44+00:00",
+  "licitacion": {
+    "titulo": "Servicio de formación virtual en competencias administrativas y asistenciales y tramitación de la subvención FFI para el personal de Servicios Sanitarios de Ejemplo, S.A.",
+    "estado": "en_preparacion",
+    "fecha_limite": "2027-10-14T08:00:00",
+    "presupuesto": 29688.75,
+    "lotes": [
+      {
+        "id": "1",
+        "nombre": "Primeros auxilios y soporte vital básico",
+        "importe": 18522
+      },
+      {
+        "id": "2",
+        "nombre": "Análisis de datos con hojas de cálculo y asistente de IA",
+        "importe": 6063.75
+      },
+      {
+        "id": "3",
+        "nombre": "Gestión documental y archivo electrónico",
+        "importe": 882
+      },
+      {
+        "id": "4",
+        "nombre": "Atención telefónica y trato a personas usuarias: voz, chat y videollamada",
+        "importe": 756
+      },
+      {
+        "id": "5",
+        "nombre": "Seguridad y salud en el puesto de trabajo",
+        "importe": 3150
+      },
+      {
+        "id": "6",
+        "nombre": "Gestión de residuos sanitarios",
+        "importe": 315
+      }
+    ],
+    "lotes_interes": [
+      "2",
+      "4"
+    ]
+  },
+  "pliegos": [
+    {
+      "nombre": "Pliego regulador del servicio.pdf",
+      "clase": "ppt"
+    },
+    {
+      "nombre": "Rectificación de Anuncio de Licitación 27-09-2027 1043.pdf",
+      "clase": "anuncio"
+    },
+    {
+      "nombre": "Anuncio de Licitación 23-09-2027 0852.pdf",
+      "clase": "anuncio"
+    },
+    {
+      "nombre": "Rectificación de Pliego 27-09-2027 1047.pdf",
+      "clase": "anuncio"
+    },
+    {
+      "nombre": "Documento de aprobación del expediente 23-09-2027 0904",
+      "clase": "otro"
+    },
+    {
+      "nombre": "Composición de la mesa de contratación 23-09-2027 0905",
+      "clase": "otro"
+    },
+    {
+      "nombre": "Memoria justificativa 23-09-2027 0906",
+      "clase": "otro"
+    },
+    {
+      "nombre": "Rectificación de errores materiales del pliego 27-09-2027 1032",
+      "clase": "otro"
+    }
+  ],
+  "guiones_anteriores": [
+    {
+      "id": 13,
+      "version": 3
+    }
+  ],
+  "respuesta_oferta": {
+    "guion": {
+      "id": 19,
+      "version": 4,
+      "ficha_id": 347,
+      "datos": {
+        "archivos": [
+          {
+            "nombre": "ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, CRITERIOS AUTOMÁTICOS Y PROPOSICIÓN ECONÓMICA",
+            "contenido": "Documentación administrativa, documentación de los criterios automáticos (si se acogen) y proposición económica. La memoria técnica se rige por la cláusula 4.2 del pliego de prescripciones. Se presentará un archivo por cada lote ofertado, con el número de lote visible en cada uno.",
+            "prohibiciones": [
+              "No se aceptarán ofertas presentadas por medios distintos de los indicados.",
+              "No se aceptarán proposiciones económicas que no sigan el modelo del ANEXO VI."
+            ],
+            "firma": "con firma electrónica de la persona licitadora o de quien la represente, e irán acompañados de un índice firmado que relacione su contenido.",
+            "documentos": [
+              {
+                "tipo": "declaracion",
+                "nombre": "ANEXO I: DECLARACIÓN RESPONSABLE DE LA PERSONA LICITADORA",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO I",
+                  "documento": "Pliego regulador del servicio.pdf",
+                  "pagina": 47
+                }
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "ANEXO II: DESIGNACIÓN DE DIRECCIÓN ELECTRÓNICA PARA NOTIFICACIONES",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO II",
+                  "documento": "Pliego regulador del servicio.pdf",
+                  "pagina": 49
+                }
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "ANEXO III: COMPROMISO DE CONSTITUCIÓN DE UNIÓN TEMPORAL",
+                "obligatorio": false,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO III",
+                  "documento": "Pliego regulador del servicio.pdf",
+                  "pagina": 50
+                }
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "ANEXO IV: DECLARACIÓN SOBRE PERTENENCIA A GRUPO DE EMPRESAS",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO IV",
+                  "documento": "Pliego regulador del servicio.pdf",
+                  "pagina": 51
+                }
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "ANEXO V: COMPROMISO DE CUMPLIMIENTO DE LA NORMATIVA DE PROTECCIÓN DE DATOS",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO V",
+                  "documento": "Pliego regulador del servicio.pdf",
+                  "pagina": 52
+                }
+              },
+              {
+                "tipo": "oferta_economica",
+                "nombre": "ANEXO VI: MODELO DE OFERTA ECONÓMICA Y CRITERIOS AUTOMÁTICOS (archivo nº2)",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO VI",
+                  "documento": "Pliego regulador del servicio.pdf",
+                  "pagina": 53
+                },
+                "notas": "Debe presentarse un anexo por cada lote al que se licite; los criterios automáticos se marcan en el apartado SEGUNDO, páginas 54-55."
+              },
+              {
+                "tipo": "memoria",
+                "nombre": "Memoria técnica independiente por cada lote",
+                "obligatorio": true,
+                "produce": "hermes",
+                "origen": {
+                  "modelo": "Cláusula 4.2 Memoria técnica",
+                  "documento": "Pliego regulador del servicio.pdf",
+                  "pagina": 63
+                }
+              },
+              {
+                "tipo": "acreditacion",
+                "nombre": "Título universitario y currículum de la persona analista de datos",
+                "obligatorio": false,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "Sección G.2, apartado 1.4",
+                  "documento": "Pliego regulador del servicio.pdf",
+                  "pagina": 9
+                }
+              },
+              {
+                "tipo": "acreditacion",
+                "nombre": "Dossier técnico del fabricante del campus virtual",
+                "obligatorio": false,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "Sección G.2, apartados 2.3 y 2.4",
+                  "documento": "Pliego regulador del servicio.pdf",
+                  "pagina": 9
+                }
+              },
+              {
+                "tipo": "acreditacion",
+                "nombre": "Titulaciones, certificados y currículum firmado del profesorado",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "Cláusula 4.2 Profesorado",
+                  "documento": "Pliego regulador del servicio.pdf",
+                  "pagina": 64
+                }
+              },
+              {
+                "tipo": "acreditacion",
+                "nombre": "Declaración de conformidad con el Esquema Nacional de Seguridad (ENS), categoría BÁSICA",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "Rectificación de errores materiales",
+                  "documento": "Rectificación de errores materiales del pliego 27-09-2027 1032.pdf",
+                  "pagina": 1
+                }
+              },
+              {
+                "tipo": "otro",
+                "nombre": "Índice firmado del contenido del archivo",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "Cláusula 14",
+                  "documento": "Pliego regulador del servicio.pdf",
+                  "pagina": 23
+                }
+              }
+            ],
+            "documento": "Pliego regulador del servicio.pdf",
+            "pagina": 11
+          }
+        ],
+        "memoria": {
+          "archivo": "ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, CRITERIOS AUTOMÁTICOS Y PROPOSICIÓN ECONÓMICA",
+          "titulo_documento": "Memoria técnica",
+          "valorable": false,
+          "limite_paginas": null,
+          "apartados": [
+            {
+              "titulo": "Propuesta formativa",
+              "puntos": 0,
+              "se_valorara": [
+                "Motivación y enfoque de la acción formativa.",
+                "Objetivos generales y específicos.",
+                "Programa y contenidos completos.",
+                "Reparto de contenidos y horas.",
+                "Metodología didáctica.",
+                "Prácticas y ejercicios.",
+                "Sistema de evaluación.",
+                "Requisitos para aprobar.",
+                "Tutorización y seguimiento del alumnado.",
+                "Recursos y materiales didácticos."
+              ],
+              "escala": [],
+              "documento": "Pliego regulador del servicio.pdf",
+              "pagina": 63
+            },
+            {
+              "titulo": "Plataforma de teleformación",
+              "puntos": 0,
+              "se_valorara": [
+                "Acceso e identificación del alumnado.",
+                "Disponibilidad y horario de acceso.",
+                "Seguimiento de la actividad de cada persona.",
+                "Registro de conexiones y de actividad formativa.",
+                "Comunicación entre alumnado y tutoría.",
+                "Herramientas de evaluación.",
+                "Informes de seguimiento.",
+                "Emisión y descarga de certificados.",
+                "Medidas de seguridad aplicables.",
+                "Protección de datos y confidencialidad.",
+                "Soporte técnico al alumnado.",
+                "Si el campus incorpora analítica, paneles, avisos automáticos, automatización o asistentes virtuales, la memoria debe describirlos de forma expresa."
+              ],
+              "escala": [],
+              "documento": "Pliego regulador del servicio.pdf",
+              "pagina": 64
+            },
+            {
+              "titulo": "Equipo docente",
+              "puntos": 0,
+              "se_valorara": [
+                "Nombre y apellidos.",
+                "Titulación académica.",
+                "Formación complementaria sobre la materia.",
+                "Experiencia docente.",
+                "Experiencia profesional ligada a los contenidos que se imparten.",
+                "Funciones durante la ejecución del contrato.",
+                "El profesorado debe acreditar una cualificación adecuada y suficiente para los contenidos que imparta."
+              ],
+              "escala": [],
+              "documento": "Pliego regulador del servicio.pdf",
+              "pagina": 64
+            }
+          ],
+          "advertencias": [
+            "Cada persona licitadora presentará una memoria técnica específica por cada lote al que concurra; la memoria no puntúa.",
+            "La memoria debe describir como mínimo los aspectos siguientes:"
+          ],
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 63
+        },
+        "automaticos": [
+          {
+            "criterio": "Formatos de descarga de los registros de actividad",
+            "puntos": 6,
+            "como_se_acredita": "Si el campus permite descargar los registros de actividad en tres o más formatos abiertos: Seis (6) puntos. Si solo permite dos formatos: Tres (3) puntos. Si permite un formato o ninguno: Cero (0) puntos. Señale con una X lo que proceda en 1.1 del Anexo VI.",
+            "casilla_en": "ANEXO VI, SEGUNDO, 1.1 Formatos de descarga de los registros de actividad",
+            "archivo": "ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, CRITERIOS AUTOMÁTICOS Y PROPOSICIÓN ECONÓMICA",
+            "marcas": [
+              "descarga en tres o más formatos abiertos"
+            ],
+            "documento": "Pliego regulador del servicio.pdf",
+            "pagina": 8
+          },
+          {
+            "criterio": "Frecuencia de sincronización del registro de asistencia",
+            "puntos": 6,
+            "como_se_acredita": "Sincronización del registro de asistencia en tiempo real o con periodicidad diaria: Seis (6) puntos. Periodicidad semanal: Tres (3) puntos. Periodicidad superior a la semanal: Cero (0) puntos. Señale con una X lo que proceda en 1.2 del Anexo VI.",
+            "casilla_en": "ANEXO VI, SEGUNDO, 1.2 Frecuencia de sincronización del registro de asistencia",
+            "archivo": "ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, CRITERIOS AUTOMÁTICOS Y PROPOSICIÓN ECONÓMICA",
+            "marcas": [
+              "sincronización con periodicidad diaria"
+            ],
+            "documento": "Pliego regulador del servicio.pdf",
+            "pagina": 8
+          },
+          {
+            "criterio": "Sistema de avisos automáticos de inactividad",
+            "puntos": 6,
+            "como_se_acredita": "Si el sistema genera y envía avisos automáticos externos (por correo electrónico o mensaje de texto) a la coordinación del contrato ante la inactividad prolongada de una persona participante: Seis (6) puntos. Si el campus carece de un sistema parametrizado de avisos: Cero (0) puntos. Señale con una X lo que proceda en 1.3 del Anexo VI.",
+            "casilla_en": "ANEXO VI, SEGUNDO, 1.3 Sistema de avisos automáticos de inactividad",
+            "archivo": "ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, CRITERIOS AUTOMÁTICOS Y PROPOSICIÓN ECONÓMICA",
+            "marcas": [
+              "avisos automáticos externos"
+            ],
+            "documento": "Pliego regulador del servicio.pdf",
+            "pagina": 8
+          },
+          {
+            "criterio": "Adscripción de Equipo Técnico de Calidad Formativa)",
+            "puntos": 6,
+            "como_se_acredita": "Compromiso formal de adscribir a un analista de calidad formativa con titulación universitaria oficial de grado, licenciatura o equivalente en Estadística y/o Matemáticas y/o Ingeniería Informática; se aportará copia del título acompañada del currículum. Señale con una X lo que proceda en 1.4 del Anexo VI.",
+            "casilla_en": "ANEXO VI, SEGUNDO, 1.4 Adscripción de Equipo Técnico de Calidad Formativa",
+            "archivo": "ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, CRITERIOS AUTOMÁTICOS Y PROPOSICIÓN ECONÓMICA",
+            "marcas": [
+              "analista de calidad formativa"
+            ],
+            "documento": "Pliego regulador del servicio.pdf",
+            "pagina": 8
+          },
+          {
+            "criterio": "Periodicidad de entrega de Informes de Seguimiento Ejecutivos",
+            "puntos": 6,
+            "como_se_acredita": "Compromiso de entregar informes de seguimiento con propuestas de mejora cada diez días o con menor intervalo: Seis (6) puntos. Periodicidad quincenal: Tres (3) puntos. Entrega únicamente al terminar la acción formativa: Cero (0) puntos. Señale con una X lo que proceda en 1.5 del Anexo VI.",
+            "casilla_en": "ANEXO VI, SEGUNDO, 1.5 Periodicidad de entrega de Informes de Seguimiento Ejecutivos",
+            "archivo": "ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, CRITERIOS AUTOMÁTICOS Y PROPOSICIÓN ECONÓMICA",
+            "marcas": [
+              "informes de seguimiento ejecutivos"
+            ],
+            "documento": "Pliego regulador del servicio.pdf",
+            "pagina": 8
+          },
+          {
+            "criterio": "Compromiso de Tiempo de Respuesta Tutorial (Prontitud)",
+            "puntos": 8,
+            "como_se_acredita": "Plazo máximo de respuesta de la tutora o el tutor humano a las dudas del alumnado inferior o igual a 3 horas (contadas dentro del horario lectivo): Ocho (8) puntos. Plazo superior a 3 horas e inferior o igual a 6 horas: Cuatro (4) puntos. Plazo igual a 6 horas: Cero (0) puntos. El Anexo VI, 2.1, presenta la última opción como «Plazo de respuesta superior a 6 horas».",
+            "casilla_en": "ANEXO VI, SEGUNDO, 2.1 Compromiso de Tiempo de Respuesta Tutorial (Prontitud)",
+            "archivo": "ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, CRITERIOS AUTOMÁTICOS Y PROPOSICIÓN ECONÓMICA",
+            "marcas": [
+              "respuesta humana inferior o igual a 3 horas"
+            ],
+            "documento": "Pliego regulador del servicio.pdf",
+            "pagina": 9
+          },
+          {
+            "criterio": "Asistente virtual de consultas con disponibilidad continua",
+            "puntos": 8,
+            "como_se_acredita": "Incorporación en el campus de un asistente virtual basado en modelos de lenguaje que resuelva de forma automática e inmediata las dudas de uso y de navegación, disponible sin interrupción las 24 horas del día, los 7 días de la semana (24/7): Ocho (8) puntos. Si no se incorpora esa herramienta con disponibilidad 24/7: Cero (0) puntos. Señale con una X lo que proceda en 2.2 del Anexo VI.",
+            "casilla_en": "ANEXO VI, SEGUNDO, 2.2 Asistente virtual de consultas con disponibilidad continua",
+            "archivo": "ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, CRITERIOS AUTOMÁTICOS Y PROPOSICIÓN ECONÓMICA",
+            "marcas": [
+              "asistente virtual basado en modelos de lenguaje"
+            ],
+            "documento": "Pliego regulador del servicio.pdf",
+            "pagina": 9
+          },
+          {
+            "criterio": "Volumen de Señales Automáticas de Inactividad del Alumnado",
+            "puntos": 8,
+            "como_se_acredita": "Detecta de forma automática 6 o más señales de inactividad simultáneas: Ocho (8) puntos; entre 4 y 5: Cuatro (4) puntos; menos de 4: Cero (0) puntos. Se acompañará el dossier técnico del fabricante del campus que certifique las señales automáticas de inactividad. Señale con una X lo que proceda en 2.3 del Anexo VI.",
+            "casilla_en": "ANEXO VI, SEGUNDO, 2.3 Volumen de Señales Automáticas de Inactividad del Alumnado",
+            "archivo": "ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, CRITERIOS AUTOMÁTICOS Y PROPOSICIÓN ECONÓMICA",
+            "marcas": [
+              "6 o más señales de inactividad simultáneas"
+            ],
+            "documento": "Pliego regulador del servicio.pdf",
+            "pagina": 9
+          },
+          {
+            "criterio": "Registro de Trazabilidad de la Atención Tutorial",
+            "puntos": 6,
+            "como_se_acredita": "El campus registra de forma automática el 100% de las atenciones entre tutoría y alumnado (mensajes, llamadas devueltas, avisos enviados) y genera un historial consultable en tiempo real por la coordinación del contrato: Seis (6) puntos; sin registro automático: Cero (0) puntos. Se acompañará el dossier técnico homologado del fabricante. Señale con una X lo que proceda en 2.4 del Anexo VI.",
+            "casilla_en": "ANEXO VI, SEGUNDO, 2.4 Registro de Trazabilidad de la Atención Tutorial",
+            "archivo": "ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, CRITERIOS AUTOMÁTICOS Y PROPOSICIÓN ECONÓMICA",
+            "marcas": [
+              "historial consultable en tiempo real"
+            ],
+            "documento": "Pliego regulador del servicio.pdf",
+            "pagina": 9
+          }
+        ],
+        "oferta_economica": {
+          "formula": "La oferta económica más baja entre las no excluidas por anormalmente baja recibirá cuarenta (40) puntos. Las demás se puntuarán en proporción a esa oferta mínima con la fórmula del pliego, y la oferta igual al presupuesto base de licitación recibirá cero (0) puntos.",
+          "presupuesto_base": 6819.75,
+          "impuesto_aparte": "IGIC",
+          "precio_unitario": {
+            "unidad": "alumno",
+            "maximo": null
+          },
+          "umbral_anormalidad": "Podrán considerarse anormalmente bajas las ofertas inferiores en un 20 % al presupuesto de licitación sin IGIC.",
+          "modelo": "ANEXO VI: MODELO DE OFERTA ECONÓMICA POR LOTE",
+          "archivo": "ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, CRITERIOS AUTOMÁTICOS Y PROPOSICIÓN ECONÓMICA",
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 9
+        },
+        "plazo": {
+          "fecha_limite": "2027-10-14T08:00",
+          "canal": "Presentación electrónica mediante la herramienta de preparación y presentación de ofertas de la PLACSP",
+          "observaciones": "Rectificación de Anuncio de Licitación 27-09-2027 1043.pdf, pág. 2: «Hasta el 14/10/2027 a las 08:00»; «las horas indicadas son las de Madrid». Pliego, pág. 25: las proposiciones se presentan en archivos separados por lote."
+        },
+        "lotes": [
+          "2",
+          "4"
+        ]
+      }
+    },
+    "lotes_cambiados": false,
+    "guion_cambiado": false,
+    "decisiones": {
+      "guion_id": 19,
+      "datos": {
+        "lotes": [
+          "2",
+          "4"
+        ],
+        "equipo": [
+          {
+            "persona_id": 1001,
+            "rol_en_la_oferta": "Rol 1 de la oferta",
+            "lotes": []
+          },
+          {
+            "persona_id": 1002,
+            "rol_en_la_oferta": "Rol 2 de la oferta",
+            "lotes": []
+          },
+          {
+            "persona_id": 1003,
+            "rol_en_la_oferta": "Rol 3 de la oferta",
+            "lotes": []
+          },
+          {
+            "persona_id": 1004,
+            "rol_en_la_oferta": "Rol 4 de la oferta",
+            "lotes": []
+          },
+          {
+            "persona_id": 1005,
+            "rol_en_la_oferta": "Rol 5 de la oferta",
+            "lotes": []
+          }
+        ],
+        "automaticos": [
+          {
+            "criterio": "Formatos de descarga de los registros de actividad",
+            "lote": null,
+            "nos_acogemos": true,
+            "tramo": "Formatos de descarga de los registros de actividad"
+          },
+          {
+            "criterio": "Frecuencia de sincronización del registro de asistencia",
+            "lote": null,
+            "nos_acogemos": true,
+            "tramo": "Frecuencia de sincronización del registro de asistencia"
+          },
+          {
+            "criterio": "Sistema de avisos automáticos de inactividad",
+            "lote": null,
+            "nos_acogemos": true,
+            "tramo": "Sistema de avisos automáticos de inactividad"
+          },
+          {
+            "criterio": "Adscripción de Equipo Técnico de Calidad Formativa)",
+            "lote": null,
+            "nos_acogemos": true,
+            "tramo": "Adscripción de Equipo Técnico de Calidad Formativa)"
+          },
+          {
+            "criterio": "Periodicidad de entrega de Informes de Seguimiento Ejecutivos",
+            "lote": null,
+            "nos_acogemos": true,
+            "tramo": "Periodicidad de entrega de Informes de Seguimiento Ejecutivos"
+          },
+          {
+            "criterio": "Compromiso de Tiempo de Respuesta Tutorial (Prontitud)",
+            "lote": null,
+            "nos_acogemos": true,
+            "tramo": "Compromiso de Tiempo de Respuesta Tutorial (Prontitud)"
+          },
+          {
+            "criterio": "Asistente virtual de consultas con disponibilidad continua",
+            "lote": null,
+            "nos_acogemos": true,
+            "tramo": "Asistente virtual de consultas con disponibilidad continua"
+          },
+          {
+            "criterio": "Volumen de Señales Automáticas de Inactividad del Alumnado",
+            "lote": null,
+            "nos_acogemos": true,
+            "tramo": "Volumen de Señales Automáticas de Inactividad del Alumnado"
+          },
+          {
+            "criterio": "Registro de Trazabilidad de la Atención Tutorial",
+            "lote": null,
+            "nos_acogemos": true,
+            "tramo": "Registro de Trazabilidad de la Atención Tutorial"
+          }
+        ],
+        "ofertas": [
+          {
+            "lote": "2",
+            "pendiente": false,
+            "importe": null,
+            "unitarios": []
+          },
+          {
+            "lote": "4",
+            "pendiente": false,
+            "importe": null,
+            "unitarios": []
+          }
+        ]
+      }
+    },
+    "memorias": [
+      {
+        "id": 16,
+        "version": 1,
+        "guion_id": 13,
+        "estado": "ensamblada",
+        "ensayo": false,
+        "guion_cambiado": true,
+        "borrador": {
+          "estado": "pendiente"
+        }
+      }
+    ]
+  }
+}

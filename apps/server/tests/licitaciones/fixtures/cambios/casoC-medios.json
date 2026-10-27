@@ -1,0 +1,802 @@
+{
+  "_origen": "Fixture sintético de una licitación inventada de Villaejemplo (p-91000770): ficha aprobada, requisitos, equipo y personas de /api/colaboradores, con textos inventados. Persona A/B…, sin NIF, correo, teléfono ni importes ofertados.",
+  "licitacion": {
+    "id": "p-91000770",
+    "titulo": "Servicio, por lotes, de formación continua para el personal de los ayuntamientos y mancomunidades de la provincia de Villaejemplo",
+    "expediente": "2026/031",
+    "organo": "Junta de Gobierno de la Diputación Provincial de Villaejemplo",
+    "presupuesto_sin_iva": 127281,
+    "lotes": [
+      {
+        "id": "1",
+        "nombre": "Lote 1: Prevención de riesgos laborales para el personal de servicios operativos municipales",
+        "presupuesto_sin_iva": 57596
+      },
+      {
+        "id": "2",
+        "nombre": "Lote 2: Atención a la ciudadanía y gestión del registro en oficinas municipales",
+        "presupuesto_sin_iva": 51128
+      },
+      {
+        "id": "3",
+        "nombre": "Lote 3: Teleformación en competencias digitales y técnicas para el personal administrativo y técnico",
+        "presupuesto_sin_iva": 18557
+      }
+    ]
+  },
+  "ficha_aprobada": {
+    "id": 233,
+    "datos": {
+      "resumen": "Lote de interés 3 (18.557 € sin IVA): cinco cursos de teleformación (comunicación institucional y redes sociales; administración electrónica; análisis de datos con hoja de cálculo; topografía y cartografía digital; jardinería y arbolado urbano), con campus virtual, materiales y tutoría (PCAP, Anexo I; PPT). La solvencia económica del lote está cubierta; faltan pruebas del campus, de los materiales y de un equipo docente que cubra todas las materias con su experiencia online. Plazo PLACSP: 14/10/2027 23:59.",
+      "requisitos": [
+        {
+          "tipo": "solvencia_economica",
+          "descripcion": "Cifra anual de negocios del mejor de los tres últimos ejercicios ≥ 10% del valor estimado del lote 3; se acredita con declaración responsable y cuentas anuales depositadas.",
+          "excluyente": true,
+          "valor_exigido": "≥ 9.649,64 €",
+          "cumple": "si",
+          "fuente": "perfil.volumen_negocio 2025: 268.420,15 €",
+          "justificacion": "El ejercicio más alto del registro supera el umbral exigido para el lote 3; la prueba documental se aporta si la empresa resulta propuesta como adjudicataria.",
+          "documento": "PCAP.pdf, Anexo III",
+          "pagina": 85,
+          "lote": "3"
+        },
+        {
+          "tipo": "solvencia_tecnica",
+          "descripcion": "Empresa de nueva creación: acreditar la solvencia técnica con la titulación de la persona responsable de dirigir y gestionar las acciones, según la vía prevista para empresas con menos de tres años.",
+          "excluyente": true,
+          "valor_exigido": "Persona titulada y vinculada, responsable de la dirección y la gestión",
+          "cumple": "dudoso",
+          "justificacion": "La empresa se constituyó el 12/03/2024 y figura como de nueva creación en el perfil, pero falta nombrar y acreditar a la persona titulada con esa responsabilidad; el PCAP prevé una vía específica para estas empresas.",
+          "documento": "PCAP.pdf, Anexo III, pág. 87",
+          "pagina": 87,
+          "lote": "3"
+        },
+        {
+          "tipo": "medios_personales",
+          "descripcion": "Adscripción obligatoria de coordinador/a responsable de dirección y gestión, un/a tutor/a de asistencia informática y tutor/a docente por curso; un mismo docente puede impartir varios cursos. Cada tutor debe cumplir título o experiencia mínima: comunicación institucional 1 año, administración electrónica 1, análisis de datos 1, topografía 1, jardinería/arbolado 2; además 30 h de formación teleformación/TIC o 60 h de impartición online.",
+          "excluyente": true,
+          "valor_exigido": "1 coordinación, 1 tutoría informática y docentes que cubran las cinco materias con experiencia o título y el umbral online",
+          "cumple": "si",
+          "fuente": "colaboradores: 9 de 9 superan los mínimos detectados",
+          "justificacion": "Hay perfiles con afinidad digital y docente, pero la búsqueda no confirma los requisitos curriculares en topografía ni en jardinería/arbolado, ni las 30 h o 60 h online, ni una persona coordinadora titulada y vinculada. Hay que revisar CV, disponibilidad y acreditaciones.",
+          "documento": "PPT.pdf",
+          "pagina": 3,
+          "lote": "3"
+        },
+        {
+          "tipo": "medios_materiales",
+          "descripcion": "Disponer de un campus virtual y describir sus características; entregar manual y material didáctico de cada curso.",
+          "excluyente": true,
+          "cumple": "dudoso",
+          "justificacion": "Los datos de empresa consultados no recogen campus virtual ni materiales propios de las cinco acciones formativas.",
+          "documento": "PPT.pdf",
+          "pagina": 3,
+          "lote": "3"
+        },
+        {
+          "tipo": "otro",
+          "descripcion": "Presentar una propuesta didáctica con calendario y plan de impartición, enfoque, recursos y entorno virtual, y medidas de transferencia al puesto; la falta de cualquiera de esos contenidos excluye el lote.",
+          "excluyente": true,
+          "valor_exigido": "Los tres bloques mínimos que fija el PCAP",
+          "cumple": "dudoso",
+          "justificacion": "Es una exigencia de la oferta, aún sin redactar; debe incluir todos los contenidos mínimos y no adelantar nada de los criterios automáticos para evitar la exclusión.",
+          "documento": "PCAP.pdf",
+          "pagina": 77,
+          "lote": "3"
+        },
+        {
+          "tipo": "otro",
+          "descripcion": "Ofrecer garantías de protección de datos con certificado, código de conducta, informe o declaración responsable del Anexo VIII, y compromiso de confidencialidad del personal.",
+          "excluyente": false,
+          "cumple": "dudoso",
+          "justificacion": "El perfil indica sin ISO ni ENS, pero el pliego admite la declaración responsable como alternativa; falta confirmar que podemos firmarla completa junto con los compromisos.",
+          "documento": "PCAP.pdf",
+          "pagina": 54,
+          "lote": "3"
+        },
+        {
+          "tipo": "subcontratacion",
+          "descripcion": "El lote 3 admite subcontratación; tras la formalización hay que declarar si se subcontrata y, en tal caso, el porcentaje, la identidad y la aptitud de las empresas subcontratistas.",
+          "excluyente": false,
+          "cumple": "si",
+          "fuente": "perfil.notas: concurre en solitario",
+          "justificacion": "Concurrir en solitario no impide subcontratar y el lote lo permite. Confirmar la declaración y, si procede, la ubicación de los servidores.",
+          "documento": "PCAP.pdf",
+          "pagina": 45,
+          "lote": "3"
+        },
+        {
+          "tipo": "lugar_ejecucion",
+          "descripcion": "El lote 3 se imparte por completo en línea; no exige un lugar físico de ejecución.",
+          "excluyente": false,
+          "cumple": "si",
+          "fuente": "perfil-licitaciones.md: servicios digitales y formación, ejecución en remoto viable",
+          "justificacion": "La prestación del lote 3 es telemática y puede operarse a distancia desde cualquier sede.",
+          "documento": "PCAP.pdf",
+          "pagina": 53,
+          "lote": "3"
+        },
+        {
+          "tipo": "seguro",
+          "descripcion": "El pliego no pide seguro de accidentes ni de responsabilidad civil para el lote 3.",
+          "excluyente": false,
+          "cumple": "no",
+          "fuente": "perfil.seguro_rc: sin seguro",
+          "justificacion": "El pliego exime expresamente al lote 3; el seguro de responsabilidad civil no es excluyente.",
+          "documento": "PCAP.pdf",
+          "pagina": 54,
+          "lote": "3"
+        },
+        {
+          "tipo": "idioma",
+          "descripcion": "Documentación presentada en castellano.",
+          "excluyente": false,
+          "valor_exigido": "Castellano",
+          "cumple": "si",
+          "fuente": "perfil.idiomas: es, en",
+          "justificacion": "El castellano figura entre los idiomas del perfil.",
+          "documento": "PCAP.pdf",
+          "pagina": 85,
+          "lote": "3"
+        },
+        {
+          "tipo": "ute",
+          "descripcion": "La documentación de constitución de UTE solo se aporta si se concurre en UTE.",
+          "excluyente": false,
+          "cumple": "no_aplica",
+          "fuente": "perfil.notas: concurre en solitario",
+          "justificacion": "No se plantea UTE; el requisito es condicional y no aplica.",
+          "documento": "PCAP.pdf",
+          "pagina": 81
+        },
+        {
+          "tipo": "clasificacion",
+          "descripcion": "El pliego no exige clasificación; en el DEUC se marca «no procede» cuando no se pide.",
+          "excluyente": false,
+          "cumple": "no_aplica",
+          "fuente": "pliego: no se exige",
+          "justificacion": "No es un requisito de acceso en este contrato.",
+          "documento": "PCAP.pdf",
+          "pagina": 82
+        }
+      ],
+      "criterios": [
+        {
+          "descripcion": "Precio por hora lectiva en línea, con un máximo de 1,54 €/hora, IVA exento",
+          "peso": 45,
+          "tipo": "formula",
+          "pagina": 73
+        },
+        {
+          "descripcion": "Grabación de las tutorías por videoconferencia con consentimiento del participante",
+          "peso": 3,
+          "tipo": "formula",
+          "pagina": 75
+        },
+        {
+          "descripcion": "Participantes adicionales sobre el mínimo conjunto de 329",
+          "peso": 6,
+          "tipo": "formula",
+          "pagina": 76
+        },
+        {
+          "descripcion": "Docentes adicionales con los requisitos curriculares del pliego",
+          "peso": 6,
+          "tipo": "formula",
+          "pagina": 76
+        },
+        {
+          "descripcion": "Propuesta didáctica de teleformación",
+          "peso": 40,
+          "tipo": "juicio_valor",
+          "subcriterios": [
+            {
+              "descripcion": "Plan de impartición y calendario",
+              "peso": 10
+            },
+            {
+              "descripcion": "Enfoque didáctico, recursos y entorno virtual de aprendizaje",
+              "peso": 15
+            },
+            {
+              "descripcion": "Transferencia al puesto de trabajo (práctica aplicada, guías de uso, sesiones de apoyo y comunidad de práctica)",
+              "peso": 15
+            }
+          ],
+          "pagina": 77
+        }
+      ],
+      "documentacion": [
+        {
+          "sobre": "A",
+          "documento": "DEUC; declaración del Anexo VI sobre prohibiciones y grupo empresarial; compromiso de dedicación de medios del Anexo VII",
+          "obligatorio": true,
+          "pagina": 12
+        },
+        {
+          "sobre": "B",
+          "documento": "Propuesta didáctica del lote 3 con los contenidos mínimos; sin adelantar los criterios automáticos",
+          "obligatorio": true,
+          "pagina": 97
+        },
+        {
+          "sobre": "C",
+          "documento": "Anexo V: precio por hora y criterios automáticos; declaración sobre la grabación de tutorías si se ofrece",
+          "obligatorio": true,
+          "pagina": 108
+        },
+        {
+          "sobre": "Previo a adjudicación",
+          "documento": "Acreditación de aptitud y solvencia, persona directora titulada y vinculada, medios dedicados y garantías de protección de datos",
+          "obligatorio": true,
+          "pagina": 17
+        }
+      ],
+      "hitos": [
+        {
+          "hito": "Cierre de presentación",
+          "fecha": "2027-10-14T23:59:00",
+          "detalle": "Según PLACSP; el PCAP fija 15 días naturales desde la publicación y aconseja presentar antes de las 11:00 del último día. Contrastar con el anuncio vigente.",
+          "pagina": 45
+        },
+        {
+          "hito": "Inicio del servicio",
+          "detalle": "Los cursos arrancan como máximo 15 días naturales después de la formalización; duración inicial de un año, con prórrogas posibles hasta 36 meses.",
+          "pagina": 51
+        },
+        {
+          "hito": "Entrega de documentación por la empresa propuesta",
+          "detalle": "Diez días hábiles desde el requerimiento, según la ficha de oportunidad; se acredita antes de la adjudicación.",
+          "pagina": 17
+        }
+      ],
+      "garantias": [
+        {
+          "tipo": "definitiva",
+          "descripcion": "5% del gasto máximo del lote 3, IVA excluido; cuantía fijada en 927,85 €",
+          "porcentaje": 5,
+          "importe": 927.85,
+          "pagina": 53
+        }
+      ],
+      "penalizaciones": [
+        {
+          "descripcion": "Incumplir las mejoras o criterios automáticos ofertados: 2% del gasto máximo del lote.",
+          "pagina": 55
+        },
+        {
+          "descripcion": "No avisar con cinco días hábiles de los cambios del personal adscrito o no acreditar los mínimos a tiempo: 5% del gasto máximo del lote.",
+          "pagina": 55
+        },
+        {
+          "descripcion": "Incumplir una condición especial de ejecución: 5% del gasto máximo del lote.",
+          "pagina": 56
+        },
+        {
+          "descripcion": "Retraso imputable a la empresa: 0,60 € por cada 1.000 € de precio y día; al alcanzar múltiplos del 5% cabe resolver el contrato o aplicar nuevas penalidades.",
+          "pagina": 34
+        }
+      ],
+      "riesgos": [
+        {
+          "descripcion": "El equipo aún no cubre las cinco materias ni acredita la formación online que se pide; hay que contrastarlo con los CV.",
+          "gravedad": "alta"
+        },
+        {
+          "descripcion": "Falta confirmar el campus virtual, los materiales y la persona titulada que dirigirá las acciones.",
+          "gravedad": "alta"
+        },
+        {
+          "descripcion": "Si la propuesta didáctica deja fuera un bloque mínimo o adelanta algún criterio del sobre C, el lote 3 queda excluido.",
+          "gravedad": "alta"
+        },
+        {
+          "descripcion": "Datos personales del personal participante y garantía definitiva de 927,85 €: concretar las medidas y la declaración del Anexo VIII.",
+          "gravedad": "media"
+        }
+      ],
+      "recomendacion": {
+        "decision": "revisar",
+        "motivo": "Solvencia económica cubierta. Falta acreditar docentes de topografía y de jardinería/arbolado, su formación o experiencia online, la persona titulada que dirige las acciones y el campus con sus materiales. Que Persona F lo confirme antes de decidir."
+      },
+      "presentacion_lotes": {
+        "regla": "uno_o_varios",
+        "maximo_lotes": 2,
+        "detalle": "Se puede concurrir a un máximo de dos lotes; a cada licitador solo se le puede adjudicar uno.",
+        "documento": "PCAP.pdf, Anexo I",
+        "pagina": 43
+      },
+      "senales_pliego": [],
+      "cobertura": [
+        {
+          "tema": "solvencia_economica",
+          "estado": "en_requisitos"
+        },
+        {
+          "tema": "solvencia_tecnica",
+          "estado": "en_requisitos"
+        },
+        {
+          "tema": "clasificacion",
+          "estado": "no_lo_pide",
+          "documento": "PCAP.pdf",
+          "pagina": 82
+        },
+        {
+          "tema": "medios_personales",
+          "estado": "en_requisitos"
+        },
+        {
+          "tema": "medios_materiales",
+          "estado": "en_requisitos"
+        },
+        {
+          "tema": "certificaciones",
+          "estado": "no_lo_pide",
+          "documento": "PCAP.pdf",
+          "pagina": 54
+        },
+        {
+          "tema": "habilitacion",
+          "estado": "no_lo_pide",
+          "documento": "PPT.pdf",
+          "pagina": 1
+        },
+        {
+          "tema": "subcontratacion",
+          "estado": "en_requisitos"
+        },
+        {
+          "tema": "idioma",
+          "estado": "en_requisitos"
+        },
+        {
+          "tema": "seguro",
+          "estado": "no_lo_pide",
+          "documento": "PCAP.pdf",
+          "pagina": 54
+        },
+        {
+          "tema": "visita_obligatoria",
+          "estado": "no_encontrado",
+          "detalle": "No se encontró ninguna visita obligatoria en los pasajes revisados."
+        },
+        {
+          "tema": "lugar_ejecucion",
+          "estado": "en_requisitos"
+        }
+      ],
+      "verificaciones": [
+        {
+          "indice": 0,
+          "regla": "solvencia_economica",
+          "resultado_ia": "si",
+          "resultado": "si",
+          "fuente": "perfil.volumen_negocio 2025: 268.420,15 €",
+          "detalle": "Se exigen 9.649,64 €; el mejor de los tres últimos ejercicios es de 268.420,15 € (2025)."
+        },
+        {
+          "indice": 2,
+          "regla": "medios_personales",
+          "resultado_ia": "dudoso",
+          "resultado": "si",
+          "fuente": "colaboradores: 9 de 9 superan los mínimos detectados",
+          "detalle": "Hay colaboradores que reúnen la experiencia, titulación, certificación e idioma exigidos (ver Equipo)."
+        },
+        {
+          "indice": 6,
+          "regla": "subcontratacion",
+          "resultado_ia": "si",
+          "resultado": "si",
+          "fuente": "perfil.notas: concurre en solitario",
+          "detalle": "Todo el servicio se presta con medios propios."
+        },
+        {
+          "indice": 8,
+          "regla": "seguro",
+          "resultado_ia": "no_aplica",
+          "resultado": "no",
+          "fuente": "perfil.seguro_rc: sin seguro",
+          "detalle": "No hay seguro de responsabilidad civil: se contrata si se decide concurrir (nunca descarta)."
+        },
+        {
+          "indice": 9,
+          "regla": "idioma",
+          "resultado_ia": "si",
+          "resultado": "si",
+          "fuente": "perfil.idiomas: es, en",
+          "detalle": null
+        },
+        {
+          "indice": 10,
+          "regla": "ute",
+          "resultado_ia": "no_aplica",
+          "resultado": "no_aplica",
+          "fuente": "perfil.notas: concurre en solitario",
+          "detalle": null
+        },
+        {
+          "indice": 11,
+          "regla": "clasificacion",
+          "resultado_ia": "si",
+          "resultado": "no_aplica",
+          "fuente": "pliego: no se exige",
+          "detalle": null
+        }
+      ],
+      "calidad": {
+        "puntuacion": 93,
+        "requisitos": 12,
+        "excluyentes": 5,
+        "dudosos_pct": 33,
+        "con_pagina_pct": 100,
+        "excluyentes_con_cita_pct": 100,
+        "cobertura_checklist_pct": 100,
+        "cobertura_placsp_pct": 100,
+        "corregidos_por_codigo": 3,
+        "avisos": []
+      }
+    },
+    "creada_en": "2027-10-04T15:14:46.420Z",
+    "version_prompt": 2
+  },
+  "requisitos": [
+    {
+      "origen": "placsp",
+      "clase": "tecnica",
+      "etiqueta": "Medios materiales",
+      "descripcion": "Compromiso de dedicación de los medios personales y materiales al contrato, según el modelo del Anexo VII del pliego administrativo",
+      "lote": null,
+      "excluyente": true,
+      "exigido": null,
+      "resultado": "desconocido",
+      "motivo": "La PLACSP no detalla este requisito: Hermes lo leerá en el pliego al preparar la ficha.",
+      "en_ficha": true
+    }
+  ],
+  "decisiones": {
+    "guion_id": 16,
+    "actualizada_en": "2027-10-13T10:15:15.483Z",
+    "datos": {
+      "lotes": [
+        "3"
+      ],
+      "equipo": [
+        {
+          "persona_id": 1001,
+          "rol_en_la_oferta": "Coordinadora de los cinco cursos (dirección, seguimiento e informes al área de personal de la Diputación)",
+          "dedicacion": "Parcial mientras dure el contrato",
+          "lotes": []
+        },
+        {
+          "persona_id": 1005,
+          "rol_en_la_oferta": "Soporte técnico del campus virtual y asistencia informática al personal participante",
+          "dedicacion": "Parcial: L-V 9:00-18:00",
+          "lotes": []
+        },
+        {
+          "persona_id": 1001,
+          "rol_en_la_oferta": "Tutora docente de los cursos de análisis de datos, administración electrónica, comunicación institucional y topografía",
+          "dedicacion": "Cursos escalonados en el calendario; atención de lunes a viernes 9:00-18:00",
+          "lotes": []
+        }
+      ],
+      "automaticos": [
+        {
+          "criterio": "Ofrecer la grabación de las tutorías por videoconferencia y ponerla a disposición del participante, con su consentimiento previo, para que pueda repasarla",
+          "lote": null,
+          "nos_acogemos": true,
+          "tramo": "Ofrecer la grabación de las tutorías por videoconferencia y ponerla a disposición del participante, con su consentimiento previo, para que pueda repasarla",
+          "nota": "Las grabaciones se guardan en un servidor de la UE; el participante consiente cada una"
+        },
+        {
+          "criterio": "Incorporar participantes por encima del mínimo exigido por el Pliego de Prescripciones Técnicas para los cursos de este lote, sin coste adicional para la Diputación de Villaejemplo",
+          "lote": null,
+          "nos_acogemos": true,
+          "tramo": "Incorporar participantes por encima del mínimo exigido por el Pliego de Prescripciones Técnicas para los cursos de este lote, sin coste adicional para la Diputación de Villaejemplo",
+          "nota": "30 participantes adicionales sin coste"
+        },
+        {
+          "criterio": "Incorporar docentes por encima del mínimo del Pliego de Prescripciones Técnicas, que cumplan los requisitos curriculares fijados en él",
+          "lote": null,
+          "nos_acogemos": false,
+          "tramo": null
+        }
+      ],
+      "herramientas": [
+        "Chamilo 4.x",
+        "videoconferencia",
+        "hoja de cálculo en línea",
+        "Genially",
+        "Ficha de perfil institucional",
+        "asistentes de IA con datos ficticios"
+      ],
+      "enfoque": "Lote 3: cinco cursos de teleformación sobre Chamilo 1.11, administrado por la empresa y alojado en la Unión Europea. Una tutora por curso; el de jardinería y arbolado lo imparte una persona con la titulación o los dos años de experiencia que pide el pliego (descríbela por su perfil, sin nombre). Herramientas que funcionen en el navegador, sin programar. Una sola franja de atención en toda la memoria: lunes a viernes de 9:00 a 18:00. Mejoras de transferencia que podemos sostener: taller de aplicación, práctica final corregida, una sesión de apoyo por curso, plantillas de uso e informe mensual a la Diputación. Sin prometer certificaciones que no expedimos. Voz concreta: quién hace qué, cuándo y con qué herramienta.",
+      "ofertas": [
+        {
+          "lote": "3",
+          "pendiente": true,
+          "importe": null,
+          "unitarios": []
+        }
+      ]
+    }
+  },
+  "propuesta": {
+    "guion_id": 8,
+    "creada_en": "2027-10-12T19:11:41.197Z",
+    "agente": "oferta-licitaciones",
+    "avisos": [],
+    "datos": {
+      "lotes": [
+        "3"
+      ],
+      "equipo": [
+        {
+          "persona_id": 1001,
+          "rol_en_la_oferta": "Coordinadora responsable de la dirección y la gestión de los cursos",
+          "motivo": "Titulada en matemáticas con máster; lidera equipos y proyectos y ha codirigido un máster de ciencia de datos (CV, págs. 1-2). Falta confirmar vinculación y funciones de coordinación."
+        },
+        {
+          "persona_id": 1005,
+          "rol_en_la_oferta": "Tutor de asistencia informática",
+          "motivo": "Dirección técnica con diez años en ingeniería de datos e infraestructura (CV, págs. 1-2). Disponibilidad parcial: confirmar que cubre accesos e incidencias del campus."
+        },
+        {
+          "persona_id": 1003,
+          "rol_en_la_oferta": "Tutora docente de Comunicación institucional y redes sociales",
+          "motivo": "Grado en marketing y comunicación y experiencia en campañas y Perfil técnico (CV, págs. 1-2). Falta acreditar 30 h de formación TIC o 60 h de docencia online (PPT, págs. 6-8)."
+        },
+        {
+          "persona_id": 1002,
+          "rol_en_la_oferta": "Tutora docente de Administración electrónica y sede electrónica",
+          "motivo": "Grado en matemáticas y seis años en analítica e innovación digital (CV, págs. 1-2). Disponibilidad parcial; falta acreditar el umbral online (PPT, págs. 6-8)."
+        },
+        {
+          "persona_id": 1001,
+          "rol_en_la_oferta": "Tutora docente de Análisis de datos con hoja de cálculo para la gestión municipal",
+          "motivo": "Grado en matemáticas, docencia en másteres de ciencia de datos e IA y más de seis años de experiencia en Perfil técnico de datos (CV, págs. 1-2). Verificar que su docencia online suma 60 h o aportar 30 h de formación TIC (PPT, págs. 6-8)."
+        },
+        {
+          "persona_id": 1006,
+          "rol_en_la_oferta": "Tutora docente de Topografía y cartografía digital para servicios técnicos",
+          "motivo": "Grado en ciencias de la salud y experiencia en analítica y administración electrónica (CV, págs. 1-2); la titulación podría valer como alternativa del PPT, pág. 7, pero el CV no acredita experiencia en topografía ni el umbral de teleformación: confirmar antes de adscribirla."
+        }
+      ],
+      "automaticos": [
+        {
+          "criterio": "Grabación de las tutorías por videoconferencia, disponible para el participante con su consentimiento previo",
+          "lote": null,
+          "tipo": "compromiso",
+          "nos_acogemos": true,
+          "tramo": null,
+          "nivel": "Sí, se ofrece la grabación completa con consentimiento previo del participante",
+          "motivo": "Compromiso máximo (PCAP, pág. 75; Anexo V, lote 3, apartado 2). Confirmar dónde se almacenan las grabaciones y las medidas de protección de datos; declaración responsable firmada."
+        },
+        {
+          "criterio": "Incorporar participantes adicionales sobre el mínimo del lote 3",
+          "lote": null,
+          "tipo": "compromiso",
+          "nos_acogemos": true,
+          "tramo": null,
+          "nivel": "Ofrece 30 participantes adicionales",
+          "motivo": "Opción máxima del Anexo V, lote 3, apartado 3: 30 sobre el mínimo de 329, a 0,20 puntos cada uno (PCAP, pág. 76). El guion resumía de 1 a 15; el modelo llega a 30. Confirmar la capacidad del campus y de la tutoría."
+        },
+        {
+          "criterio": "Incorporar docentes adicionales sobre el mínimo, con los requisitos curriculares del PPT",
+          "lote": null,
+          "tipo": "compromiso",
+          "nos_acogemos": true,
+          "tramo": null,
+          "nivel": "Ofrece 3 tutores adicionales",
+          "motivo": "Tramo máximo del Anexo V, lote 3, apartado 4 (PCAP, págs. 76-77). Pendiente de validar: ningún candidato acredita aún las 30 h de formación TIC o 60 h de docencia online ni cubre el curso de jardinería y arbolado."
+        }
+      ],
+      "herramientas": [
+        "Python",
+        "Power BI"
+      ],
+      "enfoque": "Lote 3: cinco cursos de teleformación (PPT, págs. 3 y 6-8). En el plan de impartición (PCAP, pág. 78), una tabla semanal por curso con contenidos, horas, actividad y responsable, y además el registro de actividad, la evaluación continua, los plazos de tutoría y la sustitución de docentes. En el enfoque didáctico (PCAP, pág. 78), ejercicios prácticos, materiales interactivos, autoevaluación y las funciones reales del campus; no mencionar la grabación de tutorías, que puntúa en el sobre C. En la transferencia al puesto (PCAP, pág. 79), horas de aplicación viables, sesiones de apoyo con entregables y novedades normativas sin inventar acuerdos. No prometer certificados oficiales, convenios con ayuntamientos ni cobertura de topografía o jardinería sin evidencia. El sobre B no puede citar los tres criterios automáticos del sobre C (PCAP, págs. 77-78) ni el precio.",
+      "resumen": "Solo lote 3. Equipo propuesto con nombre, pero falta un docente acreditado de jardinería y arbolado, confirmar el de topografía y las 30 h de formación TIC o 60 h de docencia online de cada docente. Los tres automáticos al máximo (grabación de tutorías, 30 participantes y 3 docentes adicionales), pendientes de confirmar su viabilidad; el Anexo V admite hasta 30 participantes. Mantener separados los sobres B y C."
+    }
+  },
+  "personas": [
+    {
+      "persona_id": 1001,
+      "nombre": "Persona F",
+      "tipo": "interno",
+      "rol": "Dirección; Ciencia de datos",
+      "titulaciones": [
+        "Máster en matemáticas",
+        "Curso en economía y empresa",
+        "Grado en matemáticas"
+      ],
+      "certificaciones": [
+        "Curso de inteligencia artificial (IA)",
+        "Certificado de inglés B2",
+        "Certificación Azure"
+      ],
+      "anios_experiencia": 5,
+      "sectores": [
+        "comercio y turismo",
+        "servicios financieros",
+        "industria y logística",
+        "salud y seguridad",
+        "administración pública"
+      ],
+      "cpv": [],
+      "tecnologias": [
+        "R",
+        "Python",
+        "Machine Learning",
+        "Deep Learning",
+        "Data Science",
+        "Data Analytics",
+        "cuadros de mando",
+        "KPIs",
+        "Análisis de datos"
+      ],
+      "idiomas": [],
+      "disponibilidad": "disponible",
+      "activo": true
+    },
+    {
+      "persona_id": 1005,
+      "nombre": "Persona K",
+      "tipo": "interno",
+      "rol": "Dirección; Ingeniería de datos",
+      "titulaciones": [
+        "Grado de área general",
+        "Curso en ciencia de datos",
+        "Curso en marketing y comunicación",
+        "Curso en economía y empresa"
+      ],
+      "certificaciones": [
+        "Curso de inteligencia artificial (IA)",
+        "Certificación Azure"
+      ],
+      "anios_experiencia": 10,
+      "sectores": [
+        "tecnología de datos",
+        "inteligencia artificial",
+        "comercio y turismo",
+        "salud"
+      ],
+      "cpv": [],
+      "tecnologias": [
+        "Python",
+        "Apache Spark",
+        "SQL",
+        "AWS",
+        "Snowflake",
+        "ETL",
+        "Machine Learning",
+        "NLP"
+      ],
+      "idiomas": [
+        {
+          "idioma": "Español",
+          "nivel": "nativo"
+        },
+        {
+          "idioma": "Inglés",
+          "nivel": "C1"
+        }
+      ],
+      "disponibilidad": "parcial",
+      "activo": true
+    },
+    {
+      "persona_id": 1003,
+      "nombre": "Persona J",
+      "tipo": "interno",
+      "rol": "Perfil técnico",
+      "titulaciones": [
+        "Máster de área general",
+        "Grado en marketing y comunicación"
+      ],
+      "certificaciones": [],
+      "anios_experiencia": 8,
+      "sectores": [
+        "comunicación institucional",
+        "comercio y turismo",
+        "industria y logística",
+        "arquitectura"
+      ],
+      "cpv": [],
+      "tecnologias": [
+        "CRM",
+        "Google Analytics",
+        "SEO"
+      ],
+      "idiomas": [],
+      "disponibilidad": "disponible",
+      "activo": true
+    },
+    {
+      "persona_id": 1002,
+      "nombre": "Persona H",
+      "tipo": "interno",
+      "rol": "Ciencia de datos; Ingeniería de datos; Consultoría",
+      "titulaciones": [
+        "Máster en ciencia de datos",
+        "Grado en matemáticas",
+        "Curso de área general"
+      ],
+      "certificaciones": [
+        "Certificado de inglés C1",
+        "Curso de inteligencia artificial (IA)"
+      ],
+      "anios_experiencia": 5,
+      "sectores": [
+        "servicios financieros",
+        "comercio y turismo",
+        "sanidad",
+        "investigación"
+      ],
+      "cpv": [],
+      "tecnologias": [
+        "Azure Databricks",
+        "Snowflake",
+        "SAS",
+        "R",
+        "Business Intelligence",
+        "Data Science"
+      ],
+      "idiomas": [
+        {
+          "idioma": "Español",
+          "nivel": "nativo"
+        },
+        {
+          "idioma": "Inglés",
+          "nivel": "C1"
+        }
+      ],
+      "disponibilidad": "parcial",
+      "activo": true
+    },
+    {
+      "persona_id": 1006,
+      "nombre": "Persona G",
+      "tipo": "interno",
+      "rol": "Ingeniería de datos; Inteligencia artificial",
+      "titulaciones": [
+        "Máster en inteligencia artificial",
+        "Curso en estadística y ciencia de datos y inteligencia artificial",
+        "Curso en informática",
+        "Grado en estadística y ciencias de la salud",
+        "Grado en ciencias de la salud"
+      ],
+      "certificaciones": [
+        "Curso de ciencia de datos",
+        "Curso de formación",
+        "Certificación AWS",
+        "Curso de gestión de proyectos"
+      ],
+      "anios_experiencia": 3,
+      "sectores": [
+        "inteligencia artificial",
+        "datos y business intelligence",
+        "administración electrónica",
+        "biología",
+        "salud"
+      ],
+      "cpv": [],
+      "tecnologias": [
+        "Python",
+        "Power BI",
+        "Tableau",
+        "aprendizaje profundo",
+        "análisis de datos",
+        "bases de datos",
+        "estadística aplicada",
+        "AWS"
+      ],
+      "idiomas": [],
+      "disponibilidad": "disponible",
+      "activo": true
+    }
+  ]
+}

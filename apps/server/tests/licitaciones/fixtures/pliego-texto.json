@@ -1,0 +1,29 @@
+{
+  "PCAP.pdf": [
+    "PLIEGO DE CLÁUSULAS ADMINISTRATIVAS PARTICULARES\nContrato de servicios de desarrollo y mantenimiento de un cuadro de mando de datos sanitarios\nProcedimiento abierto",
+    "ÍNDICE\nCláusula 1. Objeto del contrato\nCláusula 13. Aptitud, capacidad y solvencia\nCláusula 15. Proposiciones: presentación y contenido\nCláusula 12. Criterios de adjudicación",
+    "Cláusula 1. Objeto del contrato.\nEl objeto es el desarrollo, implantación y mantenimiento evolutivo del cuadro de mando de datos asistenciales del Servicio de Salud.",
+    "Cláusula 2. Régimen jurídico.\nEl contrato tiene carácter administrativo y se rige por la Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público.",
+    "Cláusula 3. Presupuesto base de licitación.\nEl presupuesto base de licitación asciende a 363.454,00 euros, IVA excluido.",
+    "Cláusula 4. Valor estimado.\nEl valor estimado del contrato es de 573.454,00 euros, incluidas las posibles prórrogas.",
+    "Cláusula 7. Duración del contrato.\nLa duración del contrato será de dos años, con posibilidad de prórroga por dos años más.",
+    "Cláusula 13. Solvencia económica y financiera.\nLos licitadores acreditarán un volumen anual de negocios, referido al mejor ejercicio dentro de los tres últimos disponibles, por importe igual o superior a 363.454,00 euros, de conformidad con el artículo 87 de la LCSP.",
+    "Cláusula 13 bis. Solvencia técnica o profesional.\nSe acreditará mediante una relación de los principales servicios realizados de igual o similar naturaleza en los últimos tres años, cuyo importe anual acumulado en el año de mayor ejecución sea igual o superior a 105.000,00 euros.\nEmpresas de nueva creación: conforme al artículo 90.4 de la LCSP, en contratos no sujetos a regulación armonizada este requisito no será exigible a las empresas con una antigüedad inferior a cinco años.",
+    "Cláusula 12. Criterios de adjudicación.\nOferta económica: hasta 60 puntos, mediante fórmula.\nReducción del plazo de puesta en producción: hasta 20 puntos.\nMemoria técnica, criterio sujeto a juicio de valor: hasta 20 puntos.",
+    "Cláusula 15. Proposiciones.\nSobre 1: DEUC y declaración responsable.\nSobre 2: memoria técnica, máximo 80 páginas.\nSobre 3: oferta económica conforme al Anexo IV.",
+    "Cláusula 20. Subcontratación.\nNo se admite la subcontratación de ninguna de las prestaciones objeto del contrato, que deberán ser ejecutadas directamente por el adjudicatario.",
+    "Cláusula 22. Penalidades.\nEl incumplimiento de los acuerdos de nivel de servicio dará lugar a penalidades del 1 % del importe mensual.",
+    "Cláusula 25. Garantías.\nNo se exige garantía provisional. La garantía definitiva será del 5 % del precio final ofertado, IVA excluido."
+  ],
+  "Anexo I cuadro.pdf": [
+    "ANEXO I. CUADRO DE CARACTERÍSTICAS",
+    "Apartado\tContenido\nClasificación\tNo se exige\nSolvencia económica\tVolumen anual de negocios igual o superior a 363.454,00 euros\nSubcontratación\tNo se admite\nVisita obligatoria\tNo\nSeguro de responsabilidad civil\tNo exigido\nGarantía definitiva\t5 % del precio de adjudicación"
+  ],
+  "PPT.pdf": [
+    "PLIEGO DE PRESCRIPCIONES TÉCNICAS\nServicio de desarrollo del cuadro de mando de datos asistenciales.",
+    "1. Alcance técnico.\nLa solución se construirá sobre la plataforma de analítica corporativa y se integrará con el almacén de datos existente mediante servicios web.",
+    "5. Equipo de trabajo.\nEl adjudicatario adscribirá como equipo mínimo un jefe de proyecto con titulación universitaria y cinco años de experiencia en proyectos de datos, y dos analistas con tres años de experiencia en Power BI.",
+    "6. Soporte.\nLa atención a usuarios, los manuales y la formación se prestarán en castellano. El servicio se prestará en remoto, salvo las reuniones de seguimiento, que serán presenciales en las dependencias de la Consejería.",
+    "7. Seguridad de la información.\nEl adjudicatario tratará los datos como encargado del tratamiento, con estricta confidencialidad."
+  ]
+}

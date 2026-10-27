@@ -1,0 +1,143 @@
+// Los cuatro modelos de anexo en PDF de CASO_D (expediente CP-0417/2027, Consorcio Insular de
+// Archivos y Patrimonio de Isla Muestra, S.A.), inventados con la forma de un pliego impreso a PDF: sin campos
+// de formulario, huecos «……» y «___», las cartas de compromiso con sus opciones «● … (….)» y el
+// Anexo I (oferta económica) en tres páginas. Las líneas cortan donde cortaría el ancho de la página:
+// de ahí salen los párrafos que lee modeloPdf.ts (y sus números, que miran los tests).
+import { pdfDePaginas } from './pdfSintetico.js';
+
+const ENCABEZADO_CARTA = [
+  'Don/Doña ………………………………………………, con domicilio a efectos de notificaciones',
+  'en………………………..………………………………………………………………………………, nº……, con NIF',
+  'n.°………………………….., en nombre propio o en representación de la entidad',
+  '………………………………………….………….. con CIF nº……………………………, teléfono de',
+  'contacto……………………..así como con la dirección de correo electrónico “habilitada”',
+  'siguiente……………………………..……., enterado/a del pliego de condiciones particulares y de',
+  'condiciones técnicas que han de regir la contratación mediante Procedimiento Abierto',
+  'Simplificado Abreviado y Tramitación Ordinaria en dos (2) lotes de los servicios necesarios para',
+  'la ejecución del “Programa de Capacitación en Conservación y Gestión Documental para el personal',
+  'de archivos y bibliotecas de las entidades locales de la isla” dentro del marco de la actuación',
+  'denominada “Red Insular de Archivos y Bibliotecas de Muestra”, SE COMPROMETE a',
+];
+const CIERRE = ['Y para que conste, firmo la presente declaración.', 'A fecha de firma electrónica'];
+
+const ANEXOS_CASO_D: Record<string, string[][]> = {
+  'Anexo I.pdf': [
+    [
+      'ANEXO I',
+      'DECLARACIÓN RESPONSABLE Y OFERTA ECONÓMICA',
+      'Don/Doña ……………………………, con domicilio a efectos de notificaciones',
+      'en………………………..………………………………………………………………………., nº……, con NIF n.°…………..,',
+      'en nombre propio o en representación de la entidad ……………………………………con CIF',
+      'nº…………………, teléfono de contacto………………..así como con la dirección de correo electrónico',
+      '“habilitada” siguiente ………………………………………………., enterado/a del pliego de condiciones',
+      'particulares y de condiciones técnicas que han de regir la contratación mediante Procedimiento',
+      'Abierto Simplificado Abreviado y Tramitación Ordinaria en dos (2) lotes de los servicios',
+      'necesarios para la ejecución del “Programa de Capacitación en Conservación y Gestión',
+      'Documental para el personal de archivos y bibliotecas de las entidades locales de la isla”,',
+      'dentro de la actuación “Red Insular de Archivos y Bibliotecas de Muestra”.',
+      'DECLARA BAJO SU RESPONSABILIDAD',
+      'PRIMERO. Que la licitadora a la que represento formula la siguiente oferta económica: (rellenar',
+      'según los lotes a los que presente oferta).',
+      'Lote 1: DISEÑO, IMPARTICIÓN Y LOGÍSTICA DE LAS DOS JORNADAS PRESENCIALES',
+      'DE LA EDICIÓN 2027 DEL PROGRAMA DE CAPACITACIÓN EN CONSERVACIÓN',
+      'Y GESTIÓN DOCUMENTAL.',
+      'IMPORTE SIN IGIC: ___________________€',
+      'IGIC: ___________________€',
+      'IMPORTE TOTAL CON IGIC: ___________________€',
+      'Lote 2: PUESTA EN MARCHA DE UN CAMPUS VIRTUAL DE APRENDIZAJE PARA LA',
+      'FORMACIÓN CONTINUA DEL PERSONAL DE ARCHIVOS Y BIBLIOTECAS.',
+      'IMPORTE SIN IGIC: ___________________€',
+      'IGIC: ___________________€',
+      'IMPORTE TOTAL CON IGIC: ___________________€',
+      'SEGUNDO: Que en la oferta presentada se han tenido en cuenta las obligaciones vigentes en',
+      'materia de protección del empleo, condiciones de trabajo, prevención de riesgos laborales y',
+      'protección del medio ambiente.',
+      'TERCERO: Que cumple con todos los requisitos previos exigidos en el artículo 140 de la Ley',
+      '9/2017, de 8 de noviembre, de Contratos del Sector Público, para ser adjudicataria del contrato,',
+    ],
+    [
+      'en concreto:',
+      '• Que la sociedad a la que representa está válidamente constituida y que conforme a su',
+      'objeto social puede presentarse a la licitación, y que quien firma la declaración ostenta',
+      'la debida representación para presentar la proposición.',
+      '• Que no está incursa en prohibición de contratar conforme al artículo 71 de la Ley 9/2017.',
+      '• Que, si es una empresa extranjera, se somete a la jurisdicción de los juzgados y',
+      'tribunales españoles para todas las incidencias que pudieran surgir del contrato.',
+      'CUARTO.- Que declaro bajo mi responsabilidad los siguientes extremos:',
+      '• Que la sociedad a la que representa ESTÁ INSCRITA / NO ESTÁ INSCRITA en el Registro',
+      'Oficial de Licitadores y Empresas Clasificadas del Estado (táchese lo que no proceda).',
+      '• Que es una PYME / Que no es una PYME (táchese lo que no proceda).',
+      'QUINTO.- Que se compromete a acreditar los documentos a que se refiere esta declaración',
+      'si resulta propuesta como adjudicataria o cuando se le requiera.',
+      'SEXTO.-Que la licitadora a la que represento va a subcontratar SI…….NO…... (Indicar lo que',
+      'proceda según el Pliego de Condiciones Particulares).',
+      'Parte del contrato que se va a subcontratar:',
+      'Porcentaje que implica la subcontratación sobre el total:',
+    ],
+    [
+      'Importe que se va a subcontratar:',
+      'Nombre de la empresa a la que se va a subcontratar:',
+      'CIF:',
+      ...CIERRE,
+    ],
+  ],
+  'Anexo V.pdf': [[
+    'ANEXO V',
+    'CARTA DE COMPROMISO – MANTENIMIENTO ADICIONAL DEL CAMPUS VIRTUAL',
+    'DE APRENDIZAJE',
+    '(PARA EL LOTE 2, CRITERIO 2B1)',
+    ...ENCABEZADO_CARTA,
+    'prestar un servicio de mantenimiento correctivo del campus virtual de aprendizaje después del plazo',
+    'de ejecución del contrato, más allá del mínimo del epígrafe 4.3 del Pliego de Condiciones Técnicas:',
+    '(rellene con una X los espacios según corresponda).',
+    '● Mantenimiento adicional del campus virtual de aprendizaje de cuatro (4) meses, a contar desde',
+    'el 28 de diciembre de 2027 (….)',
+    '● Mantenimiento adicional del campus virtual de aprendizaje de ocho (8) meses, a contar desde',
+    'el 28 de diciembre de 2027 (….)',
+    '● No se compromete a ofertar mantenimiento adicional del campus virtual de aprendizaje',
+    'respecto al mínimo exigido en el epígrafe 4.3 del Pliego de Condiciones Técnicas (….)',
+    'Breve justificación del incremento del servicio de mantenimiento, si procede (máximo 250',
+    'palabras):',
+    ...CIERRE,
+  ]],
+  'Anexo VI.pdf': [[
+    'ANEXO VI',
+    'CARTA DE COMPROMISO – ITINERARIOS DE AUTOFORMACIÓN',
+    '(PARA EL LOTE 2, CRITERIO 2B2)',
+    ...ENCABEZADO_CARTA,
+    'elaborar y entregar, sin coste adicional, itinerarios de autoformación para el uso del campus',
+    'virtual de aprendizaje por el personal técnico de la entidad contratante y por las personas',
+    'participantes, distintos de los entregables mínimos del epígrafe 5.1 del Pliego de Condiciones',
+    'Técnicas para el lote 2: (rellene con una X los espacios según corresponda).',
+    '● Oferta de dos (2) itinerarios de autoformación (….)',
+    '● Oferta de cuatro (4) itinerarios de autoformación (….)',
+    '● Oferta de seis (6) itinerarios de autoformación (….)',
+    '● No se compromete a ofertar itinerarios de autoformación (….)',
+    'Breve justificación de la oferta de itinerarios de autoformación, si procede (máximo 250',
+    'palabras):',
+    ...CIERRE,
+  ]],
+  'Anexo VII.pdf': [[
+    'ANEXO VII',
+    'CARTA DE COMPROMISO – AMPLIACIÓN DE LAS SESIONES DE FORMACIÓN',
+    '(PARA EL LOTE 2, CRITERIO 2B3)',
+    ...ENCABEZADO_CARTA,
+    'ampliar las sesiones de formación dirigidas al personal que designe la entidad contratante,',
+    'respecto de las ocho (8) horas mínimas exigidas en el epígrafe 4.1 del Pliego de Condiciones',
+    'Técnicas. (Rellene con una X los espacios según corresponda).',
+    '● Ampliación de dos (2) horas de formación (….)',
+    '● Ampliación de cuatro (4) horas de formación (….)',
+    '● Ampliación de ocho (8) horas de formación (….)',
+    '● No se compromete a ampliar las sesiones de formación con respecto a las horas',
+    'mínimas exigidas en el epígrafe 4.1 del Pliego de Condiciones Técnicas (….)',
+    'Breve justificación de la ampliación de las sesiones de formación, si procede (máximo 250 palabras):',
+    ...CIERRE,
+  ]],
+};
+
+/** El PDF del modelo de CASO_D con ese nombre de archivo («Anexo I.pdf», «Anexo V.pdf»…). */
+export function anexoCasoD(archivo: string): Promise<Buffer> {
+  const paginas = ANEXOS_CASO_D[archivo];
+  if (!paginas) throw new Error(`CASO_D no tiene «${archivo}»`);
+  return pdfDePaginas(paginas);
+}

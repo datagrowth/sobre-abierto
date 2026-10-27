@@ -1,0 +1,16 @@
+# Todo el texto, siempre con LF (también en Windows): Prettier y EditorConfig lo exigen.
+* text=auto eol=lf
+
+# Scripts que se ejecutan dentro de contenedores Linux: siempre LF.
+*.sh text eol=lf
+# Skills que se instalan en Hermes (Linux).
+infra/hermes-init/skills/** text eol=lf
+# Fixtures de los tests: se comparan byte a byte, siempre LF (también en Windows).
+apps/server/tests/**/fixtures/** text eol=lf
+
+# Binarios: nunca convertir finales de línea (rompen los PDF de los fixtures)
+*.pdf binary
+*.docx binary
+*.xlsx binary
+*.zip binary
+*.png binary

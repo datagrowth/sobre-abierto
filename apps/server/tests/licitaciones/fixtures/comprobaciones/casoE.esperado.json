@@ -1,0 +1,27 @@
+{
+  "veredicto": "no_presentable",
+  "impide": [
+    "excluyente_vs_perfil:-:ens",
+    "nos_acogemos:-:formatos_de_descarga_de_los_registros_de_actividad",
+    "nos_acogemos:-:frecuencia_de_sincronizacion_del_registro_de_asistencia",
+    "nos_acogemos:-:sistema_de_avisos_automaticos_de_inactividad",
+    "nos_acogemos:-:asistente_virtual_de_consultas_con_disponibilidad_continua",
+    "nos_acogemos:-:volumen_de_senales_automaticas_de_inactividad_del_alumnado",
+    "nos_acogemos:-:registro_de_trazabilidad_de_la_atencion_tutorial",
+    "memoria_obsoleta:-",
+    "memoria_por_lote:-",
+    "precio:2",
+    "precio:4",
+    "empresa:-:domicilio",
+    "dato_anexo:-:impuesto"
+  ],
+  "tu": [
+    "nos_acogemos:-:volumen_de_senales_automaticas_de_inactividad_del_alumnado",
+    "nos_acogemos:-:registro_de_trazabilidad_de_la_atencion_tutorial",
+    "precio:2",
+    "precio:4",
+    "empresa:-:domicilio",
+    "dato_anexo:-:impuesto"
+  ],
+  "primer_bloqueo": "excluyente_vs_perfil:-:ens"
+}
