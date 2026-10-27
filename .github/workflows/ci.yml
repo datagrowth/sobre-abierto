@@ -1,8 +1,8 @@
 name: ci
 
 on:
-  # Sin `push` a main: fusionar ya despliega, y el CI de después repetía sobre el
-  # mismo árbol lo que el PR acababa de comprobar (la mitad de los minutos del mes).
+  # Sin `push` a main: el PR ya pasó estas comprobaciones sobre el mismo árbol, y repetirlas al
+  # fusionar solo gastaría minutos.
   # Sin paths-ignore: si el check es obligatorio para fusionar, un PR solo de docs se quedaría sin él.
   pull_request:
     branches: [main]
