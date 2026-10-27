@@ -1,9 +1,11 @@
 name: ci
 
 on:
-  # Sin `push` a main: fusionar ya despliega, y el CI de después repetía sobre el
-  # mismo árbol lo que el PR acababa de comprobar (la mitad de los minutos del mes).
+  # También en cada push a main: es lo que muestra la insignia «CI» del README, y en un repo
+  # público los minutos de Actions no cuestan.
   # Sin paths-ignore: si el check es obligatorio para fusionar, un PR solo de docs se quedaría sin él.
+  push:
+    branches: [main]
   pull_request:
     branches: [main]
 

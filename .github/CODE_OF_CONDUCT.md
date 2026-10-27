@@ -53,7 +53,7 @@ o actuar como representante designado en un evento en línea o presencial.
 ## Aplicación
 
 Los casos de comportamiento abusivo, acosador o inaceptable de otro modo pueden denunciarse a los líderes de la
-comunidad responsables de la aplicación en **conducta@sobreabierto.es**. Todas las quejas serán revisadas e
+comunidad responsables de la aplicación en **conducta@datagrowth.es**. Todas las quejas serán revisadas e
 investigadas con prontitud y de manera justa.
 
 Todos los líderes de la comunidad están obligados a respetar la privacidad y la seguridad de quien denuncie un
