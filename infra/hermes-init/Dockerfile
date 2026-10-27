@@ -1,6 +1,6 @@
 # Preparación del volumen de Hermes antes de cada arranque (ver init.sh): skills
 # del monitor, token de la Biblioteca y permisos.
-FROM alpine:3.22@sha256:2e0b81d60597f449baa56dc25d355367869d2dca4cd57e866f1e2b52af3eb55f
+FROM alpine:3.24@sha256:be2656061b536c1883c4034790e21d0a09c5aaaf51968b89368a3c0371ea2c9a
 
 # Etiquetas OCI. El release sustituye `version` por la del tag (metadata-action).
 ARG VERSION=dev
