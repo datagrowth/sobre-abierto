@@ -1,4 +1,4 @@
-// Dossier de la memoria (docs/memoria-tecnica.md, paso 1): todo lo necesario para escribirla, compuesto sin IA.
+// Dossier de la memoria (docs/como-esta-hecho/memoria-tecnica.md, paso 1): todo lo necesario para escribirla, compuesto sin IA.
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';

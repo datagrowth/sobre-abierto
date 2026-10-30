@@ -166,7 +166,7 @@ export function EstadoMcp() {
       )}
       <p className="m-0 mt-3 text-leyenda text-tinta-2">
         Las herramientas de Licitaciones, Biblioteca y Equipo para Hermes y otros agentes. La clave de cada agente está
-        en su registro y se cambia allí (docs/operacion.md).
+        en su registro y se cambia allí (docs/operar/agentes-mcp.md).
       </p>
     </Tarjeta>
   );

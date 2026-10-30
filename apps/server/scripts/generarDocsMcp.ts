@@ -1,4 +1,4 @@
-// Genera docs/mcp.md con las tools que registra la plataforma, para que herramientas y permisos
+// Genera docs/referencia/mcp.md con las tools que registra la plataforma, para que herramientas y permisos
 // no se desfasen del código.
 import fs from 'node:fs';
 import path from 'node:path';
@@ -18,6 +18,7 @@ export const ARCHIVO_MCP = path.resolve(
   '..',
   '..',
   'docs',
+  'referencia',
   'mcp.md',
 );
 

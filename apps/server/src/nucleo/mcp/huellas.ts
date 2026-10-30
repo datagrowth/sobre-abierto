@@ -142,7 +142,7 @@ async function anotarLoServido(agente: Agente, listar: Listador, cuando: string)
 /**
  * Middleware de /mcp (tras autenticar y leer el JSON): anota cada tools/list con la huella de lo
  * que se sirvió. Cuenta por token, no por proceso: un `hermes -p <perfil> mcp test` también
- * anota, por eso docs/operacion.md pide reiniciar Hermes y no probar con él. Nunca corta la petición.
+ * anota, por eso docs/operar/reiniciar-hermes.md pide reiniciar Hermes y no probar con él. Nunca corta la petición.
  */
 export function vigilarListados(listar: Listador) {
   return (req: Request, res: Response, next: NextFunction): void => {

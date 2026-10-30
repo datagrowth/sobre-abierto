@@ -41,12 +41,12 @@ Sin panel, el `docker-compose.yml` de la raíz se combina con estas variantes (`
    Las tres `HERMES_*_KEY` son las mismas que pusiste en las variables del panel. Después, **vuelve a desplegar**
    (para que `hermes-init` cree el token de cada perfil y deje bien los permisos) y reinicia el servicio `hermes`.
    Es idempotente: si el perfil existe, no lo pisa. Lo detalla
-   [docs/operacion.md](../docs/operacion.md#perfiles-de-hermes).
+   [Perfiles de Hermes](../docs/operar/perfiles-de-hermes.md).
 5. **Primer acceso:** con `MONITOR_BASIC_AUTH_USERNAME` (un correo) y `MONITOR_BASIC_AUTH_PASSWORD`; la web pide
    cambiar la contraseña al entrar y, desde ese momento, la del panel deja de entrar. Si luego se pierde el acceso,
    abre una terminal en el contenedor del monitor y ejecuta
    `node apps/server/dist/recuperarAcceso.js correo-del-admin`
-   (más en [docs/operacion.md](../docs/operacion.md#usuarios-y-recuperación-de-acceso)).
+   (más en [Usuarios y recuperación de acceso](../docs/operar/usuarios-y-acceso.md)).
 
 ## Detrás de un proxy
 

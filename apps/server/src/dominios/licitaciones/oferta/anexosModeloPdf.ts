@@ -102,7 +102,7 @@ export async function motivoNoRellenable(
   if (m.error) return m.error.message;
   if (m.data.ext === '.pdf') return motivoDePdf(db, id, m.data, d);
   if (CONVERTIBLES.has(m.data.ext) && (await disponible()).estado !== 'ok') {
-    return `El modelo es un Word antiguo (${m.data.ext}): hace falta LibreOffice en el servidor para convertirlo (ver docs/operacion.md → Documentos: LibreOffice).`;
+    return `El modelo es un Word antiguo (${m.data.ext}): hace falta LibreOffice en el servidor para convertirlo (ver docs/operar/biblioteca.md → Documentos: LibreOffice).`;
   }
   return null;
 }

@@ -96,7 +96,7 @@ test('should_read_the_state_of_each_document_in_the_library_index', () => {
   indexar(
     'L/Anexos.doc',
     'error',
-    'Documento de Word antiguo (.doc): hace falta LibreOffice en el servidor para leerlo (ver docs/operacion.md → Documentos: LibreOffice) o súbelo como .docx/.pdf.',
+    'Documento de Word antiguo (.doc): hace falta LibreOffice en el servidor para leerlo (ver docs/operar/biblioteca.md → Documentos: LibreOffice) o súbelo como .docx/.pdf.',
   );
   assert.match(
     estadoEnIndice(idx, 'L/Anexos.doc').error_indice ?? '',

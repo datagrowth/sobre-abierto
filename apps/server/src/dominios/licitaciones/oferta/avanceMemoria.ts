@@ -1,4 +1,4 @@
-// Máquina de estados pura de las fases de la memoria técnica (docs/memoria-tecnica.md).
+// Máquina de estados pura de las fases de la memoria técnica (docs/como-esta-hecho/memoria-tecnica.md).
 import { nucleo } from '../../../nucleo/contexto.js';
 import type { Db as DbNucleo } from '../../../nucleo/db.js';
 import { logger } from '../../../nucleo/log.js';

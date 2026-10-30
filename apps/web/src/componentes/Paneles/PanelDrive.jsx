@@ -35,7 +35,7 @@ function SetupNeeded({ redirectUri }) {
     <>
       <Text>
         Para conectar Drive faltan las credenciales de Google en Dokploy (<Code>GDRIVE_CLIENT_ID</Code> y{' '}
-        <Code>GDRIVE_CLIENT_SECRET</Code>). Los pasos están en <Code>docs/operacion.md</Code> → Google Drive.
+        <Code>GDRIVE_CLIENT_SECRET</Code>). Los pasos están en <Code>docs/operar/drive.md</Code>.
       </Text>
       <Text>URI de redirección autorizada que debes poner en Google Cloud:</Text>
       <div

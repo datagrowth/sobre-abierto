@@ -1,4 +1,5 @@
-// Plan de la carpeta única por licitación y su ensayo en seco (docs/operacion.md, «Carpeta de cada licitación»).
+// Plan de la carpeta única por licitación y su ensayo en seco
+// (docs/como-esta-hecho/carpetas.md, «Carpeta única por licitación»).
 import fs from 'node:fs';
 import path from 'node:path';
 import { limpiarNombre } from '../../nucleo/nombres.js';

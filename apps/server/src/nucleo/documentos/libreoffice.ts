@@ -203,7 +203,7 @@ async function ejecutarSoffice(
   if (!st?.isFile() || st.size === 0)
     return fail(
       'sin_salida',
-      'LibreOffice terminó sin producir el archivo (suele ser un perfil corrupto: ver docs/operacion.md → Documentos: LibreOffice).',
+      'LibreOffice terminó sin producir el archivo (suele ser un perfil corrupto: ver docs/operar/biblioteca.md → Documentos: LibreOffice).',
     );
   return ok(salida);
 }

@@ -304,7 +304,10 @@ test('should_list_old_word_documents_and_explain_what_is_needed_to_read_them', a
   assert.equal(data, null);
   assert.match(error ?? '', /LibreOffice/);
   if ((await disponible()).estado !== 'ok')
-    assert.match(error ?? '', /^Documento de Word antiguo \(\.doc\): hace falta LibreOffice .*docs\/operacion\.md/);
+    assert.match(
+      error ?? '',
+      /^Documento de Word antiguo \(\.doc\): hace falta LibreOffice .*docs\/operar\/biblioteca\.md/,
+    );
   fs.rmSync(path.join(vault, 'tmp'), { recursive: true });
 });
 

@@ -31,7 +31,7 @@ const NOMBRE_CONVERTIBLE: Record<string, string> = {
 /** Qué decir cuando un .doc no se puede leer: sale en «pliegos ilegibles» y bloquea la ficha. */
 function sinConversor(extension: string, estado: 'ausente' | 'apagado'): string {
   const apagado = estado === 'apagado' ? ' Está apagado con LIBREOFFICE_ACTIVO=0.' : '';
-  return `${NOMBRE_CONVERTIBLE[extension] ?? `Documento ${extension}`}: hace falta LibreOffice en el servidor para leerlo (ver docs/operacion.md → Documentos: LibreOffice) o súbelo como .docx/.pdf.${apagado}`;
+  return `${NOMBRE_CONVERTIBLE[extension] ?? `Documento ${extension}`}: hace falta LibreOffice en el servidor para leerlo (ver docs/operar/biblioteca.md → Documentos: LibreOffice) o súbelo como .docx/.pdf.${apagado}`;
 }
 // Un pliego escaneado de cientos de páginas puede pasar de 50 MB; más que esto no
 // se abre, para no quedarse sin memoria.
