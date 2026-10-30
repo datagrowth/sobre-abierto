@@ -4,9 +4,9 @@ Todos los cambios importantes de Sobre Abierto se anotan aquí. El formato sigue
 [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/) y el proyecto usa
 [versionado semántico](https://semver.org/lang/es/).
 
-## [1.0.0] - Sin publicar
+## [0.1.0] - 2026-10-28
 
-Primera versión pública, con licencia AGPL-3.0-or-later.
+Primera versión pública, con licencia AGPL-3.0-or-later. Es una versión temprana: funciona, pero aún tiene detalles por pulir antes de una 1.0.
 
 ### Añadido
 
@@ -27,4 +27,4 @@ Primera versión pública, con licencia AGPL-3.0-or-later.
   Easypanel.
 - **Primeros pasos** en el Pipeline vacío: perfil de la empresa, filtros, IA y Drive (opcional).
 
-[1.0.0]: https://github.com/datagrowth/sobre-abierto/releases/tag/v1.0.0
+[0.1.0]: https://github.com/datagrowth/sobre-abierto/releases/tag/v0.1.0

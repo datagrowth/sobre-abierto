@@ -22,7 +22,7 @@ export function repositorioDelPaquete(archivo = PAQUETE): string | null {
 
 const Version = z.object({ version: z.string().regex(/^\d+\.\d+\.\d+/) });
 
-/** La versión del package.json («1.0.0»); null si no se puede leer. */
+/** La versión del package.json («0.1.0»); null si no se puede leer. */
 export function versionDelPaquete(archivo = PAQUETE): string | null {
   try {
     const p = Version.safeParse(JSON.parse(fs.readFileSync(archivo, 'utf8')));
