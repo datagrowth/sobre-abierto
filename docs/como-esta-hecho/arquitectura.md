@@ -22,29 +22,16 @@ Tres reglas explican casi todo el diseño:
 ## Componentes
 
 ```mermaid
-flowchart LR
+flowchart TB
     N[Navegador] -->|HTTPS| C[Caddy o tu proxy]
-    C --> M
-
-    subgraph M[monitor · Node 22]
-        direction TB
-        W[Web compilada<br/>React + Vite]
-        A[API REST y Socket.io]
-        NU[Núcleo<br/>agentes · MCP · cola de IA<br/>usuarios · avisos · colaboradores]
-        LI[Dominio Licitaciones<br/>radar · ficha · oferta · mercado]
-        V[Biblioteca de Conocimiento<br/>índice FTS5 + vectores]
-        MCP[Servidor MCP /mcp]
-    end
-
-    M -->|API de runs| H[Hermes<br/>gateway · perfiles]
-    H -->|MCP + token por agente| MCP
-    H -->|lee y escribe| HD[(hermes_data<br/>Biblioteca · Salidas · perfiles)]
-    M -->|lee y escribe| HD
-    M --> DB[(plataforma_data<br/>nucleo.db · licitaciones.db)]
+    C --> M[monitor · Node 22<br/>web · API REST · Socket.io<br/>núcleo · Licitaciones · Biblioteca<br/>servidor MCP /mcp]
     M -->|Atom y pliegos| P[Plataforma de Contratación]
-    DS[drive-sync<br/>rclone bisync] <-->|bisync| GD[Google Drive]
-    DS --- HD
-    DS -->|copia diaria| GD
+    M --> DB[(plataforma_data<br/>nucleo.db · licitaciones.db)]
+    M <-->|API de runs · MCP con token por agente| H[Hermes<br/>gateway · perfiles]
+    M -->|lee y escribe| HD[(hermes_data<br/>Biblioteca · Salidas · perfiles)]
+    H -->|lee y escribe| HD
+    DS[drive-sync<br/>rclone bisync] --- HD
+    DS <-->|bisync y copia diaria| GD[Google Drive]
 ```
 
 | Servicio | Papel |
