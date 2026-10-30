@@ -426,7 +426,7 @@
           "categoria_descarte": null,
           "recomendacion_ficha": {
             "decision": "revisar",
-            "motivo": "La cifra de negocios de 2026 (268.420,15 €) supera la suma de los umbrales de los cinco lotes. Antes de seguir faltan las pruebas del profesorado, de la coordinación y de los medios, y una alternativa al ENS que el órgano acepte; también hay que confirmar la modalidad presencial y la subcontratación. La decisión es de la persona."
+            "motivo": "La cifra de negocios de 2026 (196.275,85 €) supera la suma de los umbrales de los cinco lotes. Antes de seguir faltan las pruebas del profesorado, de la coordinación y de los medios, y una alternativa al ENS que el órgano acepte; también hay que confirmar la modalidad presencial y la subcontratación. La decisión es de la persona."
           },
           "creada_en": "2027-10-13T20:34:51.000Z",
           "idioma": "es",
@@ -1255,7 +1255,7 @@
     "status": 200,
     "body": {
       "perfil": {
-        "nif": "B12345674",
+        "nif": "B00123455",
         "nombre": "ANALÍTICA EJEMPLO, S.L.",
         "domicilio": null,
         "direccion": null,
@@ -1272,11 +1272,11 @@
         "volumen_negocio": [
           {
             "anio": 2024,
-            "importe": 152310.72
+            "importe": 118640.55
           },
           {
             "anio": 2025,
-            "importe": 268420.15
+            "importe": 196275.85
           }
         ],
         "certificaciones": [],
@@ -1285,9 +1285,9 @@
         "plantilla_media": 4,
         "anios_actividad": 3,
         "cpv_experiencia": ["72", "805"],
-        "mayor_contrato_similar": 174905.36,
-        "notas": "ROLECE: inscrita desde el 16/03/2027, sin clasificación ni prohibiciones para contratar. Centro de formación acreditado por el servicio público de empleo autonómico (22 especialidades en datos, IA, Power BI, SQL, Python y big data). Empresa de nueva creación (art. 90.4 LCSP) hasta marzo de 2029. Sin ISO ni ENS; solo certificaciones individuales de Microsoft (AI-900, AZ-900, DP-900). Sin seguro de RC contratado: se contrata si se gana. Concurre siempre en solitario. Mayor contrato similar: un cliente privado (en curso).",
-        "fecha_constitucion": "2024-03-12",
+        "mayor_contrato_similar": 132480.35,
+        "notas": "ROLECE: inscrita desde el 05/10/2027, sin clasificación ni prohibiciones para contratar. Centro de formación acreditado por el servicio público de empleo autonómico (9 especialidades en análisis de datos, hojas de cálculo y programación). Empresa de nueva creación (art. 90.4 LCSP) hasta septiembre de 2029. Sin ISO ni ENS; solo certificaciones individuales de analítica de datos. Sin seguro de RC contratado: se contrata si se gana. Concurre siempre en solitario. Mayor contrato similar: un cliente privado (en curso).",
+        "fecha_constitucion": "2024-09-23",
         "tamano": "micro",
         "idiomas": ["es", "en"],
         "nombre_comercial": null,
@@ -1644,7 +1644,7 @@
                   "excluyente": true,
                   "valor_exigido": "≥ 9.649,64 €",
                   "cumple": "si",
-                  "fuente": "perfil.volumen_negocio 2025: 268.420,15 €",
+                  "fuente": "perfil.volumen_negocio 2025: 196.275,85 €",
                   "justificacion": "El ejercicio más alto del registro supera el umbral exigido para el lote 3; la prueba documental se aporta si la empresa resulta propuesta como adjudicataria.",
                   "documento": "PCAP.pdf, Anexo III",
                   "pagina": 85,
@@ -1656,7 +1656,7 @@
                   "excluyente": true,
                   "valor_exigido": "Persona titulada y vinculada, responsable de la dirección y la gestión",
                   "cumple": "dudoso",
-                  "justificacion": "La empresa se constituyó el 12/03/2024 y figura como de nueva creación en el perfil, pero falta nombrar y acreditar a la persona titulada con esa responsabilidad; el PCAP prevé una vía específica para estas empresas.",
+                  "justificacion": "La empresa se constituyó el 23/09/2024 y figura como de nueva creación en el perfil, pero falta nombrar y acreditar a la persona titulada con esa responsabilidad; el PCAP prevé una vía específica para estas empresas.",
                   "documento": "PCAP.pdf, Anexo III, pág. 87",
                   "pagina": 87,
                   "lote": "3"
@@ -1982,8 +1982,8 @@
                   "regla": "solvencia_economica",
                   "resultado_ia": "si",
                   "resultado": "si",
-                  "fuente": "perfil.volumen_negocio 2025: 268.420,15 €",
-                  "detalle": "Se exigen 9.649,64 €; el mejor de los tres últimos ejercicios es de 268.420,15 € (2025)."
+                  "fuente": "perfil.volumen_negocio 2025: 196.275,85 €",
+                  "detalle": "Se exigen 9.649,64 €; el mejor de los tres últimos ejercicios es de 196.275,85 € (2025)."
                 },
                 {
                   "indice": 2,
@@ -3587,7 +3587,7 @@
         {
           "grupo": "Empresa",
           "etiqueta": "NIF",
-          "valor": "B12345674",
+          "valor": "B00123455",
           "falta": false
         },
         {

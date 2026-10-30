@@ -204,7 +204,7 @@ test('should_backfill_copied_columns_when_opening_a_database_from_before_this_ve
   INSERT INTO licitaciones VALUES ('p-1', 'a-1', 'perfiles', 'E', 'T', NULL, 'RES', '2024-05-06T08:00:00Z', 'Órgano', 'Q9', '2', '1', 100, NULL,
     ',72000000,', 'ES300', NULL, NULL, '{}', NULL, NULL, '2024-05-06');
   INSERT INTO adjudicaciones VALUES ('p-1', '', '9', NULL, 3, NULL, NULL, 'b-123.456 78', 'X', 90, 100, 0.1, 1, 0),
-    ('p-1', '', '9', NULL, 3, NULL, NULL, 'ESB12345674', 'Y', 90, 100, 0.1, 1, 1);`);
+    ('p-1', '', '9', NULL, 3, NULL, NULL, 'ESB00765438', 'Y', 90, 100, 0.1, 1, 1);`);
   vieja.close();
 
   const db = abrirLicitaciones(dir);
@@ -227,7 +227,7 @@ test('should_backfill_copied_columns_when_opening_a_database_from_before_this_ve
   assert.deepEqual(
     { ...(filas[1] as object) },
     {
-      adjudicatario_nif: 'B12345674',
+      adjudicatario_nif: 'B00765438',
       organo_nif: 'Q9',
       cpvs: ',72000000,',
       nuts: 'ES300',

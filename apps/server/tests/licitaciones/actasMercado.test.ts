@@ -31,7 +31,7 @@ const ACTA = `ACTA DE LA MESA DE CONTRATACIÓN DE VALORACIÓN DE OFERTAS
 Órgano: Cabildo (Q0000001H)
 Licitador | CIF | Oferta económica (IVA excluido) | Puntos
 SISTEMAS EJEMPLO, S.A. | A-00.000.091 | 85.000,00 € | 45,5
-ANALÍTICA EJEMPLO SL B12345674 79.500,50 € 50
+ANALÍTICA EJEMPLO SL B00765438 79.500,50 € 50
 Persona A, con DNI 12345678Z, oferta 90.000,00 euros
 Empresa Municipal de Aguas SA
 CIF: A00000075 queda excluida por no presentar el sobre 2
@@ -43,7 +43,7 @@ test('should_read_bidders_by_valid_nif_with_name_amount_and_exclusion', () => {
     leidos.map((l) => [l.nif, l.nombre, l.importe, l.excluida]),
     [
       ['A00000091', 'SISTEMAS EJEMPLO, S.A.', 85_000, false],
-      ['B12345674', 'ANALÍTICA EJEMPLO SL', 79_500.5, false],
+      ['B00765438', 'ANALÍTICA EJEMPLO SL', 79_500.5, false],
       ['12345678Z', null, 90_000, false],
       ['A00000075', 'Empresa Municipal de Aguas SA', null, true],
     ],
@@ -133,7 +133,7 @@ test('should_save_bidders_read_by_code_and_not_ask_hermes_when_all_offers_are_th
   assert.deepEqual(
     filas.map((f) => [f.empresa_nif, f.rol, f.fuente]),
     [
-      ['B12345674', 'adjudicataria', 'acta'],
+      ['B00765438', 'adjudicataria', 'acta'],
       ['A00000091', 'licitadora', 'acta'],
       ['12345678Z', 'licitadora', 'acta'],
       ['A00000075', 'excluida', 'acta'],
@@ -193,7 +193,7 @@ test('should_send_multi_lot_records_to_hermes_within_the_daily_cap_and_accept_on
     sin_datos: false,
     licitadores: [
       {
-        nif: 'B12345674',
+        nif: 'B00765438',
         nombre: 'Analítica Ejemplo',
         lote: '1',
         rol: 'adjudicataria',
@@ -233,7 +233,7 @@ test('should_send_multi_lot_records_to_hermes_within_the_daily_cap_and_accept_on
     sin_datos: false,
     licitadores: [
       {
-        nif: 'B-12345674',
+        nif: 'B-00765438',
         nombre: 'Analítica Ejemplo',
         lote: '1',
         rol: 'adjudicataria',

@@ -10,7 +10,7 @@ export function resultadoSintetico(r: Partial<Resultado> = {}): Resultado {
     ofertas: 3,
     oferta_min: null,
     oferta_max: null,
-    adjudicatario_nif: 'B12345674',
+    adjudicatario_nif: 'B00765438',
     adjudicatario_nombre: 'Sistemas Ejemplo SA',
     importe_sin_iva: 80_000,
     importe_con_iva: null,

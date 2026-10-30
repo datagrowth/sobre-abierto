@@ -12,7 +12,7 @@ export type LicitadorLeido = {
   excluida: boolean;
 };
 
-// Un NIF con lo que suelen meter en medio («A-00.000.091», «B 12345674», «ES12345678Z»): la letra
+// Un NIF con lo que suelen meter en medio («A-00.000.091», «B 00765438», «ES12345678Z»): la letra
 // del principio, las cifras con o sin puntos y la letra de control, si la hay.
 const NIF_SUELTO = /\b(?:ES[\s-]?)?([A-Z])?[\s-]?(\d[\d.]{5,10}\d)(?:[\s-]?([A-Z]))?\b/g;
 const IMPORTE = /(\d{1,3}(?:\.\d{3})+|\d{3,}),(\d{2})(?!\d)/g;

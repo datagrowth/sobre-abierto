@@ -163,29 +163,29 @@ test('should_write_profile_amounts_in_spanish_so_agents_do_not_read_the_decimal_
   });
   const t = importesEnTexto(perfil);
   const sinEspacios = (s: string | null) => s?.replace(/\s/g, ' ');
-  assert.equal(sinEspacios(t.volumen_negocio['2025'] ?? null), '268.420,15 €');
-  assert.equal(sinEspacios(t.volumen_negocio['2024'] ?? null), '152.310,72 €');
+  assert.equal(sinEspacios(t.volumen_negocio['2025'] ?? null), '196.275,85 €');
+  assert.equal(sinEspacios(t.volumen_negocio['2024'] ?? null), '118.640,55 €');
   assert.equal(sinEspacios(t.seguro_rc), '3.000,00 €', 'también con cuatro cifras');
-  assert.equal(sinEspacios(t.mayor_contrato_similar), '174.905,36 €');
+  assert.equal(sinEspacios(t.mayor_contrato_similar), '132.480,35 €');
   assert.equal(importesEnTexto(PerfilEmpresa.parse(ANTERIOR)).seguro_rc, null);
 });
 
 test('should_give_agents_whole_euros_and_catch_amounts_read_a_hundred_times_bigger', () => {
   const perfil = PerfilEmpresa.parse({ ...ANTERIOR, volumen_negocio: [VOLUMEN_2024, VOLUMEN_2025] });
   assert.deepEqual(perfilParaAgentes(perfil).volumen_negocio, [
-    { anio: 2024, importe: 152311 },
-    { anio: 2025, importe: 268420 },
+    { anio: 2024, importe: 118641 },
+    { anio: 2025, importe: 196276 },
   ]);
   const mal = importesMalLeidos(
     perfil,
-    'El perfil registra volumen de negocio 15.231.072 € (2024) y 26.842.015 € (2025).',
+    'El perfil registra volumen de negocio 11.864.055 € (2024) y 19.627.585 € (2025).',
   );
-  assert.match(mal ?? '', /volumen de negocio de 2024: 152\.310,72\s€, no 15\.231\.072,00\s€/);
+  assert.match(mal ?? '', /volumen de negocio de 2024: 118\.640,55\s€, no 11\.864\.055,00\s€/);
   assert.match(mal ?? '', /2025/);
   for (const bien of [
-    'Volumen 268.420,15 € en 2025',
-    'Volumen 268420.15 € en 2025',
-    'Volumen 268.420 € y umbral 363.454 €',
+    'Volumen 196.275,85 € en 2025',
+    'Volumen 196275.85 € en 2025',
+    'Volumen 196.276 € y umbral 363.454 €',
     'Plazo de 24 meses',
   ]) {
     assert.equal(importesMalLeidos(perfil, bien), null, bien);

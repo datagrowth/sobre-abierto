@@ -426,7 +426,7 @@
           "categoria_descarte": null,
           "recomendacion_ficha": {
             "decision": "revisar",
-            "motivo": "La cifra de negocios de 2026 (268.420,15 €) supera la suma de los umbrales de los cinco lotes. Antes de seguir faltan las pruebas del profesorado, de la coordinación y de los medios, y una alternativa al ENS que el órgano acepte; también hay que confirmar la modalidad presencial y la subcontratación. La decisión es de la persona."
+            "motivo": "La cifra de negocios de 2026 (196.275,85 €) supera la suma de los umbrales de los cinco lotes. Antes de seguir faltan las pruebas del profesorado, de la coordinación y de los medios, y una alternativa al ENS que el órgano acepte; también hay que confirmar la modalidad presencial y la subcontratación. La decisión es de la persona."
           },
           "creada_en": "2027-10-13T20:34:51.000Z",
           "idioma": "es",
@@ -1255,7 +1255,7 @@
     "status": 200,
     "body": {
       "perfil": {
-        "nif": "B12345674",
+        "nif": "B00123455",
         "nombre": "ANALÍTICA EJEMPLO, S.L.",
         "domicilio": null,
         "direccion": null,
@@ -1272,11 +1272,11 @@
         "volumen_negocio": [
           {
             "anio": 2024,
-            "importe": 152310.72
+            "importe": 118640.55
           },
           {
             "anio": 2025,
-            "importe": 268420.15
+            "importe": 196275.85
           }
         ],
         "certificaciones": [],
@@ -1285,9 +1285,9 @@
         "plantilla_media": 4,
         "anios_actividad": 3,
         "cpv_experiencia": ["72", "805"],
-        "mayor_contrato_similar": 174905.36,
-        "notas": "ROLECE: inscrita desde el 16/03/2027, sin clasificación ni prohibiciones para contratar. Centro de formación acreditado por el servicio público de empleo autonómico (22 especialidades en datos, IA, Power BI, SQL, Python y big data). Empresa de nueva creación (art. 90.4 LCSP) hasta marzo de 2029. Sin ISO ni ENS; solo certificaciones individuales de Microsoft (AI-900, AZ-900, DP-900). Sin seguro de RC contratado: se contrata si se gana. Concurre siempre en solitario. Mayor contrato similar: un cliente privado (en curso).",
-        "fecha_constitucion": "2024-03-12",
+        "mayor_contrato_similar": 132480.35,
+        "notas": "ROLECE: inscrita desde el 05/10/2027, sin clasificación ni prohibiciones para contratar. Centro de formación acreditado por el servicio público de empleo autonómico (9 especialidades en análisis de datos, hojas de cálculo y programación). Empresa de nueva creación (art. 90.4 LCSP) hasta septiembre de 2029. Sin ISO ni ENS; solo certificaciones individuales de analítica de datos. Sin seguro de RC contratado: se contrata si se gana. Concurre siempre en solitario. Mayor contrato similar: un cliente privado (en curso).",
+        "fecha_constitucion": "2024-09-23",
         "tamano": "micro",
         "idiomas": ["es", "en"],
         "nombre_comercial": null,
@@ -1777,7 +1777,7 @@
                   "excluyente": true,
                   "valor_exigido": "Umbral indicado por lote; se suman si se ofertan varios (PCAP L2: 23.520,00 €, aunque su valor estimado es 23.968,00 €).",
                   "cumple": "si",
-                  "fuente": "plataforma_empresa: cifra de negocios 2026, 268.420,15 €",
+                  "fuente": "plataforma_empresa: cifra de negocios 2026, 196.275,85 €",
                   "justificacion": "La cifra de negocios más alta acreditada supera incluso la suma del presupuesto de los cinco lotes de interés (97.216,00 €). La empresa se constituyó el 13/03/2024; si se aplicara el régimen de empresa de nueva creación, el pliego pide medios alternativos solo cuando no hayan podido depositarse cuentas; el umbral económico, por sí solo, se cumple.",
                   "documento": "PCAP firmado.pdf",
                   "pagina": 19
@@ -1788,7 +1788,7 @@
                   "excluyente": true,
                   "valor_exigido": "5 servicios por lote salvo la excepción de empresa nueva; coordinación con titulación superior y 3 años de gestión",
                   "cumple": "si",
-                  "fuente": "plataforma_empresa: constituida el 2024-03-12; colaboradores_buscar: 5 internos con titulación para coordinar",
+                  "fuente": "plataforma_empresa: constituida el 2024-09-23; colaboradores_buscar: 5 internos con titulación para coordinar",
                   "justificacion": "La sociedad tiene menos de cinco años y el pliego admite expresamente la exención del número de servicios (PCAP pág. 21). Hay personal propio con titulación superior, pero colaboradores_buscar no comprobó los tres años de gestión de la coordinación: debe verificarse en el CV y acreditarse; la excepción de empresa nueva no exime de la coordinación.",
                   "documento": "PCAP firmado.pdf",
                   "pagina": 21
@@ -2080,7 +2080,7 @@
               ],
               "recomendacion": {
                 "decision": "revisar",
-                "motivo": "La cifra de negocios de 2026 (268.420,15 €) supera la suma de los umbrales de los cinco lotes. Antes de seguir faltan las pruebas del profesorado, de la coordinación y de los medios, y una alternativa al ENS que el órgano acepte; también hay que confirmar la modalidad presencial y la subcontratación. La decisión es de la persona."
+                "motivo": "La cifra de negocios de 2026 (196.275,85 €) supera la suma de los umbrales de los cinco lotes. Antes de seguir faltan las pruebas del profesorado, de la coordinación y de los medios, y una alternativa al ENS que el órgano acepte; también hay que confirmar la modalidad presencial y la subcontratación. La decisión es de la persona."
               },
               "presentacion_lotes": {
                 "regla": "uno_o_varios",
@@ -3803,7 +3803,7 @@
         {
           "grupo": "Empresa",
           "etiqueta": "NIF",
-          "valor": "B12345674",
+          "valor": "B00123455",
           "falta": false
         },
         {

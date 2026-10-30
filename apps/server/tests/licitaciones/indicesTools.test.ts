@@ -30,7 +30,7 @@ function base() {
           resultadoSintetico({
             fecha: reciente(50 + i),
             ofertas: 3,
-            adjudicatario_nif: persona ? '12345678Z' : 'B12345674',
+            adjudicatario_nif: persona ? '12345678Z' : 'B00765438',
             adjudicatario_nombre: persona ? 'Persona A' : 'Sistemas Ejemplo SA',
           }),
         ],
@@ -72,7 +72,7 @@ test('should_list_likely_bidders_and_who_actually_bid_on_a_resolved_tender', () 
   assert.deepEqual(
     r.data!.presentados.map((p) => [p.nif, p.rol, p.fuente]),
     [
-      ['B12345674', 'adjudicataria', 'placsp'],
+      ['B00765438', 'adjudicataria', 'placsp'],
       ['A00000075', 'licitadora', 'acta'],
     ],
   );
