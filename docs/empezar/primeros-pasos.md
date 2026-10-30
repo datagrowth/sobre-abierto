@@ -65,8 +65,8 @@ La primera sincronización con la Plataforma de Contratación trae oportunidades
 15 minutos. El histórico de adjudicaciones se carga en segundo plano y alimenta los rankings de competidores y
 organismos.
 
-Hermes criba dos veces al día lo que pasa el prefiltro. Para no esperar, pulsa **Cribar ahora** en el estado del radar
-(Ajustes › Fuentes y filtros). Luego abre **Oportunidades**:
+Hermes criba dos veces al día lo que pasa el prefiltro. Para no esperar, abre **Oportunidades** y pulsa **Cribar ahora**
+en la cabecera. Cuando termine:
 
 - **Por revisar** tiene lo que encaja o merece una mirada, con la opinión de Hermes («Encaja», «Encaja con dudas» o
   «No encaja») y su motivo en la fila.
