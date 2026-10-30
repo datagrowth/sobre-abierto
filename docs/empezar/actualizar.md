@@ -1,7 +1,7 @@
 # Actualizar
 
 Cómo pasar a una versión nueva y volver atrás si hace falta. Antes de empezar, lee las notas de la versión en el
-[CHANGELOG](../CHANGELOG.md): avisa cuando hay que reiniciar Hermes o cambiar algo en el `.env`.
+[CHANGELOG](../../CHANGELOG.md): avisa cuando hay que reiniciar Hermes o cambiar algo en el `.env`.
 
 **No actualices con trabajos de IA en marcha ni cerca de un plazo de presentación.** El monitor se reinicia y puede
 tocar reiniciar Hermes, lo que corta los runs en curso. Mira la pastilla *Hermes* de la barra lateral: debe estar
@@ -25,7 +25,7 @@ quieta.
    Guarda las copias, y una del `.env`, fuera del servidor (el `.env` lleva claves: cifrado o en un gestor de secretos).
 
    Qué se guarda y cómo restaurarlo, con todas las variantes, está en
-   [operacion.md](operacion.md#copias-de-seguridad-y-restauración).
+   [Copias de seguridad y restauración](../operar/copias-y-restauracion.md).
 
 2. **Elige la versión.** En el `.env`, `SOBRE_ABIERTO_VERSION=1.1.0`. Los archivos Compose y las imágenes de una
    versión van juntos: si instalaste con el script, `--actualizar` baja los de esa versión; si instalaste con un clon
@@ -48,7 +48,7 @@ quieta.
 
 5. **Reinicia Hermes si hace falta.** Hermes carga sus skills y la lista de herramientas solo al arrancar. Si la
    versión las cambia, los trabajos de IA esperarán con «herramientas desfasadas» hasta que lo reinicies, con la cola
-   quieta: `docker compose restart hermes` (ver [operacion.md](operacion.md#reiniciar-hermes)).
+   quieta: `docker compose restart hermes` (ver [Reiniciar Hermes](../operar/reiniciar-hermes.md)).
 
 ## Qué pasa con los datos
 

@@ -1,5 +1,5 @@
 // Migración a la carpeta única por licitación, lanzada por una persona desde Ajustes › Drive.
-// Sigue el plan de carpetaUnica.ts (docs/operacion.md, sección «Carpeta de cada licitación»).
+// Sigue el plan de carpetaUnica.ts (docs/como-esta-hecho/carpetas.md, «Carpeta única por licitación»).
 import fs from 'node:fs';
 import path from 'node:path';
 import { z } from 'zod';

@@ -49,7 +49,7 @@ El repo no lleva datos reales de ninguna empresa, persona, cliente ni oferta:
   fixtures. Es idempotente: en un árbol limpio no cambia nada.
 
 Si añades un fixture, invéntalo; no copies una oferta, un pliego anotado ni un CV. La estructura de los tests y de sus
-fixtures está en [apps/server/tests/README.md](../apps/server/tests/README.md).
+fixtures está en [apps/server/tests/README.md](../../apps/server/tests/README.md).
 
 ## Recorridos e2e (Playwright)
 
@@ -104,8 +104,8 @@ infra/
 docs/                 instalación, configuración, operación, arquitectura, MCP, memoria técnica y FAQ
 ```
 
-Detalle técnico en [arquitectura.md](arquitectura.md); operación de una instalación en
-[operacion.md](operacion.md).
+Detalle técnico en [Arquitectura](../como-esta-hecho/arquitectura.md); operación de una instalación en
+[Operar](../operar/README.md).
 
 ## Todos los comandos
 
@@ -122,7 +122,7 @@ Node 22+. Un solo `npm install` en la raíz instala todas las apps (npm workspac
 | `npm run lint` | ESLint de server y web (sin avisos; lo exige el CI) |
 | `npm run format:check` | Comprueba el formato con Prettier (lo exige el CI). `npm run format` formatea todo el repo |
 | `npx knip` | Archivos, exports y dependencias sin uso (configuración en la clave `knip` de `package.json`; no es una dependencia del repo). Debe salir limpio |
-| `npm run docs:mcp -w @sobre-abierto/server` | Regenera `docs/mcp.md` (tools MCP y permisos) a partir del registro de tools. Un test falla si el archivo está desfasado |
+| `npm run docs:mcp -w @sobre-abierto/server` | Regenera `docs/referencia/mcp.md` (tools MCP y permisos) a partir del registro de tools. Un test falla si el archivo está desfasado |
 | `npm run licencias` | Revisa la licencia de cada dependencia del `package-lock.json` y falla si alguna es incompatible con la AGPL (SSPL, BUSL, Commons Clause, no comercial, GPL-2.0 sin «o posterior», sin licencia). Lo exige el CI |
 | `npm run e2e -w @sobre-abierto/web` | Recorridos e2e con Playwright, en dos bancos: `servidor` (`*.spec.mjs`: aviso de versión, `409 version_antigua`, lotes) compila su propia web y arranca un servidor con datos temporales; `fixtures` (`*.spec.js`: lista, ficha, Comprobaciones) sirve el build con `vite preview` en `:4173` y responde la API desde `apps/web/e2e/datos` (`e2e/api.js`), sin servidor ni Socket.io. Uno solo: `npm run e2e -w @sobre-abierto/web -- --project fixtures`. La primera vez, `npx playwright install chromium`. No entra en `npm test` ni en el CI de GitHub (a propósito): se lanza en local antes de dar por cerrada una rama |
 | `npm run e2e:datos -w @sobre-abierto/server` | Regenera `apps/web/e2e/datos/<oferta>.json` (y los `casoE.impacto.*.json`) con las rutas reales sobre los fixtures de las comprobaciones de las 5 ofertas, en una base temporal y con el reloj en la hora de la captura. Falla sin escribir nada si una respuesta lleva un NIF de persona, un correo o un teléfono. Hay que lanzarlo cuando cambie una respuesta de la API que lean los recorridos |
@@ -135,7 +135,7 @@ bases temporales y fixtures sintéticos, y ninguno lee un `.env` ni toca datos r
 | Script | Para qué |
 |---|---|
 | `npm run e2e:datos -w @sobre-abierto/server` | Regenera los datos de los e2e (`respuestasE2E.ts`). |
-| `npm run docs:mcp -w @sobre-abierto/server` | Regenera `docs/mcp.md` (`generarDocsMcp.ts`). |
+| `npm run docs:mcp -w @sobre-abierto/server` | Regenera `docs/referencia/mcp.md` (`generarDocsMcp.ts`). |
 | `npm run demo:base -w @sobre-abierto/server -- [destino]` | Crea una base local nueva con las cinco ofertas de ejemplo, para recorrer la web a mano (`baseDemo.ts`). |
 | `npm run banco:respuestas -w @sobre-abierto/server -- preparar\|puntuar <dir>` | Banco de 30 respuestas libres del asistente de la oferta para medir un modelo; hacen falta 27 aciertos (`bancoRespuestas.ts`). |
 | `npx tsx scripts/evalMemorias.ts --caso casoG` | Banco de pruebas de memorias: encola juicios ciegos por pares de un caso de `tests/licitaciones/fixtures/eval/` y compara el veredicto con el esperado (`evalMemorias.ts`). |

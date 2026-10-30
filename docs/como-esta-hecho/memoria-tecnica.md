@@ -416,7 +416,7 @@ sigue ilegible se sustituye por una remisión a la sección.
 Para que la nota sea fiable:
 
 1. Crea `critico-licitaciones` en Hermes **con otro modelo** que el de oferta y configura su URL y su
-   clave (`docs/operacion.md`).
+   clave ([Perfiles de Hermes](../operar/perfiles-de-hermes.md)).
 2. Pasa el banco con un caso cuyo esperado sea la memoria de referencia: el juez debe preferirla.
 3. Añade al caso una memoria de la plataforma. Orientación: en una rúbrica de 25 puntos, 21 o más de
    media y a 3 puntos o menos de la referencia.

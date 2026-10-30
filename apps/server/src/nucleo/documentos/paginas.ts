@@ -75,7 +75,7 @@ export type MemoriaGenerada = {
 
 const AVISO_CONVERSOR = {
   ausente:
-    'Sin LibreOffice en el servidor: el índice va sin páginas y las páginas son una estimación (ver docs/operacion.md → Documentos: LibreOffice).',
+    'Sin LibreOffice en el servidor: el índice va sin páginas y las páginas son una estimación (ver docs/operar/biblioteca.md → Documentos: LibreOffice).',
   apagado:
     'LibreOffice está apagado (LIBREOFFICE_ACTIVO=0): el índice va sin páginas y las páginas son una estimación.',
 } as const;

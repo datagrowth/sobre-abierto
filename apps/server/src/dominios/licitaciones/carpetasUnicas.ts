@@ -1,7 +1,7 @@
 // Dónde está la carpeta única de cada licitación: Licitaciones/Ofertas/<expediente> · <título corto> (<id>)/.
 import type { Db } from './store.js';
 
-// Ver docs/operacion.md, sección «Carpeta de cada licitación». Se guarda al crear la carpeta (tabla
+// Ver docs/como-esta-hecho/carpetas.md, sección «Carpeta única por licitación». Se guarda al crear la carpeta (tabla
 // carpetas_unicas) y no se recalcula: si cambia el título en la PLACSP, la carpeta sigue siendo la misma.
 // Mientras una licitación no tiene la suya, todo sigue donde estaba (Radar o Presentadas para los pliegos,
 // Salidas para la oferta).

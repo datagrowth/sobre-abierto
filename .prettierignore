@@ -6,7 +6,7 @@ package-lock.json
 tmp
 
 # Documentación: el texto se ajusta a mano a 120 columnas. Prettier realinearía las tablas y renumeraría las
-# listas anidadas, y el diff de cada cambio de texto se llenaría de ruido. docs/mcp.md se genera con `npm run docs:mcp`.
+# listas anidadas, y el diff de cada cambio de texto se llenaría de ruido. docs/referencia/mcp.md se genera con `npm run docs:mcp`.
 *.md
 
 # Los tests comparan estos archivos byte a byte; los e2e los regeneran desde los fixtures.

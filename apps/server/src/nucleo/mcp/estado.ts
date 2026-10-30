@@ -4,7 +4,7 @@ import { nucleo } from '../contexto.js';
 import type { Db } from '../db.js';
 
 // Los datos salen de la auditoría. Las claves viven en el registro de agentes y se cambian allí
-// (docs/operacion.md); aquí solo se ven.
+// (docs/operar/agentes-mcp.md); aquí solo se ven.
 export type EstadoMcp = { agentes: number; ultima_llamada: string | null; llamadas_24h: number };
 
 export function estadoMcp(db: Db, ahoraMs = Date.now()): EstadoMcp {

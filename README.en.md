@@ -9,7 +9,7 @@
 (PLACSP), uses AI to screen what fits your company, and helps you prepare the bid: tender sheet, team, price,
 technical proposal and annexes. It runs on your server, with your data and your AI provider.
 
-[Español](README.md) · [Installation (Spanish)](docs/instalacion.md) · [Functional specification (Spanish)](docs/especificacion.md) · [Architecture (Spanish)](docs/arquitectura.md)
+[Español](README.md) · [Documentation (Spanish)](https://docs.sobreabierto.datagrowth.es) · [Installation (Spanish)](docs/empezar/instalacion.md) · [User guide (Spanish)](docs/guia/README.md) · [Architecture (Spanish)](docs/como-esta-hecho/arquitectura.md)
 
 > The interface, the AI-generated text and the documentation are in **Spanish**, and the product is designed for
 > Spanish public procurement (PLACSP, CPV codes, DEUC, Spanish company registries). This page is a translation of the
@@ -30,7 +30,7 @@ technical proposal and annexes. It runs on your server, with your data and your 
 Code downloads and normalizes PLACSP, computes deadlines, amounts and past awards, and checks that a bid is complete.
 The AI reads the tender documents, drafts and critiques, but **only proposes**: a person decides. All AI runs in
 Hermes, so the platform holds no model keys and you can switch providers without touching the code. The design, with
-diagrams, is in [docs/arquitectura.md](docs/arquitectura.md) (Spanish).
+diagrams, is in [docs/como-esta-hecho/arquitectura.md](docs/como-esta-hecho/arquitectura.md) (Spanish).
 
 ## Status
 
@@ -50,13 +50,13 @@ bash install.sh
 
 It asks for the admin email, the domain (optional) and the AI provider; generates the keys, starts everything, creates
 the Hermes profiles and, at the end, prints the address and an initial password (the web asks you to change it on
-first login and it stops working afterwards; see [first access](docs/instalacion.md#primer-acceso) and, if you lose
-access, [how to recover it](docs/operacion.md#usuarios-y-recuperación-de-acceso)). The first screen walks you through
+first login and it stops working afterwards; see [first access](docs/empezar/instalacion.md#primer-acceso) and, if you lose
+access, [how to recover it](docs/operar/usuarios-y-acceso.md)). The first screen walks you through
 the *first steps*: your company profile, which tenders to look for, and the AI. Run it again at any time: it never
 changes a value already in `.env`. `bash install.sh --ayuda` lists every option.
 
 Requirements, manual installation with Compose or with a panel (Dokploy, Coolify, Easypanel), and how to pick the
-model for each profile are in [docs/instalacion.md](docs/instalacion.md) (Spanish).
+model for each profile are in [docs/empezar/instalacion.md](docs/empezar/instalacion.md) (Spanish).
 
 ## Privacy
 
@@ -66,21 +66,17 @@ data only reaches Hermes in the bid profile, never the other agents.
 
 ## Documentation
 
-All of it is in Spanish.
+All of it is in Spanish, in [docs/](docs/README.md) (one folder per section) and published at
+[docs.sobreabierto.datagrowth.es](https://docs.sobreabierto.datagrowth.es).
 
 | | |
 |---|---|
-| [docs/instalacion.md](docs/instalacion.md) | Requirements, installation and choosing the AI provider |
-| [docs/configuracion.md](docs/configuracion.md) | Settings in the web app and `.env` variables |
-| [docs/operacion.md](docs/operacion.md) | Operating an installation: Drive, email, profiles, backups |
-| [docs/actualizar.md](docs/actualizar.md) | Upgrading and rolling back |
-| [docs/especificacion.md](docs/especificacion.md) | What it does, screen by screen |
-| [docs/arquitectura.md](docs/arquitectura.md) | How it is built |
-| [docs/memoria-tecnica.md](docs/memoria-tecnica.md) | How the technical proposal is drafted and evaluated |
-| [docs/mcp.md](docs/mcp.md) | MCP tools and agent permissions |
-| [docs/desarrollo.md](docs/desarrollo.md) | Development environment and tests |
-| [docs/faq.md](docs/faq.md) | Frequently asked questions |
-| [CONTRIBUTING.md](.github/CONTRIBUTING.md) · [SECURITY.md](.github/SECURITY.md) | How to contribute · how to report a vulnerability |
+| [Empezar](docs/empezar/README.md) | Getting started: what it is, installation, first steps, settings and upgrades |
+| [Guía de uso](docs/guia/README.md) | User guide, screen by screen: radar, opportunities, pipeline, bid file, market… |
+| [Operar](docs/operar/README.md) | Running an installation: backups, restarts, users, Drive, email and security |
+| [Referencia](docs/referencia/README.md) | Reference: environment variables, MCP tools, roles and permissions, FAQ |
+| [Cómo está hecho](docs/como-esta-hecho/README.md) | How it is built: architecture, technical proposal and bid folders |
+| [Contribuir](docs/contribuir/README.md) | Contributing: development, [CONTRIBUTING.md](.github/CONTRIBUTING.md) and [SECURITY.md](.github/SECURITY.md) |
 
 ## License
 

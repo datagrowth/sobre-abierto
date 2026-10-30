@@ -1,4 +1,4 @@
-// docs/mcp.md se genera del registro de tools: si cambia una tool, un permiso o un parámetro,
+// docs/referencia/mcp.md se genera del registro de tools: si cambia una tool, un permiso o un parámetro,
 // hay que volver a generarlo con «npm run docs:mcp -w @sobre-abierto/server».
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
@@ -10,7 +10,7 @@ test('should_match_docs_mcp_with_registered_tools', () => {
   assert.equal(
     actual,
     generarDocumentoMcp(),
-    'docs/mcp.md desfasado: ejecuta npm run docs:mcp -w @sobre-abierto/server',
+    'docs/referencia/mcp.md desfasado: ejecuta npm run docs:mcp -w @sobre-abierto/server',
   );
 });
 

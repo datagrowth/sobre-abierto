@@ -53,7 +53,7 @@ coverage/
 # Resultados de Playwright (npm run e2e)
 test-results/
 playwright-report/
-# Capturas de referencia de visual.spec.js: cada máquina genera las suyas (docs/desarrollo.md)
+# Capturas de referencia de visual.spec.js: cada máquina genera las suyas (docs/contribuir/desarrollo.md)
 apps/web/e2e/*-snapshots/
 
 # ─── Registros y temporales ───────────────────────────────────────

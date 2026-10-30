@@ -281,7 +281,7 @@ crear_perfiles() {
     MODELO_LICITACIONES="${MODELO_LICITACIONES:-$(preguntar 'Modelo para la criba y las fichas' "$modelo_por_defecto")}"
     [ -n "$MODELO_LICITACIONES" ] || fallo "Falta el modelo: MODELO_LICITACIONES=… bash install.sh"
     # Oferta y crítico: el de la criba si no se indica otro, aunque lo ideal es un modelo mejor para la oferta y
-    # uno de otra familia para el crítico (docs/instalacion.md, «Proveedor de IA»): con terminal se preguntan.
+    # uno de otra familia para el crítico (docs/empezar/instalacion.md, «Proveedor de IA»): con terminal se preguntan.
     MODELO_OFERTA="${MODELO_OFERTA:-$(preguntar 'Modelo para la memoria de la oferta (el mejor que puedas pagar)' "$MODELO_LICITACIONES")}"
     MODELO_CRITICO="${MODELO_CRITICO:-$(preguntar 'Modelo del crítico (de otra familia que el de la oferta)' "$MODELO_OFERTA")}"
     if [ "$proveedor" = local ]; then
@@ -347,11 +347,11 @@ resumen() {
   fi
   if [ "${PROVEEDOR_ELEGIDO:-ninguno}" = ninguno ]; then
     msg ""
-    msg "Falta elegir el modelo de IA: abre Ajustes › Hermes, o vuelve a ejecutar con LLM_PROVEEDOR=… (docs/instalacion.md, «Proveedor de IA»)."
+    msg "Falta elegir el modelo de IA: abre Ajustes › Hermes, o vuelve a ejecutar con LLM_PROVEEDOR=… (docs/empezar/instalacion.md, «Proveedor de IA»)."
   elif [ -n "${MODELO_CRITICO:-}" ] && [ "${MODELO_CRITICO:-}" = "${MODELO_OFERTA:-}" ]; then
     msg ""
     msg "El crítico usa el mismo modelo que la oferta y tiende a darse buena nota: pon otro, de otra familia, en"
-    msg "Ajustes › Hermes (docs/instalacion.md, «Proveedor de IA»)."
+    msg "Ajustes › Hermes (docs/empezar/instalacion.md, «Proveedor de IA»)."
   fi
   msg ""
   msg "Guarda el archivo $ENV_FILE: lleva las claves. Siguiente paso: completa el perfil de tu empresa en Ajustes › Empresa."

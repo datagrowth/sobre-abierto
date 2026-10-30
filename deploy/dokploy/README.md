@@ -18,4 +18,4 @@ Pasos:
 3. En **Domains**, asigna el dominio al servicio `monitor`, puerto `3110`, con HTTPS.
 4. Despliega y crea los perfiles de Hermes como indica [deploy/README.md](../README.md#lo-común-a-los-tres).
 
-La guía completa de operación (reinicios, copias, restauración) está en [docs/operacion.md](../../docs/operacion.md).
+La guía completa de operación (reinicios, copias, restauración) está en [Operar](../../docs/operar/README.md).

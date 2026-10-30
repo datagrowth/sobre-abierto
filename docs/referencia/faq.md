@@ -1,11 +1,14 @@
 # Preguntas frecuentes
 
+Respuestas cortas a lo que más se pregunta antes de instalar y al empezar a usar Sobre Abierto, con el enlace a la
+página que lo explica entero.
+
 ## General
 
 **¿Qué hace y qué no hace?**
 Vigila la Plataforma de Contratación del Sector Público (PLACSP), criba lo que encaja con tu empresa y te ayuda a
 preparar la oferta. No presenta la oferta por ti: genera los documentos, y una persona los firma y los sube a la
-plataforma del órgano de contratación. Las pantallas, una a una, están en [especificacion.md](especificacion.md).
+plataforma del órgano de contratación. Las pantallas, una a una, están en [Guía de uso](../guia/README.md).
 
 **¿Funciona fuera de España?**
 No. Está pensada para la contratación pública española: PLACSP, códigos CPV, DEUC, clasificación de contratistas y la
@@ -25,7 +28,7 @@ tu SMTP y, si lo activas, Google Drive. Tu proveedor de IA recibe los textos que
 
 **¿Qué servidor necesito?**
 Linux (amd64 o arm64) con Docker 24 o posterior y Compose v2, 6 GB de memoria como mínimo (8 GB recomendados), 2 CPU y
-20 GB de disco. Un VPS modesto basta. Ver [instalacion.md](instalacion.md).
+20 GB de disco. Un VPS modesto basta. Ver [Instalación](../empezar/instalacion.md).
 
 **¿Puedo usar un modelo local, sin pagar a un proveedor?**
 Sí: `LLM_PROVEEDOR=local` con `LLM_URL` apuntando a cualquier servidor compatible con la API de OpenAI (Ollama, LM
@@ -56,12 +59,12 @@ perfil de la empresa: es lo que Hermes compara con cada pliego.
 **La IA no hace nada.**
 Los trabajos esperan si falta el modelo o la clave de un perfil, si el proveedor ha llegado a su límite de uso (la cola
 se pausa 30 minutos) o si Hermes tiene una lista de herramientas anterior a la última actualización. Ajustes › Hermes
-lo dice con el motivo. Ver [operacion.md](operacion.md#reiniciar-hermes).
+lo dice con el motivo. Ver [Reiniciar Hermes](../operar/reiniciar-hermes.md).
 
 **¿Cuánto cuesta cada licitación?**
 Depende del modelo. Una ficha completa gasta entre 0,4 y 1 millón de tokens; la memoria técnica, bastante más. Cada
 trabajo guarda el modelo y los tokens, así que puedes medir tu caso con cinco licitaciones (ver
-[instalacion.md](instalacion.md#cuánto-cuesta-una-licitación)).
+[Cuánto cuesta una licitación](../empezar/instalacion.md#cuánto-cuesta-una-licitación)).
 
 **Los plazos no coinciden con mi hora.**
 Los plazos de la PLACSP son siempre en hora peninsular. Si la zona horaria de tu empresa (Ajustes › Empresa) es otra,
@@ -77,22 +80,22 @@ decide un administrador.
 **¿Dónde están mis datos?**
 En dos bases SQLite del volumen `plataforma_data` (usuarios, perfil de la empresa, ofertas, memorias, cola de IA) y en
 el volumen `hermes_data` (la Biblioteca, las carpetas de cada licitación y los perfiles de Hermes). El histórico de la
-PLACSP se puede volver a descargar. La copia de seguridad está en [operacion.md](operacion.md#copias-de-seguridad-y-restauración).
+PLACSP se puede volver a descargar. La copia de seguridad está en [Copias de seguridad y restauración](../operar/copias-y-restauracion.md).
 
 **¿Qué ve el agente de IA?**
-Solo lo que sus herramientas MCP le dejan ver, según sus permisos ([mcp.md](mcp.md)). Los datos de CV solo llegan al
+Solo lo que sus herramientas MCP le dejan ver, según sus permisos ([Servidor MCP](mcp.md)). Los datos de CV solo llegan al
 perfil de oferta. El crítico de la memoria recibe un paquete anonimizado y no puede leer la Biblioteca.
 
 **He encontrado una vulnerabilidad.**
-Avisa de forma privada siguiendo [SECURITY.md](../.github/SECURITY.md); no abras una incidencia pública.
+Avisa de forma privada siguiendo [SECURITY.md](../../.github/SECURITY.md); no abras una incidencia pública.
 
 ## Licencia
 
 **¿Puedo usarlo en mi empresa?**
-Sí, con la [AGPL-3.0-or-later](../LICENSE). Si ofreces a otras personas, por red, una versión modificada, debes darles
+Sí, con la [AGPL-3.0-or-later](../../LICENSE). Si ofreces a otras personas, por red, una versión modificada, debes darles
 su código fuente; el pie de la aplicación enlaza al código. Usarlo sin modificar dentro de tu
 empresa no te obliga a nada más.
 
 **¿Puedo usar el nombre y el logo?**
 Para decir que usas el software, sí; para presentar un producto propio como Sobre Abierto, no. Ver
-[TRADEMARKS.md](../TRADEMARKS.md).
+[TRADEMARKS.md](../../TRADEMARKS.md).

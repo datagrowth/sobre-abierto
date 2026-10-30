@@ -2,7 +2,7 @@
 // el reloj de la captura. Un cambio que mueva más de un 0,2 % de píxeles falla; si es a propósito, se
 // regeneran con `npx playwright test e2e/visual.spec.js --project=fixtures --update-snapshots=all` y se
 // revisan. Va en .spec.js (banco de fixtures), no en .mjs (servidor real). Las referencias no van en
-// el repo: dependen del sistema y de sus fuentes, y cada máquina genera las suyas (docs/desarrollo.md).
+// el repo: dependen del sistema y de sus fuentes, y cada máquina genera las suyas (docs/contribuir/desarrollo.md).
 // Y a 400 px: Oportunidades, la ficha, Aprendizaje, la Oferta y la Revisión sin desplazamiento horizontal.
 import { test, expect } from '@playwright/test';
 import { desbordeHorizontal, servirFixture } from './api.js';

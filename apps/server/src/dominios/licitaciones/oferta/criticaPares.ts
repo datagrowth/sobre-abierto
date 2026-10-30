@@ -1,4 +1,4 @@
-// Crítica por pares de las rondas ≥ 1 de la memoria (docs/memoria-tecnica.md, paso 5).
+// Crítica por pares de las rondas ≥ 1 de la memoria (docs/como-esta-hecho/memoria-tecnica.md, paso 5).
 import { z } from 'zod';
 import { nombreEmpresa } from '../../../nucleo/empresa.js';
 import { emitir } from '../../../nucleo/eventos.js';

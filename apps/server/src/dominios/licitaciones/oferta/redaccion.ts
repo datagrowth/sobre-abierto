@@ -1,4 +1,4 @@
-// Redacción de la memoria entera en un run (docs/memoria-tecnica.md, paso 3), con la estrategia como contrato.
+// Redacción de la memoria entera en un run (docs/como-esta-hecho/memoria-tecnica.md, paso 3), con la estrategia como contrato.
 import { z } from 'zod';
 import type { Db as DbNucleo } from '../../../nucleo/db.js';
 import { nombreEmpresa } from '../../../nucleo/empresa.js';

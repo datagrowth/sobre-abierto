@@ -1,4 +1,4 @@
-// Estrategia de la memoria (docs/memoria-tecnica.md, paso 2): el contrato de la redacción, que Hermes piensa antes.
+// Estrategia de la memoria (docs/como-esta-hecho/memoria-tecnica.md, paso 2): el contrato de la redacción, que Hermes piensa antes.
 import { z } from 'zod';
 import type { Db as DbNucleo } from '../../../nucleo/db.js';
 import { nombreEmpresa } from '../../../nucleo/empresa.js';

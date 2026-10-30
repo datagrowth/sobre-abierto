@@ -1,8 +1,8 @@
 # Instalación
 
 Sobre Abierto corre en un servidor tuyo con Docker. Esta guía cubre los requisitos, las tres formas de instalarlo, el
-primer acceso y la elección del proveedor de IA. Para mantener la instalación después, ver [operacion.md](operacion.md);
-para ajustarla, [configuracion.md](configuracion.md).
+primer acceso y la elección del proveedor de IA. Cuando la web abra, sigue con [Primeros pasos](primeros-pasos.md); para
+ajustarla, [Configuración](configuracion.md), y para mantenerla después, la sección [Operar](../operar/README.md).
 
 ## Requisitos
 
@@ -42,7 +42,7 @@ LLM_PROVEEDOR=anthropic LLM_API_KEY=sk-ant-... bash install.sh
 
 Puedes ejecutarlo otra vez cuando quieras: **no cambia ningún valor que ya esté en el `.env`** y solo reinicia Hermes si
 algo de los perfiles cambió. Si no llega a GHCR, sigue con las imágenes que ya tenga. `bash install.sh --ayuda` lista
-todas las variables y opciones; para pasar a otra versión, ver [actualizar.md](actualizar.md).
+todas las variables y opciones; para pasar a otra versión, ver [Actualizar](actualizar.md).
 
 ## Con Compose a mano
 
@@ -58,32 +58,26 @@ docker compose up -d
 - Para compilar las imágenes en vez de descargarlas: `-f deploy/docker-compose.build.yml`.
 
 Los perfiles de Hermes los crea `install.sh`. Si instalas a mano, créalos como indica
-[operacion.md](operacion.md#perfiles-de-hermes).
+[Perfiles de Hermes](../operar/perfiles-de-hermes.md).
 
 ## Con un panel (Dokploy, Coolify, Easypanel)
 
-Las plantillas y los pasos de cada panel están en [deploy/](../deploy/README.md).
+Las plantillas y los pasos de cada panel están en [deploy/](../../deploy/README.md).
 
 ## Primer acceso
 
 Entra con el correo y la contraseña que enseñó el script. Por defecto la web escucha en `http://localhost:3110`; en un
 servidor remoto, abre un túnel con `ssh -L 3110:127.0.0.1:3110 usuario@servidor` o usa tu dominio. Nunca publiques el
-puerto sin HTTPS: lleva contraseñas.
+puerto sin HTTPS: lleva contraseñas. Antes de abrirlo a Internet, repasa
+[Seguridad del servidor](../operar/seguridad.md).
 
 **Si pierdes el acceso.** La contraseña del `.env` (`MONITOR_BASIC_AUTH_PASSWORD`) es solo la inicial: en cuanto un
 administrador elige la suya, deja de entrar. Para recuperarla, desde el servidor:
 `docker compose exec monitor node apps/server/dist/recuperarAcceso.js tu@correo` escribe una contraseña temporal que la
-web te obliga a cambiar al entrar. Más en [operacion.md](operacion.md#usuarios-y-recuperación-de-acceso).
+web te obliga a cambiar al entrar. Más en [Usuarios y recuperación de acceso](../operar/usuarios-y-acceso.md).
 
-La primera pantalla, el Pipeline, te lleva por los **primeros pasos**:
-
-1. El perfil de tu empresa (Ajustes › Empresa): solvencia, certificaciones, trabajos hechos y personas.
-2. Qué licitaciones buscar (Ajustes › Fuentes y filtros): CPV, importes y regiones.
-3. La IA (Ajustes › Hermes): comprueba que los tres perfiles responden.
-4. Opcional: Google Drive y el correo.
-
-La primera sincronización con la Plataforma de Contratación trae oportunidades en unos minutos. El histórico de
-adjudicaciones se carga en segundo plano y alimenta los rankings de competidores y organismos.
+La primera pantalla, el Pipeline, te lleva por los **primeros pasos**: el perfil de tu empresa, qué licitaciones
+buscar, la IA y, si quieres, Google Drive y el correo. Están explicados uno a uno en [Primeros pasos](primeros-pasos.md).
 
 ## Proveedor de IA
 
@@ -117,24 +111,7 @@ por ficha. Si tu proveedor tiene cupo, limita la concurrencia con `HERMES_RUNS_A
 Sin Drive, la Biblioteca y las carpetas de cada licitación están en el disco del servidor, y el radar, la ficha y la
 oferta funcionan igual. Con Drive, esas carpetas se sincronizan en ambos sentidos con tu cuenta y, si pones
 `GDRIVE_BACKUP=1` en el `.env`, se hace una copia de seguridad diaria. Arranca con `--profile drive` y conéctalo en Ajustes › Drive con tu propio cliente OAuth de
-Google; los pasos están en [operacion.md](operacion.md#google-drive).
-
-## Seguridad del servidor
-
-- **Cortafuegos.** Docker publica sus puertos saltándose UFW: deja publicados solo el 80 y el 443 (con Caddy) o
-  ninguno (monitor en `127.0.0.1` y acceso por túnel). Hermes (`9119`, `8642`) no se publica nunca. Si puedes,
-  limita también la salida de red del servidor a lo que usa (PLACSP, tu proveedor de IA, SMTP, Google).
-- **Actualizaciones.** Actualiza el sistema operativo y Docker, y la plataforma con `bash install.sh --actualizar`
-  (verifica los archivos contra el `SHA256SUMS` de la release) seguido de `docker compose pull && docker compose up -d`.
-  Fija `SOBRE_ABIERTO_VERSION` a una versión en el `.env` en vez de `latest`. Puedes comprobar una imagen con
-  `gh attestation verify oci://ghcr.io/datagrowth/sobre-abierto-monitor:<versión> --repo datagrowth/sobre-abierto`.
-- **Docker 26 o superior.** El Compose monta Conocimiento en solo lectura para Hermes con una subruta del volumen.
-- **Secretos.** Están en el `.env` (modo 600). Rótalos cada cierto tiempo y siempre que alguien con acceso se vaya:
-  cambia `MONITOR_SESSION_SECRET` (cierra todas las sesiones), `API_SERVER_KEY` y las claves de los proveedores.
-- **Si sospechas una intrusión.** Para el Compose (`docker compose stop`), conserva los logs y una copia del volumen,
-  rota todos los secretos y las contraseñas de los usuarios, revoca los tokens de Ajustes › Integraciones y el acceso
-  de la aplicación en tu cuenta de Google, y restaura desde una copia anterior al incidente.
-- **Sin login.** Con `MONITOR_AUTH=off` todos son administrador: solo en un ordenador personal.
+Google; los pasos están en [Google Drive](../operar/drive.md).
 
 ## Si algo falla
 
@@ -142,8 +119,8 @@ Google; los pasos están en [operacion.md](operacion.md#google-drive).
 |---|---|
 | El script dice que falta Docker Compose v2 | `docker compose version` debe responder; el antiguo `docker-compose` no vale. |
 | La web no abre | `docker compose ps` y `docker compose logs --tail 100 monitor`. Si hay un error de configuración, el monitor sale con la lista de variables inválidas. |
-| Entras, pero la IA no responde | Ajustes › Hermes: ¿los tres perfiles tienen modelo y clave? Reinicia Hermes después de cambiarlos (ver [operacion.md](operacion.md#reiniciar-hermes)). |
+| Entras, pero la IA no responde | Ajustes › Hermes: ¿los tres perfiles tienen modelo y clave? Reinicia Hermes después de cambiarlos (ver [Reiniciar Hermes](../operar/reiniciar-hermes.md)). |
 | No llegan oportunidades | Ajustes › Fuentes y filtros: ¿hay CPV propios y no los de ejemplo? La sincronización corre cada 15 minutos. |
 | El puerto 3110 está ocupado | Cambia `MONITOR_PUERTO` en el `.env` y vuelve a ejecutar `docker compose up -d`. |
 
-Más preguntas frecuentes en [faq.md](faq.md).
+Más preguntas frecuentes en [Preguntas frecuentes](../referencia/faq.md).

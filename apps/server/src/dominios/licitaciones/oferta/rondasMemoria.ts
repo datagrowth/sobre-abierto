@@ -1,4 +1,4 @@
-// Rondas de reescritura de la memoria dentro de la misma versión (docs/memoria-tecnica.md, paso 6).
+// Rondas de reescritura de la memoria dentro de la misma versión (docs/como-esta-hecho/memoria-tecnica.md, paso 6).
 import { nucleo } from '../../../nucleo/contexto.js';
 import { logger } from '../../../nucleo/log.js';
 import { EvaluacionDatos } from '../propuestas/evaluacion.js';

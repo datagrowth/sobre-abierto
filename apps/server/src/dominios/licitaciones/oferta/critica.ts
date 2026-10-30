@@ -1,4 +1,4 @@
-// Crítico ciego de la memoria (docs/memoria-tecnica.md, paso 5), sin decisiones, estrategia ni equipo.
+// Crítico ciego de la memoria (docs/como-esta-hecho/memoria-tecnica.md, paso 5), sin decisiones, estrategia ni equipo.
 import { z } from 'zod';
 import { nombreEmpresa } from '../../../nucleo/empresa.js';
 import { emitir } from '../../../nucleo/eventos.js';

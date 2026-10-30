@@ -1,4 +1,4 @@
-// Coherencia de la memoria contra su hoja de hechos (docs/memoria-tecnica.md, paso 4). Puro: sin base de datos.
+// Coherencia de la memoria contra su hoja de hechos (docs/como-esta-hecho/memoria-tecnica.md, paso 4). Puro: sin base de datos.
 import { textoComparable } from '../temas.js';
 import type { HechoData } from './estrategia.js';
 import { frases } from './fugas.js';

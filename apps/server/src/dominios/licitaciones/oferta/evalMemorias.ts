@@ -1,4 +1,4 @@
-// Banco de pruebas de memorias (docs/memoria-tecnica.md, paso 8): mide si la plataforma redacta como una de referencia.
+// Banco de pruebas de memorias (docs/como-esta-hecho/memoria-tecnica.md, paso 8): mide si la plataforma redacta como una de referencia.
 import crypto from 'node:crypto';
 import fs from 'node:fs';
 import path from 'node:path';

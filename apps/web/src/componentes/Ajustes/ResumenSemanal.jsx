@@ -147,8 +147,8 @@ export default function ResumenSemanal() {
       {datos && !datos.smtp && (
         <div className="mb-3">
           <Aviso tono="aviso">
-            El envío por email no está configurado (SMTP): se guarda, pero no sale ningún email. Ver docs/operacion.md,
-            «Correo (SMTP)».
+            El envío por email no está configurado (SMTP): se guarda, pero no sale ningún email. Ver
+            docs/operar/correo-calendario-api.md, «Correo (SMTP)».
           </Aviso>
         </div>
       )}

@@ -48,7 +48,7 @@ Desde la raíz. **Todo en verde antes de abrir el PR**: es lo mismo que comprueb
 | `npm run e2e -w @sobre-abierto/web` | Recorridos con Playwright. Solo en local, antes de cerrar una rama; no van en el CI |
 
 Un test suelto: `cd apps/server && npx tsx --test tests/<ruta>.test.ts`. Más detalle (datos de prueba, e2e,
-capturas) en [docs/desarrollo.md](../docs/desarrollo.md).
+capturas) en [Desarrollo](../docs/contribuir/desarrollo.md).
 
 ## Reglas del código
 
@@ -63,8 +63,9 @@ capturas) en [docs/desarrollo.md](../docs/desarrollo.md).
   tests usan la empresa ficticia de `apps/server/tests/fixtures/empresaEjemplo.ts` y fixtures inventados.
   `.gitleaks.toml` lo vigila en el CI.
 - **Toda la IA corre en Hermes.** El monitor no tiene claves de ningún modelo.
-- Un cambio de comportamiento visible actualiza [docs/especificacion.md](../docs/especificacion.md) y, si cambia el
-  diseño, [docs/arquitectura.md](../docs/arquitectura.md), en el mismo PR.
+- Un cambio de comportamiento visible actualiza su página de la [Guía de uso](../docs/guia/README.md) y, si cambia el
+  diseño, [Arquitectura](../docs/como-esta-hecho/arquitectura.md), en el mismo PR. Una página nueva de `docs/` se
+  añade al índice (`README.md`) de su carpeta.
 
 ## Commits y PR
 

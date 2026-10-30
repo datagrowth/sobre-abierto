@@ -61,7 +61,7 @@ services:
           subpath: conocimiento
     # El registro de agentes (tokens y permisos.json) es del monitor: oculto para Hermes, que solo
     # necesita el token de su propio perfil. Los perfiles comparten contenedor y no son una frontera
-    # de seguridad entre sí (docs/arquitectura.md, «Seguridad»).
+    # de seguridad entre sí (docs/como-esta-hecho/arquitectura.md, «Seguridad»).
     tmpfs:
       - /opt/data/.agentes
     # Sin privilegios de más: la imagen arranca como root y baja al usuario del agente.
@@ -147,7 +147,7 @@ services:
       HERMES_RUNS_A_LA_VEZ: ${HERMES_RUNS_A_LA_VEZ:-2}
       AGENTES_PETICIONES_MINUTO: ${AGENTES_PETICIONES_MINUTO:-120}
       # Perfil de Hermes que hace la criba y los análisis (API de runs); vacío = la
-      # IA queda en espera y el radar funciona igual (ver docs/operacion.md).
+      # IA queda en espera y el radar funciona igual (ver docs/operar/perfiles-de-hermes.md).
       HERMES_LICITACIONES_URL: ${HERMES_LICITACIONES_URL:-}
       HERMES_LICITACIONES_KEY: ${HERMES_LICITACIONES_KEY:-}
       # Perfil de Hermes para preparar ofertas (otro modelo); vacío = el de licitaciones.
@@ -183,7 +183,7 @@ services:
       LICITACIONES_CARPETA_RADAR: ${LICITACIONES_CARPETA_RADAR:-Licitaciones/Radar}
       LICITACIONES_CARPETA_PRESENTADAS: ${LICITACIONES_CARPETA_PRESENTADAS:-Licitaciones/Presentadas}
       # Avisos por email (resumen semanal, plazos, resoluciones, búsquedas guardadas): el SMTP del
-      # correo de la empresa. Sin SMTP_HOST no sale ningún email (ver docs/operacion.md, Correo).
+      # correo de la empresa. Sin SMTP_HOST no sale ningún email (ver docs/operar/correo-calendario-api.md).
       SMTP_HOST: ${SMTP_HOST:-}
       SMTP_PUERTO: ${SMTP_PUERTO:-587}
       SMTP_TLS: ${SMTP_TLS:-0}
@@ -196,7 +196,7 @@ services:
       APP_SOURCE_URL: ${APP_SOURCE_URL:-}
       FRONTEND_URL: ${FRONTEND_URL:-}
       # Botón "Drive" del monitor: conecta la cuenta y elige la carpeta; lo guarda
-      # en DRIVE_STATE_DIR, que drive-sync lee (ver docs/operacion.md, Google Drive).
+      # en DRIVE_STATE_DIR, que drive-sync lee (ver docs/operar/drive.md).
       GDRIVE_CLIENT_ID: ${GDRIVE_CLIENT_ID:-}
       GDRIVE_CLIENT_SECRET: ${GDRIVE_CLIENT_SECRET:-}
       DRIVE_STATE_DIR: /drive-state
@@ -251,7 +251,7 @@ services:
       GDRIVE_BACKUP_SOURCE: /opt/data
       # Bases de datos de la plataforma, copiadas con la API de backup de SQLite.
       PLATAFORMA_BACKUP_DIR: /datos
-      # 0 = sin copia a Drive (p. ej. si ya hay copia del VPS); ver docs/operacion.md.
+      # 0 = sin copia a Drive (p. ej. si ya hay copia del VPS); ver docs/operar/drive.md.
       GDRIVE_BACKUP: ${GDRIVE_BACKUP:-1}
       # diaria | semanal | no: el histórico se reconstruye desde la PLACSP y la BDNS.
       GDRIVE_BACKUP_PLATAFORMA: ${GDRIVE_BACKUP_PLATAFORMA:-semanal}
