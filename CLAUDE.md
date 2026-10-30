@@ -9,15 +9,18 @@ Idioma: todo en español (nombres de dominio, commits, docs y comentarios).
 
 ## Fuentes de verdad
 
-- Qué hace y cómo se usa → `docs/especificacion.md` (el `README.md` es la portada)
-- Cómo está hecho → `docs/arquitectura.md`
-- Instalar, configurar, operar y actualizar → `docs/instalacion.md`, `docs/configuracion.md`,
-  `docs/operacion.md`, `docs/actualizar.md`
-- Memoria técnica de las ofertas → `docs/memoria-tecnica.md`
-- Herramientas MCP y permisos → `docs/mcp.md` (generado: `npm run docs:mcp -w @sobre-abierto/server`)
-- Desarrollo y pruebas → `docs/desarrollo.md`
+La documentación vive en `docs/`, una carpeta por sección y una página por tema; el índice de cada carpeta
+(`README.md`) da el orden del menú del portal de documentación. Una página nueva se añade a ese índice.
 
-Son largos: busca la sección con Grep en vez de leerlos enteros.
+- Qué hace y cómo se usa (la especificación funcional) → `docs/guia/`, una página por módulo (el `README.md` de la
+  raíz es la portada)
+- Cómo está hecho → `docs/como-esta-hecho/arquitectura.md`; memoria técnica → `docs/como-esta-hecho/memoria-tecnica.md`
+- Instalar, configurar y actualizar → `docs/empezar/`; operar una instalación → `docs/operar/`
+- Variables, roles y FAQ → `docs/referencia/`; herramientas MCP y permisos → `docs/referencia/mcp.md` (generado:
+  `npm run docs:mcp -w @sobre-abierto/server`)
+- Desarrollo y pruebas → `docs/contribuir/desarrollo.md`
+
+Busca la sección con Grep en vez de leer las páginas enteras.
 
 ## Comandos
 
@@ -63,8 +66,8 @@ fuera de ella o el CI.
   `apps/server/tests/fixtures/empresaEjemplo.ts`, personas como «Persona A» y fixtures sintéticos
   (`apps/server/tests/licitaciones/fixtures/`; `perfilesGenericos.mjs` y `generalizarFixtures.mjs`
   quitan lo que identifica a alguien). Nada de clientes, ofertas presentadas, NIF ni correos reales.
-- Trabaja en rama + PR. Un cambio de comportamiento visible actualiza `docs/especificacion.md` /
-  `docs/arquitectura.md` en el mismo PR.
+- Trabaja en rama + PR. Un cambio de comportamiento visible actualiza su página de `docs/guia/` /
+  `docs/como-esta-hecho/arquitectura.md` en el mismo PR.
 
 ## Convenciones
 

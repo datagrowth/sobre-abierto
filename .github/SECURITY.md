@@ -1,5 +1,8 @@
 # Política de seguridad
 
+Cómo avisar de un fallo de seguridad de Sobre Abierto sin hacerlo público, qué plazos seguimos y qué cuenta como
+vulnerabilidad. Al final, el modelo de amenaza y lo que debe vigilar quien instala.
+
 ## Cómo avisar de una vulnerabilidad
 
 **No abras una issue pública.** Avísanos en privado con el
@@ -38,7 +41,7 @@ inyección de prompt es el riesgo principal. Se mitiga con permisos mínimos por
 ninguno), herramientas que solo proponen, decisiones de personas y auditoría de cada llamada MCP. **Los perfiles de
 Hermes no son una frontera de seguridad mientras compartan contenedor**, y su red de salida no está restringida:
 si te importa, pon un cortafuegos de salida o un proxy en el servidor. Más en
-[docs/arquitectura.md](../docs/arquitectura.md#seguridad).
+[Arquitectura](../docs/como-esta-hecho/arquitectura.md#seguridad).
 
 Con `MONITOR_AUTH=off` no hay login y todo el que llegue al puerto es administrador (y usa la terminal de Hermes):
 solo para un ordenador personal, nunca expuesto.
@@ -49,4 +52,4 @@ El instalador deja el monitor escuchando solo en `127.0.0.1` y genera claves ale
 hazlo con HTTPS (el override de Caddy lo trae), cambia la contraseña inicial en el primer acceso y no publiques el
 puerto de Hermes (`9119`, `8642`): nunca hace falta fuera del Compose. Desde el primer cambio, la contraseña del
 `.env` deja de entrar; si pierdes el acceso, el comando de
-[docs/operacion.md](../docs/operacion.md#usuarios-y-recuperación-de-acceso) pone una temporal desde dentro del contenedor.
+[Usuarios y recuperación de acceso](../docs/operar/usuarios-y-acceso.md) pone una temporal desde dentro del contenedor.

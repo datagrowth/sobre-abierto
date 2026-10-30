@@ -1,8 +1,8 @@
 # Arquitectura
 
 Cómo está hecho Sobre Abierto y por qué. Qué hace cada pantalla está en
-[especificacion.md](especificacion.md); cómo se opera una instalación, en [operacion.md](operacion.md); el
-entorno de desarrollo, en [desarrollo.md](desarrollo.md).
+[Guía de uso](../guia/README.md); cómo se opera una instalación, en [Operar](../operar/README.md); el
+entorno de desarrollo, en [Desarrollo](../contribuir/desarrollo.md).
 
 ## Idea central
 
@@ -121,7 +121,7 @@ flowchart TD
 - **El resultado sale de la PLACSP.** Es un hecho publicado: el código lo compara con el NIF del perfil. Lo que una
   persona pone a mano manda, y una UTE no se decide sola.
 
-La memoria técnica tiene su propio documento: [memoria-tecnica.md](memoria-tecnica.md). En resumen, toda memoria
+La memoria técnica tiene su propio documento: [Memoria técnica](memoria-tecnica.md). En resumen, toda memoria
 nueva recorre las mismas fases (dossier, estrategia, ficha de solución, redacción entera, crítica ciega, corrección
 de hechos y fin) y su estado vive en `memorias.fase` (vacía en una versión subida a mano o montada por el método
 anterior). «Nueva versión», «Actualizar los apartados afectados» y la fase `ronda_memoria` de `licitaciones_pedir`
@@ -179,7 +179,7 @@ reintentar) y alrededor van `colaTipos.ts` (tipos y registro), `colaOrden.ts` (p
 Hermes, sus perfiles y cualquier cliente MCP (Claude Code, por ejemplo) usan las mismas herramientas por el
 endpoint `/mcp`. Cada agente tiene su token y su conjunto de permisos (`leer` o `proponer` por dominio); una tool
 solo se registra si el agente puede usarla, y cada llamada queda en la auditoría. La lista completa, generada del
-código, está en [mcp.md](mcp.md).
+código, está en [Servidor MCP](../referencia/mcp.md).
 
 Los datos de CV de las personas solo llegan a los perfiles de Licitaciones (el de oferta y el de criba y fichas, que
 los necesita para los requisitos de medios personales); el resto de agentes no tiene Colaboradores salvo que
