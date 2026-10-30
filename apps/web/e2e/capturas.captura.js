@@ -312,9 +312,12 @@ test('presentadas', async ({ page }) => {
   // La columna de lo presentado: a la derecha solo dice «Elige una propuesta».
   const kpis = await page.getByTestId('presentadas-kpis').boundingBox();
   const fin = await finDe(page.getByTestId('presentada-7'));
+  const pestanas = await page.getByRole('tablist').first().boundingBox();
   const x = Math.floor(kpis.x - 24);
+  const y = Math.floor(pestanas.y - 12);
   // Es una columna larga y estrecha: a 1x se ve entera sin ocupar media página de la documentación.
-  await guardar(page, ['docs/presentadas'], { clip: { x, y: 0, width: kpis.width + 48, height: fin }, escala: 'css' });
+  const clip = { x, y, width: kpis.width + 48, height: fin - y };
+  await guardar(page, ['docs/presentadas'], { clip, escala: 'css' });
 });
 
 test('primeros-pasos', async ({ page }) => {
