@@ -88,6 +88,22 @@ Revísalas a ojo (están en `apps/web/e2e/visual.spec.js-snapshots/`). Desde ent
 `npm run e2e -w @sobre-abierto/web` compara contra ellas: un cambio de más de un 0,2 % de
 píxeles falla. Si el cambio es a propósito, vuelve a generarlas con la misma orden y revísalas.
 
+### Capturas de la documentación y de la web
+
+Las imágenes de esta documentación (los huecos `<!-- captura: id · descripción -->`) y las de la web del producto
+salen de un script de Playwright aparte, que no entra en `npm test` ni en `npm run e2e`:
+
+```sh
+CAPTURAS_DIR=/ruta/de/salida npm run capturas -w @sobre-abierto/web
+```
+
+Reutiliza el banco de fixtures (el build servido con `vite preview`, sin API detrás) con los datos sintéticos de
+`apps/web/e2e/capturas-datos.js` encima: la empresa ficticia, «Persona A…» y órganos «de Ejemplo». Escribe
+`docs/<id>.png` y `web/<id>.png` en `CAPTURAS_DIR`, a 1440 px de ancho y a 2x (a 1x si una pasa de 400 KB). Cada
+captura está en `apps/web/e2e/capturas.captura.js`: una pantalla nueva con hueco en la documentación lleva su
+captura ahí. Si el Chromium de Playwright no está instalado, `CAPTURAS_CHROME` apunta a otro (p. ej. el Chrome del
+sistema). Mira cada imagen antes de publicarla: que enseñe lo que dice su descripción y nada que parezca real.
+
 ## Estructura del repo
 
 ```
@@ -125,6 +141,7 @@ Node 22+. Un solo `npm install` en la raíz instala todas las apps (npm workspac
 | `npm run docs:mcp -w @sobre-abierto/server` | Regenera `docs/referencia/mcp.md` (tools MCP y permisos) a partir del registro de tools. Un test falla si el archivo está desfasado |
 | `npm run licencias` | Revisa la licencia de cada dependencia del `package-lock.json` y falla si alguna es incompatible con la AGPL (SSPL, BUSL, Commons Clause, no comercial, GPL-2.0 sin «o posterior», sin licencia). Lo exige el CI |
 | `npm run e2e -w @sobre-abierto/web` | Recorridos e2e con Playwright, en dos bancos: `servidor` (`*.spec.mjs`: aviso de versión, `409 version_antigua`, lotes) compila su propia web y arranca un servidor con datos temporales; `fixtures` (`*.spec.js`: lista, ficha, Comprobaciones) sirve el build con `vite preview` en `:4173` y responde la API desde `apps/web/e2e/datos` (`e2e/api.js`), sin servidor ni Socket.io. Uno solo: `npm run e2e -w @sobre-abierto/web -- --project fixtures`. La primera vez, `npx playwright install chromium`. No entra en `npm test` ni en el CI de GitHub (a propósito): se lanza en local antes de dar por cerrada una rama |
+| `CAPTURAS_DIR=<carpeta> npm run capturas -w @sobre-abierto/web` | Saca las capturas de la documentación y de la web con datos sintéticos sobre el banco de fixtures (ver «Capturas de la documentación y de la web», arriba). Fuera de `npm test` y de `npm run e2e` |
 | `npm run e2e:datos -w @sobre-abierto/server` | Regenera `apps/web/e2e/datos/<oferta>.json` (y los `casoE.impacto.*.json`) con las rutas reales sobre los fixtures de las comprobaciones de las 5 ofertas, en una base temporal y con el reloj en la hora de la captura. Falla sin escribir nada si una respuesta lleva un NIF de persona, un correo o un teléfono. Hay que lanzarlo cuando cambie una respuesta de la API que lean los recorridos |
 
 ### Scripts de `apps/server/scripts/`
