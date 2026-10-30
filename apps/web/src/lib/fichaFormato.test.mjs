@@ -23,7 +23,7 @@ const INDICES = {
   competencia: { ofertas: 3, p_un_licitador: 0.25 },
   baja: { esperada: 0.085, rango: { p25: 0.051, p50: 0.08, p75: 0.128 }, umbral_anormal: 0.25 },
   resumen: '3 ofertas esperadas (2-5) · 1 de cada 4 con un solo licitador · n = 41, CPV 4 dígitos, confianza alta',
-  licitadores: [{ nif: 'B12345674', nombre: 'Sistemas Ejemplo', evidencia: 'ganó 4 parecidas' }],
+  licitadores: [{ nif: 'B00765438', nombre: 'Sistemas Ejemplo', evidencia: 'ganó 4 parecidas' }],
   concentracion: null,
   acierto: {
     baja: { texto: 'La baja esperada se desvía de media 5,8 puntos (prueba hacia atrás, 12 meses, n = 120)' },

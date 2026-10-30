@@ -35,7 +35,7 @@
           "excluyente": true,
           "valor_exigido": "≥ 9.649,64 €",
           "cumple": "si",
-          "fuente": "perfil.volumen_negocio 2025: 268.420,15 €",
+          "fuente": "perfil.volumen_negocio 2025: 196.275,85 €",
           "justificacion": "El ejercicio más alto del registro supera el umbral exigido para el lote 3; la prueba documental se aporta si la empresa resulta propuesta como adjudicataria.",
           "documento": "PCAP.pdf, Anexo III",
           "pagina": 85,
@@ -47,7 +47,7 @@
           "excluyente": true,
           "valor_exigido": "Persona titulada y vinculada, responsable de la dirección y la gestión",
           "cumple": "dudoso",
-          "justificacion": "La empresa se constituyó el 12/03/2024 y figura como de nueva creación en el perfil, pero falta nombrar y acreditar a la persona titulada con esa responsabilidad; el PCAP prevé una vía específica para estas empresas.",
+          "justificacion": "La empresa se constituyó el 23/09/2024 y figura como de nueva creación en el perfil, pero falta nombrar y acreditar a la persona titulada con esa responsabilidad; el PCAP prevé una vía específica para estas empresas.",
           "documento": "PCAP.pdf, Anexo III, pág. 87",
           "pagina": 87,
           "lote": "3"
@@ -373,8 +373,8 @@
           "regla": "solvencia_economica",
           "resultado_ia": "si",
           "resultado": "si",
-          "fuente": "perfil.volumen_negocio 2025: 268.420,15 €",
-          "detalle": "Se exigen 9.649,64 €; el mejor de los tres últimos ejercicios es de 268.420,15 € (2025)."
+          "fuente": "perfil.volumen_negocio 2025: 196.275,85 €",
+          "detalle": "Se exigen 9.649,64 €; el mejor de los tres últimos ejercicios es de 196.275,85 € (2025)."
         },
         {
           "indice": 2,

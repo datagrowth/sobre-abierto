@@ -37,7 +37,7 @@ test('should_seed_one_awarded_row_per_award_with_a_valid_nif', () => {
   assert.deepEqual(
     filas.map((f) => [f.lote, f.empresa_nif, f.empresa_nombre, f.rol, f.importe_ofertado, f.fuente]),
     [
-      ['', 'B12345674', 'Sistemas Ejemplo SA', 'adjudicataria', 80_000, 'placsp'],
+      ['', 'B00765438', 'Sistemas Ejemplo SA', 'adjudicataria', 80_000, 'placsp'],
       ['4', '12345678Z', null, 'adjudicataria', 80_000, 'placsp'],
     ],
   );
@@ -62,7 +62,7 @@ test('should_reseed_from_the_placsp_and_keep_what_an_acta_added', () => {
   guardarParticipacion(db, {
     licitacion_id: 'p-1',
     lote: '',
-    empresa_nif: 'B12345674',
+    empresa_nif: 'B00765438',
     rol: 'licitadora',
     importe_ofertado: null,
     puntos_tecnicos: 48,
@@ -75,7 +75,7 @@ test('should_reseed_from_the_placsp_and_keep_what_an_acta_added', () => {
   assert.deepEqual(
     filas.map((f) => [f.empresa_nif, f.rol, f.importe_ofertado, f.puntos_tecnicos, f.fuente]),
     [
-      ['B12345674', 'adjudicataria', 79_000, 48, 'acta'],
+      ['B00765438', 'adjudicataria', 79_000, 48, 'acta'],
       ['A00000075', 'licitadora', 85_000, 40, 'acta'],
     ],
   );
@@ -88,12 +88,12 @@ test('should_backfill_participations_once_when_opening_an_older_database', () =>
   const vieja = new Database(path.join(dir, 'licitaciones.db'));
   vieja.exec(`DROP TABLE participaciones;
     INSERT INTO adjudicaciones (licitacion_id, lote, resultado, adjudicatario_nif, adjudicatario_nombre, importe_sin_iva, ord, fecha_ref, nif_valido)
-    VALUES ('p-9', '', '9', 'ESB12345674', 'Sistemas Ejemplo', 50000, 0, '2025-01-01', NULL);
+    VALUES ('p-9', '', '9', 'ESB00765438', 'Sistemas Ejemplo', 50000, 0, '2025-01-01', NULL);
     PRAGMA user_version = 14;`);
   vieja.close();
   const db = abrirLicitaciones(dir);
   assert.deepEqual(
     participacionesDe(db, 'p-9').map((f) => [f.empresa_nif, f.rol, f.fecha_ref]),
-    [['B12345674', 'adjudicataria', '2025-01-01']],
+    [['B00765438', 'adjudicataria', '2025-01-01']],
   );
 });

@@ -200,7 +200,7 @@ function adjudicada(
           fecha: hace(x.dias ?? 100 + i),
           ofertas: x.ofertas ?? 3,
           importe_sin_iva: x.importe ?? 90_000,
-          adjudicatario_nif: x.nif ?? 'B12345674',
+          adjudicatario_nif: x.nif ?? 'B00765438',
           adjudicatario_nombre: x.nombre ?? 'SISTEMAS EJEMPLO SA',
         }),
       ],
@@ -211,13 +211,13 @@ function adjudicada(
 
 test('should_compute_indices_with_cpv_backoff_names_concentration_and_cache', () => {
   const { db, dbNucleo } = base();
-  guardarOrganizacion(dbNucleo, { nif: 'B12345674', nombre: 'SISTEMAS EJEMPLO SA', tipo: 'empresa' });
+  guardarOrganizacion(dbNucleo, { nif: 'B00765438', nombre: 'SISTEMAS EJEMPLO SA', tipo: 'empresa' });
   for (let i = 0; i < 12; i++) adjudicada(db, i, '72267000', { ofertas: 2 + (i % 3) });
   for (let i = 12; i < 27; i++)
     adjudicada(db, i, '72261000', {
       ofertas: 4,
       organo: i < 18 ? ORGANO : undefined,
-      nif: i < 16 ? 'A00000075' : 'B12345674',
+      nif: i < 16 ? 'A00000075' : 'B00765438',
       nombre: 'Analítica Ejemplo SL',
     });
   adjudicada(db, 99, '45000000');
@@ -321,7 +321,7 @@ test('should_leave_awards_with_quality_incidents_out_of_the_organ_concentration'
       }),
     );
   adj('p-roto', 'A00000075', 900_000);
-  adj('p-bien', 'B12345674', 80_000);
+  adj('p-bien', 'B00765438', 80_000);
   guardarLicitacion(
     db,
     licitacionSintetica({
@@ -336,7 +336,7 @@ test('should_leave_awards_with_quality_incidents_out_of_the_organ_concentration'
   const c = indicesDeLicitacion(db, 'p-abierta', {}, AHORA).data?.concentracion;
 
   assert.equal(c?.contratos, 1);
-  assert.deepEqual(c?.primero, { nif: 'B12345674', cuota: 1 });
+  assert.deepEqual(c?.primero, { nif: 'B00765438', cuota: 1 });
 });
 
 test('should_use_the_tender_threshold_over_article_85_when_the_guion_sets_it', async () => {

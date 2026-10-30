@@ -1046,7 +1046,7 @@
     }
   ],
   "perfil": {
-    "nif": "B12345674",
+    "nif": "B00123455",
     "nombre": "ANALÍTICA EJEMPLO, S.L.",
     "domicilio": null,
     "representante": {
@@ -1062,11 +1062,11 @@
     "volumen_negocio": [
       {
         "anio": 2024,
-        "importe": 152310.72
+        "importe": 118640.55
       },
       {
         "anio": 2025,
-        "importe": 268420.15
+        "importe": 196275.85
       }
     ],
     "certificaciones": [],
@@ -1077,8 +1077,8 @@
       "72",
       "805"
     ],
-    "mayor_contrato_similar": 174905.36,
-    "notas": "ROLECE: inscrita desde el 17/03/2026, sin clasificación ni prohibiciones para contratar. Centro de formación acreditado por el servicio público de empleo autonómico (22 especialidades en datos, IA, Power BI, SQL, Python y big data). Empresa de nueva creación (art. 90.4 LCSP) hasta marzo de 2028. Sin ISO ni ENS; solo certificaciones individuales de Microsoft (AI-900, AZ-900, DP-900). Sin seguro de RC contratado: se contrata si se gana. Concurre siempre en solitario. Mayor contrato similar: un cliente privado (en curso).",
+    "mayor_contrato_similar": 132480.35,
+    "notas": "ROLECE: inscrita desde el 06/10/2026, sin clasificación ni prohibiciones para contratar. Centro de formación acreditado por el servicio público de empleo autonómico (9 especialidades en análisis de datos, hojas de cálculo y programación). Empresa de nueva creación (art. 90.4 LCSP) hasta septiembre de 2028. Sin ISO ni ENS; solo certificaciones individuales de analítica de datos. Sin seguro de RC contratado: se contrata si se gana. Concurre siempre en solitario. Mayor contrato similar: un cliente privado (en curso).",
     "fecha_constitucion": "2023-03-14",
     "tamano": "micro",
     "idiomas": [

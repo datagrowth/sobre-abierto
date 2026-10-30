@@ -52,7 +52,7 @@ test('should_not_accept_an_economic_solvency_the_company_does_not_reach', async 
   const r = await uno({ tipo: 'solvencia_economica', valor_exigido: '≥ 363.454 € sin IVA', cumple: 'si' });
   assert.equal(r.cumple, 'no');
   assert.equal(r.verificacion?.resultado_ia, 'si');
-  assert.match(r.verificacion?.fuente ?? '', /2025: 268\.420,15/);
+  assert.match(r.verificacion?.fuente ?? '', /2025: 196\.275,85/);
   assert.equal((await uno({ tipo: 'solvencia_economica', valor_exigido: '≥ 150.000 €' })).cumple, 'si');
 });
 
