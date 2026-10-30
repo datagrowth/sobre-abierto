@@ -55,7 +55,7 @@ else
   RAIZ="$PWD/sobre-abierto"
 fi
 
-# Etiqueta de la última release («v1.0.0»), o vacío si no hay ninguna o no se llega a GitHub.
+# Etiqueta de la última release («v0.1.0»), o vacío si no hay ninguna o no se llega a GitHub.
 ultima_release() {
   curl -fsSL "$API_BASE/releases/latest" 2> /dev/null | sed -n 's/.*"tag_name": *"\([^"]*\)".*/\1/p' | head -n 1 || true
 }

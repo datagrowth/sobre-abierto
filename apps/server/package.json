@@ -1,6 +1,6 @@
 {
   "name": "@sobre-abierto/server",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "private": true,
   "description": "Servidor de Sobre Abierto: API, login, proxy al dashboard de Hermes, cola de IA, dominios y motor de la Biblioteca de Conocimiento",
   "license": "AGPL-3.0-or-later",

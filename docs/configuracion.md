@@ -38,7 +38,7 @@ mismas variables. Descomenta solo lo que necesites cambiar y aplica con `docker 
 
 | Variable | Por defecto | Para qué |
 |---|---|---|
-| `SOBRE_ABIERTO_VERSION` | `latest` | Versión de las imágenes. Fíjala (`1.0.0`) en producción. |
+| `SOBRE_ABIERTO_VERSION` | `latest` | Versión de las imágenes. Fíjala (`0.1.0`) en producción. |
 | `DOMINIO` | — | Dominio con HTTPS automático por Caddy. |
 | `APP_URL` | — | Dirección pública; sin ella, los correos y el calendario no llevan enlaces. |
 | `MONITOR_BIND`, `MONITOR_PUERTO` | `127.0.0.1`, `3110` | Dónde escucha el monitor. No abras `0.0.0.0` en Internet sin HTTPS. |

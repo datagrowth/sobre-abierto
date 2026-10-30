@@ -9,6 +9,7 @@ import { DOMINIOS, type Accion, type Dominio, type Permisos } from '../agentes/p
 import { catalogoRegistrado } from './herramienta.js';
 import { errorMessage, fail, ok, type Result } from '../result.js';
 import { logger } from '../log.js';
+import { versionDelPaquete } from '../paquete.js';
 import { vigilarListados } from './huellas.js';
 
 // Cada petición crea un McpServer con las tools que el agente que llama puede usar; los dominios añaden las
@@ -26,7 +27,7 @@ export function anadirHerramientas(fn: Registrador): void {
 }
 
 function crearServidorMcp(agente: Agente): McpServer {
-  const server = new McpServer({ name: 'plataforma', version: '1.0.0' });
+  const server = new McpServer({ name: 'plataforma', version: versionDelPaquete() ?? '0.0.0' });
   for (const registrar of registradores) registrar(server, agente);
   return server;
 }
