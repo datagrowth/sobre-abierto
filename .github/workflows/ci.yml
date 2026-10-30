@@ -1,0 +1,83 @@
+name: ci
+
+on:
+  # También en cada push a main: es lo que muestra la insignia «CI» del README, y en un repo
+  # público los minutos de Actions no cuestan.
+  # Sin paths-ignore: si el check es obligatorio para fusionar, un PR solo de docs se quedaría sin él.
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+# Solo leer el repositorio: ningún paso publica, comenta ni escribe en GitHub.
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # Lint, typecheck, tests y build de todas las apps del monorepo.
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - uses: actions/setup-node@949feb2413d6458794dcd2491c4babbbce0c15c1 # v7.1.0
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci --no-audit --no-fund
+      # Ninguna dependencia con licencia incompatible con la AGPL (SSPL, BUSL, no comercial…).
+      - run: npm run licencias
+      # Sin avisos altos en las dependencias de producción.
+      - run: npm audit --omit=dev --audit-level=high
+      # Ningún secreto en el árbol (reglas en .gitleaks.toml). Con el binario de la imagen oficial.
+      - run: docker run --rm -v "$PWD:/repo" zricethezav/gitleaks:v8.24.3 detect --source /repo --config /repo/.gitleaks.toml --no-git --no-banner --exit-code 1
+      # Estilo (Prettier) y ESLint de servidor y web, sin avisos.
+      - run: npm run format:check
+      - run: npm run lint
+      - run: npm run typecheck
+      - run: npm test
+      - run: npm run build
+      # drive-sync: sintaxis, decisiones de la copia de seguridad y rutas con enlaces
+      # simbólicos (no escribe ni borra fuera del volumen de Hermes), sin red.
+      - run: sh -n infra/drive-sync/sync.sh && sh infra/drive-sync/copia.test.sh && sh infra/drive-sync/rutas.test.sh
+      # hermes-init: instala las skills del monitor y quita las que ya no trae, sin tocar las demás.
+      - run: sh -n infra/hermes-init/init.sh && sh infra/hermes-init/init.test.sh
+      # install.sh: genera el .env, es idempotente y no pisa lo que ya existe (sin arrancar Docker).
+      - run: bash -n install.sh && bash infra/install.test.sh
+
+  # Las imágenes y los Compose (el autónomo de la raíz y las plantillas de deploy/): detecta rutas rotas antes del deploy.
+  docker:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - run: docker build -f infra/Dockerfile -t sobre-abierto-ci .
+        # LibreOffice tiene que arrancar sin pantalla con el usuario del monitor: es lo que
+        # lee los .doc y pagina las memorias en producción.
+      - run: docker run --rm --user 10000:10000 sobre-abierto-ci /usr/lib/libreoffice/program/soffice.bin --headless --version
+      - run: docker build infra/drive-sync
+      - run: docker build infra/hermes-init
+      # Valores ficticios para las variables obligatorias (las de «:?»).
+      # El Compose autónomo de la raíz, solo, con el override de Caddy y con el de compilar, y las plantillas de Coolify, Dokploy y Easypanel.
+      - run: docker compose -f docker-compose.yml config --quiet && docker compose -f docker-compose.yml -f deploy/docker-compose.caddy.yml config --quiet && docker compose -f docker-compose.yml -f deploy/docker-compose.llm-local.yml config --quiet && docker compose -f docker-compose.yml -f deploy/docker-compose.build.yml config --quiet && docker compose -f deploy/coolify/docker-compose.yml config --quiet && docker compose -f deploy/easypanel/docker-compose.yml config --quiet && docker compose -f deploy/dokploy/docker-compose.yml config --quiet
+        env:
+          HERMES_DASHBOARD_BASIC_AUTH_USERNAME: ci
+          HERMES_DASHBOARD_BASIC_AUTH_PASSWORD: ci
+          API_SERVER_KEY: ci
+          MONITOR_BASIC_AUTH_USERNAME: ci
+          MONITOR_BASIC_AUTH_PASSWORD: ci
+          MONITOR_SESSION_SECRET: ci
+          DOMINIO: ci.example.com
+
+  # perfiles.sh con la orden `hermes` de verdad: crea los tres perfiles sin pisar lo que existe. Aparte del
+  # trabajo docker porque baja la imagen de Hermes (~4 GB) y no debe agotarle el tiempo.
+  perfiles:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+      - run: sh infra/perfiles.test.sh

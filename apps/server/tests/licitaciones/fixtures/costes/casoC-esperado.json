@@ -1,0 +1,367 @@
+{
+  "_origen": "Esperado de la prueba de aceptación de los compromisos con coste sobre la memoria sintética casoC-memoria.json. Los 14 compromisos son las filas de la tabla de referencia «Lo que la memoria añade y no es obligatorio (dónde se va el dinero)», reproducidas en la memoria sintética con frases propias; las horas y los euros son rangos alrededor de su estimación con el perfil de costes por defecto.",
+  "revisado_por": "Persona K",
+  "fecha": "2026-10-15",
+  "firma": {
+    "compromisos": { "revisado_por": "Persona K", "fecha": "2026-10-15", "fuente": "tabla de referencia de 14 compromisos, fila a fila" },
+    "exigidos_revisados": { "revisado_por": null, "fecha": null, "fuente": "propuesta sobre el PPT sintético (pág. 3 y 6): falta la firma de Persona K o Persona F" },
+    "extras_tolerados": { "revisado_por": null, "fecha": null, "fuente": "propuesta: falta la firma de Persona K o Persona F" }
+  },
+  "bandas": {
+    "bajo": { "horas_min": 0, "horas_max": 30 },
+    "bajo-medio": { "horas_min": 0, "horas_max": 150 },
+    "medio": { "horas_min": 15, "horas_max": 150 },
+    "medio-alto": { "horas_min": 50, "horas_max": 250 }
+  },
+  "compromisos": [
+    {
+      "id": "kits",
+      "tipo": "material_fisico",
+      "fila": "Envío de un kit de prácticas a cada alumna de huerto y de reparaciones",
+      "coste_tabla": "Alto: entre 4.000 y 6.000 €",
+      "que_haria": "Quitarlo. Usar utensilios de casa, vídeos de demostración y casos simulados",
+      "apartado": 2,
+      "fragmento_cita": "la empresa hace llegar a cada alumna un kit de prácticas",
+      "otras_citas": [],
+      "banda": null,
+      "horas_min": 0,
+      "horas_max": 60,
+      "euros_min": 4000,
+      "euros_max": 6000,
+      "barata_contiene": ["utensilios de casa", "vídeos", "casos simulados", "sin envío"]
+    },
+    {
+      "id": "dedicacion_fija",
+      "tipo": "dedicacion_fija",
+      "fila": "Dedicación fija de 3,5 h por subgrupo y semana",
+      "coste_tabla": "Muy alto: unas 630 h",
+      "que_haria": "Quitar la tabla de dedicación. Mantener solo el plazo de corrección",
+      "apartado": 1,
+      "fragmento_cita": "2 h por subgrupo",
+      "otras_citas": ["45 min por subgrupo"],
+      "banda": null,
+      "horas_min": 500,
+      "horas_max": 800,
+      "barata_contiene": ["quita la tabla", "plazo de corrección"]
+    },
+    {
+      "id": "correccion_3_dias",
+      "tipo": "plazo_corto",
+      "fila": "Corrección en 3 días hábiles con nota personal de mejora",
+      "coste_tabla": "Medio",
+      "que_haria": "Pasar a 5 días hábiles y un comentario breve",
+      "apartado": 1,
+      "fragmento_cita": "Nota y rúbrica devueltas en 3 días hábiles",
+      "otras_citas": ["Cada entrega se corrige en 3 días hábiles"],
+      "banda": "medio",
+      "horas_min": 15,
+      "horas_max": 150,
+      "barata_contiene": ["5 días hábiles", "comentario breve"]
+    },
+    {
+      "id": "consulta_mediodia",
+      "tipo": "sesion_recurrente",
+      "fila": "Consulta del mediodía de media hora además de la tutoría semanal",
+      "coste_tabla": "Bajo-medio",
+      "que_haria": "Quitarla; ya hay grabación",
+      "apartado": 1,
+      "fragmento_cita": "Una consulta del mediodía cada semana, de 13:30 a 14:00",
+      "otras_citas": ["Media hora cada semana, de 13:30 a 14:00"],
+      "banda": "bajo-medio",
+      "horas_min": 0,
+      "horas_max": 150,
+      "barata_contiene": ["quítala", "grabación"]
+    },
+    {
+      "id": "resumen_escrito",
+      "tipo": "sesion_recurrente",
+      "fila": "Resumen escrito de cada tutoría",
+      "coste_tabla": "Medio",
+      "que_haria": "Quitarlo; basta la grabación",
+      "apartado": 1,
+      "fragmento_cita": "un resumen escrito semanal con las preguntas y respuestas",
+      "otras_citas": ["su grabación y un resumen escrito"],
+      "banda": "medio",
+      "horas_min": 15,
+      "horas_max": 150,
+      "barata_contiene": ["quítala", "quítalo", "grabación"]
+    },
+    {
+      "id": "llamada_acogida",
+      "tipo": "sesion_individual",
+      "fila": "Llamada de acogida de 15 min a cada alumna de la ruta de apoyo",
+      "coste_tabla": "Medio",
+      "que_haria": "Pasarlo a un mensaje",
+      "apartado": 1,
+      "fragmento_cita": "15 minutos con cada alumna de la ruta de apoyo",
+      "otras_citas": ["una llamada de acogida de 15 minutos"],
+      "banda": "medio",
+      "horas_min": 15,
+      "horas_max": 150,
+      "barata_contiene": ["mensaje"]
+    },
+    {
+      "id": "entrevistas",
+      "tipo": "sesion_individual",
+      "fila": "Entrevista individual de 30 min con cada alumna apta",
+      "coste_tabla": "Alto: unas 150 h",
+      "que_haria": "Pasarla a petición de la alumna",
+      "apartado": 3,
+      "fragmento_cita": "una entrevista individual de 30 minutos",
+      "otras_citas": ["entrevista individual de 30 minutos con cada alumna apta"],
+      "banda": null,
+      "horas_min": 110,
+      "horas_max": 200,
+      "barata_contiene": ["a petición"]
+    },
+    {
+      "id": "revision_curriculum",
+      "tipo": "sesion_individual",
+      "fila": "Revisión individual del currículum de cada alumna en 5 días",
+      "coste_tabla": "Medio-alto",
+      "que_haria": "Pasarla a petición, en 10 días hábiles",
+      "apartado": 3,
+      "fragmento_cita": "La coordinadora revisa el currículum de cada alumna",
+      "otras_citas": ["Currículum revisado dentro de los 5 días hábiles posteriores a recibirlo"],
+      "banda": "medio-alto",
+      "horas_min": 50,
+      "horas_max": 250,
+      "barata_contiene": ["a petición", "10 días hábiles"]
+    },
+    {
+      "id": "empleadores",
+      "tipo": "cantidad_minima",
+      "fila": "Contacto con al menos 20 empleadores por curso",
+      "coste_tabla": "Medio",
+      "que_haria": "Bajar a 5 por curso",
+      "apartado": 3,
+      "fragmento_cita": "al menos veinte empleadores",
+      "otras_citas": ["al menos 20 empleadores"],
+      "banda": "medio",
+      "horas_min": 15,
+      "horas_max": 150,
+      "barata_contiene": ["5"]
+    },
+    {
+      "id": "cruce_semanal",
+      "tipo": "frecuencia_alta",
+      "fila": "Bolsa de candidaturas con cruce semanal de ofertas",
+      "coste_tabla": "Medio",
+      "que_haria": "Pasar a cruce mensual",
+      "apartado": 3,
+      "fragmento_cita": "La coordinadora cruza cada semana las ofertas",
+      "otras_citas": [],
+      "banda": "medio",
+      "horas_min": 15,
+      "horas_max": 150,
+      "barata_contiene": ["mensual"]
+    },
+    {
+      "id": "guardia_domingo",
+      "tipo": "sesion_recurrente",
+      "fila": "Guardia técnica los domingos",
+      "coste_tabla": "Bajo-medio",
+      "que_haria": "Quitarla",
+      "apartado": 1,
+      "fragmento_cita": "Guardia técnica los domingos de 18:00 a 20:00",
+      "otras_citas": ["la guardia técnica de los domingos"],
+      "banda": "bajo-medio",
+      "horas_min": 0,
+      "horas_max": 150,
+      "barata_contiene": ["quítala"]
+    },
+    {
+      "id": "reparaciones_dos_grupos",
+      "tipo": "grupo_extra",
+      "fila": "Reparaciones en dos grupos",
+      "coste_tabla": "Medio: un aula más",
+      "que_haria": "Dejar un solo grupo",
+      "apartado": 1,
+      "fragmento_cita": "con el curso de reparaciones dividido en dos grupos",
+      "otras_citas": ["5 (en dos grupos)"],
+      "banda": "medio",
+      "horas_min": 15,
+      "horas_max": 150,
+      "barata_contiene": ["un grupo"]
+    },
+    {
+      "id": "talleres_10h",
+      "tipo": "horas_extra",
+      "fila": "Talleres de 10 h por curso",
+      "coste_tabla": "Medio",
+      "que_haria": "Bajar a 6 h, asíncronos",
+      "apartado": 3,
+      "fragmento_cita": "un taller práctico de 10 horas",
+      "otras_citas": ["Taller práctico de 10 horas en cada curso"],
+      "banda": "medio",
+      "horas_min": 15,
+      "horas_max": 150,
+      "barata_contiene": ["6 h", "asíncron"]
+    },
+    {
+      "id": "informe_mensual",
+      "tipo": "frecuencia_alta",
+      "fila": "Informe mensual y consulta de seguimiento en diciembre",
+      "coste_tabla": "Bajo",
+      "que_haria": "Pasar a un informe por curso",
+      "apartado": 1,
+      "fragmento_cita": "Informe mensual al Área",
+      "otras_citas": ["la consulta de seguimiento que la coordinadora envía en diciembre"],
+      "banda": "bajo",
+      "horas_min": 0,
+      "horas_max": 30,
+      "barata_contiene": ["por curso"]
+    }
+  ],
+  "exigidos_revisados": [
+    {
+      "id": "manual_y_material",
+      "objeto": "Manual de contenidos de cada curso y material didáctico",
+      "apartado": 1,
+      "fragmento_memoria": "Redactan el manual de cada curso",
+      "pliego": { "documento": "PPT.pdf", "pagina": 3, "cita": "como mínimo, un manual con el temario de cada curso y su material didáctico" }
+    },
+    {
+      "id": "memoria_accion_formativa",
+      "objeto": "Memoria final de la acción formativa al terminar cada curso",
+      "apartado": 1,
+      "fragmento_memoria": "una memoria final del curso con los contenidos impartidos",
+      "pliego": { "documento": "PPT.pdf", "pagina": 3, "cita": "Memoria final de cada curso, con los contenidos impartidos." }
+    },
+    {
+      "id": "ejemplar_material",
+      "objeto": "Una copia del material didáctico utilizado",
+      "apartado": 1,
+      "fragmento_memoria": "un ejemplar en PDF del material didáctico",
+      "pliego": { "documento": "PPT.pdf", "pagina": 3, "cita": "Una copia del material didáctico utilizado." }
+    },
+    {
+      "id": "listado_diploma",
+      "objeto": "Relación de alumnas con derecho a diploma",
+      "apartado": 1,
+      "fragmento_memoria": "listado firmado de alumnas con derecho a diploma",
+      "pliego": { "documento": "PPT.pdf", "pagina": 3, "cita": "Relación de alumnas con derecho a diploma, firmada por la empresa adjudicataria." }
+    },
+    {
+      "id": "plataforma_teleformacion",
+      "objeto": "Plataforma de teleformación con la descripción de sus características",
+      "apartado": 2,
+      "fragmento_memoria": "El aula virtual funciona sobre Moodle",
+      "pliego": { "documento": "PPT.pdf", "pagina": 3, "cita": "La empresa licitadora contará con una plataforma de teleformación y aportará una descripción de sus características." }
+    },
+    {
+      "id": "tutor_asistencia_informatica",
+      "objeto": "Un/a tutor/a de asistencia informática",
+      "apartado": 1,
+      "fragmento_memoria": "La tutora de asistencia informática",
+      "pliego": { "documento": "PPT.pdf", "pagina": 6, "cita": "La empresa adjudicataria contará con un/a (1) tutor/a de asistencia informática" }
+    },
+    {
+      "id": "tutor_docente_por_curso",
+      "objeto": "Un/a tutor/a docente por curso",
+      "apartado": 1,
+      "fragmento_memoria": "Cada curso tiene su propia tutora docente",
+      "pliego": { "documento": "PPT.pdf", "pagina": 6, "cita": "En teleformación, cada curso tendrá un/a (1) tutor/a docente; puede ser la misma persona en todos los cursos." }
+    },
+    {
+      "id": "informes_aptitud",
+      "objeto": "Supervisión de la evaluación y emisión de los informes de aptitud",
+      "apartado": 1,
+      "fragmento_memoria": "firma el informe de aptitud",
+      "pliego": { "documento": "PPT.pdf", "pagina": 6, "cita": "supervisar la evaluación y emitir los informes de aptitud." }
+    },
+    {
+      "id": "dudas_en_tutorias",
+      "objeto": "Resolución de las dudas de las alumnas en las tutorías que se fijen (solo la concreción mínima: una tutoría semanal de 1 h)",
+      "apartado": 1,
+      "fragmento_memoria": "responde a las dudas de las alumnas",
+      "pliego": { "documento": "PPT.pdf", "pagina": 3, "cita": "resolver sus dudas en las tutorías que se fijen." }
+    },
+    {
+      "id": "coordinador",
+      "objeto": "Un/a coordinador/a responsable de dirigir y gestionar los cursos",
+      "apartado": 1,
+      "fragmento_memoria": "Coordinación general",
+      "pliego": { "documento": "PPT.pdf", "pagina": 3, "cita": "la empresa adjudicataria contará con un/a (1) coordinador/a" }
+    },
+    {
+      "id": "inicio_15_dias",
+      "objeto": "Inicio de los cursos en 15 días naturales desde la formalización",
+      "apartado": 1,
+      "fragmento_memoria": "15 días naturales posteriores a la firma del contrato",
+      "pliego": { "documento": "PPT.pdf", "pagina": 3, "cita": "Los cursos empezarán, como máximo, 15 días naturales después de formalizarse el contrato." }
+    },
+    {
+      "id": "informes_periodicos",
+      "objeto": "Informes periódicos con la evaluación de las alumnas (solo la concreción mínima: un informe de evolución por unidad, sin frecuencia fija)",
+      "apartado": 1,
+      "fragmento_memoria": "un informe de evolución de cada alumna",
+      "pliego": { "documento": "PPT.pdf", "pagina": 3, "cita": "redactar informes periódicos con la evaluación de las alumnas" }
+    }
+  ],
+  "extras_tolerados": [
+    {
+      "id": "tutoria_en_directo_semanal",
+      "tipo": "sesion_recurrente",
+      "apartado": 1,
+      "fragmento_cita": "Una tutoría en directo de una hora cada semana",
+      "motivo": "Concreta las «tutorías que se fijen» en una sesión semanal de 1 h; si sale como añadido, no cuenta como falso positivo."
+    },
+    {
+      "id": "sesion_grupal_orientacion",
+      "tipo": "horas_extra",
+      "apartado": 3,
+      "fragmento_cita": "una sesión grupal en directo de dos horas",
+      "motivo": "Mejora de orientación laboral (criterio de empleabilidad) que la tabla no lista: 2 h por curso."
+    },
+    {
+      "id": "foro_empleo_1_dia",
+      "tipo": "plazo_corto",
+      "apartado": 3,
+      "fragmento_cita": "responde en 1 día hábil",
+      "motivo": "Foro de empleo abierto hasta diciembre con respuesta en 1 día hábil: añadido de coste bajo."
+    },
+    {
+      "id": "ofertas_cada_semana",
+      "tipo": "frecuencia_alta",
+      "apartado": 3,
+      "fragmento_cita": "la coordinadora publica cada semana en ese foro ofertas",
+      "motivo": "Publicación semanal en el foro de empleo, distinta del cruce semanal de la bolsa."
+    },
+    {
+      "id": "envio_candidatura_5_dias",
+      "tipo": "plazo_corto",
+      "apartado": 3,
+      "fragmento_cita": "su ficha llega al empleador en 5 días hábiles",
+      "motivo": "Plazo de envío de las fichas de la bolsa: añadido de coste bajo."
+    },
+    {
+      "id": "convocatoria_recuperacion",
+      "tipo": "grupo_extra",
+      "apartado": 1,
+      "fragmento_cita": "del 15 de noviembre al 3 de diciembre",
+      "motivo": "Convocatoria de recuperación con tutoría: añadido que la tabla no lista."
+    },
+    {
+      "id": "llamada_inactividad",
+      "tipo": "sesion_individual",
+      "apartado": 1,
+      "fragmento_cita": "la tutora le telefonea",
+      "motivo": "Segundo aviso por inactividad con llamada: solo a quien lo necesita, coste bajo."
+    },
+    {
+      "id": "videollamada_demostracion",
+      "tipo": "sesion_individual",
+      "apartado": 1,
+      "fragmento_cita": "una videollamada breve",
+      "motivo": "Demostración por videollamada cuando la alumna no puede grabar su práctica: coste bajo."
+    },
+    {
+      "id": "informe_anual",
+      "tipo": "frecuencia_alta",
+      "apartado": 1,
+      "fragmento_cita": "Informe anual de resultados",
+      "motivo": "Informe anual con la consulta de seguimiento de diciembre: va con la fila del informe mensual."
+    }
+  ]
+}

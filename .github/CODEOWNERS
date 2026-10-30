@@ -1,0 +1,9 @@
+# Quién revisa lo que toca la cadena de suministro y el despliegue. Con la protección de la rama «main»
+# (revisión de los propietarios del código) ningún cambio aquí entra sin su aprobación. Cuando haya un
+# equipo de mantenedores en la organización, sustituir el usuario por el equipo.
+/.github/ @pabloramosgomez
+/infra/ @pabloramosgomez
+/deploy/ @pabloramosgomez
+/install.sh @pabloramosgomez
+/docker-compose*.yml @pabloramosgomez
+/.github/SECURITY.md @pabloramosgomez

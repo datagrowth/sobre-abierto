@@ -1,0 +1,13 @@
+# Reglas de gitleaks: las de serie más lo que sabemos que no es un secreto. El CI lo ejecuta en
+# cada PR (.github/workflows/ci.yml) y falla si encuentra uno.
+title = "Sobre Abierto"
+
+[extend]
+useDefault = true
+
+[allowlist]
+description = "Valores inventados de las pruebas del instalador"
+paths = [
+  # install.test.sh siembra un .env con un secreto de mentira para ver que no se pisa.
+  '''infra/install\.test\.sh''',
+]

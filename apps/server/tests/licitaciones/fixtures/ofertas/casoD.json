@@ -1,0 +1,337 @@
+{
+  "_origen": "Fixture sintético: licitación inventada para una oferta de prueba (organismo, expediente, lotes, criterios, anexos, fechas y textos); Persona A/B…, sin NIF, correo, teléfono, notas ni importes ofertados.",
+  "oferta": "casoD",
+  "licitacion_id": "p-91000880",
+  "capturado_en": "2027-10-13T20:34:57+00:00",
+  "licitacion": {
+    "titulo": "Servicios para la ejecución del Programa de Capacitación en Conservación y Gestión Documental dirigido al personal de archivos y bibliotecas de las entidades locales de la isla.",
+    "estado": "en_preparacion",
+    "fecha_limite": "2027-10-25T23:59:00",
+    "presupuesto": 42610.86,
+    "lotes": [
+      {
+        "id": "1",
+        "nombre": "Diseño, impartición y logística de las dos jornadas presenciales de la edición 2027 del programa de capacitación en conservación y gestión documental.",
+        "importe": 35864.85
+      },
+      {
+        "id": "2",
+        "nombre": "Puesta en marcha de un campus virtual de aprendizaje para la formación continua del personal de archivos y bibliotecas.",
+        "importe": 6746.01
+      }
+    ],
+    "lotes_interes": [
+      "2"
+    ]
+  },
+  "pliegos": [
+    {
+      "nombre": "PCAP.pdf",
+      "clase": "pcap"
+    },
+    {
+      "nombre": "PCT.pdf",
+      "clase": "ppt"
+    },
+    {
+      "nombre": "Anexo VI.pdf",
+      "clase": "adicional"
+    },
+    {
+      "nombre": "Anexo VII.pdf",
+      "clase": "adicional"
+    },
+    {
+      "nombre": "Anexo III.pdf",
+      "clase": "adicional"
+    },
+    {
+      "nombre": "Anexo I.pdf",
+      "clase": "adicional"
+    },
+    {
+      "nombre": "Anexo II.pdf",
+      "clase": "adicional"
+    },
+    {
+      "nombre": "Anexo VIII Compromiso de adscripcion de personal.pdf",
+      "clase": "adicional"
+    },
+    {
+      "nombre": "Anexo IV.pdf",
+      "clase": "adicional"
+    },
+    {
+      "nombre": "Anexo V.pdf",
+      "clase": "adicional"
+    },
+    {
+      "nombre": "Anuncio de licitacion 08-10-2027 1007.pdf",
+      "clase": "anuncio"
+    },
+    {
+      "nombre": "Pliego firmado 08-10-2027 1008.pdf",
+      "clase": "anuncio"
+    },
+    {
+      "nombre": "Resolucion de aprobacion 08-10-2027 1003",
+      "clase": "otro"
+    },
+    {
+      "nombre": "Anuncio de licitacion 08-10-2027 1003",
+      "clase": "otro"
+    },
+    {
+      "nombre": "Anexo VIII Compromiso de adscripcion de personal 08-10-2027 1004",
+      "clase": "otro"
+    },
+    {
+      "nombre": "Anexo III 08-10-2027 1004",
+      "clase": "otro"
+    },
+    {
+      "nombre": "Anexo V 08-10-2027 1004",
+      "clase": "otro"
+    },
+    {
+      "nombre": "PCAP 08-10-2027 1004",
+      "clase": "otro"
+    },
+    {
+      "nombre": "Anexo I 08-10-2027 1005",
+      "clase": "otro"
+    },
+    {
+      "nombre": "Anexo II 08-10-2027 1005",
+      "clase": "otro"
+    },
+    {
+      "nombre": "Anexo IV 08-10-2027 1005",
+      "clase": "otro"
+    },
+    {
+      "nombre": "Anexo VI 08-10-2027 1005",
+      "clase": "otro"
+    },
+    {
+      "nombre": "Informe de justificacion 08-10-2027 1006",
+      "clase": "otro"
+    },
+    {
+      "nombre": "Designacion de responsable 08-10-2027 1006",
+      "clase": "otro"
+    },
+    {
+      "nombre": "PCT 08-10-2027 1006",
+      "clase": "otro"
+    },
+    {
+      "nombre": "Resolucion de inicio del expediente 08-10-2027 1007",
+      "clase": "otro"
+    },
+    {
+      "nombre": "Anexo VII 08-10-2027 1007",
+      "clase": "otro"
+    }
+  ],
+  "guiones_anteriores": [
+    {
+      "id": 15,
+      "version": 2
+    }
+  ],
+  "respuesta_oferta": {
+    "guion": {
+      "id": 17,
+      "version": 3,
+      "ficha_id": 323,
+      "datos": {
+        "archivos": [
+          {
+            "nombre": "Sobre Único",
+            "contenido": "Documentación administrativa y criterios de valoración automática",
+            "prohibiciones": [
+              "No se admiten variantes ni alternativas a lo ofertado.",
+              "El precio ofertado no podrá superar el valor estimado de cada lote fijado en el pliego y deberá indicar, como partida aparte, el importe del Impuesto General Indirecto Canario (IGIC) repercutible, según el artículo 139.4 LCSP."
+            ],
+            "firma": "firma electrónica de la persona licitadora o de quien la represente",
+            "documentos": [
+              {
+                "tipo": "oferta_economica",
+                "nombre": "DECLARACIÓN RESPONSABLE Y OFERTA ECONÓMICA",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO I",
+                  "documento": "Anexo I.pdf",
+                  "pagina": 1
+                }
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "CARTA DE COMPROMISO – MANTENIMIENTO ADICIONAL DEL CAMPUS VIRTUAL",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO V",
+                  "documento": "Anexo V.pdf",
+                  "pagina": 1
+                }
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "CARTA DE COMPROMISO – ITINERARIOS DE AUTOFORMACIÓN",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO VI",
+                  "documento": "Anexo VI.pdf",
+                  "pagina": 1
+                }
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "CARTA DE COMPROMISO – AMPLIACIÓN DE LA FORMACIÓN",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO VII",
+                  "documento": "Anexo VII.pdf",
+                  "pagina": 1
+                }
+              }
+            ],
+            "documento": "PCAP.pdf",
+            "pagina": 28
+          }
+        ],
+        "memoria": null,
+        "automaticos": [
+          {
+            "criterio": "Mantenimiento adicional del campus virtual",
+            "puntos": 16,
+            "como_se_acredita": "Los puntos se otorgarán por tramos: • 8 puntos a las ofertas que, como mínimo, ofrezcan un periodo de mantenimiento correctivo de cuatro (4) meses, a contar desde el 28 de diciembre de 2027. • 16 puntos a las ofertas que, como mínimo, ofrezcan un periodo de mantenimiento correctivo de ocho (8) meses, a contar desde el 28 de diciembre de 2027. No se puntuarán ofrecimientos genéricos de asistencia que no fijen de forma expresa el periodo comprometido.",
+            "casilla_en": "ANEXO V: Mantenimiento adicional del campus virtual de cuatro (4) meses / ocho (8) meses / No se compromete",
+            "archivo": "Sobre Único",
+            "marcas": [
+              "mantenimiento adicional de cuatro meses",
+              "mantenimiento adicional de ocho meses"
+            ],
+            "documento": "PCAP.pdf",
+            "pagina": 23
+          },
+          {
+            "criterio": "Itinerarios de autoformación",
+            "puntos": 18,
+            "como_se_acredita": "El baremo es el siguiente: • Dos (2) itinerarios de autoformación: 6 puntos. • Cuatro (4) itinerarios de autoformación: 12 puntos. • Seis (6) itinerarios de autoformación: 18 puntos. La licitadora indicará de forma expresa el número y el tema de los itinerarios que se compromete a elaborar.",
+            "casilla_en": "ANEXO VI: Oferta de dos (2) / cuatro (4) / seis (6) itinerarios de autoformación / No se compromete",
+            "archivo": "Sobre Único",
+            "marcas": [
+              "itinerarios de autoformación"
+            ],
+            "documento": "PCAP.pdf",
+            "pagina": 24
+          },
+          {
+            "criterio": "Ampliación de las sesiones de formación",
+            "puntos": 11,
+            "como_se_acredita": "El baremo es el siguiente: • 3 puntos a las ofertas que amplíen en dos (2) horas la formación. • 6 puntos a las que la amplíen en cuatro (4) horas. • 11 puntos a las que la amplíen en ocho (8) horas. No se admiten compromisos genéricos o indeterminados. La licitadora indicará de forma expresa las horas de formación que se compromete a impartir.",
+            "casilla_en": "ANEXO VII: Ampliación de dos (2) / cuatro (4) / ocho (8) horas de formación / No se compromete",
+            "archivo": "Sobre Único",
+            "marcas": [
+              "ampliación de las sesiones de formación"
+            ],
+            "documento": "PCAP.pdf",
+            "pagina": 25
+          }
+        ],
+        "oferta_economica": {
+          "formula": "P = 55 × (BO – B) ÷ (BO – BMAX)",
+          "presupuesto_base": 6746.01,
+          "impuesto_aparte": "IGIC",
+          "umbral_anormalidad": "Con un único licitador, se presumirá anormal la oferta que, sin IGIC, baje más de un veinticinco por ciento (25 %) el valor estimado del lote. Con dos licitadores, la de menor cuantía que baje más de un veinte por ciento (20 %) respecto del precio del otro. Con tres o más, las ofertas que, sin IGIC, bajen más de un diez por ciento (10 %) respecto de la media aritmética de los precios ofertados.",
+          "modelo": "ANEXO I, Lote 2: IMPORTE SIN IGIC / IGIC / IMPORTE TOTAL CON IGIC",
+          "archivo": "Sobre Único",
+          "documento": "PCAP.pdf",
+          "pagina": 32
+        },
+        "plazo": {
+          "fecha_limite": "2027-10-25T23:59",
+          "canal": "Presentación electrónica de la oferta a través de la PLACSP"
+        },
+        "lotes": [
+          "2"
+        ]
+      }
+    },
+    "lotes_cambiados": false,
+    "guion_cambiado": true,
+    "decisiones": {
+      "guion_id": 15,
+      "datos": {
+        "lotes": [
+          "2"
+        ],
+        "equipo": [
+          {
+            "persona_id": 1005,
+            "rol_en_la_oferta": "Rol 1 de la oferta",
+            "lotes": []
+          },
+          {
+            "persona_id": 1001,
+            "rol_en_la_oferta": "Rol 2 de la oferta",
+            "lotes": []
+          }
+        ],
+        "automaticos": [
+          {
+            "criterio": "2B1.- Personalización del kit de bienvenida y de la documentación entregada a las personas participantes descritos en el epígrafe 3.2.4 del Pliego de Condiciones Técnicas sin coste adicional",
+            "lote": null,
+            "nos_acogemos": false,
+            "tramo": null
+          },
+          {
+            "criterio": "2B2.- Incorporación de ediciones impresas adicionales a las descritas en el epígrafe 3.2.4 del Pliego de Condiciones Técnicas sin coste adicional",
+            "lote": null,
+            "nos_acogemos": false,
+            "tramo": null
+          },
+          {
+            "criterio": "2B3.- Oferta de prácticas formativas vinculadas al taller de digitalización de fondos sin coste adicional",
+            "lote": null,
+            "nos_acogemos": false,
+            "tramo": null
+          },
+          {
+            "criterio": "2B1. – Mantenimiento adicional del campus virtual",
+            "lote": null,
+            "nos_acogemos": true,
+            "tramo": null
+          },
+          {
+            "criterio": "2B2. – Itinerarios de autoformación",
+            "lote": null,
+            "nos_acogemos": true,
+            "tramo": null
+          },
+          {
+            "criterio": "2B3. – Ampliación de las sesiones de formación",
+            "lote": null,
+            "nos_acogemos": true,
+            "tramo": null
+          }
+        ],
+        "ofertas": [
+          {
+            "lote": "2",
+            "pendiente": true,
+            "importe": null,
+            "unitarios": []
+          }
+        ]
+      }
+    },
+    "memorias": []
+  }
+}

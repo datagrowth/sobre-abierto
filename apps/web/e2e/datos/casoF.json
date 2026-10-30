@@ -1,0 +1,4338 @@
+{
+  "_ahora": "2027-10-13T20:34:59.000Z",
+  "GET /api/licitaciones/mesa": {
+    "status": 200,
+    "body": {
+      "minutos_total": 74.5,
+      "decide_hoy": [
+        {
+          "tipo": "frenada",
+          "id": "p-91000080",
+          "titulo": "Servicio de formación virtual en competencias administrativas y asistenciales y tramitación de la subvención FFI para el personal de Servicios Sanitarios de Ejemplo, S.A.",
+          "vence_en": "2027-10-14T08:00:00+02:00",
+          "hora_interna_cierre": "2027-10-14T04:00:00.000Z",
+          "limite_decidir": "2027-10-14T00:10:00.000Z",
+          "veredicto": {
+            "tipo": "no_presentable",
+            "texto": "No presentable: Exigen ENS BÁSICA y el perfil no lo tiene"
+          },
+          "primer_bloqueo": {
+            "clave": "excluyente_vs_perfil:-:ens",
+            "titulo": "Exigen ENS BÁSICA y el perfil no lo tiene",
+            "cita": {
+              "documento": "Rectificación de errores materiales del pliego 27-09-2027 1032.pdf",
+              "pagina": 1,
+              "texto": "Declaración de conformidad con el Esquema Nacional de Seguridad (ENS), categoría BÁSICA",
+              "comprobada": false
+            }
+          },
+          "minutos_persona": 30.5,
+          "fases": [
+            {
+              "nombre": "decidir",
+              "estado": "te_toca"
+            },
+            {
+              "nombre": "pliegos",
+              "estado": "hecho"
+            },
+            {
+              "nombre": "guion",
+              "estado": "hecho"
+            },
+            {
+              "nombre": "decisiones",
+              "estado": "te_toca"
+            },
+            {
+              "nombre": "memoria",
+              "estado": "bloqueado"
+            },
+            {
+              "nombre": "documentos",
+              "estado": "te_toca"
+            },
+            {
+              "nombre": "paquete",
+              "estado": "bloqueado"
+            },
+            {
+              "nombre": "presentar",
+              "estado": "pendiente"
+            }
+          ],
+          "hermes": null,
+          "compromisos_caros": null,
+          "proximo_hito": {
+            "clave": "decidir",
+            "titulo": "Decidir si vamos",
+            "dias": 10,
+            "fecha": "2027-10-04T04:00:00.000Z",
+            "estado": "vencido"
+          }
+        },
+        {
+          "tipo": "frenada",
+          "id": "p-91000770",
+          "titulo": "Servicio, por lotes, de formación continua para el personal de los ayuntamientos y mancomunidades de la provincia de Villaejemplo",
+          "vence_en": "2027-10-14T23:59:00+02:00",
+          "hora_interna_cierre": "2027-10-14T19:59:00.000Z",
+          "limite_decidir": "2027-10-14T16:09:00.000Z",
+          "veredicto": {
+            "tipo": "no_presentable",
+            "texto": "No presentable: Tutor de topografía (lote 3): nadie del equipo lo tiene registrado y 1 más"
+          },
+          "primer_bloqueo": {
+            "clave": "medios:3:topografia",
+            "titulo": "Tutor de topografía (lote 3): nadie del equipo lo tiene registrado",
+            "cita": {
+              "documento": "PPT.pdf",
+              "pagina": 3,
+              "texto": "Adscripción obligatoria de coordinador/a responsable de dirección y gestión, un/a tutor/a de asistencia informática y tutor/a docente por curso; un mismo docente puede impartir varios cursos. Cada tu…",
+              "comprobada": false
+            }
+          },
+          "minutos_persona": 22.5,
+          "fases": [
+            {
+              "nombre": "decidir",
+              "estado": "te_toca"
+            },
+            {
+              "nombre": "pliegos",
+              "estado": "hecho"
+            },
+            {
+              "nombre": "guion",
+              "estado": "hecho"
+            },
+            {
+              "nombre": "decisiones",
+              "estado": "te_toca"
+            },
+            {
+              "nombre": "memoria",
+              "estado": "bloqueado"
+            },
+            {
+              "nombre": "documentos",
+              "estado": "te_toca"
+            },
+            {
+              "nombre": "paquete",
+              "estado": "bloqueado"
+            },
+            {
+              "nombre": "presentar",
+              "estado": "pendiente"
+            }
+          ],
+          "hermes": null,
+          "compromisos_caros": {
+            "n": 3,
+            "horas": 189,
+            "antes_de": "2027-10-14T18:59:00.000Z"
+          },
+          "proximo_hito": {
+            "clave": "decidir",
+            "titulo": "Decidir si vamos",
+            "dias": 10,
+            "fecha": "2027-10-04T19:59:00.000Z",
+            "estado": "vencido"
+          }
+        },
+        {
+          "tipo": "frenada",
+          "id": "p-91000740",
+          "titulo": "Servicio de formación en análisis de datos y automatización de procesos para el personal de la entidad",
+          "vence_en": "2027-10-18T14:00:00+02:00",
+          "hora_interna_cierre": "2027-10-18T10:00:00.000Z",
+          "limite_decidir": "2027-10-18T09:10:00.000Z",
+          "veredicto": {
+            "tipo": "no_presentable",
+            "texto": "No presentable: Exigen ENS MEDIA y el perfil no lo tiene"
+          },
+          "primer_bloqueo": {
+            "clave": "excluyente_vs_perfil:-:ens",
+            "titulo": "Exigen ENS MEDIA y el perfil no lo tiene",
+            "cita": {
+              "documento": "PCAP firmado.pdf",
+              "pagina": 18,
+              "texto": "Garantizar la conformidad con el ENS en categoría MEDIA para el alcance del servicio mientras dure el contrato. Quien no tenga el certificado debe presentar el Anexo XIV o un informe de auditoría con cumplimiento equivalente; se admiten ISO 27001 u otras evidencias equivalentes dentro del alcance, a juicio del órgano.",
+              "comprobada": false
+            }
+          },
+          "minutos_persona": 14,
+          "fases": [
+            {
+              "nombre": "decidir",
+              "estado": "te_toca"
+            },
+            {
+              "nombre": "pliegos",
+              "estado": "hecho"
+            },
+            {
+              "nombre": "guion",
+              "estado": "hecho"
+            },
+            {
+              "nombre": "decisiones",
+              "estado": "te_toca"
+            },
+            {
+              "nombre": "memoria",
+              "estado": "no_aplica"
+            },
+            {
+              "nombre": "documentos",
+              "estado": "te_toca"
+            },
+            {
+              "nombre": "paquete",
+              "estado": "bloqueado"
+            },
+            {
+              "nombre": "presentar",
+              "estado": "pendiente"
+            }
+          ],
+          "hermes": null,
+          "compromisos_caros": null,
+          "proximo_hito": {
+            "clave": "decidir",
+            "titulo": "Decidir si vamos",
+            "dias": 10,
+            "fecha": "2027-10-08T10:00:00.000Z",
+            "estado": "vencido"
+          }
+        }
+      ],
+      "tu_mesa": [
+        {
+          "id": "p-91000880",
+          "titulo": "Servicios para la ejecución del Programa de Capacitación en Conservación y Gestión Documental dirigido al personal de archivos y bibliotecas de las entidades locales de la isla.",
+          "vence_en": "2027-10-25T23:59:00+02:00",
+          "hora_interna_cierre": "2027-10-25T19:59:00.000Z",
+          "limite_decidir": "2027-10-25T19:09:00.000Z",
+          "veredicto": {
+            "tipo": "faltan_decisiones",
+            "texto": "Faltan 7 decisiones tuyas"
+          },
+          "primer_bloqueo": {
+            "clave": "precio:2",
+            "titulo": "Precio del lote 2 sin decidir",
+            "cita": null
+          },
+          "minutos_persona": 7.5,
+          "fases": [
+            {
+              "nombre": "decidir",
+              "estado": "hecho"
+            },
+            {
+              "nombre": "pliegos",
+              "estado": "hecho"
+            },
+            {
+              "nombre": "guion",
+              "estado": "hecho"
+            },
+            {
+              "nombre": "decisiones",
+              "estado": "te_toca"
+            },
+            {
+              "nombre": "memoria",
+              "estado": "no_aplica"
+            },
+            {
+              "nombre": "documentos",
+              "estado": "te_toca"
+            },
+            {
+              "nombre": "paquete",
+              "estado": "bloqueado"
+            },
+            {
+              "nombre": "presentar",
+              "estado": "pendiente"
+            }
+          ],
+          "hermes": null,
+          "compromisos_caros": null,
+          "proximo_hito": {
+            "clave": "decisiones",
+            "titulo": "Decisiones y precio",
+            "dias": 7,
+            "fecha": "2027-10-18T19:59:00.000Z",
+            "estado": "pendiente"
+          }
+        }
+      ],
+      "listas_para_firmar": []
+    }
+  },
+  "GET /api/licitaciones/oportunidades": {
+    "status": 200,
+    "body": {
+      "total": 4,
+      "items": [
+        {
+          "lotes_interes": [
+            {
+              "id": "2",
+              "nombre": "Análisis de datos con hojas de cálculo y asistente de IA",
+              "importe": 6063.75,
+              "motivo": "criba"
+            },
+            {
+              "id": "4",
+              "nombre": "Atención telefónica y trato a personas usuarias: voz, chat y videollamada",
+              "importe": 756,
+              "motivo": "criba"
+            }
+          ],
+          "lotes_prefiltro": [],
+          "retirada": null,
+          "id": "p-91000080",
+          "titulo": "Servicio de formación virtual en competencias administrativas y asistenciales y tramitación de la subvención FFI para el personal de Servicios Sanitarios de Ejemplo, S.A.",
+          "organo": "Gerencia de Servicios Sanitarios de Ejemplo, S.A.",
+          "estado_placsp": "En plazo",
+          "estado": "en_preparacion",
+          "importe": 29688.75,
+          "fecha_limite": "2027-10-14T08:00:00",
+          "fecha_solicitud": null,
+          "cpvs": ["80561000", "80530000", "80570000", "80533100"],
+          "tipo": "Servicios",
+          "motivo_prefiltro": "CPV 80",
+          "veredicto_ia": null,
+          "motivo_ia": null,
+          "confianza_ia": null,
+          "url": "https://contrataciondelestado.es/1",
+          "fuente": "perfiles",
+          "error_proceso": null,
+          "renovacion_de": null,
+          "semaforo": {
+            "color": "ambar",
+            "motivo": "9 por confirmar."
+          },
+          "con_ficha": true,
+          "excluyentes_por_confirmar": 8,
+          "categoria_descarte": null,
+          "recomendacion_ficha": {
+            "decision": "revisar",
+            "motivo": "ROLECE consta y la solvencia está exenta. Faltan docentes acreditados para los lotes 2 y 4, el campus, la tutoría disponible y la tramitación del FFI; que Persona F lo verifique antes de decidir."
+          },
+          "creada_en": "2027-10-13T20:34:44.000Z",
+          "idioma": "es",
+          "pendiente": "Memoria técnica v1: es de un guion anterior; pide una nueva con el guion vigente",
+          "veredicto": {
+            "tipo": "no_presentable",
+            "texto": "No presentable: Exigen ENS BÁSICA y el perfil no lo tiene"
+          },
+          "primer_bloqueo": {
+            "clave": "excluyente_vs_perfil:-:ens",
+            "titulo": "Exigen ENS BÁSICA y el perfil no lo tiene"
+          }
+        },
+        {
+          "lotes_interes": [
+            {
+              "id": "3",
+              "nombre": "Lote 3: Teleformación en competencias digitales y técnicas para el personal administrativo y técnico",
+              "importe": 18557,
+              "motivo": "criba"
+            }
+          ],
+          "lotes_prefiltro": [],
+          "retirada": null,
+          "id": "p-91000770",
+          "titulo": "Servicio, por lotes, de formación continua para el personal de los ayuntamientos y mancomunidades de la provincia de Villaejemplo",
+          "organo": "Junta de Gobierno de la Diputación Provincial de Villaejemplo",
+          "estado_placsp": "En plazo",
+          "estado": "en_preparacion",
+          "importe": 127281,
+          "fecha_limite": "2027-10-14T23:59:00",
+          "fecha_solicitud": null,
+          "cpvs": ["80530000"],
+          "tipo": "Servicios",
+          "motivo_prefiltro": "CPV 80",
+          "veredicto_ia": null,
+          "motivo_ia": null,
+          "confianza_ia": null,
+          "url": "https://contrataciondelestado.es/5",
+          "fuente": "perfiles",
+          "error_proceso": null,
+          "renovacion_de": null,
+          "semaforo": {
+            "color": "ambar",
+            "motivo": "4 por confirmar y 1 sin cumplir pero no excluyentes o en algún lote."
+          },
+          "con_ficha": true,
+          "excluyentes_por_confirmar": 3,
+          "categoria_descarte": null,
+          "recomendacion_ficha": {
+            "decision": "revisar",
+            "motivo": "Solvencia económica cubierta. Falta acreditar docentes de topografía y de jardinería/arbolado, su formación o experiencia online, la persona titulada que dirige las acciones y el campus con sus materiales. Que Persona F lo confirme antes de decidir."
+          },
+          "creada_en": "2027-10-13T20:34:54.000Z",
+          "idioma": "es",
+          "pendiente": "Memoria técnica v3: dala por buena o pide cambios",
+          "veredicto": {
+            "tipo": "no_presentable",
+            "texto": "No presentable: Tutor de topografía (lote 3): nadie del equipo lo tiene registrado y 1 más"
+          },
+          "primer_bloqueo": {
+            "clave": "medios:3:topografia",
+            "titulo": "Tutor de topografía (lote 3): nadie del equipo lo tiene registrado"
+          }
+        },
+        {
+          "lotes_interes": [
+            {
+              "id": "1",
+              "nombre": "Análisis de datos con hojas de cálculo",
+              "importe": 26880,
+              "motivo": "criba"
+            }
+          ],
+          "lotes_prefiltro": [],
+          "retirada": null,
+          "id": "p-91000740",
+          "titulo": "Servicio de formación en análisis de datos y automatización de procesos para el personal de la entidad",
+          "organo": "Consejero Delegado de Ingeniería Pública de Ejemplo, S.A.",
+          "estado_placsp": "En plazo",
+          "estado": "en_preparacion",
+          "importe": 97216,
+          "fecha_limite": "2027-10-18T14:00:00",
+          "fecha_solicitud": null,
+          "cpvs": ["80000000"],
+          "tipo": "Servicios",
+          "motivo_prefiltro": "CPV 80",
+          "veredicto_ia": null,
+          "motivo_ia": null,
+          "confianza_ia": null,
+          "url": "https://contrataciondelestado.es/2",
+          "fuente": "perfiles",
+          "error_proceso": null,
+          "renovacion_de": null,
+          "semaforo": {
+            "color": "ambar",
+            "motivo": "6 por confirmar."
+          },
+          "con_ficha": true,
+          "excluyentes_por_confirmar": 5,
+          "categoria_descarte": null,
+          "recomendacion_ficha": {
+            "decision": "revisar",
+            "motivo": "La cifra de negocios de 2026 (268.420,15 €) supera la suma de los umbrales de los cinco lotes. Antes de seguir faltan las pruebas del profesorado, de la coordinación y de los medios, y una alternativa al ENS que el órgano acepte; también hay que confirmar la modalidad presencial y la subcontratación. La decisión es de la persona."
+          },
+          "creada_en": "2027-10-13T20:34:51.000Z",
+          "idioma": "es",
+          "pendiente": null,
+          "veredicto": {
+            "tipo": "no_presentable",
+            "texto": "No presentable: Exigen ENS MEDIA y el perfil no lo tiene"
+          },
+          "primer_bloqueo": {
+            "clave": "excluyente_vs_perfil:-:ens",
+            "titulo": "Exigen ENS MEDIA y el perfil no lo tiene"
+          }
+        },
+        {
+          "lotes_interes": [
+            {
+              "id": "2",
+              "nombre": "Puesta en marcha de un campus virtual de aprendizaje para la formación continua del personal de archivos y bibliotecas.",
+              "importe": 6746.01,
+              "motivo": "criba"
+            }
+          ],
+          "lotes_prefiltro": [],
+          "retirada": null,
+          "id": "p-91000880",
+          "titulo": "Servicios para la ejecución del Programa de Capacitación en Conservación y Gestión Documental dirigido al personal de archivos y bibliotecas de las entidades locales de la isla.",
+          "organo": "Consorcio Insular de Archivos y Patrimonio de Isla Muestra, S.A.",
+          "estado_placsp": "En plazo",
+          "estado": "en_preparacion",
+          "importe": 42610.86,
+          "fecha_limite": "2027-10-25T23:59:00",
+          "fecha_solicitud": null,
+          "cpvs": ["80521000", "79952000", "63510000", "72500000"],
+          "tipo": "Servicios",
+          "motivo_prefiltro": "CPV 80",
+          "veredicto_ia": null,
+          "motivo_ia": null,
+          "confianza_ia": null,
+          "url": "https://contrataciondelestado.es/4",
+          "fuente": "perfiles",
+          "error_proceso": null,
+          "renovacion_de": null,
+          "semaforo": {
+            "color": "ambar",
+            "motivo": "4 por confirmar y 1 sin cumplir pero no excluyentes o en algún lote."
+          },
+          "con_ficha": true,
+          "excluyentes_por_confirmar": 0,
+          "categoria_descarte": null,
+          "recomendacion_ficha": {
+            "decision": "revisar",
+            "motivo": "No se pide solvencia ni clasificación y no hay barrera automática. Antes de decidir, confirmar la segunda persona acreditada para el taller del lote 1 y el coste de su logística. En el lote 2, validar Chamilo, seguridad, disponibilidad, accesibilidad y capacidad de ejecución hasta el 27/12/2027."
+          },
+          "creada_en": "2027-10-13T20:34:57.000Z",
+          "idioma": "es",
+          "pendiente": null,
+          "veredicto": {
+            "tipo": "faltan_decisiones",
+            "texto": "Faltan 7 decisiones tuyas"
+          },
+          "primer_bloqueo": {
+            "clave": "precio:2",
+            "titulo": "Precio del lote 2 sin decidir"
+          }
+        }
+      ],
+      "cuentas": {
+        "descartada": 1,
+        "en_preparacion": 4
+      },
+      "pagina": 1,
+      "limite": 20
+    }
+  },
+  "GET /api/licitaciones/estado": {
+    "status": 200,
+    "body": {
+      "activo": false,
+      "hermes": "sin configurar (HERMES_LICITACIONES_URL y HERMES_LICITACIONES_KEY)",
+      "hermes_oferta": "usa el perfil de licitaciones (sin HERMES_OFERTA_LICITACIONES_URL y HERMES_OFERTA_LICITACIONES_KEY)",
+      "hermes_critico": "la hace el perfil de oferta, el mismo que redacta: tiende a sobrevalorar (sin HERMES_OFERTA_CRITICO_URL y HERMES_OFERTA_CRITICO_KEY)",
+      "aviso_hermes": "La criba por IA espera: falta el perfil de licitaciones (Conocimiento/Empresa/perfil-licitaciones.md), con el que Hermes decide qué nos interesa. Escríbelo en la Biblioteca y las candidatas se cribarán solas",
+      "alertas_ia": [],
+      "ingesta": {
+        "activa": false,
+        "error": null,
+        "estado": null
+      },
+      "al_dia_hasta": null,
+      "alertas_operacion": [],
+      "oportunidades": {
+        "descartada": 1,
+        "en_preparacion": 4
+      },
+      "pliegos": {
+        "descargado": 62,
+        "descomprimido": 1
+      },
+      "pliegos_ilegibles": [],
+      "lotes": {},
+      "fichas": {
+        "aprobada": 5
+      },
+      "fichas_hermes": {
+        "recientes": [
+          {
+            "licitacion": "p-91000080",
+            "creada_en": "2027-10-13T11:10:04.790Z",
+            "version": 5,
+            "modelo": null,
+            "duracion_s": null,
+            "tokens": null,
+            "llamadas": null,
+            "recortadas": 0,
+            "rechazos": 0,
+            "calidad": 88,
+            "dudosos_pct": 60,
+            "requisitos": 15,
+            "corregidos": 1
+          },
+          {
+            "licitacion": "p-91000880",
+            "creada_en": "2027-10-08T19:07:04.806Z",
+            "version": 5,
+            "modelo": null,
+            "duracion_s": null,
+            "tokens": null,
+            "llamadas": null,
+            "recortadas": 0,
+            "rechazos": 0,
+            "calidad": 91,
+            "dudosos_pct": 43,
+            "requisitos": 23,
+            "corregidos": 1
+          },
+          {
+            "licitacion": "p-91000740",
+            "creada_en": "2027-10-04T15:32:00.159Z",
+            "version": 5,
+            "modelo": null,
+            "duracion_s": null,
+            "tokens": null,
+            "llamadas": null,
+            "recortadas": 0,
+            "rechazos": 0,
+            "calidad": 91,
+            "dudosos_pct": 46,
+            "requisitos": 13,
+            "corregidos": 1
+          },
+          {
+            "licitacion": "p-91000780",
+            "creada_en": "2027-10-04T15:22:46.777Z",
+            "version": 5,
+            "modelo": null,
+            "duracion_s": null,
+            "tokens": null,
+            "llamadas": null,
+            "recortadas": 0,
+            "rechazos": 0,
+            "calidad": 93,
+            "dudosos_pct": 33,
+            "requisitos": 15,
+            "corregidos": 3
+          },
+          {
+            "licitacion": "p-91000770",
+            "creada_en": "2027-10-04T15:14:46.420Z",
+            "version": 5,
+            "modelo": null,
+            "duracion_s": null,
+            "tokens": null,
+            "llamadas": null,
+            "recortadas": 0,
+            "rechazos": 0,
+            "calidad": 93,
+            "dudosos_pct": 33,
+            "requisitos": 12,
+            "corregidos": 3
+          }
+        ],
+        "por_modelo": [
+          {
+            "modelo": "sin dato",
+            "fichas": 5,
+            "calidad_media": 91,
+            "dudosos_media": 43,
+            "duracion_media_s": null,
+            "tokens_media": null
+          }
+        ],
+        "version_actual": 5
+      },
+      "regeneracion_fichas": {
+        "version": 5,
+        "estado": "sin_empezar",
+        "total": 0,
+        "encoladas": 0,
+        "quedan": 0
+      },
+      "propuestas": {},
+      "guiones": 5,
+      "memorias": {
+        "ensamblada": 4
+      },
+      "salidas": "configurada",
+      "ficha_automatica": true,
+      "historico": {
+        "anios": [],
+        "por_estado": {},
+        "desde_por_defecto": 2018,
+        "guarda_todo": false
+      },
+      "carpetas": {
+        "radar": "Licitaciones/Radar",
+        "presentadas": "Licitaciones/Presentadas",
+        "reorganizacion": {
+          "mensaje": "",
+          "movidas": [],
+          "omitidas": [],
+          "errores": [],
+          "empezada_en": null,
+          "movida_en": null,
+          "sincronizada_en": null,
+          "estado": "pendiente",
+          "actualizada_en": null,
+          "total_omitidas": 0,
+          "descarga_en_espera": true
+        },
+        "carpetas_presentadas": {}
+      }
+    }
+  },
+  "GET /api/licitaciones/pipeline": {
+    "status": 200,
+    "body": {
+      "columnas": [
+        {
+          "clave": "en_preparacion",
+          "titulo": "En preparación",
+          "tarjetas": [
+            {
+              "id": "p-91000080",
+              "expediente": "CAP-27/12",
+              "titulo": "Servicio de formación virtual en competencias administrativas y asistenciales y tramitación de la subvención FFI para el personal de Servicios Sanitarios de Ejemplo, S.A.",
+              "titulo_corto": "Formación virtual en competencias administrativas y…",
+              "organo": "Gerencia de Servicios Sanitarios de Ejemplo, S.A.",
+              "importe": 29688.75,
+              "fecha_limite": "2027-10-14T08:00:00",
+              "columna": "en_preparacion",
+              "resultado": null,
+              "responsable": null
+            },
+            {
+              "id": "p-91000770",
+              "expediente": "2026/031",
+              "titulo": "Servicio, por lotes, de formación continua para el personal de los ayuntamientos y mancomunidades de la provincia de Villaejemplo",
+              "titulo_corto": "Servicio, por lotes, de formación continua para el…",
+              "organo": "Junta de Gobierno de la Diputación Provincial de Villaejemplo",
+              "importe": 127281,
+              "fecha_limite": "2027-10-14T23:59:00",
+              "columna": "en_preparacion",
+              "resultado": null,
+              "responsable": null
+            },
+            {
+              "id": "p-91000740",
+              "expediente": "EXP-2026-0517",
+              "titulo": "Servicio de formación en análisis de datos y automatización de procesos para el personal de la entidad",
+              "titulo_corto": "Formación en análisis de datos y automatización de…",
+              "organo": "Consejero Delegado de Ingeniería Pública de Ejemplo, S.A.",
+              "importe": 97216,
+              "fecha_limite": "2027-10-18T14:00:00",
+              "columna": "en_preparacion",
+              "resultado": null,
+              "responsable": null
+            },
+            {
+              "id": "p-91000880",
+              "expediente": "CP-0417/2027",
+              "titulo": "Servicios para la ejecución del Programa de Capacitación en Conservación y Gestión Documental dirigido al personal de archivos y bibliotecas de las entidades locales de la isla.",
+              "titulo_corto": "Programa de Capacitación en Conservación y Gestión…",
+              "organo": "Consorcio Insular de Archivos y Patrimonio de Isla Muestra, S.A.",
+              "importe": 42610.86,
+              "fecha_limite": "2027-10-25T23:59:00",
+              "columna": "en_preparacion",
+              "resultado": null,
+              "responsable": null
+            }
+          ]
+        },
+        {
+          "clave": "lista_para_firmar",
+          "titulo": "Lista para firmar",
+          "tarjetas": []
+        },
+        {
+          "clave": "presentada",
+          "titulo": "Presentada",
+          "tarjetas": []
+        },
+        {
+          "clave": "en_evaluacion",
+          "titulo": "En evaluación",
+          "tarjetas": []
+        },
+        {
+          "clave": "resuelta",
+          "titulo": "Resuelta",
+          "tarjetas": []
+        }
+      ],
+      "por_revisar": {
+        "total": 0,
+        "proximas": []
+      }
+    }
+  },
+  "GET /api/licitaciones/revision": {
+    "status": 200,
+    "body": {
+      "total": 0,
+      "items": [],
+      "cuentas": {
+        "por_revisar": 0,
+        "sin_cribar": 0,
+        "errores": 0,
+        "descartadas": 1
+      },
+      "opiniones": {
+        "interesa": 0,
+        "revisar": 0,
+        "descartar": 0
+      },
+      "orden": "plazo"
+    }
+  },
+  "GET /api/licitaciones/filtros": {
+    "status": 200,
+    "body": {
+      "cpv_prefijos": ["72", "48", "73", "79311", "79330"],
+      "palabras": [
+        "datos",
+        "analítica",
+        "inteligencia artificial",
+        "business intelligence",
+        "big data",
+        "cuadro de mando",
+        "gobierno del dato"
+      ],
+      "excluir_palabras": [],
+      "importe_min": null,
+      "importe_max": null,
+      "tipos_contrato": ["2"],
+      "nuts_prefijos": [],
+      "excluir_idiomas": [],
+      "de_ejemplo": true
+    }
+  },
+  "GET /api/licitaciones/cobertura": {
+    "status": 200,
+    "body": {
+      "umbral_falta": 0.05,
+      "desde": null,
+      "hasta": null,
+      "calculada_en": null,
+      "comunidades": []
+    }
+  },
+  "GET /api/licitaciones/calidad": {
+    "status": 200,
+    "body": {
+      "incidencias": [
+        {
+          "regla": "sobre_presupuesto",
+          "texto": "Adjudicado por encima de 1,2 veces el presupuesto",
+          "n": 0,
+          "ejemplos": []
+        },
+        {
+          "regla": "baja_excesiva",
+          "texto": "Baja de más del 70 %",
+          "n": 0,
+          "ejemplos": []
+        },
+        {
+          "regla": "cero_ofertas",
+          "texto": "Adjudicado con 0 ofertas",
+          "n": 0,
+          "ejemplos": []
+        },
+        {
+          "regla": "nif_no_valido",
+          "texto": "NIF del adjudicatario no válido",
+          "n": 0,
+          "ejemplos": []
+        },
+        {
+          "regla": "lote_sin_importe",
+          "texto": "Lote sin importe",
+          "n": 0,
+          "ejemplos": []
+        }
+      ],
+      "fuera_de_indices": 0,
+      "pliegos_ilegibles": {
+        "n": 0,
+        "ejemplos": []
+      },
+      "acierto": {
+        "ultimo": {},
+        "historial": []
+      },
+      "actas_mercado": {
+        "por_estado": {},
+        "licitadores": 0,
+        "ultima": null
+      }
+    }
+  },
+  "GET /api/licitaciones/mercado/panorama": {
+    "status": 200,
+    "body": {
+      "desde": "2025-10-13",
+      "hasta": "2027-10-13",
+      "n": 0,
+      "importe": 0,
+      "cpvs": ["72", "48", "73", "79311", "79330", "805"],
+      "trimestres": [
+        {
+          "trimestre": "2025-T4",
+          "importe": 0,
+          "adjudicaciones": 0
+        },
+        {
+          "trimestre": "2026-T1",
+          "importe": 0,
+          "adjudicaciones": 0
+        },
+        {
+          "trimestre": "2026-T2",
+          "importe": 0,
+          "adjudicaciones": 0
+        },
+        {
+          "trimestre": "2026-T3",
+          "importe": 0,
+          "adjudicaciones": 0
+        },
+        {
+          "trimestre": "2026-T4",
+          "importe": 0,
+          "adjudicaciones": 0
+        },
+        {
+          "trimestre": "2027-T1",
+          "importe": 0,
+          "adjudicaciones": 0
+        },
+        {
+          "trimestre": "2027-T2",
+          "importe": 0,
+          "adjudicaciones": 0
+        },
+        {
+          "trimestre": "2027-T3",
+          "importe": 0,
+          "adjudicaciones": 0
+        },
+        {
+          "trimestre": "2027-T4",
+          "importe": 0,
+          "adjudicaciones": 0
+        }
+      ],
+      "tramos": [
+        {
+          "tramo": "1",
+          "adjudicaciones": 0,
+          "baja_mediana": null
+        },
+        {
+          "tramo": "2-3",
+          "adjudicaciones": 0,
+          "baja_mediana": null
+        },
+        {
+          "tramo": "4-5",
+          "adjudicaciones": 0,
+          "baja_mediana": null
+        },
+        {
+          "tramo": "6-10",
+          "adjudicaciones": 0,
+          "baja_mediana": null
+        },
+        {
+          "tramo": "11+",
+          "adjudicaciones": 0,
+          "baja_mediana": null
+        }
+      ],
+      "organos": [],
+      "adjudicatarios": [],
+      "nuestra_cuota": null,
+      "nota": "Adjudicaciones de la PLACSP en los CPV del perfil y los filtros, sin las que tienen incidencias de calidad. La cuota es del importe adjudicado; una UTE cuenta como tal."
+    }
+  },
+  "GET /api/licitaciones/mercado/vencimientos": {
+    "status": 200,
+    "body": {
+      "total": 0,
+      "desde": 0,
+      "siguiente": null,
+      "items": []
+    }
+  },
+  "GET /api/licitaciones/carpeta-unica/ensayo": {
+    "status": 200,
+    "body": {
+      "generado_en": "2027-10-13T20:34:59.000Z",
+      "sin_disco": null,
+      "licitaciones": [
+        {
+          "id": "p-91000080",
+          "expediente": "CAP-27/12",
+          "destino": "Licitaciones/Ofertas/CAP-27-12 · Formación virtual en competencias administrativas y asistenciales y (p-91000080)",
+          "pasos": [],
+          "filas": 0,
+          "avisos": ["No tiene nada en el disco todavía: la carpeta se crearía vacía."]
+        },
+        {
+          "id": "p-91000740",
+          "expediente": "EXP-2026-0517",
+          "destino": "Licitaciones/Ofertas/EXP-2026-0517 · Formación en análisis de datos y automatización de procesos para el (p-91000740)",
+          "pasos": [],
+          "filas": 0,
+          "avisos": ["No tiene nada en el disco todavía: la carpeta se crearía vacía."]
+        },
+        {
+          "id": "p-91000770",
+          "expediente": "2026/031",
+          "destino": "Licitaciones/Ofertas/2026-031 · Servicio, por lotes, de formación continua para el personal de los (p-91000770)",
+          "pasos": [],
+          "filas": 0,
+          "avisos": ["No tiene nada en el disco todavía: la carpeta se crearía vacía."]
+        },
+        {
+          "id": "p-91000880",
+          "expediente": "CP-0417/2027",
+          "destino": "Licitaciones/Ofertas/CP-0417-2027 · Programa de Capacitación en Conservación y Gestión Documental dirigido (p-91000880)",
+          "pasos": [],
+          "filas": 0,
+          "avisos": ["No tiene nada en el disco todavía: la carpeta se crearía vacía."]
+        }
+      ],
+      "sin_licitacion": [],
+      "totales": {
+        "licitaciones": 4,
+        "pasos": 0,
+        "archivos": 0,
+        "bytes": 0,
+        "filas": 0,
+        "avisos": 4
+      }
+    }
+  },
+  "GET /api/licitaciones/carpeta-unica/migracion": {
+    "status": 200,
+    "body": {
+      "copia": null,
+      "movidas": [],
+      "errores": [],
+      "hechas": [],
+      "empezada_en": null,
+      "mensaje": "",
+      "estado": "sin_lanzar",
+      "actualizada_en": null
+    }
+  },
+  "GET /api/licitaciones/aprendizaje": {
+    "status": 200,
+    "body": {
+      "por_revisar": {
+        "lecciones": [],
+        "porques": [],
+        "actas": []
+      },
+      "libro": [],
+      "comparaciones": [],
+      "efecto": {
+        "ofertas": [],
+        "trimestres": [],
+        "nota": "Es una tendencia, no una prueba: con pocas ofertas al año, una mesa distinta o un competidor nuevo mueven más que una lección."
+      }
+    }
+  },
+  "GET /api/plataforma/hoy": {
+    "status": 200,
+    "body": {
+      "desde": "2027-10-12T20:34:59.000Z",
+      "secciones": [
+        {
+          "seccion": "licitaciones",
+          "vence": [
+            {
+              "tipo": "plazo",
+              "titulo": "Servicio de formación virtual en competencias administrativas y asistenciales y tramitación de la subvención FFI para el personal de Servicios Sanitarios de Ejemplo, S.A.",
+              "detalle": "Gerencia de Servicios Sanitarios de Ejemplo, S.A.",
+              "fecha": "2027-10-14T08:00:00",
+              "importe": 29688.75,
+              "enlace": {
+                "seccion": "licitaciones",
+                "vista": "oportunidades",
+                "id": "p-91000080"
+              }
+            },
+            {
+              "tipo": "plazo",
+              "titulo": "Servicio, por lotes, de formación continua para el personal de los ayuntamientos y mancomunidades de la provincia de Villaejemplo",
+              "detalle": "Junta de Gobierno de la Diputación Provincial de Villaejemplo",
+              "fecha": "2027-10-14T23:59:00",
+              "importe": 127281,
+              "enlace": {
+                "seccion": "licitaciones",
+                "vista": "oportunidades",
+                "id": "p-91000770"
+              }
+            },
+            {
+              "tipo": "plazo",
+              "titulo": "Servicio de formación en análisis de datos y automatización de procesos para el personal de la entidad",
+              "detalle": "Consejero Delegado de Ingeniería Pública de Ejemplo, S.A.",
+              "fecha": "2027-10-18T14:00:00",
+              "importe": 97216,
+              "enlace": {
+                "seccion": "licitaciones",
+                "vista": "oportunidades",
+                "id": "p-91000740"
+              }
+            }
+          ],
+          "por_aprobar": [
+            {
+              "tipo": "borrador",
+              "titulo": "Servicio, por lotes, de formación continua para el personal de los ayuntamientos y mancomunidades de la provincia de Villaejemplo",
+              "detalle": "Memoria técnica v3: dala por buena o pide cambios · en Preparación › Memoria",
+              "corto": "Memoria v3 por revisar",
+              "fecha": "2027-10-13T10:23:25.409Z",
+              "importe": null,
+              "enlace": {
+                "seccion": "licitaciones",
+                "vista": "oportunidades",
+                "id": "p-91000770/preparacion"
+              }
+            },
+            {
+              "tipo": "borrador",
+              "titulo": "Servicio de formación virtual en competencias administrativas y asistenciales y tramitación de la subvención FFI para el personal de Servicios Sanitarios de Ejemplo, S.A.",
+              "detalle": "Memoria técnica v1: es de un guion anterior; pide una nueva con el guion vigente · en Preparación › Memoria",
+              "corto": "Memoria v1 desfasada",
+              "fecha": "2027-10-13T10:19:11.104Z",
+              "importe": null,
+              "enlace": {
+                "seccion": "licitaciones",
+                "vista": "oportunidades",
+                "id": "p-91000080/preparacion"
+              }
+            }
+          ],
+          "novedades": [],
+          "novedades_total": 0,
+          "en_preparacion": [
+            {
+              "tipo": "preparacion",
+              "titulo": "Servicio de formación virtual en competencias administrativas y asistenciales y tramitación de la subvención FFI para el personal de Servicios Sanitarios de Ejemplo, S.A.",
+              "detalle": "Elegibilidad: Exigen ENS BÁSICA y el perfil no lo tiene · Precio: Precio del lote 2 sin decidir · Precio: Precio del lote 4 sin decidir · Precio: Fórmula de precio no reconocida del lote 2: léela en el pliego antes de fijar el precio · Decisiones: Te acoges a «Formatos de descarga de los registros de actividad» sin con qué acreditarlo · Decisiones: Te acoges a «Frecuencia de sincronización del registro de asistencia» sin con qué acreditarlo · Decisiones: Te acoges a «Sistema de avisos automáticos de inactividad» sin con qué acreditarlo · Decisiones: Te acoges a «Asistente virtual de consultas con disponibilidad continua» sin con qué acreditarlo · Decisiones: Te acoges a «Volumen de Señales Automáticas de Inactividad del Alumnado» y tu nota dice que no · Decisiones: Te acoges a «Registro de Trazabilidad de la Atención Tutorial» y tu nota dice que no · Decisiones: La v1 es de un guion anterior: no la des por buena · Decisiones: Decide el impuesto de la oferta (IVA, IGIC o exento) y su tipo · Decisiones: Hermes propuso cambios después de tus decisiones · Coherencia: El apartado 2 de la memoria promete «Aula Abierta propia», «alojamiento en la UE», «descarga de registros», «sincronización diaria», «avisos», «asistente 24/7», y Hermes dijo no prometerlo · Coherencia: El apartado 1 de la memoria promete «avisos», y Hermes dijo no prometerlo · Documentos: El pliego pide una memoria por lote: redáctalas en Memoria («Redactar las memorias, una por lote») o sube la de cada lote · Documentos: ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, C…: 7 documentos sin preparar · Empresa: Falta el domicilio de la empresa (va en el DEUC y en los anexos) · Empresa: Falta el correo de contacto de la empresa (lo piden el DEUC y los anexos) · Empresa: Falta el teléfono de contacto de la empresa (lo piden el DEUC y los anexos) · Hitos del plazo: Vencido el hito «Paquete y firma»: tocaba el 13/10 a las 06:00 hora peninsular, un día antes del cierre interno (y 3 anteriores sin hacer)",
+              "fecha": "2027-10-14T08:00:00",
+              "importe": 29688.75,
+              "enlace": {
+                "seccion": "licitaciones",
+                "vista": "oportunidades",
+                "id": "p-91000080/preparacion"
+              },
+              "vence_en": "2027-10-14T06:00:00.000Z",
+              "restante_ms": 33901000,
+              "falta": [
+                "Elegibilidad: Exigen ENS BÁSICA y el perfil no lo tiene",
+                "Precio: Precio del lote 2 sin decidir",
+                "Precio: Precio del lote 4 sin decidir",
+                "Precio: Fórmula de precio no reconocida del lote 2: léela en el pliego antes de fijar el precio",
+                "Decisiones: Te acoges a «Formatos de descarga de los registros de actividad» sin con qué acreditarlo",
+                "Decisiones: Te acoges a «Frecuencia de sincronización del registro de asistencia» sin con qué acreditarlo",
+                "Decisiones: Te acoges a «Sistema de avisos automáticos de inactividad» sin con qué acreditarlo",
+                "Decisiones: Te acoges a «Asistente virtual de consultas con disponibilidad continua» sin con qué acreditarlo",
+                "Decisiones: Te acoges a «Volumen de Señales Automáticas de Inactividad del Alumnado» y tu nota dice que no",
+                "Decisiones: Te acoges a «Registro de Trazabilidad de la Atención Tutorial» y tu nota dice que no",
+                "Decisiones: La v1 es de un guion anterior: no la des por buena",
+                "Decisiones: Decide el impuesto de la oferta (IVA, IGIC o exento) y su tipo",
+                "Decisiones: Hermes propuso cambios después de tus decisiones",
+                "Coherencia: El apartado 2 de la memoria promete «Aula Abierta propia», «alojamiento en la UE», «descarga de registros», «sincronización diaria», «avisos», «asistente 24/7», y Hermes dijo no prometerlo",
+                "Coherencia: El apartado 1 de la memoria promete «avisos», y Hermes dijo no prometerlo",
+                "Documentos: El pliego pide una memoria por lote: redáctalas en Memoria («Redactar las memorias, una por lote») o sube la de cada lote",
+                "Documentos: ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, C…: 7 documentos sin preparar",
+                "Empresa: Falta el domicilio de la empresa (va en el DEUC y en los anexos)",
+                "Empresa: Falta el correo de contacto de la empresa (lo piden el DEUC y los anexos)",
+                "Empresa: Falta el teléfono de contacto de la empresa (lo piden el DEUC y los anexos)",
+                "Hitos del plazo: Vencido el hito «Paquete y firma»: tocaba el 13/10 a las 06:00 hora peninsular, un día antes del cierre interno (y 3 anteriores sin hacer)"
+              ]
+            },
+            {
+              "tipo": "preparacion",
+              "titulo": "Servicio, por lotes, de formación continua para el personal de los ayuntamientos y mancomunidades de la provincia de Villaejemplo",
+              "detalle": "Elegibilidad: Tutor de topografía (lote 3): nadie del equipo lo tiene registrado · Elegibilidad: Tutor de jardinería/arbolado (lote 3): nadie del equipo lo tiene registrado · Elegibilidad: Tutor de comunicación institucional (lote 3): Persona J lo tiene, asígnala al rol · Elegibilidad: Tutor de administración electrónica (lote 3): Persona G lo tiene, asígnala al rol · Precio: Precio del lote 3 sin decidir · Decisiones: La propuesta de Hermes es del guion v8 (vigente v16) · Coherencia: El apartado 1 de la memoria pone «semana 6» y el pliego dice «Inicio del servicio: Los cursos arrancan como máximo 15 días naturales después de la formalización (pliego, pág. 51)» · Coherencia: El apartado 3 de la memoria promete «certificados oficiales», y Hermes dijo no prometerlo · Documentos: «Declaración responsable sobre la grabación de las tutorías del personal participante» pasa a obligatoria: te acoges a «Ofrecer la grabación de las tutorías por videoconferencia y ponerla a disposición del par…» · Documentos: Sobre A · lote 3: 3 documentos sin preparar · Documentos: Sobre B · lote 3: 1 documento sin preparar · Documentos: Sobre C · lote 3: 1 documento sin preparar · Empresa: Falta el domicilio de la empresa (va en el DEUC y en los anexos) · Empresa: Falta el correo de contacto de la empresa (lo piden el DEUC y los anexos) · Empresa: Falta el teléfono de contacto de la empresa (lo piden el DEUC y los anexos) · Hitos del plazo: Vencido el hito «Paquete y firma»: tocaba el 13/10 a las 21:59 hora peninsular, un día antes del cierre interno (y 3 anteriores sin hacer) · Memoria técnica: revisa la v3 y dala por buena",
+              "fecha": "2027-10-14T23:59:00",
+              "importe": 127281,
+              "enlace": {
+                "seccion": "licitaciones",
+                "vista": "oportunidades",
+                "id": "p-91000770/preparacion"
+              },
+              "vence_en": "2027-10-14T21:59:00.000Z",
+              "restante_ms": 91441000,
+              "falta": [
+                "Elegibilidad: Tutor de topografía (lote 3): nadie del equipo lo tiene registrado",
+                "Elegibilidad: Tutor de jardinería/arbolado (lote 3): nadie del equipo lo tiene registrado",
+                "Elegibilidad: Tutor de comunicación institucional (lote 3): Persona J lo tiene, asígnala al rol",
+                "Elegibilidad: Tutor de administración electrónica (lote 3): Persona G lo tiene, asígnala al rol",
+                "Precio: Precio del lote 3 sin decidir",
+                "Decisiones: La propuesta de Hermes es del guion v8 (vigente v16)",
+                "Coherencia: El apartado 1 de la memoria pone «semana 6» y el pliego dice «Inicio del servicio: Los cursos arrancan como máximo 15 días naturales después de la formalización (pliego, pág. 51)»",
+                "Coherencia: El apartado 3 de la memoria promete «certificados oficiales», y Hermes dijo no prometerlo",
+                "Documentos: «Declaración responsable sobre la grabación de las tutorías del personal participante» pasa a obligatoria: te acoges a «Ofrecer la grabación de las tutorías por videoconferencia y ponerla a disposición del par…»",
+                "Documentos: Sobre A · lote 3: 3 documentos sin preparar",
+                "Documentos: Sobre B · lote 3: 1 documento sin preparar",
+                "Documentos: Sobre C · lote 3: 1 documento sin preparar",
+                "Empresa: Falta el domicilio de la empresa (va en el DEUC y en los anexos)",
+                "Empresa: Falta el correo de contacto de la empresa (lo piden el DEUC y los anexos)",
+                "Empresa: Falta el teléfono de contacto de la empresa (lo piden el DEUC y los anexos)",
+                "Hitos del plazo: Vencido el hito «Paquete y firma»: tocaba el 13/10 a las 21:59 hora peninsular, un día antes del cierre interno (y 3 anteriores sin hacer)",
+                "Memoria técnica: revisa la v3 y dala por buena"
+              ]
+            },
+            {
+              "tipo": "preparacion",
+              "titulo": "Servicio de formación en análisis de datos y automatización de procesos para el personal de la entidad",
+              "detalle": "Elegibilidad: Exigen ENS MEDIA y el perfil no lo tiene · Elegibilidad: Coordinadora de gestión: Persona G lo tiene, asígnala al rol · Precio: Precio del lote 1 sin decidir · Decisiones: El guion cubre también los lotes 2, 3, 4, 5 y vamos solo al lote 1: deja fuera de la memoria y de los documentos lo que sea solo de esos lotes. · Documentos: El Anexo XIV pasa a obligatorio: no tenemos ENS MEDIA · Documentos: SOBRE O ARCHIVO ÚNICO · lote 1: 13 documentos sin preparar · Empresa: Falta el domicilio de la empresa (va en el DEUC y en los anexos) · Empresa: Falta el correo de contacto de la empresa (lo piden el DEUC y los anexos) · Empresa: Falta el teléfono de contacto de la empresa (lo piden el DEUC y los anexos) · Hitos del plazo: Vencido el hito «Decisiones y precio»: tocaba el 11/10 a las 12:00 hora peninsular, 7 días antes del cierre interno (y otro anterior sin hacer)",
+              "fecha": "2027-10-18T14:00:00",
+              "importe": 97216,
+              "enlace": {
+                "seccion": "licitaciones",
+                "vista": "oportunidades",
+                "id": "p-91000740/preparacion"
+              },
+              "vence_en": "2027-10-18T12:00:00.000Z",
+              "restante_ms": 401101000,
+              "falta": [
+                "Elegibilidad: Exigen ENS MEDIA y el perfil no lo tiene",
+                "Elegibilidad: Coordinadora de gestión: Persona G lo tiene, asígnala al rol",
+                "Precio: Precio del lote 1 sin decidir",
+                "Decisiones: El guion cubre también los lotes 2, 3, 4, 5 y vamos solo al lote 1: deja fuera de la memoria y de los documentos lo que sea solo de esos lotes.",
+                "Documentos: El Anexo XIV pasa a obligatorio: no tenemos ENS MEDIA",
+                "Documentos: SOBRE O ARCHIVO ÚNICO · lote 1: 13 documentos sin preparar",
+                "Empresa: Falta el domicilio de la empresa (va en el DEUC y en los anexos)",
+                "Empresa: Falta el correo de contacto de la empresa (lo piden el DEUC y los anexos)",
+                "Empresa: Falta el teléfono de contacto de la empresa (lo piden el DEUC y los anexos)",
+                "Hitos del plazo: Vencido el hito «Decisiones y precio»: tocaba el 11/10 a las 12:00 hora peninsular, 7 días antes del cierre interno (y otro anterior sin hacer)"
+              ]
+            },
+            {
+              "tipo": "preparacion",
+              "titulo": "Servicios para la ejecución del Programa de Capacitación en Conservación y Gestión Documental dirigido al personal de archivos y bibliotecas de las entidades locales de la isla.",
+              "detalle": "Precio: Precio del lote 2 sin decidir · Decisiones: Tus decisiones son del guion v15 (vigente v17): revísalas · Decisiones: Decide el impuesto de la oferta (IVA, IGIC o exento) y su tipo · Documentos: Sobre Único · lote 2: 4 documentos sin preparar · Empresa: Falta el domicilio de la empresa (va en el DEUC y en los anexos) · Empresa: Falta el correo de contacto de la empresa (lo piden el DEUC y los anexos) · Empresa: Falta el teléfono de contacto de la empresa (lo piden el DEUC y los anexos)",
+              "fecha": "2027-10-25T23:59:00",
+              "importe": 42610.86,
+              "enlace": {
+                "seccion": "licitaciones",
+                "vista": "oportunidades",
+                "id": "p-91000880/preparacion"
+              },
+              "vence_en": "2027-10-25T21:59:00.000Z",
+              "restante_ms": 1041841000,
+              "falta": [
+                "Precio: Precio del lote 2 sin decidir",
+                "Decisiones: Tus decisiones son del guion v15 (vigente v17): revísalas",
+                "Decisiones: Decide el impuesto de la oferta (IVA, IGIC o exento) y su tipo",
+                "Documentos: Sobre Único · lote 2: 4 documentos sin preparar",
+                "Empresa: Falta el domicilio de la empresa (va en el DEUC y en los anexos)",
+                "Empresa: Falta el correo de contacto de la empresa (lo piden el DEUC y los anexos)",
+                "Empresa: Falta el teléfono de contacto de la empresa (lo piden el DEUC y los anexos)"
+              ]
+            }
+          ],
+          "tareas": 4,
+          "resumen": "56 decisiones tuyas en 4 ofertas",
+          "otras_cuentas": {
+            "oportunidades": 0,
+            "aprendizaje": 0
+          }
+        },
+        {
+          "seccion": "ajustes",
+          "vence": [],
+          "por_aprobar": [],
+          "novedades": [],
+          "novedades_total": 0
+        },
+        {
+          "seccion": "equipo",
+          "vence": [],
+          "por_aprobar": [],
+          "novedades": [],
+          "novedades_total": 0
+        }
+      ],
+      "cuentas": {
+        "licitaciones": 4,
+        "oportunidades": 0,
+        "aprendizaje": 0,
+        "ajustes": 0,
+        "equipo": 0
+      }
+    }
+  },
+  "GET /api/plataforma/empresa": {
+    "status": 200,
+    "body": {
+      "perfil": {
+        "nif": "B12345674",
+        "nombre": "ANALÍTICA EJEMPLO, S.L.",
+        "domicilio": null,
+        "direccion": null,
+        "representante": {
+          "nombre": "Persona R",
+          "nif": "12345678Z",
+          "cargo": "Administrador solidario"
+        },
+        "contacto": {
+          "email": null,
+          "telefono": null
+        },
+        "clasificaciones": [],
+        "volumen_negocio": [
+          {
+            "anio": 2024,
+            "importe": 152310.72
+          },
+          {
+            "anio": 2025,
+            "importe": 268420.15
+          }
+        ],
+        "certificaciones": [],
+        "certificados": [],
+        "seguro_rc": null,
+        "plantilla_media": 4,
+        "anios_actividad": 3,
+        "cpv_experiencia": ["72", "805"],
+        "mayor_contrato_similar": 174905.36,
+        "notas": "ROLECE: inscrita desde el 16/03/2027, sin clasificación ni prohibiciones para contratar. Centro de formación acreditado por el servicio público de empleo autonómico (22 especialidades en datos, IA, Power BI, SQL, Python y big data). Empresa de nueva creación (art. 90.4 LCSP) hasta marzo de 2029. Sin ISO ni ENS; solo certificaciones individuales de Microsoft (AI-900, AZ-900, DP-900). Sin seguro de RC contratado: se contrata si se gana. Concurre siempre en solitario. Mayor contrato similar: un cliente privado (en curso).",
+        "fecha_constitucion": "2024-03-12",
+        "tamano": "micro",
+        "idiomas": ["es", "en"],
+        "nombre_comercial": null,
+        "zona_horaria": "Europe/Madrid"
+      },
+      "actualizado_en": "2026-10-27T11:00:38.709Z",
+      "propuesta": null
+    }
+  },
+  "GET /api/plataforma/programado": {
+    "status": 200,
+    "body": {
+      "automatismos": [],
+      "hermes": [
+        {
+          "perfil": "principal",
+          "tareas": [],
+          "error": null
+        }
+      ]
+    }
+  },
+  "GET /api/plataforma/cola/resumen": {
+    "status": 200,
+    "body": {
+      "dominios": []
+    }
+  },
+  "GET /api/licitaciones/licitaciones/p-91000780": {
+    "status": 200,
+    "body": {
+      "lotes_interes": [],
+      "lotes_prefiltro": [],
+      "retirada": null,
+      "id": "p-91000780",
+      "titulo": "Servicio de auditoría de accesibilidad y usabilidad de los portales web de la Sociedad de Desarrollo de Villaejemplo.",
+      "organo": "Consejero Delegado de la Sociedad de Desarrollo de Villaejemplo, S.A.U.",
+      "estado_placsp": "En plazo",
+      "estado": "descartada",
+      "importe": 30261,
+      "fecha_limite": "2027-10-15T23:59:00",
+      "fecha_solicitud": null,
+      "cpvs": ["79311410", "79311400", "79311000"],
+      "tipo": "Servicios",
+      "motivo_prefiltro": "CPV 80",
+      "veredicto_ia": null,
+      "motivo_ia": null,
+      "confianza_ia": null,
+      "url": "https://contrataciondelestado.es/3",
+      "fuente": "perfiles",
+      "error_proceso": null,
+      "renovacion_de": null,
+      "expediente": "CTR-2026-0093",
+      "procedimiento": "Abierto",
+      "valor_estimado": 90783,
+      "nuts": "ES300",
+      "lugar": null,
+      "organo_nif": "A00572321",
+      "notas": null,
+      "rescatada": false,
+      "datos": {
+        "criterios": [
+          {
+            "tipo": "OBJ",
+            "descripcion": "Experiencia acreditada en auditorías de accesibilidad web y en la redacción de informes técnicos",
+            "peso": 15,
+            "nota": "Cada licitador presentará su propuesta conforme a lo que fijan el PCAP y los anexos del expediente"
+          },
+          {
+            "tipo": "OBJ",
+            "descripcion": "Capacidad técnica y herramientas",
+            "peso": 10,
+            "nota": "Cada licitador presentará su propuesta conforme a lo que fijan el PCAP y los anexos del expediente"
+          },
+          {
+            "tipo": "SUBJ",
+            "descripcion": "Enfoque técnico y plan de auditoría",
+            "peso": 25,
+            "nota": "Cada licitador presentará su propuesta conforme a lo que fijan el PCAP y los anexos del expediente"
+          },
+          {
+            "tipo": "OBJ",
+            "descripcion": "Actualización formativa del equipo",
+            "peso": 5,
+            "nota": "Cada licitador presentará su compromiso en los términos y con los límites que fija el PCAP del expediente."
+          },
+          {
+            "tipo": "OBJ",
+            "descripcion": "Oferta económica",
+            "peso": 45,
+            "nota": "Cada licitador presentará su oferta económica según el modelo del PCAP y de los anexos del expediente"
+          }
+        ],
+        "requisitos": [
+          {
+            "clase": "tecnica",
+            "codigo": "OSR-COMPTASK",
+            "descripcion": "Declaración responsable en formato DEUC con la que cada licitador afirma que cumple las condiciones de solvencia del expediente.",
+            "umbral": null,
+            "lote": null
+          },
+          {
+            "clase": "financiera",
+            "codigo": "5",
+            "descripcion": "Declaración responsable en formato DEUC con la que cada licitador afirma que cumple las condiciones de solvencia del expediente.",
+            "umbral": null,
+            "lote": null
+          },
+          {
+            "clase": "declaracion",
+            "codigo": "1",
+            "descripcion": "Capacidad de obrar",
+            "umbral": null,
+            "lote": null
+          }
+        ],
+        "garantias": [],
+        "documentos": [],
+        "lotes": [],
+        "presentacion": {
+          "codigo": null,
+          "maximo_lotes": null,
+          "maximo_adjudicables": null,
+          "combinacion": null
+        },
+        "resultados": [],
+        "duracion": {
+          "valor": 2,
+          "unidad": "ANN"
+        },
+        "periodo": null,
+        "presupuesto_con_iva": null,
+        "organo": {
+          "nombre": "Consejero Delegado de la Sociedad de Desarrollo de Villaejemplo, S.A.U.",
+          "nif": "A00572321",
+          "dir3": null,
+          "ciudad": "Villaejemplo (Canarias)"
+        },
+        "mapper": 2
+      },
+      "adjudicaciones": [],
+      "pliegos": [
+        {
+          "clase": "pcap",
+          "nombre": "PCAP.pdf",
+          "estado": "descargado",
+          "ruta": "Licitaciones/Radar/2026/p-91000780/0-PCAP.pdf",
+          "error": null,
+          "origen": "feed",
+          "tipo": null,
+          "subido_por": null,
+          "clases": ["pcap"],
+          "tambien_como": []
+        },
+        {
+          "clase": "ppt",
+          "nombre": "PPT.pdf",
+          "estado": "descargado",
+          "ruta": "Licitaciones/Radar/2026/p-91000780/1-PPT.pdf",
+          "error": null,
+          "origen": "feed",
+          "tipo": null,
+          "subido_por": null,
+          "clases": ["ppt"],
+          "tambien_como": []
+        },
+        {
+          "clase": "adicional",
+          "nombre": "Cuadro de condiciones.pdf",
+          "estado": "descargado",
+          "ruta": "Licitaciones/Radar/2026/p-91000780/2-Cuadro de condiciones.pdf",
+          "error": null,
+          "origen": "feed",
+          "tipo": null,
+          "subido_por": null,
+          "clases": ["adicional"],
+          "tambien_como": []
+        }
+      ],
+      "completitud_pliegos": {
+        "completa": true,
+        "descarga_completa": true,
+        "publicados": 0,
+        "descargados": 0,
+        "faltan": [],
+        "citados_sin_pliego": [],
+        "sin_comprobar": false,
+        "expediente": null
+      },
+      "cambiada_a_mano": false,
+      "motivo_descarte": "Sin solvencia técnica mínima: no tenemos director/a con 5 años en auditoría de accesibilidad web o evaluación de usabilidad ni analista con 3 años en pruebas de usabilidad o analítica web, y no se puede subcontratar",
+      "categoria_descarte": null,
+      "descartada_en": null,
+      "descarte_automatico": false,
+      "idioma": "es",
+      "go_no_go": {
+        "semaforo": {
+          "color": "ambar",
+          "motivo": "5 por confirmar y 1 sin cumplir pero no excluyentes o en algún lote.",
+          "bloqueos": []
+        },
+        "requisitos": [
+          {
+            "origen": "placsp",
+            "clase": "tecnica",
+            "etiqueta": "Trabajos similares",
+            "descripcion": "Declaración responsable en formato DEUC con la que cada licitador afirma que cumple las condiciones de solvencia del expediente.",
+            "lote": null,
+            "excluyente": true,
+            "exigido": null,
+            "resultado": "desconocido",
+            "motivo": "La PLACSP no da el detalle: Hermes lo leerá del pliego al generar la ficha.",
+            "en_ficha": true
+          },
+          {
+            "origen": "placsp",
+            "clase": "financiera",
+            "etiqueta": "Volumen anual de negocio",
+            "descripcion": "Declaración responsable en formato DEUC con la que cada licitador afirma que cumple las condiciones de solvencia del expediente.",
+            "lote": null,
+            "excluyente": true,
+            "exigido": null,
+            "resultado": "desconocido",
+            "motivo": "La PLACSP no da el detalle: Hermes lo leerá del pliego al generar la ficha.",
+            "en_ficha": true
+          }
+        ],
+        "ficha": {
+          "aprobada": {
+            "id": 239,
+            "licitacion_id": "p-91000780",
+            "estado": "aprobada",
+            "datos": {
+              "resumen": "Servicio sin lotes de auditoría de accesibilidad (WCAG 2.2) de los portales web de la Sociedad: informes por encargo, informe anual consolidado y panel de seguimiento en línea. PBL anual 32.379,27 € IGIC incluido; VE 90.783,00 € sin IGIC con prórrogas. Precio unitario máximo 1.513,05 € por informe sin IGIC, sin mínimo de encargos. Pide método reproducible, revisión humana y seguimiento de las correcciones (PPT págs. 2-7; CC págs. 8-15).",
+              "requisitos": [
+                {
+                  "tipo": "solvencia_economica",
+                  "descripcion": "Facturación anual en servicios del ámbito del contrato, en el mejor ejercicio disponible; con menos de 3 ejercicios cerrados se toma el de mayor volumen.",
+                  "excluyente": true,
+                  "valor_exigido": "≥45.391,50 € sin impuestos (1,5 veces el valor estimado anual)",
+                  "cumple": "si",
+                  "fuente": "perfil.volumen_negocio, ejercicio 2025: 268.420,15 €",
+                  "justificacion": "Supera el umbral, pero no consta qué parte de la facturación corresponde a servicios de accesibilidad y usabilidad web; falta ese dato.",
+                  "documento": "Cuadro de condiciones.pdf",
+                  "pagina": 8
+                },
+                {
+                  "tipo": "solvencia_tecnica",
+                  "descripcion": "Servicios análogos de los tres últimos años por un importe acumulado ≥70% de la anualidad media; solo se exige a empresas que no sean de nueva creación.",
+                  "excluyente": true,
+                  "valor_exigido": "≥70% de la anualidad media salvo empresas de nueva creación, exentas de forma expresa",
+                  "cumple": "si",
+                  "fuente": "perfil.fecha_constitucion 2023-03-14; perfil.notas: nueva creación hasta marzo de 2028",
+                  "justificacion": "El pliego exime a las empresas de nueva creación de acreditar servicios análogos, pero no de adscribir los dos perfiles personales.",
+                  "documento": "Cuadro de condiciones.pdf",
+                  "pagina": 9
+                },
+                {
+                  "tipo": "medios_personales",
+                  "descripcion": "Director/a técnico/a: titulación universitaria y ≥5 años en auditoría de accesibilidad web o evaluación de usabilidad.",
+                  "excluyente": true,
+                  "valor_exigido": "Un perfil con grado universitario y ≥5 años experiencia específica",
+                  "cumple": "si",
+                  "fuente": "colaboradores: 7 de 11 cumplen los mínimos que se leen del requisito",
+                  "justificacion": "Falta comprobar la experiencia en la materia y la disponibilidad real; las coincidencias solo cubren los mínimos genéricos.",
+                  "documento": "Cuadro de condiciones.pdf",
+                  "pagina": 11
+                },
+                {
+                  "tipo": "medios_personales",
+                  "descripcion": "Analista de datos: titulación universitaria en Estadística, Informática, Matemáticas, Ingeniería, Psicología o similar y ≥3 años en pruebas de usabilidad/analítica web.",
+                  "excluyente": true,
+                  "valor_exigido": "Un perfil con titulación afín y ≥3 años experiencia específica",
+                  "cumple": "si",
+                  "fuente": "colaboradores: 9 de 12 cumplen los mínimos que se leen del requisito",
+                  "justificacion": "Falta comprobar la experiencia en pruebas de usabilidad y analítica web y la adscripción; no se da por acreditado solo por los años totales.",
+                  "documento": "Cuadro de condiciones.pdf",
+                  "pagina": 11
+                },
+                {
+                  "tipo": "medios_materiales",
+                  "descripcion": "Medios personales y materiales suficientes, detallados en la oferta; su adscripción efectiva es obligación esencial.",
+                  "excluyente": true,
+                  "valor_exigido": "Medios suficientes y detallados en la oferta",
+                  "cumple": "dudoso",
+                  "fuente": "perfil-licitaciones.md: capacidad en datos/BI/IA; sin inventario de licencias ni de herramientas de accesibilidad",
+                  "justificacion": "No consta acceso a herramientas de evaluación de accesibilidad ni el compromiso de adscribir medios adecuados.",
+                  "documento": "Cuadro de condiciones.pdf",
+                  "pagina": 11
+                },
+                {
+                  "tipo": "otro",
+                  "descripcion": "No ser adjudicataria del contrato de desarrollo de los portales ni empresa vinculada a ella.",
+                  "excluyente": true,
+                  "valor_exigido": "Ni adjudicataria ni vinculada a ella",
+                  "cumple": "dudoso",
+                  "fuente": "el perfil no dice si Analítica Ejemplo o alguna vinculada desarrolló los portales",
+                  "justificacion": "Hay que confirmar expresamente esa incompatibilidad.",
+                  "documento": "PPT.pdf",
+                  "pagina": 2
+                },
+                {
+                  "tipo": "otro",
+                  "descripcion": "Declarar que no hay conflicto de intereses y abstenerse de prestar servicios de desarrollo o mantenimiento de los portales auditados durante la ejecución.",
+                  "excluyente": true,
+                  "valor_exigido": "Sin conflicto de intereses y con abstención",
+                  "cumple": "dudoso",
+                  "fuente": "perfil-licitaciones.md: ofrece desarrollo web y marketing; no identifica los portales a auditar",
+                  "justificacion": "Falta cotejar los servicios y clientes con los portales auditados y confirmar que Analítica Ejemplo puede abstenerse.",
+                  "documento": "PPT.pdf",
+                  "pagina": 5
+                },
+                {
+                  "tipo": "seguro",
+                  "descripcion": "Póliza de responsabilidad civil acorde con la actividad; el pliego no concreta el importe.",
+                  "excluyente": false,
+                  "valor_exigido": "Póliza de RC exigible, importe sin fijar",
+                  "cumple": "no",
+                  "fuente": "perfil.seguro_rc: sin seguro",
+                  "justificacion": "Hoy no hay seguro contratado; el perfil dice que se contrataría si se gana. El seguro no es excluyente.",
+                  "documento": "PCAP.pdf",
+                  "pagina": 7
+                },
+                {
+                  "tipo": "subcontratacion",
+                  "descripcion": "Se admite integrar la solvencia técnica con medios de otras entidades mediante compromiso, pero la experiencia solo cuenta si esas entidades ejecutan el servicio; Analítica Ejemplo concurre en solitario.",
+                  "excluyente": false,
+                  "cumple": "si",
+                  "fuente": "perfil.notas: la empresa concurre siempre sola",
+                  "justificacion": "Concurrir sola coincide con lo declarado; hacen falta los perfiles y medios adscritos de verdad.",
+                  "documento": "Cuadro de condiciones.pdf",
+                  "pagina": 10
+                },
+                {
+                  "tipo": "idioma",
+                  "descripcion": "El pliego no fija un idioma; los informes y la comunicación serán en castellano.",
+                  "excluyente": false,
+                  "valor_exigido": "Castellano",
+                  "cumple": "si",
+                  "fuente": "perfil.idiomas: es, en",
+                  "justificacion": "La empresa trabaja habitualmente en castellano.",
+                  "documento": "PPT.pdf",
+                  "pagina": 2
+                },
+                {
+                  "tipo": "lugar_ejecucion",
+                  "descripcion": "Auditoría remota de los portales; el pliego no exige presencia continuada ni sede obligatoria.",
+                  "excluyente": false,
+                  "cumple": "si",
+                  "fuente": "plataforma_empresa.nuts_sede ES70; el perfil sitúa la sede en Canarias",
+                  "justificacion": "Mismo territorio que el órgano contratante; el servicio se describe como auditoría e informes.",
+                  "documento": "PPT.pdf",
+                  "pagina": 2
+                },
+                {
+                  "tipo": "otro",
+                  "descripcion": "Acreditar cuatro capacidades técnicas en la oferta; puntúan, pero no son mínimo de admisión.",
+                  "excluyente": false,
+                  "valor_exigido": "Cuatro capacidades a 2,5 puntos cada una",
+                  "cumple": "dudoso",
+                  "fuente": "perfil-licitaciones.md: herramientas de IA/datos; no identifica licencias de analizador WCAG, lector de pantalla ni plataforma de pruebas con usuarios",
+                  "justificacion": "Sin licencias ni certificados concretos no hay evidencia. Sin acreditar se puntúa cero en el criterio; no es un mínimo de solvencia.",
+                  "documento": "Cuadro de condiciones.pdf",
+                  "pagina": 14
+                },
+                {
+                  "tipo": "otro",
+                  "descripcion": "Dos actividades formativas distintas al año, de una hora como mínimo, dirigidas al personal adscrito.",
+                  "excluyente": false,
+                  "valor_exigido": "2 actividades al año de ≥1 hora",
+                  "cumple": "dudoso",
+                  "fuente": "perfil-licitaciones.md: la empresa imparte formación en datos/IA; no hay compromiso anual registrado",
+                  "justificacion": "Falta formular el compromiso formativo y su calendario por anualidad.",
+                  "documento": "Cuadro de condiciones.pdf",
+                  "pagina": 13
+                },
+                {
+                  "tipo": "lugar_ejecucion",
+                  "descripcion": "Entregar informes de auditoría y un panel de seguimiento de correcciones consultable 24/7 con los resultados de los portales de la Sociedad de Desarrollo.",
+                  "excluyente": false,
+                  "cumple": "si",
+                  "fuente": "perfil-licitaciones.md: servicios de datos/IA, BI, estadística aplicada y paneles de control",
+                  "justificacion": "El objeto encaja con la analítica y el BI declarados; la disponibilidad de herramientas de accesibilidad se valida aparte.",
+                  "documento": "PPT.pdf",
+                  "pagina": 2
+                },
+                {
+                  "tipo": "ute",
+                  "descripcion": "Suma de servicios y porcentajes de participación si se concurre en UTE.",
+                  "excluyente": false,
+                  "cumple": "no_aplica",
+                  "fuente": "perfil.notas: la empresa concurre siempre sola",
+                  "justificacion": "La empresa no concurre en UTE.",
+                  "documento": "Cuadro de condiciones.pdf",
+                  "pagina": 9
+                }
+              ],
+              "criterios": [
+                {
+                  "descripcion": "Precio unitario por informe, con fórmula logarítmica",
+                  "peso": 45,
+                  "tipo": "formula",
+                  "pagina": 12
+                },
+                {
+                  "descripcion": "Experiencia acreditada de hasta tres profesionales en auditoría de accesibilidad e informes técnicos; tramos de 6, 5 y 4 puntos por perfil, máximo 15",
+                  "peso": 15,
+                  "tipo": "formula",
+                  "pagina": 13
+                },
+                {
+                  "descripcion": "Formación anual: dos actividades diferentes de al menos una hora",
+                  "peso": 5,
+                  "tipo": "formula",
+                  "pagina": 13
+                },
+                {
+                  "descripcion": "Capacidades técnicas: cuatro a 2,5 puntos cada una (analizador automático WCAG 2.2; lector de pantalla comercial; pruebas con usuarios con histórico de 12 meses; detección automática de contraste por visión artificial)",
+                  "peso": 10,
+                  "tipo": "formula",
+                  "pagina": 14
+                },
+                {
+                  "descripcion": "Enfoque técnico y plan de auditoría; mínimo eliminatorio 12,5/25; memoria técnica propia",
+                  "peso": 25,
+                  "tipo": "juicio_valor",
+                  "subcriterios": [
+                    {
+                      "descripcion": "Metodología de auditoría y priorización de hallazgos",
+                      "peso": 12
+                    },
+                    {
+                      "descripcion": "Herramientas de evaluación y comparación",
+                      "peso": 6
+                    },
+                    {
+                      "descripcion": "Aseguramiento de calidad y seguimiento de correcciones",
+                      "peso": 4
+                    },
+                    {
+                      "descripcion": "Modelo de informe, ficha ejecutiva y panel de seguimiento",
+                      "peso": 3
+                    }
+                  ],
+                  "pagina": 15
+                }
+              ],
+              "documentacion": [
+                {
+                  "sobre": "Sobre electrónico 1",
+                  "documento": "DEUC y memoria técnica de hasta 10 páginas A4 en cuerpo 11, sin datos de los criterios automáticos",
+                  "obligatorio": true,
+                  "pagina": 6
+                },
+                {
+                  "sobre": "Sobre electrónico 2",
+                  "documento": "Oferta económica y criterios automáticos según el Anexo II",
+                  "obligatorio": true,
+                  "pagina": 7
+                },
+                {
+                  "sobre": "Sobre electrónico 2",
+                  "documento": "Acreditación vigente de las capacidades técnicas (licencia, suscripción, certificado o declaración técnica si es desarrollo propio)",
+                  "obligatorio": true,
+                  "pagina": 14
+                },
+                {
+                  "sobre": "Sobre electrónico 2",
+                  "documento": "Certificados de buena ejecución de la experiencia puntuable de los profesionales",
+                  "obligatorio": false,
+                  "pagina": 13
+                },
+                {
+                  "sobre": "Requerimiento a la propuesta de adjudicación",
+                  "documento": "Certificados tributarios y de Seguridad Social, declaración de prevención de riesgos y adscripción de medios, a requerimiento de la propuesta de adjudicación",
+                  "obligatorio": true,
+                  "pagina": 11
+                }
+              ],
+              "hitos": [
+                {
+                  "hito": "Fin de presentación",
+                  "fecha": "2027-10-15T23:59:00",
+                  "detalle": "Fecha definitiva comunicada en el anuncio de licitación",
+                  "pagina": 8
+                },
+                {
+                  "hito": "Consultas",
+                  "detalle": "Consultas hasta 10 días naturales antes del cierre; la respuesta se publica al menos 5 días antes del cierre",
+                  "pagina": 8
+                },
+                {
+                  "hito": "Informe de auditoría",
+                  "detalle": "Máximo de 15 días hábiles desde cada encargo o desde recibir la documentación complementaria",
+                  "pagina": 5
+                },
+                {
+                  "hito": "Informe anual consolidado",
+                  "detalle": "Durante el mes posterior al cierre de cada anualidad",
+                  "pagina": 5
+                },
+                {
+                  "hito": "Panel de seguimiento",
+                  "detalle": "Panel actualizado en 5 días hábiles tras la conformidad; acceso 24/7 para 3 usuarios como mínimo",
+                  "pagina": 5
+                },
+                {
+                  "hito": "Duración",
+                  "detalle": "Duración de 1 año; el valor estimado cuenta hasta dos prórrogas anuales",
+                  "pagina": 7
+                }
+              ],
+              "garantias": [
+                {
+                  "tipo": "provisional",
+                  "descripcion": "No se exige garantía provisional",
+                  "pagina": 4
+                },
+                {
+                  "tipo": "definitiva",
+                  "descripcion": "5% del presupuesto base sin IGIC, a cargo de la propuesta de adjudicación",
+                  "porcentaje": 5,
+                  "pagina": 4
+                },
+                {
+                  "tipo": "complementaria",
+                  "descripcion": "No se exige garantía complementaria",
+                  "pagina": 4
+                }
+              ],
+              "penalizaciones": [
+                {
+                  "descripcion": "Retraso en la entrega de un informe: 1% del precio del informe por cada día hábil",
+                  "pagina": 5
+                },
+                {
+                  "descripcion": "Ejecución defectuosa o incumplimiento de compromisos de la oferta: 10% del precio del contrato sin IGIC",
+                  "pagina": 17
+                },
+                {
+                  "descripcion": "Incumplir una obligación esencial: 10% del precio del contrato sin IGIC",
+                  "pagina": 17
+                }
+              ],
+              "riesgos": [
+                {
+                  "descripcion": "Dos perfiles obligatorios: la búsqueda solo da candidatos por mínimos genéricos, sin experiencia confirmada en accesibilidad ni en pruebas de usabilidad.",
+                  "gravedad": "alta"
+                },
+                {
+                  "descripcion": "La facturación total supera el umbral, pero no se conoce la parte que corresponde al ámbito del contrato.",
+                  "gravedad": "media"
+                },
+                {
+                  "descripcion": "Quedan por confirmar la incompatibilidad contractual y los conflictos con los portales auditados; incumplir la abstención puede resolver el contrato.",
+                  "gravedad": "alta"
+                },
+                {
+                  "descripcion": "Herramientas y capacidades sin acreditar: sin documentación puntúan cero.",
+                  "gravedad": "media"
+                },
+                {
+                  "descripcion": "Un enfoque técnico por debajo de 12,5/25 excluye; la memoria se limita a 10 páginas.",
+                  "gravedad": "alta"
+                },
+                {
+                  "descripcion": "Plazos de entrega cortos y penalidades por retraso; sin volumen mínimo de encargos.",
+                  "gravedad": "media"
+                },
+                {
+                  "descripcion": "Antecedente: edición anterior con una oferta, adjudicada a Estudio Web Ejemplo, S.L.; es un indicio, no una prueba.",
+                  "gravedad": "media"
+                }
+              ],
+              "recomendacion": {
+                "decision": "revisar",
+                "motivo": "Confirmar la experiencia de los dos perfiles en la materia, la facturación en el ámbito, las herramientas acreditables y la ausencia de conflictos. No hay incumplimiento excluyente demostrado; la excepción de empresa nueva se aplica a los servicios análogos."
+              },
+              "senales_pliego": [
+                {
+                  "tipo": "juicio_valor_favorece",
+                  "descripcion": "La puntuación máxima exige concretar la auditoría sobre los portales de la Sociedad de Desarrollo, lo que puede favorecer a quien ya los conoce.",
+                  "cita": "trata todos los aspectos del subcriterio de forma concreta para los portales de la Sociedad de Desarrollo, con parámetros o ejemplos.",
+                  "documento": "Cuadro de condiciones.pdf",
+                  "pagina": 15
+                },
+                {
+                  "tipo": "tecnologia_especifica",
+                  "descripcion": "Capacidad específica de detección automática de contraste mediante visión artificial, junto con un histórico de pruebas con usuarios; requiere herramientas especializadas.",
+                  "cita": "tecnología de visión artificial que detecte de forma automatizada los fallos de contraste y de estructura en capturas y vídeos",
+                  "documento": "Cuadro de condiciones.pdf",
+                  "pagina": 14
+                }
+              ],
+              "cobertura": [
+                {
+                  "tema": "solvencia_economica",
+                  "estado": "en_requisitos"
+                },
+                {
+                  "tema": "solvencia_tecnica",
+                  "estado": "en_requisitos"
+                },
+                {
+                  "tema": "clasificacion",
+                  "estado": "no_lo_pide",
+                  "documento": "Cuadro de condiciones.pdf",
+                  "pagina": 8
+                },
+                {
+                  "tema": "medios_personales",
+                  "estado": "en_requisitos"
+                },
+                {
+                  "tema": "medios_materiales",
+                  "estado": "en_requisitos"
+                },
+                {
+                  "tema": "certificaciones",
+                  "estado": "no_lo_pide",
+                  "documento": "Cuadro de condiciones.pdf",
+                  "pagina": 11
+                },
+                {
+                  "tema": "habilitacion",
+                  "estado": "no_lo_pide",
+                  "documento": "PCAP.pdf",
+                  "pagina": 7
+                },
+                {
+                  "tema": "subcontratacion",
+                  "estado": "en_requisitos"
+                },
+                {
+                  "tema": "idioma",
+                  "estado": "no_lo_pide",
+                  "documento": "PPT.pdf",
+                  "pagina": 2
+                },
+                {
+                  "tema": "seguro",
+                  "estado": "en_requisitos"
+                },
+                {
+                  "tema": "visita_obligatoria",
+                  "estado": "no_lo_pide",
+                  "documento": "PCAP.pdf",
+                  "pagina": 8
+                },
+                {
+                  "tema": "lugar_ejecucion",
+                  "estado": "en_requisitos"
+                }
+              ],
+              "verificaciones": [
+                {
+                  "indice": 0,
+                  "regla": "solvencia_economica",
+                  "resultado_ia": "dudoso",
+                  "resultado": "si",
+                  "fuente": "perfil.volumen_negocio, ejercicio 2025: 268.420,15 €",
+                  "detalle": "Umbral 45.391,50 €; el mejor de los tres últimos ejercicios es 268.420,15 € (2025)."
+                },
+                {
+                  "indice": 2,
+                  "regla": "medios_personales",
+                  "resultado_ia": "dudoso",
+                  "resultado": "si",
+                  "fuente": "colaboradores: 7 de 11 cumplen los mínimos que se leen del requisito",
+                  "detalle": "Hay colaboradores con los años, la titulación, la certificación y el idioma que se piden (ver Equipo)."
+                },
+                {
+                  "indice": 3,
+                  "regla": "medios_personales",
+                  "resultado_ia": "dudoso",
+                  "resultado": "si",
+                  "fuente": "colaboradores: 9 de 12 cumplen los mínimos que se leen del requisito",
+                  "detalle": "Hay colaboradores con los años, la titulación, la certificación y el idioma que se piden (ver Equipo)."
+                },
+                {
+                  "indice": 7,
+                  "regla": "seguro",
+                  "resultado_ia": "no",
+                  "resultado": "no",
+                  "fuente": "perfil.seguro_rc: sin seguro",
+                  "detalle": "No hay seguro de responsabilidad civil: se contrata si se decide concurrir (nunca descarta por sí solo)."
+                },
+                {
+                  "indice": 8,
+                  "regla": "subcontratacion",
+                  "resultado_ia": "si",
+                  "resultado": "si",
+                  "fuente": "perfil.notas: la empresa concurre siempre sola",
+                  "detalle": "El servicio se presta íntegramente con medios propios."
+                },
+                {
+                  "indice": 9,
+                  "regla": "idioma",
+                  "resultado_ia": "si",
+                  "resultado": "si",
+                  "fuente": "perfil.idiomas: es, en",
+                  "detalle": null
+                },
+                {
+                  "indice": 14,
+                  "regla": "ute",
+                  "resultado_ia": "no_aplica",
+                  "resultado": "no_aplica",
+                  "fuente": "perfil.notas: la empresa concurre siempre sola",
+                  "detalle": null
+                }
+              ],
+              "calidad": {
+                "puntuacion": 93,
+                "requisitos": 15,
+                "excluyentes": 7,
+                "dudosos_pct": 33,
+                "con_pagina_pct": 100,
+                "excluyentes_con_cita_pct": 100,
+                "cobertura_checklist_pct": 100,
+                "cobertura_placsp_pct": 100,
+                "corregidos_por_codigo": 3,
+                "avisos": []
+              }
+            },
+            "agente": "licitaciones",
+            "creada_en": "2027-10-04T15:22:46.777Z",
+            "actualizada_en": "2027-10-04T15:22:46.777Z",
+            "revisada_en": "2027-10-04T15:22:46.777Z",
+            "version_prompt": 5,
+            "trabajo_id": null,
+            "metricas": null
+          }
+        },
+        "perfil_empresa": true,
+        "nueva_creacion": true,
+        "presentacion": null,
+        "ambito": {
+          "por_lotes": false,
+          "origen": "total",
+          "lotes": [],
+          "importe": 30261,
+          "cpvs": ["79311410", "79311400", "79311000"],
+          "descripcion": "Contrato entero",
+          "aviso": null,
+          "error": null
+        },
+        "version_ficha_actual": 5
+      },
+      "citas_requisitos": [null, null, null, null, null, null, null, null, null, null, null, null, null, null, null],
+      "encaje": {
+        "valor": 45,
+        "elegible": true,
+        "etiqueta": null,
+        "componentes": [
+          {
+            "clave": "tematica",
+            "etiqueta": "Temática",
+            "peso": 0.3,
+            "valor": 30,
+            "detalle": "Hermes: revisar · CPV parecido a lo nuestro: 0 %",
+            "de_hermes": true
+          },
+          {
+            "clave": "solvencia",
+            "etiqueta": "Solvencia y medios",
+            "peso": 0.2,
+            "valor": 72,
+            "detalle": "8 de 16 requisitos cumplidos",
+            "de_hermes": false
+          },
+          {
+            "clave": "competencia",
+            "etiqueta": "Competencia",
+            "peso": 0.15,
+            "valor": null,
+            "detalle": "Pocas adjudicaciones parecidas para estimar la competencia.",
+            "de_hermes": false
+          },
+          {
+            "clave": "economia",
+            "etiqueta": "Economía",
+            "peso": 0.15,
+            "valor": null,
+            "detalle": "Pocas ofertas ganadas con las que comparar el importe.",
+            "de_hermes": false
+          },
+          {
+            "clave": "capacidad",
+            "etiqueta": "Capacidad",
+            "peso": 0.1,
+            "valor": 33,
+            "detalle": "2 ofertas en preparación con plazo a ±7 días",
+            "de_hermes": false
+          },
+          {
+            "clave": "historial",
+            "etiqueta": "Historial",
+            "peso": 0.1,
+            "valor": null,
+            "detalle": "Aún no hay ofertas resueltas.",
+            "de_hermes": false
+          }
+        ]
+      },
+      "lotes": [],
+      "ficha_en_curso": null,
+      "oferta": {
+        "guion": {
+          "version": 1,
+          "apartados": 4,
+          "limite_paginas": 10
+        },
+        "guion_en_curso": null,
+        "decisiones_fijadas": false,
+        "guion_cambiado": false,
+        "memoria": null,
+        "automaticos": [
+          {
+            "criterio": "Experiencia acreditada en auditorías de accesibilidad web y en la redacción de informes técnicos",
+            "puntos": 15,
+            "tope": null,
+            "lotes": []
+          },
+          {
+            "criterio": "Criterio social de formación del personal adscrito",
+            "puntos": 5,
+            "tope": null,
+            "lotes": []
+          },
+          {
+            "criterio": "Capacidades técnicas y herramientas de evaluación",
+            "puntos": 10,
+            "tope": null,
+            "lotes": []
+          }
+        ],
+        "precios_maximos": [
+          {
+            "lote": null,
+            "unidad": null,
+            "maximo": null,
+            "presupuesto": 30261
+          }
+        ],
+        "memorias_por_lote": null
+      },
+      "carpeta_unica": null,
+      "responsable": null
+    }
+  },
+  "GET /api/licitaciones/licitaciones/p-91000780/oferta": {
+    "status": 200,
+    "body": {
+      "guion": {
+        "id": 3,
+        "version": 1,
+        "ficha_id": 239,
+        "creado_en": "2027-10-05T09:56:00.153Z",
+        "avisos": [],
+        "datos": {
+          "archivos": [
+            {
+              "nombre": "Sobre electrónico número uno (1)",
+              "contenido": "DEUC y la documentación de los criterios sujetos a juicio de valor: la memoria técnica.",
+              "prohibiciones": [
+                "En el sobre electrónico nº 1 no puede aparecer información que permita conocer los criterios valorables mediante fórmulas; hacerlo puede suponer la exclusión del licitador del procedimiento."
+              ],
+              "firma": "Firma de quien represente al licitador; tanto el DEUC como la memoria van firmados.",
+              "documentos": [
+                {
+                  "tipo": "deuc",
+                  "nombre": "Declaración responsable en el formulario del Documento Europeo Único de Contratación (DEUC)",
+                  "obligatorio": true,
+                  "produce": "persona",
+                  "origen": {
+                    "modelo": "DEUC",
+                    "documento": "Cuadro de condiciones.pdf",
+                    "pagina": 5
+                  }
+                },
+                {
+                  "tipo": "memoria",
+                  "nombre": "Memoria técnica",
+                  "obligatorio": true,
+                  "produce": "hermes",
+                  "origen": {
+                    "documento": "Cuadro de condiciones.pdf",
+                    "pagina": 6
+                  }
+                }
+              ],
+              "documento": "Cuadro de condiciones.pdf",
+              "pagina": 5
+            },
+            {
+              "nombre": "Sobre electrónico número dos (2)",
+              "contenido": "Oferta económica y resto de criterios valorables mediante fórmulas, según el modelo del Anexo II, con la documentación que los acredite cuando se exige.",
+              "prohibiciones": [],
+              "documentos": [
+                {
+                  "tipo": "oferta_economica",
+                  "nombre": "ANEXO II. MODELO DE OFERTA ECONÓMICA Y DE CRITERIOS AUTOMÁTICOS",
+                  "obligatorio": true,
+                  "produce": "persona",
+                  "origen": {
+                    "modelo": "Anexo II",
+                    "documento": "Cuadro de condiciones.pdf",
+                    "pagina": 19
+                  }
+                },
+                {
+                  "tipo": "acreditacion",
+                  "nombre": "Certificados de buena ejecución que acreditan la experiencia puntuable del equipo",
+                  "obligatorio": false,
+                  "produce": "persona",
+                  "origen": {
+                    "modelo": "Anexo II, justificantes que exige el criterio A.2",
+                    "documento": "Cuadro de condiciones.pdf",
+                    "pagina": 20
+                  }
+                },
+                {
+                  "tipo": "acreditacion",
+                  "nombre": "Licencia, certificado del proveedor o declaración responsable que acredite las capacidades técnicas",
+                  "obligatorio": false,
+                  "produce": "persona",
+                  "origen": {
+                    "modelo": "Anexo II, justificantes que exige el criterio A.4",
+                    "documento": "Cuadro de condiciones.pdf",
+                    "pagina": 22
+                  }
+                }
+              ],
+              "documento": "Cuadro de condiciones.pdf",
+              "pagina": 7
+            }
+          ],
+          "memoria": {
+            "archivo": "Sobre electrónico número uno (1)",
+            "titulo_documento": "Memoria técnica",
+            "limite_paginas": 10,
+            "limite_detalle": "La memoria no superará diez (10) páginas numeradas en formato A4 y letra de once (11) puntos; no se valorará nada a partir de la página once (11).",
+            "formato": {
+              "tamano_letra": 11,
+              "otros": "A4 con páginas numeradas."
+            },
+            "apartados": [
+              {
+                "titulo": "Metodología de auditoría y priorización de hallazgos",
+                "puntos": 12,
+                "se_valorara": [
+                  "la combinación de pruebas automáticas y revisión manual según WCAG 2.2 nivel AA",
+                  "el criterio para clasificar la gravedad y priorizar los hallazgos",
+                  "el método para no repetir el mismo fallo en páginas con plantilla común",
+                  "el procedimiento para verificar las correcciones frente al informe previo",
+                  "su apoyo en estándares y guías reconocidas, como WCAG 2.2, EN 301 549 y la metodología WCAG-EM"
+                ],
+                "escala": [
+                  {
+                    "puntos": 12,
+                    "descripcion": "Excelente (100 %): trata todos los aspectos del subcriterio de forma concreta para los portales de la Sociedad de Desarrollo, con parámetros o ejemplos."
+                  },
+                  {
+                    "puntos": 8.4,
+                    "descripcion": "Bueno (70 %): trata todos los aspectos, pero de forma genérica."
+                  },
+                  {
+                    "puntos": 4.8,
+                    "descripcion": "Suficiente (40 %): omite algún aspecto o lo trata de forma superficial."
+                  },
+                  {
+                    "puntos": 0,
+                    "descripcion": "Insuficiente (0 %): no aborda el subcriterio o contradice el pliego."
+                  }
+                ],
+                "documento": "Cuadro de condiciones.pdf",
+                "pagina": 15
+              },
+              {
+                "titulo": "Herramientas de evaluación",
+                "puntos": 6,
+                "se_valorara": [
+                  "su adecuación a los portales de la Sociedad de Desarrollo (turismo, trámites, empresas, etc.)",
+                  "la comparación razonada de ventajas e inconvenientes frente a otras herramientas del mercado"
+                ],
+                "escala": [
+                  {
+                    "puntos": 6,
+                    "descripcion": "Excelente (100 %): trata todos los aspectos del subcriterio de forma concreta para los portales de la Sociedad de Desarrollo, con parámetros o ejemplos."
+                  },
+                  {
+                    "puntos": 4.2,
+                    "descripcion": "Bueno (70 %): trata todos los aspectos, pero de forma genérica."
+                  },
+                  {
+                    "puntos": 2.4,
+                    "descripcion": "Suficiente (40 %): omite algún aspecto o lo trata de forma superficial."
+                  },
+                  {
+                    "puntos": 0,
+                    "descripcion": "Insuficiente (0 %): no aborda el subcriterio o contradice el pliego."
+                  }
+                ],
+                "documento": "Cuadro de condiciones.pdf",
+                "pagina": 15
+              },
+              {
+                "titulo": "Aseguramiento de calidad y seguimiento de correcciones",
+                "puntos": 4,
+                "se_valorara": [
+                  "los controles de revisión humana",
+                  "la estructura del anexo de evidencias",
+                  "la reproducibilidad de las pruebas"
+                ],
+                "escala": [
+                  {
+                    "puntos": 4,
+                    "descripcion": "Excelente (100 %): trata todos los aspectos del subcriterio de forma concreta para los portales de la Sociedad de Desarrollo, con parámetros o ejemplos."
+                  },
+                  {
+                    "puntos": 2.8,
+                    "descripcion": "Bueno (70 %): trata todos los aspectos, pero de forma genérica."
+                  },
+                  {
+                    "puntos": 1.6,
+                    "descripcion": "Suficiente (40 %): omite algún aspecto o lo trata de forma superficial."
+                  },
+                  {
+                    "puntos": 0,
+                    "descripcion": "Insuficiente (0 %): no aborda el subcriterio o contradice el pliego."
+                  }
+                ],
+                "documento": "Cuadro de condiciones.pdf",
+                "pagina": 15
+              },
+              {
+                "titulo": "Modelo de informe, ficha ejecutiva y panel de seguimiento",
+                "puntos": 3,
+                "se_valorara": [
+                  "la claridad y utilidad del modelo de informe, de la ficha ejecutiva y del panel de seguimiento para decidir qué corregir primero"
+                ],
+                "escala": [
+                  {
+                    "puntos": 3,
+                    "descripcion": "Excelente (100 %): trata todos los aspectos del subcriterio de forma concreta para los portales de la Sociedad de Desarrollo, con parámetros o ejemplos."
+                  },
+                  {
+                    "puntos": 2.1,
+                    "descripcion": "Bueno (70 %): trata todos los aspectos, pero de forma genérica."
+                  },
+                  {
+                    "puntos": 1.2,
+                    "descripcion": "Suficiente (40 %): omite algún aspecto o lo trata de forma superficial."
+                  },
+                  {
+                    "puntos": 0,
+                    "descripcion": "Insuficiente (0 %): no aborda el subcriterio o contradice el pliego."
+                  }
+                ],
+                "documento": "Cuadro de condiciones.pdf",
+                "pagina": 15
+              }
+            ],
+            "advertencias": [
+              "La memoria respetará las condiciones mínimas del Pliego de Prescripciones Técnicas; se valorarán el orden, la concreción y la claridad, y la coherencia entre objetivos, medios, mejoras, resultados y control.",
+              "Las ofertas que no lleguen a 12,5 puntos en este criterio quedarán excluidas (art. 146.3 LCSP).",
+              "No se valorará la información que aparezca desde la página once (11).",
+              "En el sobre electrónico nº 1 no puede aparecer información que permita conocer los criterios valorables mediante fórmulas; hacerlo puede suponer la exclusión del licitador del procedimiento."
+            ],
+            "documento": "Cuadro de condiciones.pdf",
+            "pagina": 6
+          },
+          "automaticos": [
+            {
+              "criterio": "Experiencia acreditada en auditorías de accesibilidad web y en la redacción de informes técnicos",
+              "puntos": 15,
+              "como_se_acredita": "Se valoran hasta tres profesionales adscritos a la ejecución, cada uno en un solo tramo a elección del licitador; la puntuación es la suma de los tres, con un máximo de 15 puntos. Se acredita con certificados de buena ejecución que identifiquen el servicio y la participación individual de la persona. Sin acreditación válida se puntúa 0; no cabe subsanación ni aclaración.",
+              "casilla_en": "Anexo II, apartado 2: casilla de cada tramo y campos con nombre, titulación y años exactos de cada profesional",
+              "archivo": "Sobre electrónico número dos (2)",
+              "marcas": [
+                "experiencia profesional",
+                "10 anos",
+                "5 anos",
+                "auditoria de accesibilidad",
+                "certificados de buena ejecucion"
+              ],
+              "documento": "Cuadro de condiciones.pdf",
+              "pagina": 13
+            },
+            {
+              "criterio": "Criterio social de formación del personal adscrito",
+              "puntos": 5,
+              "como_se_acredita": "Compromiso de realizar al menos dos actividades formativas distintas, de una hora como mínimo cada una, relacionadas con el objeto del contrato y dirigidas al personal adscrito, como mínimo en cada año de ejecución.",
+              "casilla_en": "Anexo II, apartado 3, casilla «Asumo el compromiso formativo»",
+              "archivo": "Sobre electrónico número dos (2)",
+              "marcas": ["actividades de formacion", "formacion del personal", "dos actividades", "una hora"],
+              "documento": "Cuadro de condiciones.pdf",
+              "pagina": 13
+            },
+            {
+              "criterio": "Capacidades técnicas y herramientas de evaluación",
+              "puntos": 10,
+              "como_se_acredita": "Se otorgan 2,5 puntos por cada capacidad acreditada. Se acredita con contrato de licencia o suscripción, o certificado del proveedor vigente al cierre del plazo, que nombre la capacidad concreta; si la herramienta es de desarrollo propio, con una declaración responsable que describa técnicamente sus funciones.",
+              "casilla_en": "Anexo II, apartado 4, casillas a), b), c) y d) y nombre de la herramienta acreditada",
+              "archivo": "Sobre electrónico número dos (2)",
+              "marcas": [
+                "WCAG 2.2",
+                "analizador automatico",
+                "lector de pantalla",
+                "JAWS",
+                "pruebas con usuarios",
+                "12 meses",
+                "vision artificial",
+                "deteccion automatica de contraste"
+              ],
+              "documento": "Cuadro de condiciones.pdf",
+              "pagina": 14
+            }
+          ],
+          "oferta_economica": {
+            "formula": "La puntuación máxima se asigna a la oferta admitida más barata y las demás se puntúan con la fórmula logarítmica Pi = Pmax · (1 + log₁₀(Omin / Oi)), donde Pi es la puntuación de la oferta valorada, Pmax la puntuación máxima del criterio de precio, Omin la oferta admitida más económica y Oi la oferta valorada, calculadas sobre el precio unitario por informe. No habrá puntuaciones negativas (mínimo 0 puntos) y el resultado se redondeará a dos decimales.",
+            "presupuesto_base": 30261,
+            "impuesto_aparte": "IGIC",
+            "umbral_anormalidad": null,
+            "modelo": "Anexo II",
+            "archivo": "Sobre electrónico número dos (2)",
+            "documento": "Cuadro de condiciones.pdf",
+            "pagina": 12
+          },
+          "plazo": {
+            "fecha_limite": "2027-10-15T23:59",
+            "canal": "Presentación solo por vía electrónica en la Plataforma de Contratación del Sector Público (PLACSP), con la herramienta de preparación y presentación de ofertas."
+          },
+          "lotes": [],
+          "documentos_adjudicacion": []
+        },
+        "cambios": null
+      },
+      "guion_en_curso": null,
+      "guion_desfasado": false,
+      "lotes_cambiados": false,
+      "decisiones": null,
+      "decisiones_problemas": [],
+      "guion_cambiado": false,
+      "memorias": [],
+      "ficha_aprobada": true,
+      "salidas_configurado": true,
+      "pliegos_listos": true,
+      "propuesta_decisiones": {
+        "guion_id": 3,
+        "creada_en": "2027-10-12T19:13:49.584Z",
+        "agente": "oferta-licitaciones",
+        "avisos": [],
+        "datos": {
+          "lotes": [],
+          "equipo": [
+            {
+              "persona_id": 1,
+              "rol_en_la_oferta": "Director/a técnico/a",
+              "motivo": "Persona J: grado en marketing y comunicación; 9 años de experiencia profesional con diseño de contenidos web y seguimiento de métricas de campañas en varias agencias (CV, págs. 1-2). Es el perfil más afín a usabilidad, pero el CV no desglosa cinco años específicos de auditoría de accesibilidad ni de evaluación de usabilidad; confirmar proyectos, fechas y disponibilidad."
+            },
+            {
+              "persona_id": 2,
+              "rol_en_la_oferta": "Analista de datos",
+              "motivo": "Persona F: grado y máster en matemáticas y 7 años de experiencia profesional; ha diseñado indicadores y paneles de control (CV, págs. 1 y 3-4). No consta que tres años sean de pruebas de usabilidad o analítica web: verificar proyectos y fechas antes de acreditar la solvencia."
+            }
+          ],
+          "automaticos": [
+            {
+              "criterio": "Experiencia acreditada en auditorías de accesibilidad web y en la redacción de informes técnicos",
+              "lote": null,
+              "tipo": "acreditacion",
+              "nos_acogemos": false,
+              "tramo": null,
+              "cumple": "falta_dato",
+              "motivo": "El CV de Persona J documenta diseño de contenidos y métricas de campañas, pero no años exactos de auditoría de accesibilidad ni certificados de buena ejecución con participación individual. Tampoco hay profesionales para repartir los tramos ≥10 años (6 puntos), ≥5 años (5) y >1 y <5 años (4) sin repetir persona. Preparar proyectos, fechas y certificados para el Anexo II, apartado 2; el CC, pág. 13, no admite subsanación."
+            },
+            {
+              "criterio": "Criterio social de formación del personal adscrito",
+              "lote": null,
+              "tipo": "compromiso",
+              "nos_acogemos": true,
+              "tramo": null,
+              "nivel": "Dos actividades distintas como mínimo cada año de ejecución, de una hora cada una, ligadas al objeto y para el personal adscrito",
+              "motivo": "Se asume íntegro el compromiso de formación anual del Cuadro de condiciones.pdf, pág. 13; quien lleva la oferta debe programar las actividades y marcar la casilla del Anexo II, apartado 3."
+            },
+            {
+              "criterio": "Capacidades técnicas y herramientas de evaluación",
+              "lote": null,
+              "tipo": "acreditacion",
+              "nos_acogemos": false,
+              "tramo": null,
+              "cumple": "falta_dato",
+              "motivo": "Ni el perfil de empresa ni los CV acreditan un analizador automático WCAG 2.2, un lector de pantalla comercial, pruebas con usuarios con histórico de 12 meses ni detección automática de contraste por visión artificial. Registrar en Ajustes › Empresa las licencias realmente disponibles, con proveedor y vigencia; sin ello no marcar las casillas a)-d) del Anexo II, apartado 4 (Cuadro de condiciones.pdf, págs. 13-14)."
+            }
+          ],
+          "herramientas": ["Python", "R", "Streamlit"],
+          "enfoque": "Objeto: auditar la accesibilidad y la usabilidad de los portales web de la Sociedad y seguir la corrección de los hallazgos (PPT.pdf, págs. 2-6). En «Metodología de auditoría y priorización de hallazgos» (Cuadro de condiciones.pdf, pág. 15), un ejemplo por portal y plantilla: pruebas automáticas fechadas, revisión manual documentada, criterio fijo de gravedad, agrupación de fallos repetidos y comprobación frente al informe previo, sin afirmar cumplimientos no verificados. En «Herramientas de evaluación», qué hacen Python y Streamlit en la extracción, el control, el cálculo y la visualización, y sus límites frente a otras opciones. En «Aseguramiento de calidad y seguimiento de correcciones», revisión humana de muestras, registro de herramientas y parámetros y anexo de evidencias. En «Modelo de informe, ficha ejecutiva y panel de seguimiento», tablas de hallazgos previstos y corregidos, gravedad y esfuerzo por portal, recomendación motivada y exportación abierta. Nunca citar en la memoria del sobre 1 el equipo puntuable, su experiencia, la formación ofrecida ni las capacidades técnicas puntuables: van en el sobre 2 (Cuadro de condiciones.pdf, págs. 5-7, 13-15). Concreción en 10 páginas: menos de 12,5/25 excluye.",
+          "no_prometer": [],
+          "resumen": "Sin lotes: Persona J como directora técnica y Persona F como analista, condicionadas a probar los años de experiencia específica (CC, pág. 11) y su adscripción. Formación anual al máximo; la experiencia puntuable y las cuatro capacidades técnicas no se marcan sin acreditación. Confirmar certificados, herramientas y licencias, facturación en el ámbito, incompatibilidad y conflictos antes de guardar."
+        },
+        "decisiones": {
+          "lotes": [],
+          "equipo": [
+            {
+              "persona_id": 1,
+              "rol_en_la_oferta": "Director/a técnico/a",
+              "lotes": []
+            },
+            {
+              "persona_id": 2,
+              "rol_en_la_oferta": "Analista de datos",
+              "lotes": []
+            }
+          ],
+          "automaticos": [
+            {
+              "criterio": "Experiencia acreditada en auditorías de accesibilidad web y en la redacción de informes técnicos",
+              "lote": null,
+              "nos_acogemos": false,
+              "tramo": null,
+              "nota": "El CV de Persona J documenta diseño de contenidos y métricas de campañas, pero no años exactos de auditoría de accesibilidad ni certificados de buena ejecución con participación individual. Tampoco hay profesionales para repartir los tramos ≥10 años (6 puntos), ≥5 años (5) y >1 y <5 años (4) sin repetir persona. Preparar proyectos, fechas y certificados para el Anexo II, apartado 2; el CC, pág. 13, no admite subsanación."
+            },
+            {
+              "criterio": "Criterio social de formación del personal adscrito",
+              "lote": null,
+              "nos_acogemos": true,
+              "tramo": null,
+              "nota": "Dos actividades distintas como mínimo cada año de ejecución, de una hora cada una, ligadas al objeto y para el personal adscrito. Se asume íntegro el compromiso de formación anual del Cuadro de condiciones.pdf, pág. 13; quien lleva la oferta debe programar las actividades y marcar la casilla del Anexo II, apartado 3."
+            },
+            {
+              "criterio": "Capacidades técnicas y herramientas de evaluación",
+              "lote": null,
+              "nos_acogemos": false,
+              "tramo": null,
+              "nota": "Ni el perfil de empresa ni los CV acreditan un analizador automático WCAG 2.2, un lector de pantalla comercial, pruebas con usuarios con histórico de 12 meses ni detección automática de contraste por visión artificial. Registrar en Ajustes › Empresa las licencias realmente disponibles, con proveedor y vigencia; sin ello no marcar las casillas a)-d) del Anexo II, apartado 4 (Cuadro de condiciones.pdf, págs. 13-14)."
+            }
+          ],
+          "herramientas": ["Python", "R", "Streamlit"],
+          "enfoque": "Objeto: auditar la accesibilidad y la usabilidad de los portales web de la Sociedad y seguir la corrección de los hallazgos (PPT.pdf, págs. 2-6). En «Metodología de auditoría y priorización de hallazgos» (Cuadro de condiciones.pdf, pág. 15), un ejemplo por portal y plantilla: pruebas automáticas fechadas, revisión manual documentada, criterio fijo de gravedad, agrupación de fallos repetidos y comprobación frente al informe previo, sin afirmar cumplimientos no verificados. En «Herramientas de evaluación», qué hacen Python y Streamlit en la extracción, el control, el cálculo y la visualización, y sus límites frente a otras opciones. En «Aseguramiento de calidad y seguimiento de correcciones», revisión humana de muestras, registro de herramientas y parámetros y anexo de evidencias. En «Modelo de informe, ficha ejecutiva y panel de seguimiento», tablas de hallazgos previstos y corregidos, gravedad y esfuerzo por portal, recomendación motivada y exportación abierta. Nunca citar en la memoria del sobre 1 el equipo puntuable, su experiencia, la formación ofrecida ni las capacidades técnicas puntuables: van en el sobre 2 (Cuadro de condiciones.pdf, págs. 5-7, 13-15). Concreción en 10 páginas: menos de 12,5/25 excluye.",
+          "ofertas": [
+            {
+              "lote": null,
+              "pendiente": true,
+              "importe": null,
+              "unitarios": []
+            }
+          ]
+        }
+      },
+      "propuesta_en_curso": null,
+      "precios_sugeridos": {
+        "": {
+          "base": 30261,
+          "unidad": null,
+          "referencia": "presupuesto",
+          "comparables": 0,
+          "ofertas_esperadas": 3,
+          "umbral_anormal": null,
+          "equilibrio": null,
+          "maxima": null,
+          "avisos": ["Solo 0 adjudicaciones parecidas: tómalo como orientación."]
+        }
+      },
+      "coherencia": [
+        {
+          "tipo": "medios_sin_acreditar",
+          "gravedad": "aviso",
+          "donde": "ficha",
+          "mensaje": "Técnico/a de auditoría de accesibilidad web o evaluación de usabilidad: nadie en Colaboradores con «auditoría de accesibilidad web o evaluación de usabilidad». Los años totales no acreditan la materia: añade a quien la tenga registrada en Colaboradores o déjalo como «dudoso» hasta acreditarlo."
+        },
+        {
+          "tipo": "medios_sin_acreditar",
+          "gravedad": "aviso",
+          "donde": "ficha",
+          "mensaje": "Analista de pruebas de usabilidad/analítica web: nadie en Colaboradores con «pruebas de usabilidad/analítica web». Los años totales no acreditan la materia: añade a quien la tenga registrada en Colaboradores o déjalo como «dudoso» hasta acreditarlo."
+        }
+      ],
+      "paquete": null,
+      "memoria_lotes": null,
+      "presentada_o_vencida": false
+    }
+  },
+  "GET /api/licitaciones/licitaciones/p-91000780/oferta/documentos": {
+    "status": 200,
+    "body": {
+      "documentos": [
+        {
+          "clave": "a1-d1",
+          "archivo": "Sobre electrónico número uno (1)",
+          "lote": null,
+          "nombre": "Declaración responsable en el formulario del Documento Europeo Único de Contratación (DEUC)",
+          "tipo": "deuc",
+          "obligatorio": true,
+          "produce": "persona",
+          "origen": {
+            "modelo": "DEUC",
+            "documento": "Cuadro de condiciones.pdf",
+            "pagina": 5
+          },
+          "estado": "pendiente",
+          "ruta": null,
+          "ruta_pdf": null,
+          "nota": null,
+          "actualizado_en": "2027-10-13T20:34:59.000Z",
+          "anexo": {
+            "rellenable": false,
+            "motivo": "Hermes lee los modelos PDF de las ofertas en preparación con plazo: pon la licitación en preparación o rellénalo a mano.",
+            "en_curso": null,
+            "avisos": [],
+            "modelo": null,
+            "deuc": {
+              "peticion": null,
+              "respuesta": null,
+              "version": null,
+              "sin_responder": []
+            }
+          }
+        },
+        {
+          "clave": "a1-d2",
+          "archivo": "Sobre electrónico número uno (1)",
+          "lote": null,
+          "nombre": "Memoria técnica",
+          "tipo": "memoria",
+          "obligatorio": true,
+          "produce": "hermes",
+          "origen": {
+            "documento": "Cuadro de condiciones.pdf",
+            "pagina": 6
+          },
+          "estado": "pendiente",
+          "ruta": null,
+          "ruta_pdf": null,
+          "nota": null,
+          "actualizado_en": "2027-10-13T20:34:59.000Z",
+          "anexo": {
+            "rellenable": false,
+            "motivo": "La memoria técnica se redacta en el paso 3: no es un modelo que rellenar.",
+            "en_curso": null,
+            "avisos": [],
+            "modelo": null
+          }
+        },
+        {
+          "clave": "a2-d1",
+          "archivo": "Sobre electrónico número dos (2)",
+          "lote": null,
+          "nombre": "ANEXO II. MODELO DE OFERTA ECONÓMICA Y DE CRITERIOS AUTOMÁTICOS",
+          "tipo": "oferta_economica",
+          "obligatorio": true,
+          "produce": "persona",
+          "origen": {
+            "modelo": "Anexo II",
+            "documento": "Cuadro de condiciones.pdf",
+            "pagina": 19
+          },
+          "estado": "pendiente",
+          "ruta": null,
+          "ruta_pdf": null,
+          "nota": null,
+          "actualizado_en": "2027-10-13T20:34:59.000Z",
+          "anexo": {
+            "rellenable": false,
+            "motivo": "Hermes lee los modelos PDF de las ofertas en preparación con plazo: pon la licitación en preparación o rellénalo a mano.",
+            "en_curso": null,
+            "avisos": [],
+            "modelo": null
+          }
+        },
+        {
+          "clave": "a2-d2",
+          "archivo": "Sobre electrónico número dos (2)",
+          "lote": null,
+          "nombre": "Certificados de buena ejecución que acreditan la experiencia puntuable del equipo",
+          "tipo": "acreditacion",
+          "obligatorio": false,
+          "produce": "persona",
+          "origen": {
+            "modelo": "Anexo II, justificantes que exige el criterio A.2",
+            "documento": "Cuadro de condiciones.pdf",
+            "pagina": 20
+          },
+          "estado": "pendiente",
+          "ruta": null,
+          "ruta_pdf": null,
+          "nota": null,
+          "actualizado_en": "2027-10-13T20:34:59.000Z",
+          "anexo": {
+            "rellenable": false,
+            "motivo": "Hermes lee los modelos PDF de las ofertas en preparación con plazo: pon la licitación en preparación o rellénalo a mano.",
+            "en_curso": null,
+            "avisos": [],
+            "modelo": null
+          }
+        },
+        {
+          "clave": "a2-d3",
+          "archivo": "Sobre electrónico número dos (2)",
+          "lote": null,
+          "nombre": "Licencia, certificado del proveedor o declaración responsable que acredite las capacidades técnicas",
+          "tipo": "acreditacion",
+          "obligatorio": false,
+          "produce": "persona",
+          "origen": {
+            "modelo": "Anexo II, justificantes que exige el criterio A.4",
+            "documento": "Cuadro de condiciones.pdf",
+            "pagina": 22
+          },
+          "estado": "pendiente",
+          "ruta": null,
+          "ruta_pdf": null,
+          "nota": null,
+          "actualizado_en": "2027-10-13T20:34:59.000Z",
+          "anexo": {
+            "rellenable": false,
+            "motivo": "Hermes lee los modelos PDF de las ofertas en preparación con plazo: pon la licitación en preparación o rellénalo a mano.",
+            "en_curso": null,
+            "avisos": [],
+            "modelo": null
+          }
+        }
+      ],
+      "resumen": {
+        "total": 5,
+        "preparados": 0,
+        "pendientes_obligatorios": 3
+      }
+    }
+  },
+  "GET /api/licitaciones/licitaciones/p-91000780/oferta/hoja-datos": {
+    "status": 200,
+    "body": {
+      "campos": [
+        {
+          "grupo": "Empresa",
+          "etiqueta": "Nombre o razón social",
+          "valor": "ANALÍTICA EJEMPLO, S.L.",
+          "falta": false
+        },
+        {
+          "grupo": "Empresa",
+          "etiqueta": "NIF",
+          "valor": "B12345674",
+          "falta": false
+        },
+        {
+          "grupo": "Empresa",
+          "etiqueta": "Domicilio",
+          "valor": null,
+          "falta": true
+        },
+        {
+          "grupo": "Empresa",
+          "etiqueta": "Representante",
+          "valor": "Persona R",
+          "falta": false
+        },
+        {
+          "grupo": "Empresa",
+          "etiqueta": "NIF del representante",
+          "valor": "12345678Z",
+          "falta": false
+        },
+        {
+          "grupo": "Empresa",
+          "etiqueta": "Cargo del representante",
+          "valor": "Administrador solidario",
+          "falta": false
+        },
+        {
+          "grupo": "Empresa",
+          "etiqueta": "Correo electrónico",
+          "valor": null,
+          "falta": true
+        },
+        {
+          "grupo": "Empresa",
+          "etiqueta": "Teléfono",
+          "valor": null,
+          "falta": true
+        },
+        {
+          "grupo": "Empresa",
+          "etiqueta": "Lugar",
+          "valor": null,
+          "falta": true
+        },
+        {
+          "grupo": "Licitación",
+          "etiqueta": "Expediente",
+          "valor": "CTR-2026-0093",
+          "falta": false
+        },
+        {
+          "grupo": "Licitación",
+          "etiqueta": "Título",
+          "valor": "Servicio de auditoría de accesibilidad y usabilidad de los portales web de la Sociedad de Desarrollo de Villaejemplo.",
+          "falta": false
+        },
+        {
+          "grupo": "Licitación",
+          "etiqueta": "Órgano de contratación",
+          "valor": "Consejero Delegado de la Sociedad de Desarrollo de Villaejemplo, S.A.U.",
+          "falta": false
+        },
+        {
+          "grupo": "Licitación",
+          "etiqueta": "Lotes",
+          "valor": "Toda la licitación",
+          "falta": false
+        },
+        {
+          "grupo": "Oferta",
+          "etiqueta": "Importe sin impuestos",
+          "valor": null,
+          "falta": true
+        },
+        {
+          "grupo": "Oferta",
+          "etiqueta": "Impuesto",
+          "valor": "IGIC 7 %",
+          "falta": false
+        },
+        {
+          "grupo": "Oferta",
+          "etiqueta": "Cuota de IGIC",
+          "valor": null,
+          "falta": true
+        },
+        {
+          "grupo": "Oferta",
+          "etiqueta": "Total con IGIC",
+          "valor": null,
+          "falta": true
+        },
+        {
+          "grupo": "Oferta",
+          "etiqueta": "Baja sobre el presupuesto",
+          "valor": null,
+          "falta": true
+        },
+        {
+          "grupo": "Criterios automáticos",
+          "etiqueta": "Experiencia acreditada en auditorías de accesibilidad web y en la redacción de informes técnicos",
+          "valor": null,
+          "falta": true
+        },
+        {
+          "grupo": "Criterios automáticos",
+          "etiqueta": "Criterio social de formación del personal adscrito",
+          "valor": null,
+          "falta": true
+        },
+        {
+          "grupo": "Criterios automáticos",
+          "etiqueta": "Capacidades técnicas y herramientas de evaluación",
+          "valor": null,
+          "falta": true
+        },
+        {
+          "grupo": "Firma",
+          "etiqueta": "Fecha",
+          "valor": "a la fecha de la firma electrónica",
+          "falta": false
+        }
+      ],
+      "avisos": [
+        "Faltan datos de la empresa en Ajustes › Empresa: domicilio, correo electrónico, teléfono.",
+        "El domicilio de la empresa no trae código postal y municipio (Ajustes › Empresa): el lugar de la firma queda en blanco.",
+        "Aún no se han fijado las decisiones de la oferta: faltan los lotes, el precio y los criterios automáticos.",
+        "IGIC al 7 % (tipo general): confirma el tipo en el pliego antes de presentar."
+      ]
+    }
+  },
+  "GET /api/licitaciones/licitaciones/p-91000780/oferta/decisiones": {
+    "status": 404,
+    "body": {
+      "error": "not_found",
+      "message": "Aún no se han fijado las decisiones de la oferta."
+    }
+  },
+  "GET /api/licitaciones/licitaciones/p-91000780/oferta/decisiones/historial": {
+    "status": 200,
+    "body": []
+  },
+  "GET /api/licitaciones/licitaciones/p-91000780/oferta/hermes": {
+    "status": 200,
+    "body": {
+      "trabajos": [],
+      "ultimo_fallo": null,
+      "runs_hoy": 0,
+      "tope_runs": 40,
+      "propuestas_auto_hoy": 0,
+      "tope_propuestas": 3,
+      "frenos": [],
+      "pausa_hasta": null,
+      "freno_elegibilidad": {
+        "frenada": true,
+        "bloqueos": [
+          {
+            "clave": "medios:-:auditoria_de_accesibilidad_web_o_evaluacion_de_usabilidad",
+            "titulo": "Técnico de auditoría de accesibilidad web o evaluación de usabilidad: nadie del equipo lo tiene registrado"
+          },
+          {
+            "clave": "medios:-:pruebas_de_usabilidad_analitica_web",
+            "titulo": "Analista de pruebas de usabilidad/analítica web: nadie del equipo lo tiene registrado"
+          }
+        ]
+      }
+    }
+  },
+  "GET /api/licitaciones/licitaciones/p-91000780/oferta/memoria": {
+    "status": 200,
+    "body": {
+      "memorias": []
+    }
+  },
+  "GET /api/licitaciones/licitaciones/p-91000780/propuesta": {
+    "status": 200,
+    "body": {
+      "id": "p-91000780",
+      "propuestas": [],
+      "borradores": [],
+      "evaluaciones": [],
+      "parecidas": [],
+      "aprendizajes": [],
+      "documentos": [],
+      "carpeta_salidas": "Salidas/Licitaciones/CTR-2026-0093 (p-91000780)",
+      "ficha_aprobada": true,
+      "salidas_configurado": true,
+      "carpeta_presentada": null,
+      "guion": {
+        "id": 3,
+        "version": 1,
+        "apartados": 4,
+        "limite_paginas": 10
+      },
+      "memorias": []
+    }
+  },
+  "GET /api/licitaciones/licitaciones/p-91000780/equipo": {
+    "status": 200,
+    "body": {
+      "id": "p-91000780",
+      "cpvs": ["79311410", "79311400", "79311000"],
+      "ambito": "Contrato entero",
+      "ficha": "aprobada",
+      "requisitos": [
+        {
+          "texto": "Director/a técnico/a: titulación universitaria y ≥5 años en auditoría de accesibilidad web o evaluación de usabilidad.. Un perfil con grado universitario y ≥5 años experiencia específica",
+          "requisito": {
+            "anios_minimos": 5,
+            "titulacion": {
+              "nivel": 2,
+              "nombre": "titulación universitaria",
+              "campos": []
+            },
+            "certificaciones": [],
+            "idiomas": [],
+            "materias": [
+              {
+                "texto": "auditoria de accesibilidad web o evaluacion de usabilidad",
+                "alternativas": ["auditoria de accesibilidad web", "evaluacion de usabilidad"]
+              }
+            ],
+            "docencia": null
+          },
+          "internos": [
+            {
+              "id": 2,
+              "nombre": "Persona F",
+              "tipo": "interno",
+              "rol": "Dirección; Ciencia de datos",
+              "disponibilidad": "disponible",
+              "disponibilidad_motivo": "",
+              "tarifa_hora": null,
+              "cv_ruta": null,
+              "puntuacion": 70,
+              "cumple_minimos": true,
+              "coincidencias": 2,
+              "reglas": [
+                {
+                  "regla": "anios",
+                  "exigido": "≥ 5 años de experiencia",
+                  "resultado": "cumple",
+                  "detalle": "5 años de experiencia."
+                },
+                {
+                  "regla": "titulacion",
+                  "exigido": "titulación universitaria",
+                  "resultado": "cumple",
+                  "detalle": "Máster en matemáticas"
+                }
+              ],
+              "afinidad": [],
+              "materias": [
+                {
+                  "materia": "auditoria de accesibilidad web o evaluacion de usabilidad",
+                  "evidencia": null
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "nombre": "Persona J",
+              "tipo": "interno",
+              "rol": "Marketing digital",
+              "disponibilidad": "disponible",
+              "disponibilidad_motivo": "",
+              "tarifa_hora": null,
+              "cv_ruta": null,
+              "puntuacion": 70,
+              "cumple_minimos": true,
+              "coincidencias": 2,
+              "reglas": [
+                {
+                  "regla": "anios",
+                  "exigido": "≥ 5 años de experiencia",
+                  "resultado": "cumple",
+                  "detalle": "8 años de experiencia."
+                },
+                {
+                  "regla": "titulacion",
+                  "exigido": "titulación universitaria",
+                  "resultado": "cumple",
+                  "detalle": "Máster de área general"
+                }
+              ],
+              "afinidad": [],
+              "materias": [
+                {
+                  "materia": "auditoria de accesibilidad web o evaluacion de usabilidad",
+                  "evidencia": null
+                }
+              ]
+            }
+          ],
+          "externos": [],
+          "recortado": false,
+          "activos": 2,
+          "descripcion": "Director/a técnico/a: titulación universitaria y ≥5 años en auditoría de accesibilidad web o evaluación de usabilidad.",
+          "valor_exigido": "Un perfil con grado universitario y ≥5 años experiencia específica",
+          "excluyente": true,
+          "pagina": 11
+        },
+        {
+          "texto": "Analista de datos: titulación universitaria en Estadística, Informática, Matemáticas, Ingeniería, Psicología o similar y ≥3 años en pruebas de usabilidad/analítica web.. Un perfil con titulación afín y ≥3 años experiencia específica",
+          "requisito": {
+            "anios_minimos": 3,
+            "titulacion": {
+              "nivel": 2,
+              "nombre": "titulación universitaria",
+              "campos": ["informática", "matemáticas", "estadística"]
+            },
+            "certificaciones": [],
+            "idiomas": [],
+            "materias": [
+              {
+                "texto": "pruebas de usabilidad/analitica web",
+                "alternativas": ["pruebas de usabilidad", "analitica web"]
+              }
+            ],
+            "docencia": null
+          },
+          "internos": [
+            {
+              "id": 2,
+              "nombre": "Persona F",
+              "tipo": "interno",
+              "rol": "Dirección; Ciencia de datos",
+              "disponibilidad": "disponible",
+              "disponibilidad_motivo": "",
+              "tarifa_hora": null,
+              "cv_ruta": null,
+              "puntuacion": 70,
+              "cumple_minimos": true,
+              "coincidencias": 2,
+              "reglas": [
+                {
+                  "regla": "anios",
+                  "exigido": "≥ 3 años de experiencia",
+                  "resultado": "cumple",
+                  "detalle": "5 años de experiencia."
+                },
+                {
+                  "regla": "titulacion",
+                  "exigido": "titulación universitaria en informática o matemáticas o estadística",
+                  "resultado": "cumple",
+                  "detalle": "Máster en matemáticas"
+                }
+              ],
+              "afinidad": [],
+              "materias": [
+                {
+                  "materia": "pruebas de usabilidad/analitica web",
+                  "evidencia": null
+                }
+              ]
+            },
+            {
+              "id": 1,
+              "nombre": "Persona J",
+              "tipo": "interno",
+              "rol": "Marketing digital",
+              "disponibilidad": "disponible",
+              "disponibilidad_motivo": "",
+              "tarifa_hora": null,
+              "cv_ruta": null,
+              "puntuacion": 53,
+              "cumple_minimos": true,
+              "coincidencias": 2,
+              "reglas": [
+                {
+                  "regla": "anios",
+                  "exigido": "≥ 3 años de experiencia",
+                  "resultado": "cumple",
+                  "detalle": "8 años de experiencia."
+                },
+                {
+                  "regla": "titulacion",
+                  "exigido": "titulación universitaria en informática o matemáticas o estadística",
+                  "resultado": "parcial",
+                  "detalle": "Nivel suficiente en otra rama: Máster de área general."
+                }
+              ],
+              "afinidad": [],
+              "materias": [
+                {
+                  "materia": "pruebas de usabilidad/analitica web",
+                  "evidencia": null
+                }
+              ]
+            }
+          ],
+          "externos": [],
+          "recortado": false,
+          "activos": 2,
+          "descripcion": "Analista de datos: titulación universitaria en Estadística, Informática, Matemáticas, Ingeniería, Psicología o similar y ≥3 años en pruebas de usabilidad/analítica web.",
+          "valor_exigido": "Un perfil con titulación afín y ≥3 años experiencia específica",
+          "excluyente": true,
+          "pagina": 11
+        }
+      ],
+      "busqueda_semantica": true,
+      "aviso": "Puntuación orientativa (0–100): 70 puntos por lo exigido que se puede comprobar (años, titulación, certificación, idioma, horas de docencia) y 30 por afinidad (tecnologías y rol citados, CPV, CV parecido). Revisa siempre el CV."
+    }
+  },
+  "GET /api/licitaciones/licitaciones/p-91000780/comprobaciones": {
+    "status": 200,
+    "body": {
+      "id": "p-91000780",
+      "veredicto": {
+        "tipo": "descartada",
+        "texto": "Descartada: Sin solvencia técnica mínima: no tenemos director/a con 5 años en auditoría de accesibilidad web o evaluación de usabili"
+      },
+      "hora_interna_cierre": "2027-10-15T19:59:00.000Z",
+      "limite_decidir": "2027-10-15T16:09:00.000Z",
+      "limite_suavizar": null,
+      "minutos_persona": 6.5,
+      "bloqueos": [
+        {
+          "clave": "medios:-:auditoria_de_accesibilidad_web_o_evaluacion_de_usabilidad",
+          "categoria": "elegibilidad",
+          "lote": null,
+          "gravedad": "impide",
+          "titulo": "Técnico de auditoría de accesibilidad web o evaluación de usabilidad: nadie del equipo lo tiene registrado",
+          "cita": {
+            "documento": "Cuadro de condiciones.pdf",
+            "pagina": 11,
+            "texto": "Director/a técnico/a: titulación universitaria y ≥5 años en auditoría de accesibilidad web o evaluación de usabilidad.",
+            "comprobada": false
+          },
+          "actor": "negocio",
+          "accion": {
+            "tipo": "asignar_rol",
+            "destino": "equipo:tecnico"
+          },
+          "propuesta": null,
+          "minutos": 0,
+          "estado": "abierto",
+          "huella": "90e42e4b235df659"
+        },
+        {
+          "clave": "medios:-:pruebas_de_usabilidad_analitica_web",
+          "categoria": "elegibilidad",
+          "lote": null,
+          "gravedad": "impide",
+          "titulo": "Analista de pruebas de usabilidad/analítica web: nadie del equipo lo tiene registrado",
+          "cita": {
+            "documento": "Cuadro de condiciones.pdf",
+            "pagina": 11,
+            "texto": "Analista de datos: titulación universitaria en Estadística, Informática, Matemáticas, Ingeniería, Psicología o similar y ≥3 años en pruebas de usabilidad/analítica web.",
+            "comprobada": false
+          },
+          "actor": "negocio",
+          "accion": {
+            "tipo": "asignar_rol",
+            "destino": "equipo:analista"
+          },
+          "propuesta": null,
+          "minutos": 0,
+          "estado": "abierto",
+          "huella": "bf15cc4e2b0e1b07"
+        },
+        {
+          "clave": "precio:-",
+          "categoria": "precio",
+          "lote": null,
+          "gravedad": "impide",
+          "titulo": "Precio sin decidir",
+          "cita": null,
+          "actor": "tu",
+          "accion": {
+            "tipo": "fijar_precio",
+            "destino": "precio-lote-unico"
+          },
+          "propuesta": null,
+          "minutos": 1,
+          "estado": "abierto",
+          "huella": "87915234aa3c550f"
+        },
+        {
+          "clave": "decisiones_falta:-",
+          "categoria": "decisiones",
+          "lote": null,
+          "gravedad": "impide",
+          "titulo": "Decisiones sin fijar",
+          "cita": null,
+          "actor": "tu",
+          "accion": {
+            "tipo": "aplicar_diff",
+            "destino": "decisiones"
+          },
+          "propuesta": null,
+          "minutos": 1,
+          "estado": "abierto",
+          "huella": "46c0fa4b49a08fa9"
+        },
+        {
+          "clave": "dato_anexo:-:impuesto",
+          "categoria": "decisiones",
+          "lote": null,
+          "gravedad": "impide",
+          "titulo": "Decide el impuesto de la oferta (IVA, IGIC o exento) y su tipo",
+          "cita": {
+            "documento": "Cuadro de condiciones.pdf",
+            "pagina": 12,
+            "texto": "Anexo II: IGIC aparte",
+            "comprobada": false
+          },
+          "actor": "tu",
+          "accion": {
+            "tipo": "campo",
+            "destino": "decisiones.datos_anexo.impuesto"
+          },
+          "propuesta": null,
+          "minutos": 0.5,
+          "estado": "abierto",
+          "huella": "8de3ce1e3090abee"
+        },
+        {
+          "clave": "documentos_sin_preparar:-:sobre_electronico_numero_uno_1",
+          "categoria": "documentos",
+          "lote": null,
+          "gravedad": "riesgo",
+          "titulo": "Sobre electrónico número uno (1): 1 documento sin preparar",
+          "cita": null,
+          "actor": "tu",
+          "accion": {
+            "tipo": "preparar_documento",
+            "destino": "documentos"
+          },
+          "propuesta": null,
+          "minutos": 0.5,
+          "estado": "abierto",
+          "huella": "db37dbcad84304e2"
+        },
+        {
+          "clave": "documentos_sin_preparar:-:sobre_electronico_numero_dos_2",
+          "categoria": "documentos",
+          "lote": null,
+          "gravedad": "riesgo",
+          "titulo": "Sobre electrónico número dos (2): 1 documento sin preparar",
+          "cita": null,
+          "actor": "tu",
+          "accion": {
+            "tipo": "preparar_documento",
+            "destino": "documentos"
+          },
+          "propuesta": null,
+          "minutos": 0.5,
+          "estado": "abierto",
+          "huella": "b2e629ff789b79ec"
+        },
+        {
+          "clave": "empresa:-:domicilio",
+          "categoria": "empresa",
+          "lote": null,
+          "gravedad": "impide",
+          "titulo": "Falta el domicilio de la empresa (va en el DEUC y en los anexos)",
+          "cita": null,
+          "actor": "tu",
+          "accion": {
+            "tipo": "completar_empresa",
+            "destino": "empresa.domicilio"
+          },
+          "propuesta": null,
+          "minutos": 1,
+          "estado": "abierto",
+          "huella": "85e6038da7275176"
+        },
+        {
+          "clave": "empresa:-:contacto_email",
+          "categoria": "empresa",
+          "lote": null,
+          "gravedad": "riesgo",
+          "titulo": "Falta el correo de contacto de la empresa (lo piden el DEUC y los anexos)",
+          "cita": null,
+          "actor": "tu",
+          "accion": {
+            "tipo": "completar_empresa",
+            "destino": "empresa.contacto.email"
+          },
+          "propuesta": null,
+          "minutos": 1,
+          "estado": "abierto",
+          "huella": "499470abf7612ff2"
+        },
+        {
+          "clave": "empresa:-:contacto_telefono",
+          "categoria": "empresa",
+          "lote": null,
+          "gravedad": "riesgo",
+          "titulo": "Falta el teléfono de contacto de la empresa (lo piden el DEUC y los anexos)",
+          "cita": null,
+          "actor": "tu",
+          "accion": {
+            "tipo": "completar_empresa",
+            "destino": "empresa.contacto.telefono"
+          },
+          "propuesta": null,
+          "minutos": 1,
+          "estado": "abierto",
+          "huella": "69ecbb478fcc484c"
+        }
+      ],
+      "comprobado": [
+        {
+          "clave": "coherencia",
+          "texto": "Lotes, ficha, pliegos, guion y decisiones casan entre sí"
+        }
+      ],
+      "fases": [
+        {
+          "nombre": "decidir",
+          "estado": "te_toca",
+          "actor": "tu",
+          "eta": null
+        },
+        {
+          "nombre": "pliegos",
+          "estado": "hecho",
+          "actor": "hermes",
+          "eta": null
+        },
+        {
+          "nombre": "guion",
+          "estado": "hecho",
+          "actor": "hermes",
+          "eta": null
+        },
+        {
+          "nombre": "decisiones",
+          "estado": "te_toca",
+          "actor": "tu",
+          "eta": null
+        },
+        {
+          "nombre": "memoria",
+          "estado": "bloqueado",
+          "actor": "hermes",
+          "eta": null
+        },
+        {
+          "nombre": "documentos",
+          "estado": "te_toca",
+          "actor": "tu",
+          "eta": null
+        },
+        {
+          "nombre": "paquete",
+          "estado": "bloqueado",
+          "actor": "hermes",
+          "eta": null
+        },
+        {
+          "nombre": "presentar",
+          "estado": "pendiente",
+          "actor": "tu",
+          "eta": null
+        }
+      ],
+      "hitos": [],
+      "hermes": null,
+      "version": "9849a2ffb91c9285"
+    }
+  },
+  "GET /api/licitaciones/licitaciones/p-91000780/precios": {
+    "status": 200,
+    "body": {
+      "consulta": {
+        "cpv": "79311410",
+        "presupuesto": 30261,
+        "tipo": "2",
+        "procedimiento": "1",
+        "organo": "A00572321",
+        "organo_dir3": null,
+        "organo_norm": "consejero delegado de la sociedad de desarrollo de villaejemplo sau",
+        "mismo_organo": false,
+        "ofertas": null,
+        "excluir": "p-91000780",
+        "titulo": "Servicio de auditoría de accesibilidad y usabilidad de los portales web de la Sociedad de Desarrollo de Villaejemplo.",
+        "tipo_nombre": "Servicios",
+        "procedimiento_nombre": "Abierto"
+      },
+      "segmento": {
+        "descripcion": "todos los CPV",
+        "nivel": {
+          "cpv": null,
+          "tipo": false,
+          "proc": false,
+          "banda": false
+        },
+        "n": 0,
+        "excluidas": 0,
+        "suficiente": false,
+        "minimo": 20,
+        "importe_min": null,
+        "importe_max": null,
+        "probados": [
+          {
+            "descripcion": "CPV 79311410 · Servicios · Abierto · 10.087–90.783 €",
+            "n": 0
+          },
+          {
+            "descripcion": "CPV 79311410 · Servicios · 10.087–90.783 €",
+            "n": 0
+          },
+          {
+            "descripcion": "CPV 79311410 · Servicios",
+            "n": 0
+          },
+          {
+            "descripcion": "CPV 79311… · Servicios · Abierto · 10.087–90.783 €",
+            "n": 0
+          },
+          {
+            "descripcion": "CPV 79311… · Servicios · 10.087–90.783 €",
+            "n": 0
+          },
+          {
+            "descripcion": "CPV 79311… · Servicios",
+            "n": 0
+          },
+          {
+            "descripcion": "CPV 7931… · Servicios · Abierto · 10.087–90.783 €",
+            "n": 0
+          },
+          {
+            "descripcion": "CPV 7931… · Servicios · 10.087–90.783 €",
+            "n": 0
+          },
+          {
+            "descripcion": "CPV 7931… · Servicios",
+            "n": 0
+          },
+          {
+            "descripcion": "CPV 793… · Servicios · Abierto · 10.087–90.783 €",
+            "n": 0
+          },
+          {
+            "descripcion": "CPV 793… · Servicios · 10.087–90.783 €",
+            "n": 0
+          },
+          {
+            "descripcion": "CPV 793… · Servicios",
+            "n": 0
+          },
+          {
+            "descripcion": "CPV 79… · Servicios · Abierto · 10.087–90.783 €",
+            "n": 0
+          },
+          {
+            "descripcion": "CPV 79… · Servicios · 10.087–90.783 €",
+            "n": 0
+          },
+          {
+            "descripcion": "CPV 79… · Servicios",
+            "n": 0
+          },
+          {
+            "descripcion": "todos los CPV · Servicios · 10.087–90.783 €",
+            "n": 0
+          },
+          {
+            "descripcion": "todos los CPV · Servicios",
+            "n": 0
+          },
+          {
+            "descripcion": "todos los CPV",
+            "n": 0
+          }
+        ]
+      },
+      "estadistica": {
+        "n": 0,
+        "percentiles": {
+          "p10": null,
+          "p25": null,
+          "p50": null,
+          "p75": null,
+          "p90": null
+        },
+        "media": null,
+        "desviacion": null,
+        "rango_intercuartil": null,
+        "por_anio": [],
+        "tendencia_anual": null,
+        "por_ofertas": []
+      },
+      "escenarios": null,
+      "nota": "Orientativo: estadística de adjudicaciones parecidas publicadas en la PLACSP. El aviso de oferta anormalmente baja usa el umbral del pliego si el guion lo trae como baja; si no, la regla supletoria del art. 85 del RGLCAP suponiendo que el resto oferta la baja mediana del segmento; manda lo que diga el pliego.",
+      "lote": null,
+      "lotes_interes": []
+    }
+  },
+  "GET /api/licitaciones/licitaciones/p-91000780/indices": {
+    "status": 200,
+    "body": {
+      "clave": "2|79311410|46|abi|A00572321",
+      "referencia": "2027-10-13T20:34:59.000Z",
+      "muestra": {
+        "descripcion": "CPV 79… · 5 años · ÷3–×3 del presupuesto · cualquier procedimiento",
+        "cpv": "79",
+        "cifras_cpv": 2,
+        "procedimiento_relajado": true,
+        "n": 0,
+        "n_organo": 0
+      },
+      "confianza": "baja",
+      "competencia": {
+        "ofertas": null,
+        "rango": {
+          "p25": null,
+          "p50": null,
+          "p75": null
+        },
+        "p_un_licitador": null,
+        "n": 0,
+        "n_organo": 0,
+        "mediana_organo": null,
+        "ajustado_por_organo": false
+      },
+      "baja": {
+        "esperada": null,
+        "rango": {
+          "p25": null,
+          "p50": null,
+          "p75": null
+        },
+        "n": 0,
+        "tramos": [
+          {
+            "tramo": "1",
+            "probabilidad": 0,
+            "mediana": null,
+            "n": 0
+          },
+          {
+            "tramo": "2-3",
+            "probabilidad": 0,
+            "mediana": null,
+            "n": 0
+          },
+          {
+            "tramo": "4-5",
+            "probabilidad": 0,
+            "mediana": null,
+            "n": 0
+          },
+          {
+            "tramo": "6-10",
+            "probabilidad": 0,
+            "mediana": null,
+            "n": 0
+          },
+          {
+            "tramo": "11+",
+            "probabilidad": 0,
+            "mediana": null,
+            "n": 0
+          }
+        ],
+        "umbral_anormal": null,
+        "regla_umbral": "art85",
+        "umbral_literal": null
+      },
+      "licitadores": [],
+      "concentracion": null,
+      "resumen": "Sin dato de ofertas · n = 0, CPV 2 dígitos, confianza baja",
+      "comparables": [],
+      "nota": "Estadística de lo adjudicado en la PLACSP: comparables del mismo tipo de contrato y CPV (con retroceso de 8 a 2 cifras hasta tener 20), presupuesto entre un tercio y el triple, procedimiento parecido y 5 años, pesando la mitad cada 2 años. La PLACSP solo publica al ganador y el nº de ofertas; quién más se presentó sale de las actas leídas. «Más barata» no es «ganar»: los juicios de valor también puntúan.",
+      "calculado_en": "2027-10-13T20:34:59.000Z",
+      "id": "p-91000780",
+      "lote": null,
+      "lotes_interes": [],
+      "de_cache": false,
+      "acierto": {}
+    }
+  },
+  "GET /api/licitaciones/licitaciones/p-91000780/antecedentes": {
+    "status": 200,
+    "body": {
+      "licitacion": {
+        "id": "p-91000780",
+        "titulo": "Servicio de auditoría de accesibilidad y usabilidad de los portales web de la Sociedad de Desarrollo de Villaejemplo.",
+        "organo": "Consejero Delegado de la Sociedad de Desarrollo de Villaejemplo, S.A.U.",
+        "organo_por": "mismo NIF del órgano",
+        "referencia": "2026-09-24"
+      },
+      "como_se_buscan": "Ediciones anteriores: licitaciones del mismo órgano publicadas al menos seis meses antes que esta, sin contratos basados en un acuerdo marco, cuyo objeto se parece. El parecido compara las palabras del título sin años, números de expediente ni palabras vacías, y pesa más las que el órgano usa poco (su nombre o «hospital» apenas cuentan). Cuenta como edición con un parecido de 0.7 o más, o de 0.5 o más si comparten CPV (al menos la división, 2 cifras), el importe no se sale de entre un tercio y el triple y no tiene cada título una palabra que el órgano casi no usa y el otro no (otro centro, otra ruta). Nunca si nombran provincias, ciudades o comunidades distintas: es el mismo servicio en otro sitio. En licitaciones con lotes, cada lote se busca por su nombre y se casa con el lote de nombre más parecido de cada edición.",
+      "reglas": "Puntos: mismo adjudicatario en las últimas ediciones seguidas, 1 por edición (máx. 3); ediciones con 1 oferta (en la mitad o más de sus lotes), 1 si hay una y 2 si hay dos o más (1 si todas tienen como mucho 2); baja mediana del adjudicatario anterior por debajo del 2 % sin contar las adjudicaciones con una sola oferta, 1 o 2 si son dos o más; el contrato nuevo empieza al acabar el anterior, 1; plazo de presentación más de 2 días por debajo del mínimo legal de su procedimiento y tipo de contrato, 2 (en el mínimo se muestra, pero no suma); volumen de negocio de más de 1,7 veces el valor estimado (el tope legal es 1,5) o trabajos similares de más de 1,4 veces la anualidad media (el doble de la referencia del 70 %), 2; cada señal del pliego en la ficha aprobada, 1 (2 si es una marca o compatibilidad obligatoria; máx. 4 en total; las de un lote solo cuentan en ese lote). Nivel: alto desde 5 puntos, medio desde 3, bajo por debajo. Son indicios, no pruebas: compruébalos en el pliego.",
+      "nota": "Indicios, no pruebas: patrones que suelen aparecer cuando una licitación está pensada para quien ya presta el servicio. Compruébalos en el pliego. La PLACSP solo publica quién ganó, no quién se presentó.",
+      "nivel": "bajo",
+      "ediciones": [],
+      "indicios": {
+        "nivel": "bajo",
+        "puntos": 2,
+        "indicios": [
+          {
+            "codigo": "pliego_juicio_valor_favorece",
+            "origen": "pliego",
+            "peso": 1,
+            "titulo": "Criterio de juicio de valor que favorece a quien ya lo presta",
+            "explicacion": "La puntuación máxima exige concretar la auditoría sobre los portales de la Sociedad de Desarrollo, lo que puede favorecer a quien ya los conoce.",
+            "dato": "«trata todos los aspectos del subcriterio de forma concreta para los portales de la Sociedad de Desarrollo, con parámetros o ejemplos.» (Cuadro de condiciones.pdf, pág. 15)."
+          },
+          {
+            "codigo": "pliego_tecnologia_especifica",
+            "origen": "pliego",
+            "peso": 1,
+            "titulo": "Tecnología o herramienta concreta",
+            "explicacion": "Capacidad específica de detección automática de contraste mediante visión artificial, junto con un histórico de pruebas con usuarios; requiere herramientas especializadas.",
+            "dato": "«tecnología de visión artificial que detecte de forma automatizada los fallos de contraste y de estructura en capturas y vídeos» (Cuadro de condiciones.pdf, pág. 14)."
+          }
+        ],
+        "sin_datos": ["No hay ediciones anteriores en el histórico cargado."]
+      },
+      "lotes": [],
+      "lotes_sin_mirar": 0
+    }
+  },
+  "GET /api/licitaciones/licitaciones/p-91000780/oferta/preguntas": {
+    "status": 200,
+    "body": {
+      "id": "p-91000780",
+      "estado": "preguntando",
+      "preguntas": [
+        {
+          "clave": "equipo:director:-",
+          "seccion": "equipo",
+          "lote": null,
+          "titulo": "Director/a",
+          "texto": "Director/a técnico/a: titulación universitaria y ≥5 años en auditoría de accesibilidad web o evaluación de usabilidad. Un perfil con grado universitario y ≥5 años experiencia específica. Es excluyente. ¿A quién vas a poner?",
+          "citas": [
+            {
+              "documento": "Cuadro de condiciones.pdf",
+              "pagina": 11
+            }
+          ],
+          "opciones": [
+            {
+              "clave": "persona-2",
+              "texto": "Persona F · Dirección; Ciencia de datos",
+              "detalle": "no consta «auditoria de accesibilidad web o evaluacion de usabilidad»",
+              "tono": "riesgo",
+              "hermes": false,
+              "accion": {
+                "tipo": "persona",
+                "persona_id": 2,
+                "rol": "Director/a",
+                "lotes": []
+              }
+            },
+            {
+              "clave": "persona-1",
+              "texto": "Persona J · Marketing digital",
+              "detalle": "no consta «auditoria de accesibilidad web o evaluacion de usabilidad»",
+              "tono": "riesgo",
+              "hermes": true,
+              "accion": {
+                "tipo": "persona",
+                "persona_id": 1,
+                "rol": "Director/a",
+                "lotes": []
+              }
+            },
+            {
+              "clave": "contratar",
+              "texto": "Hay que contratarlo",
+              "detalle": null,
+              "tono": "neutro",
+              "hermes": false,
+              "accion": {
+                "tipo": "contratar",
+                "rol": "Director/a",
+                "lotes": []
+              }
+            }
+          ],
+          "libre": "hermes",
+          "estado": "pendiente",
+          "respuesta": null
+        },
+        {
+          "clave": "equipo:analist:-",
+          "seccion": "equipo",
+          "lote": null,
+          "titulo": "Analista",
+          "texto": "Analista de datos: titulación universitaria en Estadística, Informática, Matemáticas, Ingeniería, Psicología o similar y ≥3 años en pruebas de usabilidad/analítica web. Un perfil con titulación afín y ≥3 años experiencia específica. Es excluyente. ¿A quién vas a poner?",
+          "citas": [
+            {
+              "documento": "Cuadro de condiciones.pdf",
+              "pagina": 11
+            }
+          ],
+          "opciones": [
+            {
+              "clave": "persona-2",
+              "texto": "Persona F · Dirección; Ciencia de datos",
+              "detalle": "no consta «pruebas de usabilidad/analitica web»",
+              "tono": "riesgo",
+              "hermes": true,
+              "accion": {
+                "tipo": "persona",
+                "persona_id": 2,
+                "rol": "Analista",
+                "lotes": []
+              }
+            },
+            {
+              "clave": "persona-1",
+              "texto": "Persona J · Marketing digital",
+              "detalle": "titulación: Nivel suficiente en otra rama: Máster de área general",
+              "tono": "riesgo",
+              "hermes": false,
+              "accion": {
+                "tipo": "persona",
+                "persona_id": 1,
+                "rol": "Analista",
+                "lotes": []
+              }
+            },
+            {
+              "clave": "contratar",
+              "texto": "Hay que contratarlo",
+              "detalle": null,
+              "tono": "neutro",
+              "hermes": false,
+              "accion": {
+                "tipo": "contratar",
+                "rol": "Analista",
+                "lotes": []
+              }
+            }
+          ],
+          "libre": "hermes",
+          "estado": "pendiente",
+          "respuesta": null
+        },
+        {
+          "clave": "precio:-",
+          "seccion": "precio",
+          "lote": null,
+          "titulo": "Precio",
+          "texto": "Se puntúa así: «La puntuación máxima se asigna a la oferta admitida más barata y las demás se puntúan con la fórmula logarítmica Pi = Pmax · (1 + log₁₀(Omin / Oi)), donde Pi es la puntuación de la oferta valorada, Pmax la puntuación má…». El presupuesto es de 30.261 € sin impuestos. ¿Qué precio ofertas?",
+          "citas": [
+            {
+              "documento": "Cuadro de condiciones.pdf",
+              "pagina": 12
+            }
+          ],
+          "opciones": [
+            {
+              "clave": "otro",
+              "texto": "Otro precio",
+              "detalle": null,
+              "tono": "neutro",
+              "hermes": false,
+              "accion": null,
+              "pide": "importe"
+            }
+          ],
+          "libre": "codigo",
+          "estado": "pendiente",
+          "respuesta": null
+        },
+        {
+          "clave": "automatico:experiencia acreditada en auditorias de accesibilidad web y en la redaccion de informes tecnicos:-",
+          "seccion": "automaticos",
+          "lote": null,
+          "titulo": "Experiencia acreditada en auditorías de accesibilidad web y en la redacción de informes técnicos",
+          "texto": "Vale 15 puntos y va en Sobre electrónico número dos (2). Se acredita: Se valoran hasta tres profesionales adscritos a la ejecución, cada uno en un solo tramo a elección del licitador; la puntuación es la suma de los tres, con un máximo de 15 puntos. Se acredita con certificados de buena ejecución que identifiquen el servicio y la participación individual de la person… ¿Nos acogemos?",
+          "citas": [
+            {
+              "documento": "Cuadro de condiciones.pdf",
+              "pagina": 13
+            }
+          ],
+          "opciones": [
+            {
+              "clave": "tramo-1",
+              "texto": "Sí, nos acogemos",
+              "detalle": "15 puntos · hay que acreditarlo",
+              "tono": "ok",
+              "hermes": false,
+              "pide": "evidencia",
+              "accion": {
+                "tipo": "automatico",
+                "criterio": "Experiencia acreditada en auditorías de accesibilidad web y en la redacción de informes técnicos",
+                "lote": null,
+                "nos_acogemos": true,
+                "tramo": null
+              }
+            },
+            {
+              "clave": "no",
+              "texto": "No nos acogemos",
+              "detalle": "0 puntos",
+              "tono": "neutro",
+              "hermes": true,
+              "accion": {
+                "tipo": "automatico",
+                "criterio": "Experiencia acreditada en auditorías de accesibilidad web y en la redacción de informes técnicos",
+                "lote": null,
+                "nos_acogemos": false,
+                "tramo": null
+              }
+            }
+          ],
+          "libre": "hermes",
+          "estado": "pendiente",
+          "respuesta": null
+        },
+        {
+          "clave": "automatico:criterio social de formacion del personal adscrito:-",
+          "seccion": "automaticos",
+          "lote": null,
+          "titulo": "Criterio social de formación del personal adscrito",
+          "texto": "Vale 5 puntos y va en Sobre electrónico número dos (2). Se acredita: Compromiso de realizar al menos dos actividades formativas distintas, de una hora como mínimo cada una, relacionadas con el objeto del contrato y dirigidas al personal adscrito, como mínimo en cada año de ejecución. ¿Nos acogemos?",
+          "citas": [
+            {
+              "documento": "Cuadro de condiciones.pdf",
+              "pagina": 13
+            }
+          ],
+          "opciones": [
+            {
+              "clave": "tramo-1",
+              "texto": "Sí, nos acogemos",
+              "detalle": "5 puntos",
+              "tono": "ok",
+              "hermes": true,
+              "accion": {
+                "tipo": "automatico",
+                "criterio": "Criterio social de formación del personal adscrito",
+                "lote": null,
+                "nos_acogemos": true,
+                "tramo": null
+              }
+            },
+            {
+              "clave": "no",
+              "texto": "No nos acogemos",
+              "detalle": "0 puntos",
+              "tono": "neutro",
+              "hermes": false,
+              "accion": {
+                "tipo": "automatico",
+                "criterio": "Criterio social de formación del personal adscrito",
+                "lote": null,
+                "nos_acogemos": false,
+                "tramo": null
+              }
+            }
+          ],
+          "libre": "hermes",
+          "estado": "pendiente",
+          "respuesta": null
+        },
+        {
+          "clave": "automatico:capacidades tecnicas y herramientas de evaluacion:-",
+          "seccion": "automaticos",
+          "lote": null,
+          "titulo": "Capacidades técnicas y herramientas de evaluación",
+          "texto": "Vale 10 puntos y va en Sobre electrónico número dos (2). Se acredita: Se otorgan 2,5 puntos por cada capacidad acreditada. Se acredita con contrato de licencia o suscripción, o certificado del proveedor vigente al cierre del plazo, que nombre la capacidad concreta; si la herramienta es de desarrollo propio, con una declaración responsable que describa técnicamente su… ¿Nos acogemos?",
+          "citas": [
+            {
+              "documento": "Cuadro de condiciones.pdf",
+              "pagina": 14
+            }
+          ],
+          "opciones": [
+            {
+              "clave": "tramo-1",
+              "texto": "Sí, nos acogemos",
+              "detalle": "10 puntos · hay que acreditarlo",
+              "tono": "ok",
+              "hermes": false,
+              "pide": "evidencia",
+              "accion": {
+                "tipo": "automatico",
+                "criterio": "Capacidades técnicas y herramientas de evaluación",
+                "lote": null,
+                "nos_acogemos": true,
+                "tramo": null
+              }
+            },
+            {
+              "clave": "no",
+              "texto": "No nos acogemos",
+              "detalle": "0 puntos",
+              "tono": "neutro",
+              "hermes": true,
+              "accion": {
+                "tipo": "automatico",
+                "criterio": "Capacidades técnicas y herramientas de evaluación",
+                "lote": null,
+                "nos_acogemos": false,
+                "tramo": null
+              }
+            }
+          ],
+          "libre": "hermes",
+          "estado": "pendiente",
+          "respuesta": null
+        },
+        {
+          "clave": "dato_anexo:impuesto",
+          "seccion": "datos_anexo",
+          "lote": null,
+          "titulo": "Impuesto de la oferta",
+          "texto": "El anexo pide el impuesto que va aparte del precio. ¿Cuál es?",
+          "citas": [
+            {
+              "documento": "Cuadro de condiciones.pdf",
+              "pagina": 12,
+              "texto": "Anexo II: IGIC aparte"
+            }
+          ],
+          "opciones": [
+            {
+              "clave": "iva",
+              "texto": "IVA al 21 %",
+              "detalle": null,
+              "tono": "neutro",
+              "hermes": false,
+              "accion": {
+                "tipo": "dato_anexo",
+                "dato": "impuesto",
+                "valor": {
+                  "tipo": "IVA",
+                  "porcentaje": 21
+                }
+              }
+            },
+            {
+              "clave": "igic",
+              "texto": "IGIC al 7 %",
+              "detalle": null,
+              "tono": "neutro",
+              "hermes": false,
+              "accion": {
+                "tipo": "dato_anexo",
+                "dato": "impuesto",
+                "valor": {
+                  "tipo": "IGIC",
+                  "porcentaje": 7
+                }
+              }
+            },
+            {
+              "clave": "exento",
+              "texto": "Exento",
+              "detalle": null,
+              "tono": "neutro",
+              "hermes": false,
+              "accion": {
+                "tipo": "dato_anexo",
+                "dato": "impuesto",
+                "valor": {
+                  "tipo": "exento",
+                  "porcentaje": null
+                }
+              }
+            }
+          ],
+          "libre": null,
+          "estado": "pendiente",
+          "respuesta": null
+        },
+        {
+          "clave": "enfoque",
+          "seccion": "enfoque",
+          "lote": null,
+          "titulo": "Enfoque de la memoria",
+          "citas": [],
+          "texto": "Enfoque de la memoria: qué quieres que destaque, qué no prometer y cualquier indicación para quien redacta. Escríbelo o elige una opción.",
+          "opciones": [
+            {
+              "clave": "hermes",
+              "texto": "Usar el que propone Hermes",
+              "detalle": "Objeto: auditar la accesibilidad y la usabilidad de los portales web de la Sociedad y seguir la corrección de los hallazgos (PPT.pdf, págs. 2-6). En «Metodolog…",
+              "tono": "neutro",
+              "hermes": true,
+              "accion": {
+                "tipo": "enfoque",
+                "texto": "Objeto: auditar la accesibilidad y la usabilidad de los portales web de la Sociedad y seguir la corrección de los hallazgos (PPT.pdf, págs. 2-6). En «Metodología de auditoría y priorización de hallazgos» (Cuadro de condiciones.pdf, pág. 15), un ejemplo por portal y plantilla: pruebas automáticas fechadas, revisión manual documentada, criterio fijo de gravedad, agrupación de fallos repetidos y comprobación frente al informe previo, sin afirmar cumplimientos no verificados. En «Herramientas de evaluación», qué hacen Python y Streamlit en la extracción, el control, el cálculo y la visualización, y sus límites frente a otras opciones. En «Aseguramiento de calidad y seguimiento de correcciones», revisión humana de muestras, registro de herramientas y parámetros y anexo de evidencias. En «Modelo de informe, ficha ejecutiva y panel de seguimiento», tablas de hallazgos previstos y corregidos, gravedad y esfuerzo por portal, recomendación motivada y exportación abierta. Nunca citar en la memoria del sobre 1 el equipo puntuable, su experiencia, la formación ofrecida ni las capacidades técnicas puntuables: van en el sobre 2 (Cuadro de condiciones.pdf, págs. 5-7, 13-15). Concreción en 10 páginas: menos de 12,5/25 excluye."
+              }
+            },
+            {
+              "clave": "sin",
+              "texto": "Sin indicaciones: que lo plantee Hermes",
+              "detalle": null,
+              "tono": "neutro",
+              "hermes": false,
+              "accion": {
+                "tipo": "enfoque",
+                "texto": "Sin indicaciones del equipo: plantea tú el enfoque en la estrategia, con lo que pide el pliego."
+              }
+            }
+          ],
+          "libre": "codigo",
+          "estado": "pendiente",
+          "respuesta": null
+        }
+      ],
+      "hechas": 0,
+      "total": 8,
+      "avisos": [],
+      "version": null
+    }
+  },
+  "GET /api/licitaciones/licitaciones/p-91000780/oferta/hilo": {
+    "status": 200,
+    "body": {
+      "mensajes": []
+    }
+  },
+  "GET /api/licitaciones/licitaciones/p-91000780/oferta/generar": {
+    "status": 200,
+    "body": {
+      "sobres": [
+        {
+          "archivo": "Sobre electrónico número uno (1)",
+          "documentos": [
+            {
+              "clave": "a1-d1",
+              "nombre": "Declaración responsable en el formulario del Documento Europeo Único de Contratación (DEUC)",
+              "tipo": "deuc",
+              "lote": null,
+              "produce": "persona",
+              "estado": "pendiente",
+              "ruta": null,
+              "generado": false
+            },
+            {
+              "clave": "a1-d2",
+              "nombre": "Memoria técnica",
+              "tipo": "memoria",
+              "lote": null,
+              "produce": "hermes",
+              "estado": "pendiente",
+              "ruta": null,
+              "generado": false
+            }
+          ]
+        },
+        {
+          "archivo": "Sobre electrónico número dos (2)",
+          "documentos": [
+            {
+              "clave": "a2-d1",
+              "nombre": "ANEXO II. MODELO DE OFERTA ECONÓMICA Y DE CRITERIOS AUTOMÁTICOS",
+              "tipo": "oferta_economica",
+              "lote": null,
+              "produce": "persona",
+              "estado": "pendiente",
+              "ruta": null,
+              "generado": false
+            }
+          ]
+        }
+      ],
+      "listo": false,
+      "pendientes": 8,
+      "pedida_en": null
+    }
+  },
+  "GET /api/licitaciones/licitaciones/p-91000780/oferta/sobres": {
+    "status": 200,
+    "body": {
+      "veredicto": {
+        "tipo": "descartada",
+        "texto": "Descartada: Sin solvencia técnica mínima: no tenemos director/a con 5 años en auditoría de accesibilidad web o evaluación de usabili"
+      },
+      "cuentas": {
+        "correcto": 1,
+        "riesgo": 4,
+        "impide": 6,
+        "pendiente": 1
+      },
+      "calculada_en": "2027-10-13T20:34:59.000Z",
+      "puede_registrar": false,
+      "generales": [
+        {
+          "clave": "decisiones_falta:-",
+          "estado": "impide",
+          "titulo": "Decisiones sin fijar",
+          "detalle": null,
+          "aceptado": false,
+          "accion": {
+            "texto": "Revisarlo",
+            "bloqueo": "decisiones_falta:-",
+            "destino": null
+          }
+        },
+        {
+          "clave": "comprobado:coherencia",
+          "estado": "correcto",
+          "titulo": "Lotes, ficha, pliegos, guion y decisiones casan entre sí",
+          "detalle": null,
+          "accion": null,
+          "aceptado": false
+        }
+      ],
+      "sobres": [
+        {
+          "archivo": "Sobre electrónico número uno (1)",
+          "documentos": [
+            {
+              "clave": "a1-d1",
+              "nombre": "Declaración responsable en el formulario del Documento Europeo Único de Contratación (DEUC)",
+              "tipo": "deuc",
+              "lote": null,
+              "ruta": null,
+              "estado": "pendiente",
+              "comprobaciones": [
+                {
+                  "clave": "empresa:-:domicilio",
+                  "estado": "impide",
+                  "titulo": "Falta el domicilio de la empresa (va en el DEUC y en los anexos)",
+                  "detalle": null,
+                  "aceptado": false,
+                  "accion": {
+                    "texto": "Completarlo",
+                    "bloqueo": "empresa:-:domicilio",
+                    "destino": null
+                  }
+                },
+                {
+                  "clave": "empresa:-:contacto_email",
+                  "estado": "riesgo",
+                  "titulo": "Falta el correo de contacto de la empresa (lo piden el DEUC y los anexos)",
+                  "detalle": null,
+                  "aceptado": false,
+                  "accion": {
+                    "texto": "Completarlo",
+                    "bloqueo": "empresa:-:contacto_email",
+                    "destino": null
+                  }
+                },
+                {
+                  "clave": "empresa:-:contacto_telefono",
+                  "estado": "riesgo",
+                  "titulo": "Falta el teléfono de contacto de la empresa (lo piden el DEUC y los anexos)",
+                  "detalle": null,
+                  "aceptado": false,
+                  "accion": {
+                    "texto": "Completarlo",
+                    "bloqueo": "empresa:-:contacto_telefono",
+                    "destino": null
+                  }
+                }
+              ]
+            },
+            {
+              "clave": "a1-d2",
+              "nombre": "Memoria técnica",
+              "tipo": "memoria",
+              "lote": null,
+              "ruta": null,
+              "estado": "pendiente",
+              "comprobaciones": [],
+              "lecciones": []
+            }
+          ],
+          "comprobaciones": [
+            {
+              "clave": "documentos_sin_preparar:-:sobre_electronico_numero_uno_1",
+              "estado": "riesgo",
+              "titulo": "Sobre electrónico número uno (1): 1 documento sin preparar",
+              "detalle": null,
+              "aceptado": false,
+              "accion": {
+                "texto": "Prepararlo",
+                "bloqueo": "documentos_sin_preparar:-:sobre_electronico_numero_uno_1",
+                "destino": null
+              }
+            },
+            {
+              "clave": "firma:Sobre electrónico número uno (1)",
+              "estado": "pendiente",
+              "titulo": "Hay que firmarlo: Firma de quien represente al licitador; tanto el DEUC como la memoria van firmados.",
+              "detalle": "Se firma con el kit de firma de la carpeta de la licitación",
+              "accion": {
+                "texto": "Kit de firma",
+                "bloqueo": null,
+                "destino": "kit_firma"
+              },
+              "aceptado": false
+            }
+          ]
+        },
+        {
+          "archivo": "Sobre electrónico número dos (2)",
+          "documentos": [
+            {
+              "clave": "a2-d1",
+              "nombre": "ANEXO II. MODELO DE OFERTA ECONÓMICA Y DE CRITERIOS AUTOMÁTICOS",
+              "tipo": "oferta_economica",
+              "lote": null,
+              "ruta": null,
+              "estado": "pendiente",
+              "comprobaciones": [
+                {
+                  "clave": "precio:-",
+                  "estado": "impide",
+                  "titulo": "Precio sin decidir",
+                  "detalle": null,
+                  "aceptado": false,
+                  "accion": {
+                    "texto": "Fijar el precio",
+                    "bloqueo": "precio:-",
+                    "destino": null
+                  }
+                },
+                {
+                  "clave": "dato_anexo:-:impuesto",
+                  "estado": "impide",
+                  "titulo": "Decide el impuesto de la oferta (IVA, IGIC o exento) y su tipo",
+                  "detalle": "Cuadro de condiciones.pdf, pág. 12",
+                  "aceptado": false,
+                  "accion": {
+                    "texto": "Completarlo",
+                    "bloqueo": "dato_anexo:-:impuesto",
+                    "destino": null
+                  }
+                }
+              ]
+            },
+            {
+              "clave": "a2-d2",
+              "nombre": "Certificados de buena ejecución que acreditan la experiencia puntuable del equipo",
+              "tipo": "acreditacion",
+              "lote": null,
+              "ruta": null,
+              "estado": "pendiente",
+              "comprobaciones": [
+                {
+                  "clave": "medios:-:auditoria_de_accesibilidad_web_o_evaluacion_de_usabilidad",
+                  "estado": "impide",
+                  "titulo": "Técnico de auditoría de accesibilidad web o evaluación de usabilidad: nadie del equipo lo tiene registrado",
+                  "detalle": "Cuadro de condiciones.pdf, pág. 11",
+                  "aceptado": false,
+                  "accion": {
+                    "texto": "Asignar a alguien",
+                    "bloqueo": "medios:-:auditoria_de_accesibilidad_web_o_evaluacion_de_usabilidad",
+                    "destino": null
+                  }
+                },
+                {
+                  "clave": "medios:-:pruebas_de_usabilidad_analitica_web",
+                  "estado": "impide",
+                  "titulo": "Analista de pruebas de usabilidad/analítica web: nadie del equipo lo tiene registrado",
+                  "detalle": "Cuadro de condiciones.pdf, pág. 11",
+                  "aceptado": false,
+                  "accion": {
+                    "texto": "Asignar a alguien",
+                    "bloqueo": "medios:-:pruebas_de_usabilidad_analitica_web",
+                    "destino": null
+                  }
+                }
+              ]
+            },
+            {
+              "clave": "a2-d3",
+              "nombre": "Licencia, certificado del proveedor o declaración responsable que acredite las capacidades técnicas",
+              "tipo": "acreditacion",
+              "lote": null,
+              "ruta": null,
+              "estado": "pendiente",
+              "comprobaciones": []
+            }
+          ],
+          "comprobaciones": [
+            {
+              "clave": "documentos_sin_preparar:-:sobre_electronico_numero_dos_2",
+              "estado": "riesgo",
+              "titulo": "Sobre electrónico número dos (2): 1 documento sin preparar",
+              "detalle": null,
+              "aceptado": false,
+              "accion": {
+                "texto": "Prepararlo",
+                "bloqueo": "documentos_sin_preparar:-:sobre_electronico_numero_dos_2",
+                "destino": null
+              }
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "GET /api/licitaciones/licitaciones/p-91000780/oferta/comparaciones": {
+    "status": 200,
+    "body": {
+      "items": []
+    }
+  },
+  "GET /api/licitaciones/licitaciones/p-91000780/preguntas": {
+    "status": 200,
+    "body": {
+      "preguntas": []
+    }
+  }
+}

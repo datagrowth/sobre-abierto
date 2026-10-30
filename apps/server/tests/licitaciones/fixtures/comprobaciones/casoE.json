@@ -1,0 +1,1858 @@
+{
+  "_origen": "Fixture sintético: estructura de una oferta de prueba con textos, equipo y memorias inventados; Persona A/B… y Persona R, NIF ficticios, sin correo, teléfono ni importes ofertados.",
+  "id": "p-91000080",
+  "ahora": "2027-10-13T20:34:44.000Z",
+  "licitacion": {
+    "titulo": "Servicio de formación virtual en competencias administrativas y asistenciales y tramitación de la subvención FFI para el personal de Servicios Sanitarios de Ejemplo, S.A.",
+    "expediente": "CAP-27/12",
+    "organo": {
+      "nombre": "Gerencia de Servicios Sanitarios de Ejemplo, S.A.",
+      "nif": "A00378067",
+      "dir3": null,
+      "ciudad": "Villaejemplo (Canarias)"
+    },
+    "presupuesto_sin_iva": 29688.75,
+    "valor_estimado": 29688.75,
+    "cpvs": [
+      "80561000",
+      "80530000",
+      "80570000",
+      "80533100"
+    ],
+    "lotes": [
+      {
+        "id": "1",
+        "nombre": "Primeros auxilios y soporte vital básico",
+        "presupuesto_sin_iva": 18522,
+        "cpvs": [
+          "80561000"
+        ]
+      },
+      {
+        "id": "2",
+        "nombre": "Análisis de datos con hojas de cálculo y asistente de IA",
+        "presupuesto_sin_iva": 6063.75,
+        "cpvs": [
+          "80533100"
+        ]
+      },
+      {
+        "id": "3",
+        "nombre": "Gestión documental y archivo electrónico",
+        "presupuesto_sin_iva": 882,
+        "cpvs": [
+          "80530000"
+        ]
+      },
+      {
+        "id": "4",
+        "nombre": "Atención telefónica y trato a personas usuarias: voz, chat y videollamada",
+        "presupuesto_sin_iva": 756,
+        "cpvs": [
+          "80570000"
+        ]
+      },
+      {
+        "id": "5",
+        "nombre": "Seguridad y salud en el puesto de trabajo",
+        "presupuesto_sin_iva": 3150,
+        "cpvs": [
+          "80533100"
+        ]
+      },
+      {
+        "id": "6",
+        "nombre": "Gestión de residuos sanitarios",
+        "presupuesto_sin_iva": 315,
+        "cpvs": [
+          "80533100"
+        ]
+      }
+    ],
+    "fecha_limite": "2027-10-14T08:00:00",
+    "fecha_solicitud": null,
+    "presentacion": {
+      "codigo": "3",
+      "maximo_lotes": 6,
+      "maximo_adjudicables": null,
+      "combinacion": null
+    },
+    "criterios": [
+      {
+        "tipo": "OBJ",
+        "descripcion": "2.- Modelo reforzado de acompañamiento tutorial (tecnología y asistencia virtual) - 2.2. Asistente virtual de consultas con disponibilidad continua",
+        "peso": 8,
+        "nota": "Véase el apartado G.2 del Cuadro de Características del pliego regulador."
+      },
+      {
+        "tipo": "OBJ",
+        "descripcion": "1.- Mejoras en las funcionalidades del panel de seguimiento del alumnado y de la coordinación - 1.2. Frecuencia de sincronización del registro de asistencia",
+        "peso": 6,
+        "nota": "Véase el apartado G.2 del Cuadro de Características del pliego regulador."
+      },
+      {
+        "tipo": "OBJ",
+        "descripcion": "Oferta económica",
+        "peso": 40,
+        "nota": "Véase el apartado G.2 del Cuadro de Características del pliego regulador."
+      },
+      {
+        "tipo": "OBJ",
+        "descripcion": "1.- Mejoras en las funcionalidades del panel de seguimiento del alumnado y de la coordinación - 1.3. Sistema de avisos automáticos de inactividad",
+        "peso": 6,
+        "nota": "Véase el apartado G.2 del Cuadro de Características del pliego regulador."
+      },
+      {
+        "tipo": "OBJ",
+        "descripcion": "1.- Mejoras en las funcionalidades del panel de seguimiento del alumnado y de la coordinación - 1.1. Formatos de descarga de los registros de actividad:",
+        "peso": 6,
+        "nota": "Véase el apartado G.2 del Cuadro de Características del pliego regulador."
+      },
+      {
+        "tipo": "OBJ",
+        "descripcion": "2.- Modelo reforzado de acompañamiento tutorial (tecnología y asistencia virtual) - 2.1. Compromiso de Tiempo de Respuesta Tutorial (Prontitud)",
+        "peso": 8,
+        "nota": "Véase el apartado G.2 del Cuadro de Características del pliego regulador."
+      },
+      {
+        "tipo": "OBJ",
+        "descripcion": "1.- Mejoras en las funcionalidades del panel de seguimiento del alumnado y de la coordinación - 1.4. Adscripción de Equipo Técnico de Calidad Formativa)",
+        "peso": 6,
+        "nota": "Véase el apartado G.2 del Cuadro de Características del pliego regulador."
+      },
+      {
+        "tipo": "OBJ",
+        "descripcion": "1.- Mejoras en las funcionalidades del panel de seguimiento del alumnado y de la coordinación - 1.5. Periodicidad de entrega de Informes de Seguimiento Ejecutivos",
+        "peso": 6,
+        "nota": "Véase el apartado G.2 del Cuadro de Características del pliego regulador."
+      },
+      {
+        "tipo": "OBJ",
+        "descripcion": "2.- Modelo reforzado de acompañamiento tutorial (tecnología y asistencia virtual) - 2.3. Volumen de Señales Automáticas de Inactividad del Alumnado",
+        "peso": 8,
+        "nota": "Véase el apartado G.2 del Cuadro de Características del pliego regulador."
+      },
+      {
+        "tipo": "OBJ",
+        "descripcion": "2.- Modelo reforzado de acompañamiento tutorial (tecnología y asistencia virtual) - 2.4. Registro de Trazabilidad de la Atención Tutorial",
+        "peso": 6,
+        "nota": "Véase el apartado G.2 del Cuadro de Características del pliego regulador."
+      }
+    ],
+    "requisitos": [
+      {
+        "clase": "financiera",
+        "codigo": "ZZZ",
+        "descripcion": "Exención de solvencia: al tramitarse como procedimiento abreviado, no se exige acreditar la solvencia económica ni la técnica o profesional.",
+        "umbral": null,
+        "lote": null
+      },
+      {
+        "clase": "tecnica",
+        "codigo": "XXR-SUBCONT",
+        "descripcion": "Véase el apartado L del Cuadro de Características del pliego regulador.",
+        "umbral": null,
+        "lote": null
+      },
+      {
+        "clase": "declaracion",
+        "codigo": "2",
+        "descripcion": "No estar incursa en prohibición de contratar",
+        "umbral": null,
+        "lote": null
+      },
+      {
+        "clase": "declaracion",
+        "codigo": "8",
+        "descripcion": "Constar en el registro de licitadores (ROLECE) y declarar que sus datos no han cambiado",
+        "umbral": null,
+        "lote": null
+      },
+      {
+        "clase": "declaracion",
+        "codigo": "4",
+        "descripcion": "Estar al corriente de las obligaciones con la Seguridad Social",
+        "umbral": null,
+        "lote": null
+      },
+      {
+        "clase": "declaracion",
+        "codigo": "1",
+        "descripcion": "Capacidad de obrar",
+        "umbral": null,
+        "lote": null
+      },
+      {
+        "clase": "declaracion",
+        "codigo": "3",
+        "descripcion": "No estar incursa en causa de incompatibilidad",
+        "umbral": null,
+        "lote": null
+      },
+      {
+        "clase": "declaracion",
+        "codigo": "5",
+        "descripcion": "Estar al corriente de las obligaciones tributarias",
+        "umbral": null,
+        "lote": null
+      },
+      {
+        "clase": "declaracion",
+        "codigo": "9",
+        "descripcion": "Las empresas extranjeras declararán que se someten a los tribunales españoles.",
+        "umbral": null,
+        "lote": null
+      }
+    ]
+  },
+  "oportunidad": {
+    "estado": "en_preparacion",
+    "lotes_interes": [
+      "2",
+      "4"
+    ],
+    "motivo_descarte": null
+  },
+  "ficha": {
+    "id": 347,
+    "datos": {
+      "resumen": "Formación virtual y tramitación de la subvención FFI para el personal de la empresa pública. Lotes de interés 2 (análisis de datos con hojas de cálculo y asistente de IA) y 4 (atención telefónica y trato a personas usuarias): precio unitario por alumno y presupuesto conjunto de 6.819,75 € sin IGIC; ejecución en 14 días naturales desde la formalización y cursos terminados antes del 30/12/2027, sin prórroga (pliego, pp. 4-7, 11).",
+      "requisitos": [
+        {
+          "tipo": "solvencia_economica",
+          "descripcion": "Exención de acreditar solvencia económica y técnica o profesional por tratarse de un procedimiento abreviado.",
+          "excluyente": false,
+          "cumple": "si",
+          "fuente": "Pliego, Cuadro de Características, p. 7: exención expresa.",
+          "justificacion": "No hay umbral económico que contrastar.",
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 7
+        },
+        {
+          "tipo": "otro",
+          "descripcion": "Estar inscrita en el ROLECE (o admitirse su solicitud previa) y declarar que los datos no han cambiado.",
+          "excluyente": true,
+          "cumple": "si",
+          "fuente": "plataforma_empresa.notas: ROLECE inscrita desde 16/03/2027.",
+          "justificacion": "Consta inscrita; habrá que acreditar la vigencia cuando se pida la documentación.",
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 20
+        },
+        {
+          "tipo": "medios_personales",
+          "descripcion": "Un docente principal por lote, con titulación oficial afín y formación o certificación específica sobre el curso; hay que identificarlo y aportar títulos y currículum firmado.",
+          "excluyente": true,
+          "valor_exigido": "Un docente por lote ofertado, con cualificación y acreditación afines",
+          "cumple": "dudoso",
+          "fuente": "colaboradores_buscar: lote 2, ninguna acreditación específica en hojas de cálculo con asistente de IA; lote 4, una candidata afín (Persona J) sin formación específica registrada.",
+          "justificacion": "No consta la formación concreta en el asistente de IA ni en atención al público, ni su asignación efectiva.",
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 64,
+          "lote": "2"
+        },
+        {
+          "tipo": "medios_personales",
+          "descripcion": "Un docente principal por lote, con titulación oficial afín y formación o certificación específica sobre el curso; hay que identificarlo y aportar títulos y currículum firmado.",
+          "excluyente": true,
+          "valor_exigido": "Un docente por lote ofertado, con cualificación y acreditación afines",
+          "cumple": "dudoso",
+          "fuente": "colaboradores_buscar: una candidata afín a la atención al público; acreditación específica no aportada.",
+          "justificacion": "Falta comprobar la formación o certificación concreta y su disponibilidad y adscripción.",
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 64,
+          "lote": "4"
+        },
+        {
+          "tipo": "medios_personales",
+          "descripcion": "Adscripción de personal suficiente; la tutoría humana atiende las dudas en horario lectivo dentro del plazo comprometido.",
+          "excluyente": true,
+          "cumple": "dudoso",
+          "fuente": "plataforma_empresa: plantilla media de 4 personas en 2027; la búsqueda no acreditó disponibilidad para ese plazo.",
+          "justificacion": "Falta designar una tutora disponible y confirmar la capacidad durante la ejecución.",
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 62
+        },
+        {
+          "tipo": "medios_materiales",
+          "descripcion": "Teleformación con acceso individual, seguimiento, actividades, evaluaciones e informes; hay que describir el campus y sus funciones por lote.",
+          "excluyente": true,
+          "cumple": "dudoso",
+          "fuente": "Empresa/perfil-licitaciones.md: formación online y servicios digitales; no consta un campus acreditado.",
+          "justificacion": "No hay evidencia de un campus disponible con todas las funciones exigidas.",
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 62
+        },
+        {
+          "tipo": "otro",
+          "descripcion": "Tramitación integral de la subvención FFI: comunicaciones de inicio y de cambios, información a la representación legal y cierre dentro de los plazos del pliego.",
+          "excluyente": true,
+          "cumple": "dudoso",
+          "fuente": "Empresa/perfil-licitaciones.md: formación y financiación pública gestionada; no acredita tramitar el FFI.",
+          "justificacion": "La experiencia general no confirma haber tramitado el FFI ni un procedimiento para cumplir los plazos.",
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 64
+        },
+        {
+          "tipo": "otro",
+          "descripcion": "Memoria técnica por lote con propuesta formativa, campus, profesorado, seguridad y protección de datos.",
+          "excluyente": true,
+          "cumple": "dudoso",
+          "fuente": "Empresa/perfil-licitaciones.md: formación en IA y datos; campus y profesorado asignados sin acreditar.",
+          "justificacion": "Falta confirmar los medios y contenidos concretos para completar la memoria.",
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 63
+        },
+        {
+          "tipo": "medios_materiales",
+          "descripcion": "Adscripción de los equipos necesarios y capacidad para aplicar medidas técnicas y organizativas de protección de datos si se tratan datos personales.",
+          "excluyente": true,
+          "cumple": "dudoso",
+          "fuente": "Empresa/perfil-licitaciones.md: infraestructura cloud y compromiso general con el RGPD.",
+          "justificacion": "Falta confirmar campus, medidas concretas y ubicación de los servidores si la empresa pública encarga el tratamiento.",
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 7
+        },
+        {
+          "tipo": "habilitacion",
+          "descripcion": "Habilitación profesional o empresarial que proceda legalmente.",
+          "excluyente": true,
+          "cumple": "dudoso",
+          "fuente": "plataforma_empresa.notas: centro de formación acreditado con 22 especialidades.",
+          "justificacion": "No se comprobó si hace falta alguna habilitación legal adicional para estos cursos.",
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 7
+        },
+        {
+          "tipo": "subcontratacion",
+          "descripcion": "El apartado L indica qué tareas no pueden subcontratarse; la casilla Sí/No no se lee en el pasaje extraído.",
+          "excluyente": false,
+          "cumple": "si",
+          "fuente": "perfil.notas: la empresa concurre sin socios ni subcontratas",
+          "justificacion": "Falta confirmar la casilla del apartado L; concurrir en solitario no resuelve si se prohíbe subcontratar.",
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 11
+        },
+        {
+          "tipo": "idioma",
+          "descripcion": "Prestación y atención en castellano; no hay otro requisito lingüístico.",
+          "excluyente": false,
+          "valor_exigido": "Castellano",
+          "cumple": "si",
+          "fuente": "perfil.idiomas: es, en",
+          "justificacion": "Todo el equipo atiende en castellano.",
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 61
+        },
+        {
+          "tipo": "lugar_ejecucion",
+          "descripcion": "Servicios prestados a distancia mediante teleformación.",
+          "excluyente": false,
+          "cumple": "si",
+          "fuente": "Empresa/perfil-licitaciones.md: formación virtual y servicios digitales declarados.",
+          "justificacion": "Prestar el servicio a distancia encaja con lo que la empresa declara ofrecer.",
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 11
+        },
+        {
+          "tipo": "otro",
+          "descripcion": "Si hay tratamiento de datos por cuenta de la empresa pública, declarar la ubicación de los servidores o el lugar de prestación y formalizar el encargo de tratamiento.",
+          "excluyente": false,
+          "cumple": "dudoso",
+          "fuente": "Empresa/perfil-licitaciones.md: infraestructura cloud y compromiso general con el RGPD.",
+          "justificacion": "Falta definir campus y alojamiento y confirmar si se formalizará el encargo; aplica si hay tratamiento de datos.",
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 12
+        },
+        {
+          "tipo": "otro",
+          "descripcion": "Condición especial: eliminar el papel y comunicarse por medios electrónicos.",
+          "excluyente": false,
+          "cumple": "si",
+          "fuente": "Empresa/perfil-licitaciones.md: operación digital, desarrollo de software y nube.",
+          "justificacion": "Al ser telemático, el servicio se comunica por medios electrónicos.",
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 11
+        }
+      ],
+      "criterios": [
+        {
+          "descripcion": "Precio unitario por alumno; la oferta más baja admisible obtiene la máxima puntuación y las demás en proporción; precio máximo 0. Tener en cuenta el IGIC según la situación fiscal.",
+          "peso": 40,
+          "tipo": "formula",
+          "pagina": 10
+        },
+        {
+          "descripcion": "Mejoras del panel de seguimiento: descarga de registros, sincronización, avisos automáticos, analista cualificado e informes cada diez días o menos.",
+          "peso": 30,
+          "tipo": "formula",
+          "subcriterios": [
+            {
+              "descripcion": "Descarga nativa en tres o más formatos abiertos",
+              "peso": 6
+            },
+            {
+              "descripcion": "Sincronización automática en tiempo real o diaria (6), semanal (3), menos frecuente (0)",
+              "peso": 6
+            },
+            {
+              "descripcion": "Avisos automáticos externos ante inactividad prolongada",
+              "peso": 6
+            },
+            {
+              "descripcion": "Analista con grado oficial en Estadística, Matemáticas o Ingeniería Informática",
+              "peso": 6
+            },
+            {
+              "descripcion": "Informes de seguimiento cada diez días o con más frecuencia",
+              "peso": 6
+            }
+          ],
+          "pagina": 8
+        },
+        {
+          "descripcion": "Modelo reforzado de acompañamiento: plazo de respuesta, asistente virtual, señales automáticas de inactividad, historial auditable.",
+          "peso": 30,
+          "tipo": "formula",
+          "subcriterios": [
+            {
+              "descripcion": "Respuesta humana ≤3 h: 8; >3 y ≤6 h: 4; el texto asigna también 0 a igual a 6 h",
+              "peso": 8
+            },
+            {
+              "descripcion": "Asistente virtual 24/7",
+              "peso": 8
+            },
+            {
+              "descripcion": "Seis o más señales automatizadas de inactividad (8), 4-5 (4), menos de 4 (0)",
+              "peso": 8
+            },
+            {
+              "descripcion": "Registro automático consultable del 100% de las atenciones",
+              "peso": 6
+            }
+          ],
+          "pagina": 9
+        }
+      ],
+      "documentacion": [
+        {
+          "sobre": "Archivo único de la oferta",
+          "documento": "Documentación administrativa cláusula 14.2; anexos y declaraciones aplicables, Anexo VI de oferta económica y acreditaciones automáticas; oferta separada por lote.",
+          "obligatorio": true,
+          "pagina": 11
+        },
+        {
+          "sobre": "Archivo único de la oferta",
+          "documento": "Memoria técnica sin puntuación por lote: propuesta formativa, campus, profesorado; títulos y currículum firmado.",
+          "obligatorio": true,
+          "pagina": 63
+        },
+        {
+          "sobre": "Archivo único de la oferta",
+          "documento": "Título oficial y currículum del analista de calidad formativa si se ofrece el criterio correspondiente.",
+          "obligatorio": true,
+          "pagina": 9
+        },
+        {
+          "sobre": "Archivo único de la oferta",
+          "documento": "Dossier técnico homologado del fabricante para las señales automáticas y el historial si se declaran.",
+          "obligatorio": true,
+          "pagina": 9
+        },
+        {
+          "sobre": "Requerimiento a la empresa propuesta",
+          "documento": "Capacidad y representación, ROLECE vigente, obligaciones tributarias y de Seguridad Social; atender el requerimiento en 5 días hábiles.",
+          "obligatorio": true,
+          "pagina": 27
+        },
+        {
+          "sobre": "Antes de formalizar el contrato, si se tratan datos",
+          "documento": "Declaración del Anexo VII sobre la ubicación de los servidores o el lugar de prestación y encargo del Anexo VIII.",
+          "obligatorio": true,
+          "pagina": 12
+        }
+      ],
+      "hitos": [
+        {
+          "hito": "Fin de presentación",
+          "fecha": "2027-10-14T08:00",
+          "detalle": "Según licitaciones_ver; comprobar el anuncio rectificado vigente.",
+          "pagina": 14
+        },
+        {
+          "hito": "Servicio",
+          "detalle": "El servicio dura 14 días naturales desde la formalización y los cursos deben estar evaluados antes del 30/12/2027.",
+          "pagina": 7
+        },
+        {
+          "hito": "Inicio FFI",
+          "detalle": "Aviso 6 días antes; cambios con 3 días; informar a la RLT 12 días antes.",
+          "pagina": 64
+        },
+        {
+          "hito": "Fin FFI",
+          "detalle": "Hasta 10 días hábiles tras el curso y antes del cierre fiscal.",
+          "pagina": 65
+        }
+      ],
+      "garantias": [
+        {
+          "tipo": "definitiva",
+          "descripcion": "No se exige: procedimiento abreviado.",
+          "pagina": 7
+        },
+        {
+          "tipo": "complementaria",
+          "descripcion": "No se exige.",
+          "pagina": 7
+        },
+        {
+          "tipo": "otra",
+          "descripcion": "El plazo de garantía es el de vigencia del contrato.",
+          "pagina": 7
+        }
+      ],
+      "penalizaciones": [
+        {
+          "descripcion": "Retraso imputable: 2 % del valor pendiente por día hasta 5 días; después, 12 % del valor del contrato y resolución.",
+          "pagina": 12
+        },
+        {
+          "descripcion": "Pérdida imputable de la subvención FFI: abonar el importe no subvencionado, previa audiencia de 4 días hábiles.",
+          "pagina": 13
+        },
+        {
+          "descripcion": "Una oferta inferior en un 20 % al presupuesto sin IGIC puede ser anormalmente baja; art. 149 LCSP.",
+          "pagina": 11
+        }
+      ],
+      "riesgos": [
+        {
+          "descripcion": "Docentes, campus, tutoría y tramitación del FFI pendientes de verificación documental.",
+          "gravedad": "alta"
+        },
+        {
+          "descripcion": "Plazo de 14 días y fin de cursos el 30/12/2027, con comunicaciones previas al FFI.",
+          "gravedad": "alta"
+        },
+        {
+          "descripcion": "Si se pierde la subvención por causa imputable, hay que devolver lo no subvencionado.",
+          "gravedad": "alta"
+        }
+      ],
+      "recomendacion": {
+        "decision": "revisar",
+        "motivo": "ROLECE consta y la solvencia está exenta. Faltan docentes acreditados para los lotes 2 y 4, el campus, la tutoría disponible y la tramitación del FFI; que Persona F lo verifique antes de decidir."
+      },
+      "presentacion_lotes": {
+        "regla": "uno_o_varios",
+        "maximo_lotes": 6,
+        "detalle": "Se puede licitar y resultar adjudicataria de hasta seis lotes, sin obligación de presentarse a todos.",
+        "documento": "Pliego regulador del servicio.pdf",
+        "pagina": 4
+      },
+      "senales_pliego": [
+        {
+          "tipo": "tecnologia_especifica",
+          "descripcion": "Se puntúa un campus con asistente virtual continuo, señales automáticas de inactividad e historial de atenciones.",
+          "cita": "Incorporación en el campus de un asistente virtual basado en modelos de lenguaje ... disponible sin interrupción las 24 horas del día, los 7 días de la semana (24/7)",
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 9
+        },
+        {
+          "tipo": "experiencia_especifica",
+          "descripcion": "El profesorado debe aportar formación o certificación ligada a la materia concreta del curso.",
+          "cita": "Formación específica o certificación profesional acreditable sobre la materia del curso.",
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 64
+        }
+      ],
+      "cobertura": [
+        {
+          "tema": "solvencia_economica",
+          "estado": "en_requisitos"
+        },
+        {
+          "tema": "solvencia_tecnica",
+          "estado": "no_lo_pide",
+          "detalle": "El pliego exime de forma expresa de acreditar la solvencia técnica y profesional.",
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 7
+        },
+        {
+          "tema": "clasificacion",
+          "estado": "no_lo_pide",
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 7
+        },
+        {
+          "tema": "medios_personales",
+          "estado": "en_requisitos"
+        },
+        {
+          "tema": "medios_materiales",
+          "estado": "en_requisitos"
+        },
+        {
+          "tema": "certificaciones",
+          "estado": "no_lo_pide",
+          "detalle": "No pide certificación de empresa; la formación o certificación del profesorado cuenta como medio personal.",
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 64
+        },
+        {
+          "tema": "habilitacion",
+          "estado": "en_requisitos"
+        },
+        {
+          "tema": "subcontratacion",
+          "estado": "en_requisitos"
+        },
+        {
+          "tema": "idioma",
+          "estado": "no_lo_pide",
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 61
+        },
+        {
+          "tema": "seguro",
+          "estado": "no_encontrado",
+          "detalle": "No consta exigencia de seguro de RC en el cuadro de características ni en los pasajes revisados."
+        },
+        {
+          "tema": "visita_obligatoria",
+          "estado": "no_encontrado",
+          "detalle": "No consta visita obligatoria."
+        },
+        {
+          "tema": "lugar_ejecucion",
+          "estado": "en_requisitos"
+        }
+      ],
+      "verificaciones": [
+        {
+          "indice": 10,
+          "regla": "subcontratacion",
+          "resultado_ia": "dudoso",
+          "resultado": "si",
+          "fuente": "perfil.notas: la empresa concurre sin socios ni subcontratas",
+          "detalle": "Todo se ejecuta con medios propios."
+        },
+        {
+          "indice": 11,
+          "regla": "idioma",
+          "resultado_ia": "si",
+          "resultado": "si",
+          "fuente": "perfil.idiomas: es, en",
+          "detalle": null
+        }
+      ],
+      "calidad": {
+        "puntuacion": 88,
+        "requisitos": 15,
+        "excluyentes": 9,
+        "dudosos_pct": 60,
+        "con_pagina_pct": 100,
+        "excluyentes_con_cita_pct": 100,
+        "cobertura_checklist_pct": 100,
+        "cobertura_placsp_pct": 100,
+        "corregidos_por_codigo": 1,
+        "avisos": []
+      },
+      "ambito_lotes": [
+        "2",
+        "4"
+      ]
+    },
+    "creada_en": "2027-10-13T11:10:04.790Z",
+    "version_prompt": 2
+  },
+  "guiones": [
+    {
+      "id": 19,
+      "version": 4,
+      "ficha_id": 347,
+      "datos": {
+        "archivos": [
+          {
+            "nombre": "ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, CRITERIOS AUTOMÁTICOS Y PROPOSICIÓN ECONÓMICA",
+            "contenido": "Documentación administrativa, documentación de los criterios automáticos (si se acogen) y proposición económica. La memoria técnica se rige por la cláusula 4.2 del pliego de prescripciones. Se presentará un archivo por cada lote ofertado, con el número de lote visible en cada uno.",
+            "prohibiciones": [
+              "No se aceptarán ofertas presentadas por medios distintos de los indicados.",
+              "No se aceptarán proposiciones económicas que no sigan el modelo del ANEXO VI."
+            ],
+            "firma": "con firma electrónica de la persona licitadora o de quien la represente, e irán acompañados de un índice firmado que relacione su contenido.",
+            "documentos": [
+              {
+                "tipo": "declaracion",
+                "nombre": "ANEXO I: DECLARACIÓN RESPONSABLE DE LA PERSONA LICITADORA",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO I",
+                  "documento": "Pliego regulador del servicio.pdf",
+                  "pagina": 47
+                }
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "ANEXO II: DESIGNACIÓN DE DIRECCIÓN ELECTRÓNICA PARA NOTIFICACIONES",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO II",
+                  "documento": "Pliego regulador del servicio.pdf",
+                  "pagina": 49
+                }
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "ANEXO III: COMPROMISO DE CONSTITUCIÓN DE UNIÓN TEMPORAL",
+                "obligatorio": false,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO III",
+                  "documento": "Pliego regulador del servicio.pdf",
+                  "pagina": 50
+                }
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "ANEXO IV: DECLARACIÓN SOBRE PERTENENCIA A GRUPO DE EMPRESAS",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO IV",
+                  "documento": "Pliego regulador del servicio.pdf",
+                  "pagina": 51
+                }
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "ANEXO V: COMPROMISO DE CUMPLIMIENTO DE LA NORMATIVA DE PROTECCIÓN DE DATOS",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO V",
+                  "documento": "Pliego regulador del servicio.pdf",
+                  "pagina": 52
+                }
+              },
+              {
+                "tipo": "oferta_economica",
+                "nombre": "ANEXO VI: MODELO DE OFERTA ECONÓMICA Y CRITERIOS AUTOMÁTICOS (archivo nº2)",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO VI",
+                  "documento": "Pliego regulador del servicio.pdf",
+                  "pagina": 53
+                },
+                "notas": "Debe presentarse un anexo por cada lote al que se licite; los criterios automáticos se marcan en el apartado SEGUNDO, páginas 54-55."
+              },
+              {
+                "tipo": "memoria",
+                "nombre": "Memoria técnica independiente por cada lote",
+                "obligatorio": true,
+                "produce": "hermes",
+                "origen": {
+                  "modelo": "Cláusula 4.2 Memoria técnica",
+                  "documento": "Pliego regulador del servicio.pdf",
+                  "pagina": 63
+                }
+              },
+              {
+                "tipo": "acreditacion",
+                "nombre": "Título universitario y currículum de la persona analista de datos",
+                "obligatorio": false,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "Sección G.2, apartado 1.4",
+                  "documento": "Pliego regulador del servicio.pdf",
+                  "pagina": 9
+                }
+              },
+              {
+                "tipo": "acreditacion",
+                "nombre": "Dossier técnico del fabricante del campus virtual",
+                "obligatorio": false,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "Sección G.2, apartados 2.3 y 2.4",
+                  "documento": "Pliego regulador del servicio.pdf",
+                  "pagina": 9
+                }
+              },
+              {
+                "tipo": "acreditacion",
+                "nombre": "Titulaciones, certificados y currículum firmado del profesorado",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "Cláusula 4.2 Profesorado",
+                  "documento": "Pliego regulador del servicio.pdf",
+                  "pagina": 64
+                }
+              },
+              {
+                "tipo": "acreditacion",
+                "nombre": "Declaración de conformidad con el Esquema Nacional de Seguridad (ENS), categoría BÁSICA",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "Rectificación de errores materiales",
+                  "documento": "Rectificación de errores materiales del pliego 27-09-2027 1032.pdf",
+                  "pagina": 1
+                }
+              },
+              {
+                "tipo": "otro",
+                "nombre": "Índice firmado del contenido del archivo",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "Cláusula 14",
+                  "documento": "Pliego regulador del servicio.pdf",
+                  "pagina": 23
+                }
+              }
+            ],
+            "documento": "Pliego regulador del servicio.pdf",
+            "pagina": 11
+          }
+        ],
+        "memoria": {
+          "archivo": "ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, CRITERIOS AUTOMÁTICOS Y PROPOSICIÓN ECONÓMICA",
+          "titulo_documento": "Memoria técnica",
+          "valorable": false,
+          "limite_paginas": null,
+          "apartados": [
+            {
+              "titulo": "Propuesta formativa",
+              "puntos": 0,
+              "se_valorara": [
+                "Motivación y enfoque de la acción formativa.",
+                "Objetivos generales y específicos.",
+                "Programa y contenidos completos.",
+                "Reparto de contenidos y horas.",
+                "Metodología didáctica.",
+                "Prácticas y ejercicios.",
+                "Sistema de evaluación.",
+                "Requisitos para aprobar.",
+                "Tutorización y seguimiento del alumnado.",
+                "Recursos y materiales didácticos."
+              ],
+              "escala": [],
+              "documento": "Pliego regulador del servicio.pdf",
+              "pagina": 63
+            },
+            {
+              "titulo": "Plataforma de teleformación",
+              "puntos": 0,
+              "se_valorara": [
+                "Acceso e identificación del alumnado.",
+                "Disponibilidad y horario de acceso.",
+                "Seguimiento de la actividad de cada persona.",
+                "Registro de conexiones y de actividad formativa.",
+                "Comunicación entre alumnado y tutoría.",
+                "Herramientas de evaluación.",
+                "Informes de seguimiento.",
+                "Emisión y descarga de certificados.",
+                "Medidas de seguridad aplicables.",
+                "Protección de datos y confidencialidad.",
+                "Soporte técnico al alumnado.",
+                "Si el campus incorpora analítica, paneles, avisos automáticos, automatización o asistentes virtuales, la memoria debe describirlos de forma expresa."
+              ],
+              "escala": [],
+              "documento": "Pliego regulador del servicio.pdf",
+              "pagina": 64
+            },
+            {
+              "titulo": "Equipo docente",
+              "puntos": 0,
+              "se_valorara": [
+                "Nombre y apellidos.",
+                "Titulación académica.",
+                "Formación complementaria sobre la materia.",
+                "Experiencia docente.",
+                "Experiencia profesional ligada a los contenidos que se imparten.",
+                "Funciones durante la ejecución del contrato.",
+                "El profesorado debe acreditar una cualificación adecuada y suficiente para los contenidos que imparta."
+              ],
+              "escala": [],
+              "documento": "Pliego regulador del servicio.pdf",
+              "pagina": 64
+            }
+          ],
+          "advertencias": [
+            "Cada persona licitadora presentará una memoria técnica específica por cada lote al que concurra; la memoria no puntúa.",
+            "La memoria debe describir como mínimo los aspectos siguientes:"
+          ],
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 63
+        },
+        "automaticos": [
+          {
+            "criterio": "Formatos de descarga de los registros de actividad",
+            "puntos": 6,
+            "como_se_acredita": "Si el campus permite descargar los registros de actividad en tres o más formatos abiertos: Seis (6) puntos. Si solo permite dos formatos: Tres (3) puntos. Si permite un formato o ninguno: Cero (0) puntos. Señale con una X lo que proceda en 1.1 del Anexo VI.",
+            "casilla_en": "ANEXO VI, SEGUNDO, 1.1 Formatos de descarga de los registros de actividad",
+            "archivo": "ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, CRITERIOS AUTOMÁTICOS Y PROPOSICIÓN ECONÓMICA",
+            "marcas": [
+              "descarga en tres o más formatos abiertos"
+            ],
+            "documento": "Pliego regulador del servicio.pdf",
+            "pagina": 8
+          },
+          {
+            "criterio": "Frecuencia de sincronización del registro de asistencia",
+            "puntos": 6,
+            "como_se_acredita": "Sincronización del registro de asistencia en tiempo real o con periodicidad diaria: Seis (6) puntos. Periodicidad semanal: Tres (3) puntos. Periodicidad superior a la semanal: Cero (0) puntos. Señale con una X lo que proceda en 1.2 del Anexo VI.",
+            "casilla_en": "ANEXO VI, SEGUNDO, 1.2 Frecuencia de sincronización del registro de asistencia",
+            "archivo": "ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, CRITERIOS AUTOMÁTICOS Y PROPOSICIÓN ECONÓMICA",
+            "marcas": [
+              "sincronización con periodicidad diaria"
+            ],
+            "documento": "Pliego regulador del servicio.pdf",
+            "pagina": 8
+          },
+          {
+            "criterio": "Sistema de avisos automáticos de inactividad",
+            "puntos": 6,
+            "como_se_acredita": "Si el sistema genera y envía avisos automáticos externos (por correo electrónico o mensaje de texto) a la coordinación del contrato ante la inactividad prolongada de una persona participante: Seis (6) puntos. Si el campus carece de un sistema parametrizado de avisos: Cero (0) puntos. Señale con una X lo que proceda en 1.3 del Anexo VI.",
+            "casilla_en": "ANEXO VI, SEGUNDO, 1.3 Sistema de avisos automáticos de inactividad",
+            "archivo": "ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, CRITERIOS AUTOMÁTICOS Y PROPOSICIÓN ECONÓMICA",
+            "marcas": [
+              "avisos automáticos externos"
+            ],
+            "documento": "Pliego regulador del servicio.pdf",
+            "pagina": 8
+          },
+          {
+            "criterio": "Adscripción de Equipo Técnico de Calidad Formativa)",
+            "puntos": 6,
+            "como_se_acredita": "Compromiso formal de adscribir a un analista de calidad formativa con titulación universitaria oficial de grado, licenciatura o equivalente en Estadística y/o Matemáticas y/o Ingeniería Informática; se aportará copia del título acompañada del currículum. Señale con una X lo que proceda en 1.4 del Anexo VI.",
+            "casilla_en": "ANEXO VI, SEGUNDO, 1.4 Adscripción de Equipo Técnico de Calidad Formativa",
+            "archivo": "ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, CRITERIOS AUTOMÁTICOS Y PROPOSICIÓN ECONÓMICA",
+            "marcas": [
+              "analista de calidad formativa"
+            ],
+            "documento": "Pliego regulador del servicio.pdf",
+            "pagina": 8
+          },
+          {
+            "criterio": "Periodicidad de entrega de Informes de Seguimiento Ejecutivos",
+            "puntos": 6,
+            "como_se_acredita": "Compromiso de entregar informes de seguimiento con propuestas de mejora cada diez días o con menor intervalo: Seis (6) puntos. Periodicidad quincenal: Tres (3) puntos. Entrega únicamente al terminar la acción formativa: Cero (0) puntos. Señale con una X lo que proceda en 1.5 del Anexo VI.",
+            "casilla_en": "ANEXO VI, SEGUNDO, 1.5 Periodicidad de entrega de Informes de Seguimiento Ejecutivos",
+            "archivo": "ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, CRITERIOS AUTOMÁTICOS Y PROPOSICIÓN ECONÓMICA",
+            "marcas": [
+              "informes de seguimiento ejecutivos"
+            ],
+            "documento": "Pliego regulador del servicio.pdf",
+            "pagina": 8
+          },
+          {
+            "criterio": "Compromiso de Tiempo de Respuesta Tutorial (Prontitud)",
+            "puntos": 8,
+            "como_se_acredita": "Plazo máximo de respuesta de la tutora o el tutor humano a las dudas del alumnado inferior o igual a 3 horas (contadas dentro del horario lectivo): Ocho (8) puntos. Plazo superior a 3 horas e inferior o igual a 6 horas: Cuatro (4) puntos. Plazo igual a 6 horas: Cero (0) puntos. El Anexo VI, 2.1, presenta la última opción como «Plazo de respuesta superior a 6 horas».",
+            "casilla_en": "ANEXO VI, SEGUNDO, 2.1 Compromiso de Tiempo de Respuesta Tutorial (Prontitud)",
+            "archivo": "ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, CRITERIOS AUTOMÁTICOS Y PROPOSICIÓN ECONÓMICA",
+            "marcas": [
+              "respuesta humana inferior o igual a 3 horas"
+            ],
+            "documento": "Pliego regulador del servicio.pdf",
+            "pagina": 9
+          },
+          {
+            "criterio": "Asistente virtual de consultas con disponibilidad continua",
+            "puntos": 8,
+            "como_se_acredita": "Incorporación en el campus de un asistente virtual basado en modelos de lenguaje que resuelva de forma automática e inmediata las dudas de uso y de navegación, disponible sin interrupción las 24 horas del día, los 7 días de la semana (24/7): Ocho (8) puntos. Si no se incorpora esa herramienta con disponibilidad 24/7: Cero (0) puntos. Señale con una X lo que proceda en 2.2 del Anexo VI.",
+            "casilla_en": "ANEXO VI, SEGUNDO, 2.2 Asistente virtual de consultas con disponibilidad continua",
+            "archivo": "ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, CRITERIOS AUTOMÁTICOS Y PROPOSICIÓN ECONÓMICA",
+            "marcas": [
+              "asistente virtual basado en modelos de lenguaje"
+            ],
+            "documento": "Pliego regulador del servicio.pdf",
+            "pagina": 9
+          },
+          {
+            "criterio": "Volumen de Señales Automáticas de Inactividad del Alumnado",
+            "puntos": 8,
+            "como_se_acredita": "Detecta de forma automática 6 o más señales de inactividad simultáneas: Ocho (8) puntos; entre 4 y 5: Cuatro (4) puntos; menos de 4: Cero (0) puntos. Se acompañará el dossier técnico del fabricante del campus que certifique las señales automáticas de inactividad. Señale con una X lo que proceda en 2.3 del Anexo VI.",
+            "casilla_en": "ANEXO VI, SEGUNDO, 2.3 Volumen de Señales Automáticas de Inactividad del Alumnado",
+            "archivo": "ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, CRITERIOS AUTOMÁTICOS Y PROPOSICIÓN ECONÓMICA",
+            "marcas": [
+              "6 o más señales de inactividad simultáneas"
+            ],
+            "documento": "Pliego regulador del servicio.pdf",
+            "pagina": 9
+          },
+          {
+            "criterio": "Registro de Trazabilidad de la Atención Tutorial",
+            "puntos": 6,
+            "como_se_acredita": "El campus registra de forma automática el 100% de las atenciones entre tutoría y alumnado (mensajes, llamadas devueltas, avisos enviados) y genera un historial consultable en tiempo real por la coordinación del contrato: Seis (6) puntos; sin registro automático: Cero (0) puntos. Se acompañará el dossier técnico homologado del fabricante. Señale con una X lo que proceda en 2.4 del Anexo VI.",
+            "casilla_en": "ANEXO VI, SEGUNDO, 2.4 Registro de Trazabilidad de la Atención Tutorial",
+            "archivo": "ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, CRITERIOS AUTOMÁTICOS Y PROPOSICIÓN ECONÓMICA",
+            "marcas": [
+              "historial consultable en tiempo real"
+            ],
+            "documento": "Pliego regulador del servicio.pdf",
+            "pagina": 9
+          }
+        ],
+        "oferta_economica": {
+          "formula": "La oferta económica más baja entre las no excluidas por anormalmente baja recibirá cuarenta (40) puntos. Las demás se puntuarán en proporción a esa oferta mínima con la fórmula del pliego, y la oferta igual al presupuesto base de licitación recibirá cero (0) puntos.",
+          "presupuesto_base": 6819.75,
+          "impuesto_aparte": "IGIC",
+          "precio_unitario": {
+            "unidad": "alumno",
+            "maximo": null
+          },
+          "umbral_anormalidad": "Podrán considerarse anormalmente bajas las ofertas inferiores en un 20 % al presupuesto de licitación sin IGIC.",
+          "modelo": "ANEXO VI: MODELO DE OFERTA ECONÓMICA POR LOTE",
+          "archivo": "ARCHIVO ÚNICO DE LA OFERTA: DOCUMENTACIÓN ADMINISTRATIVA, CRITERIOS AUTOMÁTICOS Y PROPOSICIÓN ECONÓMICA",
+          "documento": "Pliego regulador del servicio.pdf",
+          "pagina": 9
+        },
+        "plazo": {
+          "fecha_limite": "2027-10-14T08:00",
+          "canal": "Presentación electrónica mediante la herramienta de preparación y presentación de ofertas de la PLACSP",
+          "observaciones": "Rectificación de Anuncio de Licitación 27-09-2027 1043.pdf, pág. 2: «Hasta el 14/10/2027 a las 08:00»; «las horas indicadas son las de Madrid». Pliego, pág. 25: las proposiciones se presentan en archivos separados por lote."
+        },
+        "lotes": [
+          "2",
+          "4"
+        ]
+      },
+      "creado_en": "2027-10-13T11:46:18.644Z"
+    }
+  ],
+  "decisiones": {
+    "guion_id": 19,
+    "actualizada_en": "2027-10-13T14:48:18.911Z",
+    "datos": {
+      "lotes": [
+        "2",
+        "4"
+      ],
+      "equipo": [
+        {
+          "persona_id": 1001,
+          "rol_en_la_oferta": "Tutora académica titular de los lotes 2 y 4 (respuesta en menos de 3 h en horario lectivo)",
+          "dedicacion": "Parcial: horario lectivo L-V 8:30-13:30 (Canarias) durante los cursos",
+          "lotes": []
+        },
+        {
+          "persona_id": 1002,
+          "rol_en_la_oferta": "Docente principal del lote 2 (hojas de cálculo con asistente de IA) y tutora suplente",
+          "dedicacion": "Parcial: clases y seguimiento del lote 2",
+          "lotes": []
+        },
+        {
+          "persona_id": 1003,
+          "rol_en_la_oferta": "Docente principal del lote 4 (atención telefónica y trato a personas usuarias)",
+          "dedicacion": "Parcial: clases y seguimiento del lote 4",
+          "lotes": []
+        },
+        {
+          "persona_id": 1004,
+          "rol_en_la_oferta": "Analista externo de calidad formativa (panel de seguimiento e informes cada diez días)",
+          "dedicacion": "Parcial: informes cada diez días y cierre",
+          "lotes": []
+        },
+        {
+          "persona_id": 1005,
+          "rol_en_la_oferta": "Coordinador del contrato, responsable de la información y soporte técnico del campus",
+          "dedicacion": "Parcial: durante toda la ejecución",
+          "lotes": []
+        }
+      ],
+      "automaticos": [
+        {
+          "criterio": "Formatos de descarga de los registros de actividad",
+          "lote": null,
+          "nos_acogemos": true,
+          "tramo": "Formatos de descarga de los registros de actividad",
+          "nota": "Panel de seguimiento de Aula Abierta con descarga en CSV, XLSX y JSON"
+        },
+        {
+          "criterio": "Frecuencia de sincronización del registro de asistencia",
+          "lote": null,
+          "nos_acogemos": true,
+          "tramo": "Frecuencia de sincronización del registro de asistencia",
+          "nota": "Sincronización diaria automática"
+        },
+        {
+          "criterio": "Sistema de avisos automáticos de inactividad",
+          "lote": null,
+          "nos_acogemos": true,
+          "tramo": "Sistema de avisos automáticos de inactividad",
+          "nota": "Avisos por correo a la coordinación del contrato"
+        },
+        {
+          "criterio": "Adscripción de Equipo Técnico de Calidad Formativa)",
+          "lote": null,
+          "nos_acogemos": true,
+          "tramo": "Adscripción de Equipo Técnico de Calidad Formativa)"
+        },
+        {
+          "criterio": "Periodicidad de entrega de Informes de Seguimiento Ejecutivos",
+          "lote": null,
+          "nos_acogemos": true,
+          "tramo": "Periodicidad de entrega de Informes de Seguimiento Ejecutivos",
+          "nota": "Informe cada diez días con propuestas de mejora"
+        },
+        {
+          "criterio": "Compromiso de Tiempo de Respuesta Tutorial (Prontitud)",
+          "lote": null,
+          "nos_acogemos": true,
+          "tramo": "Compromiso de Tiempo de Respuesta Tutorial (Prontitud)",
+          "nota": "≤ 3 h en horario lectivo; Persona F titular, Persona H suplente"
+        },
+        {
+          "criterio": "Asistente virtual de consultas con disponibilidad continua",
+          "lote": null,
+          "nos_acogemos": true,
+          "tramo": "Asistente virtual de consultas con disponibilidad continua",
+          "nota": "Asistente de IA propio integrado en Aula Abierta, 24/7"
+        },
+        {
+          "criterio": "Volumen de Señales Automáticas de Inactividad del Alumnado",
+          "lote": null,
+          "nos_acogemos": true,
+          "tramo": "Volumen de Señales Automáticas de Inactividad del Alumnado",
+          "nota": "No nos acogemos: pide un dossier técnico homologado por el fabricante y no disponemos de él"
+        },
+        {
+          "criterio": "Registro de Trazabilidad de la Atención Tutorial",
+          "lote": null,
+          "nos_acogemos": true,
+          "tramo": "Registro de Trazabilidad de la Atención Tutorial",
+          "nota": "No nos acogemos: pide un dossier técnico homologado por el fabricante y no disponemos de él"
+        }
+      ],
+      "herramientas": [
+        "Aula Abierta 4.x",
+        "panel de seguimiento",
+        "avisos automáticos por correo",
+        "asistente de IA integrado",
+        "hojas de cálculo con asistente de IA",
+        "videollamada integrada del campus",
+        "centralita virtual de práctica",
+        "chat de atención de práctica",
+        "gestor de incidencias de práctica",
+        "plantillas de guion de atención",
+        "simulador de llamadas",
+        "grabadora de práctica"
+      ],
+      "enfoque": "Ofertamos los lotes 2 (análisis de datos con hojas de cálculo y asistente de IA) y 4 (atención telefónica y trato a personas usuarias). La memoria no puntúa pero obliga: una parte completa por lote con A) propuesta formativa (módulos con horas, objetivos, ejercicios sobre casos reales de gestión y de atención, evaluación y un calendario que encaje con el aviso a la representación legal y al FFI y con el fin de los cursos antes del 31 de diciembre), B) campus de teleformación y C) profesorado. Campus: Aula Abierta 4.x gestionado por la empresa y alojado en un centro de datos de la Unión Europea, con acceso individual, registro de conexión para acreditar el 80 % que pide el FFI, panel de seguimiento con descarga en formatos abiertos y sincronización diaria, avisos automáticos por correo a la coordinación del contrato, informes cada diez días con propuestas de mejora y asistente de IA integrado, disponible 24 horas, para dudas de uso y de navegación. Equipo: docente principal del lote 2, Persona H; docente principal del lote 4, Persona J; tutora titular de ambos lotes, Persona F, que responde en menos de 3 horas en horario lectivo (lunes a viernes de 8:30 a 13:30, hora de Canarias), con Persona H como suplente; analista de calidad formativa, Persona D; coordinación del contrato y soporte técnico, Persona K. Voz concreta: quién, qué, cuándo y con qué herramienta.",
+      "ofertas": [
+        {
+          "lote": "2",
+          "pendiente": false,
+          "importe": null,
+          "unitarios": []
+        },
+        {
+          "lote": "4",
+          "pendiente": false,
+          "importe": null,
+          "unitarios": []
+        }
+      ]
+    }
+  },
+  "propuesta": {
+    "guion_id": 19,
+    "creada_en": "2027-10-13T14:50:52.824Z",
+    "agente": "oferta-licitaciones",
+    "avisos": [],
+    "datos": {
+      "lotes": [
+        "2",
+        "4"
+      ],
+      "equipo": [
+        {
+          "persona_id": 1002,
+          "rol_en_la_oferta": "Docente principal del lote 2: análisis de datos con hojas de cálculo y asistente de IA",
+          "dedicacion": "Parcial mientras dure el lote 2; falta confirmar disponibilidad y horario",
+          "motivo": "Persona H: grado en matemáticas y formación específica en hojas de cálculo avanzadas y analítica con asistente de IA (CV, p. 2); seis años de experiencia profesional. Es la mejor evidencia para el lote 2, aunque su CV no recoge docencia. Confirmar título, formación, CV firmado y adscripción (Pliego, p. 64)."
+        },
+        {
+          "persona_id": 1003,
+          "rol_en_la_oferta": "Docente principal del lote 4: atención telefónica y trato a personas usuarias",
+          "dedicacion": "Parcial mientras dure el lote 4; falta confirmar el horario",
+          "motivo": "Persona J: grado en marketing y comunicación y experiencia en atención al cliente y gestión de reclamaciones en varias empresas de servicios (CV, pp. 1-2); nueve años profesionales y disponible. Confirmar formación específica en atención al público, docencia, títulos y CV firmado (Pliego, p. 64)."
+        },
+        {
+          "persona_id": 1001,
+          "rol_en_la_oferta": "Tutora humana de los lotes 2 y 4",
+          "dedicacion": "Cubre el horario lectivo de los dos lotes; falta confirmar turnos y suplente",
+          "motivo": "Persona F: profesora y codirectora de másteres de ciencia de datos e IA (CV, pp. 1-2), disponible. Confirmar que puede responder en tres horas lectivas en ambos lotes y la suplencia (Pliego, pp. 9 y 62)."
+        },
+        {
+          "persona_id": 1004,
+          "rol_en_la_oferta": "Analista de calidad formativa",
+          "dedicacion": "Parcial para interpretar datos e informes; adscripción formal por confirmar",
+          "motivo": "Persona D: grado en ingeniería informática, titulación admitida (CV, p. 3), con experiencia en plataformas y análisis; externo con disponibilidad parcial. Pedir copia del título y CV y confirmar su adscripción y el apartado L sobre subcontratación (Pliego, pp. 8-11)."
+        },
+        {
+          "persona_id": 1005,
+          "rol_en_la_oferta": "Coordinación del contrato y soporte técnico",
+          "dedicacion": "Parcial en la ejecución; falta confirmar disponibilidad",
+          "motivo": "Persona K: dirección técnica y diez años de experiencia en plataformas y canalizaciones de datos (CV, pp. 1-3). No acredita haber operado un campus de teleformación ni tramitado el FFI; verificarlo antes de asignárselos (Pliego, pp. 61-65)."
+        }
+      ],
+      "automaticos": [
+        {
+          "criterio": "Formatos de descarga de los registros de actividad",
+          "lote": null,
+          "tipo": "acreditacion",
+          "nos_acogemos": false,
+          "tramo": null,
+          "cumple": "falta_dato",
+          "motivo": "Pliego, p. 8: puntúa la descarga nativa de los registros en dos o tres formatos. Las decisiones dicen CSV, XLSX y JSON, pero no consta un campus operativo ni una prueba de descarga; aportarla en Ajustes › Empresa/Decisiones antes de marcar el Anexo VI 1.1."
+        },
+        {
+          "criterio": "Frecuencia de sincronización del registro de asistencia",
+          "lote": null,
+          "tipo": "acreditacion",
+          "nos_acogemos": false,
+          "tramo": null,
+          "cumple": "falta_dato",
+          "motivo": "Pliego, p. 8: falta una prueba de sincronización diaria o en tiempo real del registro de asistencia en el campus real. Aportarla en Ajustes › Empresa/Decisiones antes de marcar el Anexo VI 1.2."
+        },
+        {
+          "criterio": "Sistema de avisos automáticos de inactividad",
+          "lote": null,
+          "tipo": "acreditacion",
+          "nos_acogemos": false,
+          "tramo": null,
+          "cumple": "falta_dato",
+          "motivo": "Pliego, p. 8: no consta un sistema que detecte la inactividad y envíe avisos a la coordinación. Aportar una prueba funcional en Ajustes › Empresa/Decisiones antes de marcar el Anexo VI 1.3."
+        },
+        {
+          "criterio": "Adscripción de Equipo Técnico de Calidad Formativa)",
+          "lote": null,
+          "tipo": "acreditacion",
+          "nos_acogemos": true,
+          "tramo": null,
+          "cumple": "si",
+          "nivel": "Analista de calidad formativa con grado oficial en Ingeniería Informática",
+          "motivo": "Persona D tiene un grado en ingeniería informática (CV, p. 3), titulación admitida por el Pliego, pp. 8-9. Preparar copia del título y CV y confirmar adscripción, disponibilidad y subcontratación antes de guardar."
+        },
+        {
+          "criterio": "Periodicidad de entrega de Informes de Seguimiento Ejecutivos",
+          "lote": null,
+          "tipo": "compromiso",
+          "nos_acogemos": true,
+          "tramo": null,
+          "nivel": "Informes de seguimiento con propuestas de mejora cada diez días o con menor intervalo",
+          "motivo": "Tramo máximo (Pliego, p. 8): Persona D interpretaría los datos y Persona F aportaría el seguimiento. Confirmar dedicación y calendario para que quepa en los 14 días de ejecución (Pliego, p. 7)."
+        },
+        {
+          "criterio": "Compromiso de Tiempo de Respuesta Tutorial (Prontitud)",
+          "lote": null,
+          "tipo": "compromiso",
+          "nos_acogemos": true,
+          "tramo": null,
+          "nivel": "Plazo máximo de respuesta de la tutora o el tutor humano inferior o igual a 3 horas en horario lectivo",
+          "motivo": "Tramo máximo (Pliego, p. 9) con Persona F como tutora de ambos lotes; confirmar horario, turnos, carga simultánea y suplencia antes de guardar."
+        },
+        {
+          "criterio": "Asistente virtual de consultas con disponibilidad continua",
+          "lote": null,
+          "tipo": "acreditacion",
+          "nos_acogemos": false,
+          "tramo": null,
+          "cumple": "falta_dato",
+          "motivo": "Pliego, p. 9: pide un asistente integrado en el campus para dudas de uso y de navegación, disponible 24/7. El CV de Persona K acredita asistentes en otros proyectos (p. 3), no este servicio desplegado. Registrar la prueba de integración en Ajustes › Empresa/Decisiones antes de marcar el Anexo VI 2.2."
+        },
+        {
+          "criterio": "Volumen de Señales Automáticas de Inactividad del Alumnado",
+          "lote": null,
+          "tipo": "acreditacion",
+          "nos_acogemos": false,
+          "tramo": null,
+          "cumple": "falta_dato",
+          "motivo": "Pliego, p. 9: faltan la prueba de señales operativas y el dossier técnico homologado del fabricante. Sin ellos no marcar el Anexo VI 2.3."
+        },
+        {
+          "criterio": "Registro de Trazabilidad de la Atención Tutorial",
+          "lote": null,
+          "tipo": "acreditacion",
+          "nos_acogemos": false,
+          "tramo": null,
+          "cumple": "falta_dato",
+          "motivo": "Pliego, p. 9: no consta el registro automático del 100 % de las atenciones ni un historial consultable, ni el dossier homologado del fabricante. Aportarlos antes de marcar el Anexo VI 2.4."
+        }
+      ],
+      "herramientas": [],
+      "enfoque": "Teleformación y tramitación de la subvención FFI: lote 2, análisis de datos con hojas de cálculo y asistente de IA (55 personas), y lote 4, atención a personas usuarias (6), ambos de 60 horas, con una memoria independiente por lote. La memoria no puntúa pero obliga (Pliego, pp. 61-64). En Propuesta formativa, los diez elementos de la cláusula 4.2.A: objetivos, módulos y horas, ejercicios adaptados, método, evaluación, tutoría y materiales. En Plataforma, acceso individual, registro de actividad, comunicación, evaluaciones, certificados, seguridad y soporte; las funciones de analítica, avisos y asistente de IA solo si se verifica un campus real (Pliego, pp. 62-64). En Equipo docente, Persona H para el lote 2, Persona J para el lote 4, Persona F para la tutoría, Persona D para el análisis y Persona K para la coordinación, con títulos y CV firmados (Pliego, p. 64). Encajar los avisos a la representación legal (12 días) y al FFI (6 días) con los 14 días de ejecución (Pliego, pp. 7, 64-65). No prometer Aula Abierta propia, alojamiento en la UE, descarga de registros, sincronización diaria, avisos, asistente 24/7, trazabilidad, dossier homologado, experiencia docente no documentada ni tramitación del FFI ya acreditada. La Rectificación de errores materiales, p. 1, exige la declaración de conformidad ENS BÁSICA con la oferta técnica y el perfil de empresa dice que no la tenemos: bloqueo de elegibilidad que decide la persona. Las casillas automáticas están en el Anexo VI (Pliego, pp. 53-55).",
+      "resumen": "Lotes 2 y 4. Persona H y Persona J como docentes, Persona F como tutora, Persona D como analista y Persona K en coordinación; falta confirmar formación docente, títulos y CV firmados, disponibilidad, campus real y tramitación del FFI. Frente a las decisiones guardadas se desmarcan descarga de registros, sincronización, avisos, asistente 24/7 y los dos criterios que exigen dossier, porque sus notas afirman prestaciones sin evidencia; se mantienen analista, informe cada diez días y respuesta humana ≤3 h, sujetos a confirmación. Antes de nada hay que resolver la declaración ENS BÁSICA que exige la rectificación (perfil: sin ENS)."
+    }
+  },
+  "memorias": [
+    {
+      "id": 16,
+      "version": 1,
+      "guion_id": 13,
+      "estado": "ensamblada",
+      "pedida_en": "2027-10-13T10:13:11.483Z",
+      "ensamblada_en": "2027-10-13T10:19:11.104Z",
+      "revision": "pendiente",
+      "borrador_id": 17,
+      "paginas": 8,
+      "paginas_estimadas": 12.4,
+      "apartados": [
+        {
+          "apartado": 1,
+          "titulo": "Propuesta formativa",
+          "puntos": 0,
+          "estado": "recibido",
+          "caracteres": 11639,
+          "paginas_estimadas": 4.2,
+          "avisos": [],
+          "compromisos": [
+            {
+              "que": "Impartir el programa de análisis de datos con hojas de cálculo y asistente de IA de 60 horas y evaluar cinco productos y prueba individual",
+              "quien": "Persona H",
+              "cuando_o_medida": "12 jornadas de aprendizaje dentro de la ventana de 14 días del lote 2; rúbrica 50 % productos y 50 % prueba"
+            },
+            {
+              "que": "Impartir el programa de atención telefónica y trato a personas usuarias de 60 horas y evaluar cinco productos y prueba individual",
+              "quien": "Persona J",
+              "cuando_o_medida": "12 jornadas de aprendizaje dentro de la ventana de 14 días del lote 4; rúbrica 50 % productos y 50 % prueba"
+            },
+            {
+              "que": "Tutoría y seguimiento personal del alumnado de los dos lotes",
+              "quien": "Persona F",
+              "cuando_o_medida": "Lunes a viernes, 8:30–13:30, hora de Canarias; respuesta inferior a tres horas lectivas y revisión al final de cada módulo"
+            },
+            {
+              "que": "Coordinar avisos previos, calendario y cierre de la documentación de cada lote",
+              "quien": "Persona K",
+              "cuando_o_medida": "Información a la RLT con al menos 12 días de antelación al inicio; comunicación al FFI con al menos seis días naturales; cierre antes del 30 de diciembre de 2027"
+            },
+            {
+              "que": "Entregar recursos reutilizables y resultados por lote a la empresa pública",
+              "quien": "La empresa, mediante las docentes y Persona K",
+              "cuando_o_medida": "Al cierre de cada acción: plantillas, cuadernos, rúbricas, evidencias e informe final electrónicos"
+            }
+          ],
+          "texto": "## 1. Propuesta formativa\n\n### 1.1 Lote 2. Análisis de datos con hojas de cálculo y asistente de IA: justificación y objetivos\n\nLa empresa impartirá al personal de gestión de la empresa pública una acción de teleformación de 60 horas basada en el trabajo diario con datos: limpiar un listado, cruzar dos tablas, calcular indicadores de actividad y presentar un resumen con ayuda de un asistente de IA cuyas respuestas una persona contrasta antes de usarlas. Al terminar, cada participante sabrá estructurar una hoja de cálculo, aplicar fórmulas y tablas dinámicas, formular peticiones claras al asistente y verificar sus resultados con los datos de origen para obtener cifras fiables y reproducibles. Persona H conducirá los ejercicios y corregirá las entregas de este lote.\n\n### 1.2 Lote 2. Programa y distribución de las 60 horas\n\n| Módulo | Horas | Contenidos y producto práctico |\n| --- | --- | --- |\n| 1. Estructura y limpieza de datos | 10 | Tablas, formatos, duplicados y validaciones. Entrega: listado depurado con su registro de cambios. |\n| 2. Fórmulas y funciones | 12 | Funciones de búsqueda, condicionales y de fecha. Entrega: hoja de cálculo de indicadores. |\n| 3. Tablas dinámicas y gráficos | 14 | Resúmenes por categoría, segmentación y gráficos. Entrega: cuadro resumen con su lectura. |\n| 4. Asistente de IA en el análisis | 12 | Peticiones claras, contraste de respuestas y confidencialidad. Entrega: análisis con las correcciones anotadas. |\n| 5. Proyecto final y evaluación | 12 | Informe completo a partir de datos de ejemplo; prueba individual. Entrega: informe final. |\n\n### 1.3 Lote 2. Método, evaluación y materiales\n\nPersona H presentará cada tarea con una demostración breve y un cuaderno de ejercicios descargable; el alumnado lo reproducirá con datos ficticios y entregará el resultado en Aula Abierta. Los cinco productos de módulo pesarán un 50 % y la prueba final otro 50 %. Para superar el curso habrá que acreditar al menos el 80 % de las 60 horas, entregar los cinco productos y obtener 65 sobre 100 en ambas partes. Persona F atenderá las dudas académicas por la mensajería del curso. Al cierre, la empresa pública recibirá los cuadernos, las plantillas y las rúbricas en formato editable.\n\n### 1.4 Lote 4. Atención telefónica y trato a personas usuarias: justificación y objetivos\n\nLa empresa impartirá al equipo de atención al público una acción de teleformación de 60 horas sobre la atención por voz, chat y videollamada en un servicio sanitario. El hilo práctico será una jornada simulada de consultas, desde la recepción de la llamada hasta el registro de la incidencia, la gestión de una queja y la valoración de la atención. Persona J adaptará los ejercicios a las funciones del equipo y revisará las grabaciones de práctica.\n\n### 1.5 Lote 4. Programa y distribución de las 60 horas\n\n| Módulo | Horas | Contenidos y producto práctico |\n| --- | --- | --- |\n| 1. Protocolo y tono de atención | 10 | Saludo, escucha activa, accesibilidad y circuito de derivación. Entrega: guion de atención. |\n| 2. Canales y turnos | 12 | Particularidades de la voz, el chat y la videollamada y organización de turnos. Entrega: cuadrante de atención. |\n| 3. Casos difíciles | 14 | Reclamaciones, personas alteradas y comunicación de malas noticias. Entrega: una grabación de práctica por canal. |\n| 4. Registro y seguimiento | 12 | Gestor de incidencias, cierre de consultas y derivación. Entrega: incidencias registradas y revisadas. |\n| 5. Medición y evaluación | 12 | Tiempos de espera, satisfacción y mejoras. Entrega: informe de servicio y prueba individual. |\n\n### 1.6 Lote 4. Método, evaluación y materiales\n\nPersona J mostrará un ejemplo de cada canal y dará una consigna de práctica por módulo; el alumnado practicará solo en el entorno de simulación y presentará una versión corregida de cada ejercicio. La evaluación seguirá el mismo esquema que el lote 2: 50 % productos, 50 % prueba final, 80 % de las horas y 65 sobre 100. Persona F atenderá las dudas académicas y la empresa pública conservará los guiones, las plantillas y las guías.\n\n### 1.7 Calendario, tutorización y seguimiento de ambos lotes\n\nPersona K acordará con la empresa pública la fecha de inicio de cada grupo, entregará la información para la representación legal de las personas trabajadoras con 12 días de antelación y comunicará el inicio al FFI al menos seis días naturales antes. Las 60 horas se repartirán en 12 jornadas de cinco horas dentro de una ventana de 14 días naturales desde la formalización, de modo que los dos lotes terminen y se evalúen antes del 30 de diciembre de 2027.\n\nPersona F será la tutora titular de ambos lotes de lunes a viernes, de 8:30 a 13:30, hora de Canarias, y responderá en menos de tres horas dentro de ese horario; Persona H cubrirá la suplencia. Persona K consolidará el registro de actividad, las calificaciones y el informe final de cada lote.\n\n| Tramo | Horas por lote | Actividad y responsable |\n| --- | --- | --- |\n| Jornadas 1–4 | 20 h | Módulos 1 y 2 en Aula Abierta; corrige la docente del lote |\n| Jornadas 5–8 | 20 h | Módulos 3 y 4; Persona F sigue los hitos |\n| Jornadas 9–12 | 20 h | Módulo 5 y prueba individual |\n| Cierre | Incluido en las 60 h | Persona K entrega resultados y materiales |"
+        },
+        {
+          "apartado": 2,
+          "titulo": "Plataforma de teleformación",
+          "puntos": 0,
+          "estado": "recibido",
+          "caracteres": 9026,
+          "paginas_estimadas": 3.2,
+          "avisos": [],
+          "compromisos": [
+            {
+              "que": "Habilitar aulas de Aula Abierta y cuentas individuales separadas para los lotes 2 y 4",
+              "quien": "Persona K",
+              "cuando_o_medida": "Antes de empezar cada acción formativa"
+            },
+            {
+              "que": "Mantener abiertos los recursos y las pruebas",
+              "quien": "Persona K",
+              "cuando_o_medida": "En cualquier franja mientras dure cada curso"
+            },
+            {
+              "que": "Contestar las dudas de contenido de los dos lotes",
+              "quien": "Persona F, con Persona H de suplente",
+              "cuando_o_medida": "Máximo tres horas dentro del horario lectivo, lunes a viernes de 8:30 a 13:30, hora de Canarias"
+            },
+            {
+              "que": "Corregir entregas y pruebas del lote 2",
+              "quien": "Persona H",
+              "cuando_o_medida": "A lo largo del curso y al terminar la evaluación"
+            },
+            {
+              "que": "Corregir entregas y pruebas del lote 4",
+              "quien": "Persona J",
+              "cuando_o_medida": "A lo largo del curso y al terminar la evaluación"
+            },
+            {
+              "que": "Extraer registros de participación y activar certificados individuales",
+              "quien": "Persona K",
+              "cuando_o_medida": "Al cierre de cada lote, con registro de conexiones y pruebas para el expediente del FFI"
+            },
+            {
+              "que": "Sincronizar el registro de asistencia, enviar avisos y entregar seguimiento",
+              "quien": "Persona D y Persona F",
+              "cuando_o_medida": "Sincronización diaria, avisos ante inactividad e informe de seguimiento cada diez días"
+            },
+            {
+              "que": "Mantener el asistente de consultas y atender incidencias técnicas",
+              "quien": "Persona K",
+              "cuando_o_medida": "Asistente siempre disponible y apoyo de una persona mientras dure la ejecución"
+            },
+            {
+              "que": "Gestionar permisos, seguridad y el tratamiento de los documentos",
+              "quien": "Persona K",
+              "cuando_o_medida": "Durante la ejecución y entrega final a la empresa pública"
+            }
+          ],
+          "texto": "## 2. Plataforma de teleformación\n\n### 2.1 Lote 2. Análisis de datos con hojas de cálculo y asistente de IA: acceso del alumnado\n\nEn Aula Abierta 4.x, la empresa creará un aula exclusiva para el personal del lote 2. Persona K gestionará el entorno, alojado en la Unión Europea, y dará de alta una cuenta personal por participante con los datos que entregue la empresa pública. Cada persona accederá solo a su curso. Los recursos y ejercicios estarán abiertos a cualquier hora mientras dure la acción, y la tutoría humana de Persona F atenderá de lunes a viernes, de 8:30 a 13:30 (hora de Canarias), con Persona H como suplente.\n\n### 2.2 Lote 2. Evidencias, evaluación y certificados\n\nAula Abierta anotará para cada participante los accesos, los recursos consultados, los cuestionarios y las entregas. Persona K sacará el informe de conexiones y actividad para justificar la acción ante el FFI, que exige acreditar al menos el 80 % de las horas. Persona H preparará cuestionarios y tareas; al cierre, Persona K activará la descarga del certificado de aprovechamiento para las personas aptas.\n\n### 2.3 Lote 4. Atención telefónica y trato a personas usuarias: acceso del alumnado\n\nEl lote 4 tendrá su propia aula en Aula Abierta 4.x, con cuentas individuales. Persona J subirá los recursos y los ejercicios de protocolo de atención y de revisión de llamadas; las prácticas usarán casos preparados para la formación y no se atenderá a personas usuarias reales. Persona F atenderá las dudas académicas con el mismo horario y plazo que en el lote 2.\n\n### 2.4 Lote 4. Evidencias, evaluación y certificados\n\nEl registro de Aula Abierta recogerá accesos, actividades, intentos y calificaciones del lote 4. Persona K extraerá el informe de participación para el FFI y activará los certificados de las personas aptas al cierre.\n\n### 2.5 Seguimiento de los dos lotes\n\nCada aula tendrá un panel de participación separado por lote. Persona D revisará la evolución del alumnado; el registro de asistencia se sincronizará automáticamente cada día y la empresa pública podrá descargar los datos en CSV, XLSX y JSON. Los avisos configurados enviarán un correo a la coordinación del contrato cuando una persona lleve varios días sin conectarse, y Persona F la contactará desde el aula. Persona D entregará un informe de seguimiento cada diez días y otro al cierre de cada lote.\n\nLa empresa integrará en Aula Abierta un asistente de IA propio, disponible de forma continuada, para resolver dudas de uso y de navegación: entrar en la cuenta, localizar un recurso, subir una entrega o descargar el certificado. Persona K mantendrá sus instrucciones y revisará las consultas que requieran a una persona. El asistente no calificará ejercicios ni modificará registros.\n\n### 2.6 Seguridad, datos y soporte en ambos lotes\n\nPersona K configurará conexiones cifradas, cuentas personales, permisos por rol, copias de seguridad y actualizaciones de Aula Abierta 4.x. El campus de ambos lotes se alojará en la Unión Europea y el equipo solo accederá para impartir, dar soporte, hacer el seguimiento y justificar la formación. La empresa tratará los datos según las instrucciones de la empresa pública y el encargo de tratamiento que se firme, y documentará dónde están los servidores.\n\n| Tipo de dato | Dónde está | Quién accede |\n| --- | --- | --- |\n| Identidad y matrícula | Cuenta de Aula Abierta de cada lote | Persona K, docentes y Persona F |\n| Conexiones y actividad | Registros de Aula Abierta e informe de cada lote | Persona K, Persona F y Persona D |\n| Evaluaciones y certificados | Aula de cada lote | Docente del lote, Persona F y Persona K |\n| Consultas y soporte | Mensajería e incidencias | Docentes, Persona F y Persona K |"
+        },
+        {
+          "apartado": 3,
+          "titulo": "Equipo docente",
+          "puntos": 0,
+          "estado": "recibido",
+          "caracteres": 7161,
+          "paginas_estimadas": 2.6,
+          "avisos": [],
+          "compromisos": [
+            {
+              "que": "Impartir y corregir las actividades de hojas de cálculo con asistente de IA",
+              "quien": "Persona H",
+              "cuando_o_medida": "Mientras dure el lote 2; ejercicios y pruebas ya corregidos"
+            },
+            {
+              "que": "Impartir y corregir las actividades de atención telefónica y trato a personas usuarias",
+              "quien": "Persona J",
+              "cuando_o_medida": "Mientras dure el lote 4; ejercicios y pruebas ya corregidos"
+            },
+            {
+              "que": "Resolver las dudas de contenido de los dos lotes",
+              "quien": "Persona F, y Persona H como sustituta",
+              "cuando_o_medida": "Menos de tres horas lectivas, de lunes a viernes de 8:30 a 13:30, hora de Canarias"
+            },
+            {
+              "que": "Analizar el seguimiento del alumnado y preparar los informes",
+              "quien": "Persona D",
+              "cuando_o_medida": "En cada curso y al terminar"
+            },
+            {
+              "que": "Coordinar el contrato y resolver incidencias técnicas del campus",
+              "quien": "Persona K",
+              "cuando_o_medida": "En toda la ejecución"
+            },
+            {
+              "que": "Acreditar la cualificación y mantener la adscripción del profesorado",
+              "quien": "La empresa",
+              "cuando_o_medida": "Copia de los títulos y certificados y currículo firmado; permiso previo del órgano antes de sustituir a cualquier docente"
+            }
+          ],
+          "texto": "## 3. Equipo docente\n\n### 3.1 Lote 2. Análisis de datos con hojas de cálculo y asistente de IA: docencia\n\nPersona H será la docente principal del lote 2. Es graduada en Matemáticas, tiene un máster en ciencia de datos y una formación específica en hojas de cálculo avanzadas y analítica con asistente de IA, y acumula seis años de experiencia en análisis de datos y transformación digital. Diseñará y conducirá las sesiones, explicará las hojas de cálculo y el asistente a partir de casos de gestión y corregirá las prácticas y la prueba final. También será suplente de la tutoría.\n\n### 3.2 Lote 2. Tutoría y apoyo\n\nPersona F será la tutora académica titular. Es graduada en Matemáticas y máster en matemáticas, con formación complementaria en inteligencia artificial y certificaciones de proveedores tecnológicos, y ha sido profesora y codirectora académica de másteres de ciencia de datos. Atenderá las dudas de lunes a viernes de 8:30 a 13:30, hora de Canarias, con respuesta en menos de tres horas lectivas.\n\nPersona D, graduado y máster en informática, analizará el seguimiento del alumnado y preparará los informes; ha sido instructor de cursos en línea y tiene nueve años de experiencia en plataformas y análisis de datos. Persona K coordinará el contrato y dará soporte técnico al campus durante toda la ejecución, con diez años de experiencia en soluciones de datos e inteligencia artificial.\n\n### 3.3 Lote 4. Atención telefónica y trato a personas usuarias: docencia\n\nPersona J será la docente principal del lote 4. Es graduada en marketing y comunicación y tiene nueve años de experiencia atendiendo, coordinando y evaluando la atención a clientes en empresas de servicios. Su currículo no recoge docencia previa; la experiencia docente del equipo de tutoría corresponde a Persona F. Impartirá las sesiones de voz, chat y videollamada y corregirá los ejercicios del grupo.\n\n### 3.4 Lote 4. Tutoría y apoyo\n\nPersona F será también la tutora titular del lote 4, con el mismo horario y plazo de respuesta, y Persona H ejercerá la suplencia. Persona D preparará los informes de seguimiento y cierre de este lote y Persona K mantendrá la coordinación y el soporte técnico; la impartición corresponderá a Persona J.\n\nLa empresa acreditará la cualificación del profesorado principal de cada lote con copia de los títulos, los certificados relacionados con la materia y el currículo firmado. Cualquier sustitución del profesorado se hará con autorización previa del órgano de contratación y por una persona de cualificación igual o superior."
+        }
+      ],
+      "fugas": {
+        "hallazgos": [],
+        "anulada": null
+      },
+      "coherencia": []
+    }
+  ],
+  "documentos": [
+    {
+      "clave": "a1-d1",
+      "nombre": "ANEXO I: DECLARACIÓN RESPONSABLE DE LA PERSONA LICITADORA",
+      "estado": "pendiente",
+      "ruta": null,
+      "ruta_pdf": null,
+      "nota": null,
+      "actualizado_en": "2027-10-13T20:34:44.000Z"
+    },
+    {
+      "clave": "a1-d2",
+      "nombre": "ANEXO II: DESIGNACIÓN DE DIRECCIÓN ELECTRÓNICA PARA NOTIFICACIONES",
+      "estado": "pendiente",
+      "ruta": null,
+      "ruta_pdf": null,
+      "nota": null,
+      "actualizado_en": "2027-10-13T20:34:44.000Z"
+    },
+    {
+      "clave": "a1-d3",
+      "nombre": "ANEXO III: COMPROMISO DE CONSTITUCIÓN DE UNIÓN TEMPORAL",
+      "estado": "pendiente",
+      "ruta": null,
+      "ruta_pdf": null,
+      "nota": null,
+      "actualizado_en": "2027-10-13T20:34:44.000Z"
+    },
+    {
+      "clave": "a1-d4",
+      "nombre": "ANEXO IV: DECLARACIÓN SOBRE PERTENENCIA A GRUPO DE EMPRESAS",
+      "estado": "pendiente",
+      "ruta": null,
+      "ruta_pdf": null,
+      "nota": null,
+      "actualizado_en": "2027-10-13T20:34:44.000Z"
+    },
+    {
+      "clave": "a1-d5",
+      "nombre": "ANEXO V: COMPROMISO DE CUMPLIMIENTO DE LA NORMATIVA DE PROTECCIÓN DE DATOS",
+      "estado": "pendiente",
+      "ruta": null,
+      "ruta_pdf": null,
+      "nota": null,
+      "actualizado_en": "2027-10-13T20:34:44.000Z"
+    },
+    {
+      "clave": "a1-d6",
+      "nombre": "ANEXO VI: MODELO DE OFERTA ECONÓMICA Y CRITERIOS AUTOMÁTICOS (archivo nº2)",
+      "estado": "pendiente",
+      "ruta": null,
+      "ruta_pdf": null,
+      "nota": null,
+      "actualizado_en": "2027-10-13T20:34:44.000Z"
+    },
+    {
+      "clave": "a1-d7",
+      "nombre": "Memoria técnica independiente por cada lote",
+      "estado": "pendiente",
+      "ruta": null,
+      "ruta_pdf": null,
+      "nota": null,
+      "actualizado_en": "2027-10-13T20:34:44.000Z"
+    },
+    {
+      "clave": "a1-d8",
+      "nombre": "Título universitario y currículum de la persona analista de datos",
+      "estado": "pendiente",
+      "ruta": null,
+      "ruta_pdf": null,
+      "nota": null,
+      "actualizado_en": "2027-10-13T20:34:44.000Z"
+    },
+    {
+      "clave": "a1-d9",
+      "nombre": "Dossier técnico del fabricante del campus virtual",
+      "estado": "pendiente",
+      "ruta": null,
+      "ruta_pdf": null,
+      "nota": null,
+      "actualizado_en": "2027-10-13T20:34:44.000Z"
+    },
+    {
+      "clave": "a1-d10",
+      "nombre": "Titulaciones, certificados y currículum firmado del profesorado",
+      "estado": "pendiente",
+      "ruta": null,
+      "ruta_pdf": null,
+      "nota": null,
+      "actualizado_en": "2027-10-13T20:34:44.000Z"
+    },
+    {
+      "clave": "a1-d11",
+      "nombre": "Declaración de conformidad con el Esquema Nacional de Seguridad (ENS), categoría BÁSICA",
+      "estado": "pendiente",
+      "ruta": null,
+      "ruta_pdf": null,
+      "nota": null,
+      "actualizado_en": "2027-10-13T20:34:44.000Z"
+    },
+    {
+      "clave": "a1-d12",
+      "nombre": "Índice firmado del contenido del archivo",
+      "estado": "pendiente",
+      "ruta": null,
+      "ruta_pdf": null,
+      "nota": null,
+      "actualizado_en": "2027-10-13T20:34:44.000Z"
+    }
+  ],
+  "pliegos": [
+    {
+      "nombre": "Pliego regulador del servicio.pdf",
+      "clase": "pcap",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Pliego regulador del servicio.pdf",
+      "clase": "ppt",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Rectificación de Anuncio de Licitación 27-09-2027 1043.pdf",
+      "clase": "anuncio",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Anuncio de Licitación 23-09-2027 0852.pdf",
+      "clase": "anuncio",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Rectificación de Pliego 27-09-2027 1047.pdf",
+      "clase": "anuncio",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Documento de aprobación del expediente 23-09-2027 0904",
+      "clase": "otro",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Composición de la mesa de contratación 23-09-2027 0905",
+      "clase": "otro",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Memoria justificativa 23-09-2027 0906",
+      "clase": "otro",
+      "estado": "descargado"
+    },
+    {
+      "nombre": "Rectificación de errores materiales del pliego 27-09-2027 1032",
+      "clase": "otro",
+      "estado": "descargado"
+    }
+  ],
+  "perfil": {
+    "nif": "B12345674",
+    "nombre": "ANALÍTICA EJEMPLO, S.L.",
+    "domicilio": null,
+    "representante": {
+      "nombre": "Persona R",
+      "nif": "12345678Z",
+      "cargo": "Administrador solidario"
+    },
+    "contacto": {
+      "email": null,
+      "telefono": null
+    },
+    "clasificaciones": [],
+    "volumen_negocio": [
+      {
+        "anio": 2025,
+        "importe": 152310.72
+      },
+      {
+        "anio": 2026,
+        "importe": 268420.15
+      }
+    ],
+    "certificaciones": [],
+    "seguro_rc": null,
+    "plantilla_media": 4,
+    "anios_actividad": 3,
+    "cpv_experiencia": [
+      "72",
+      "805"
+    ],
+    "mayor_contrato_similar": 174905.36,
+    "notas": "ROLECE: inscrita desde el 16/03/2027, sin clasificación ni prohibiciones para contratar. Centro de formación acreditado por el servicio público de empleo autonómico (22 especialidades en datos, IA, hojas de cálculo, bases de datos y programación). Empresa de nueva creación (art. 90.4 LCSP) hasta marzo de 2029. Sin ISO ni ENS; solo certificaciones individuales de proveedores tecnológicos. Sin seguro de RC contratado: se contrata si se gana. Concurre siempre en solitario. Mayor contrato similar: un cliente privado (en curso).",
+    "fecha_constitucion": "2024-03-13",
+    "tamano": "micro",
+    "idiomas": [
+      "es",
+      "en"
+    ]
+  },
+  "personas": [
+    {
+      "persona_id": 1001,
+      "nombre": "Persona F",
+      "tipo": "interno",
+      "rol": "Dirección; Ciencia de datos",
+      "titulaciones": [
+        "Máster en matemáticas",
+        "Curso en economía y empresa",
+        "Grado en matemáticas"
+      ],
+      "certificaciones": [
+        "Curso de inteligencia artificial (IA)",
+        "Certificado de inglés B2",
+        "Curso de formación",
+        "Certificación Azure"
+      ],
+      "anios_experiencia": 5,
+      "sectores": [
+        "comercio y turismo",
+        "servicios financieros",
+        "industria y logística",
+        "salud y seguridad",
+        "administración pública"
+      ],
+      "cpv": [],
+      "tecnologias": [
+        "R",
+        "Python",
+        "Machine Learning",
+        "Deep Learning",
+        "Data Science",
+        "Data Analytics",
+        "cuadros de mando",
+        "KPIs"
+      ],
+      "idiomas": [],
+      "disponibilidad": "disponible",
+      "activo": true
+    },
+    {
+      "persona_id": 1002,
+      "nombre": "Persona H",
+      "tipo": "interno",
+      "rol": "Ciencia de datos; Consultoría",
+      "titulaciones": [
+        "Máster en ciencia de datos",
+        "Grado en matemáticas",
+        "Curso de área general"
+      ],
+      "certificaciones": [
+        "Certificado de inglés C1",
+        "Curso de inteligencia artificial (IA)"
+      ],
+      "anios_experiencia": 5,
+      "sectores": [
+        "servicios financieros",
+        "comercio y turismo",
+        "sanidad",
+        "investigación"
+      ],
+      "cpv": [],
+      "tecnologias": [
+        "Azure Databricks",
+        "Snowflake",
+        "SAS",
+        "R",
+        "Business Intelligence",
+        "Data Science"
+      ],
+      "idiomas": [
+        {
+          "idioma": "Español",
+          "nivel": "nativo"
+        },
+        {
+          "idioma": "Inglés",
+          "nivel": "C1"
+        }
+      ],
+      "disponibilidad": "parcial",
+      "activo": true
+    },
+    {
+      "persona_id": 1003,
+      "nombre": "Persona J",
+      "tipo": "interno",
+      "rol": "Marketing digital",
+      "titulaciones": [
+        "Máster de área general",
+        "Grado en marketing y comunicación"
+      ],
+      "certificaciones": [],
+      "anios_experiencia": 8,
+      "sectores": [
+        "marketing digital",
+        "comercio y turismo",
+        "industria y logística",
+        "arquitectura"
+      ],
+      "cpv": [],
+      "tecnologias": [
+        "CRM",
+        "Google Analytics",
+        "SEO"
+      ],
+      "idiomas": [],
+      "disponibilidad": "disponible",
+      "activo": true
+    },
+    {
+      "persona_id": 1004,
+      "nombre": "Persona D",
+      "tipo": "externo",
+      "rol": "Dirección; Ingeniería de datos",
+      "titulaciones": [
+        "Máster en informática",
+        "Grado en informática",
+        "Grado en gestión de proyectos"
+      ],
+      "certificaciones": [
+        "Certificado de inglés B2",
+        "Certificación PRINCE2",
+        "Curso de formación"
+      ],
+      "anios_experiencia": 8,
+      "sectores": [
+        "tecnología",
+        "datos",
+        "empresas tecnológicas",
+        "salud"
+      ],
+      "cpv": [],
+      "tecnologias": [
+        "Big Data",
+        "Amazon Web Services (AWS)",
+        "Python",
+        "Data Engineering",
+        "Machine Learning",
+        "Inteligencia artificial"
+      ],
+      "idiomas": [
+        {
+          "idioma": "Español",
+          "nivel": "nativo"
+        },
+        {
+          "idioma": "Catalán",
+          "nivel": "nativo"
+        },
+        {
+          "idioma": "Inglés",
+          "nivel": "C1"
+        }
+      ],
+      "disponibilidad": "parcial",
+      "activo": true
+    },
+    {
+      "persona_id": 1005,
+      "nombre": "Persona K",
+      "tipo": "interno",
+      "rol": "Dirección; Ingeniería de datos",
+      "titulaciones": [
+        "Grado de área general",
+        "Curso en ciencia de datos",
+        "Curso en marketing y comunicación",
+        "Curso en economía y empresa"
+      ],
+      "certificaciones": [
+        "Curso de inteligencia artificial (IA)",
+        "Curso de formación",
+        "Certificación Azure"
+      ],
+      "anios_experiencia": 10,
+      "sectores": [
+        "tecnología de datos",
+        "inteligencia artificial",
+        "comercio y turismo",
+        "salud"
+      ],
+      "cpv": [],
+      "tecnologias": [
+        "Python",
+        "Apache Spark",
+        "SQL",
+        "AWS",
+        "Snowflake",
+        "ETL",
+        "Machine Learning",
+        "NLP"
+      ],
+      "idiomas": [
+        {
+          "idioma": "Español",
+          "nivel": "nativo"
+        },
+        {
+          "idioma": "Inglés",
+          "nivel": "C1"
+        }
+      ],
+      "disponibilidad": "parcial",
+      "activo": true
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+# HTTPS automático con Caddy (Let's Encrypt) delante del monitor. Se suma al Compose principal:
+#   docker compose -f docker-compose.yml -f deploy/docker-compose.caddy.yml up -d
+# Hace falta un DOMINIO en el .env que apunte a este servidor y los puertos 80 y 443 libres.
+# install.sh lo usa solo cuando se le pasa DOMINIO.
+services:
+  caddy:
+    image: caddy:2.10-alpine@sha256:4c6e91c6ed0e2fa03efd5b44747b625fec79bc9cd06ac5235a779726618e530d
+    restart: unless-stopped
+    depends_on:
+      - monitor
+    ports:
+      - '80:80'
+      - '443:443'
+      - '443:443/udp'
+    # Un solo sitio, sin Caddyfile: Caddy pide y renueva el certificado del DOMINIO.
+    command: caddy reverse-proxy --from ${DOMINIO:?Define DOMINIO} --to monitor:3110
+    volumes:
+      - caddy_data:/data
+      - caddy_config:/config
+    logging:
+      driver: json-file
+      options:
+        max-size: '10m'
+        max-file: '3'
+
+  monitor:
+    environment:
+      # Un salto de proxy (Caddy): la IP del bloqueo de login sale de su X-Forwarded-For.
+      MONITOR_PROXIES_DE_CONFIANZA: '1'
+      APP_URL: https://${DOMINIO:?Define DOMINIO}
+
+volumes:
+  caddy_data:
+  caddy_config:

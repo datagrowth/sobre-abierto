@@ -1,0 +1,36 @@
+name: dco
+
+# Developer Certificate of Origin (https://developercertificate.org): cada commit de un PR lleva
+# «Signed-off-by: Nombre <correo>» (git commit -s). Sin CLA: con la AGPL basta.
+on:
+  pull_request:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  firmas:
+    # Solo en el repo público: el privado de desarrollo tiene commits sin firmar que no se publican.
+    if: github.repository == 'datagrowth/sobre-abierto'
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@fbc6f3992d24b796d5a048ff273f7fcc4a7b6c09 # v5
+        with:
+          fetch-depth: 0
+      - name: Comprobar el Signed-off-by de cada commit
+        env:
+          BASE: ${{ github.event.pull_request.base.sha }}
+          CABEZA: ${{ github.event.pull_request.head.sha }}
+        run: |
+          # Los bots (Dependabot…) no pueden firmar: se saltan.
+          sin_firma=$(git log --no-merges --format='%H %an' "$BASE..$CABEZA" | while read -r sha autor; do
+            case "$autor" in *'[bot]') continue ;; esac
+            git show -s --format=%B "$sha" | grep -qE '^Signed-off-by: .+ <.+@.+>$' || echo "$sha ($autor)"
+          done)
+          if [ -n "$sin_firma" ]; then
+            echo "Estos commits no llevan Signed-off-by (usa git commit -s, o git rebase --signoff para los que ya hiciste):"
+            echo "$sin_firma"
+            exit 1
+          fi

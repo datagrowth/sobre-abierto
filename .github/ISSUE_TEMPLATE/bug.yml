@@ -1,0 +1,45 @@
+name: Algo no funciona
+description: Un error, un fallo al instalar o un comportamiento que no es el esperado
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por avisar. **No pegues claves, contraseñas, tu `.env` ni datos de personas**; tacha lo que sea privado.
+  - type: textarea
+    id: que-pasa
+    attributes:
+      label: Qué pasa
+      description: Qué esperabas y qué ha ocurrido. Si hay un mensaje de error, pégalo entero.
+    validations:
+      required: true
+  - type: textarea
+    id: pasos
+    attributes:
+      label: Cómo reproducirlo
+      placeholder: |
+        1. Entro en…
+        2. Pulso…
+    validations:
+      required: true
+  - type: input
+    id: version
+    attributes:
+      label: Versión
+      description: En Ajustes › Acerca de, o `SOBRE_ABIERTO_VERSION` del `.env`.
+      placeholder: '0.1.0'
+    validations:
+      required: true
+  - type: dropdown
+    id: instalacion
+    attributes:
+      label: Cómo lo instalaste
+      options: [install.sh, Compose a mano, Dokploy, Coolify, Easypanel, Otro]
+    validations:
+      required: true
+  - type: textarea
+    id: registros
+    attributes:
+      label: Registros
+      description: '`docker compose logs --tail 100 monitor` (o hermes), sin secretos.'
+      render: text

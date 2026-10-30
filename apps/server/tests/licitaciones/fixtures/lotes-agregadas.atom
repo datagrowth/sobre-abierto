@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xmlns:cbc="urn:dgpe:names:draft:codice:schema:xsd:CommonBasicComponents-2" xmlns:cac="urn:dgpe:names:draft:codice:schema:xsd:CommonAggregateComponents-2" xmlns:cac-place-ext="urn:dgpe:names:draft:codice-place-ext:schema:xsd:CommonAggregateComponents-2" xmlns:cbc-place-ext="urn:dgpe:names:draft:codice-place-ext:schema:xsd:CommonBasicComponents-2" xmlns:at="http://purl.org/atompub/tombstones/1.0" xmlns:ns7="urn:oasis:names:specification:ubl:schema:xsd:CommonExtensionComponents-2">
+    <author>
+        <name>Plataforma de Contratación del Sector Público</name>
+        <uri>https://contrataciondelestado.es</uri>
+        <email>contrataciondelestado@example.com</email>
+    </author>
+    <id>https://contrataciondelestado.es/sindicacion/sindicacion_1044/PlataformasAgregadasSinMenores.atom</id>
+    <link href="https://contrataciondelestado.es/sindicacion/sindicacion_1044/PlataformasAgregadasSinMenores.atom" rel="self"/>
+    <link href="https://contrataciondelestado.es/sindicacion/sindicacion_1044/PlataformasAgregadasSinMenores.atom" rel="first"/>
+    <title>Licitaciones publicadas en la Plataforma de Contratación del Sector Público: Plataformas Agregadas Sin Menores</title>
+    <updated>2026-10-02T03:00:40.727+02:00</updated>
+    <entry>
+        <id>https://contrataciondelestado.es/sindicacion/PlataformasAgregadasSinMenores/20603673</id>
+        <link href="https://www.example.com/perfiles/detalle-licitacion.jsf?idExpediente=1000001"/>
+        <summary type="text">Id licitación: CONTR 2026 0000213002; Órgano de contratación: Agencia de Emergencias de Ejemplo; Importe: 2.658.071,96 €;</summary>
+        <title>servicio de maquinaria pesada de apoyo a trabajos. plan forestal. 2027-2030</title>
+        <updated>2026-10-01T18:41:20.541+02:00</updated>
+        <cac-place-ext:ContractFolderStatus>
+            <cbc:ContractFolderID>CONTR 2026 0000213002</cbc:ContractFolderID>
+            <cbc-place-ext:ContractFolderStatusCode languageID="es" listURI="https://contrataciondelestado.es/codice/cl/2.04/SyndicationContractFolderStatusCode-2.04.gc">PUB</cbc-place-ext:ContractFolderStatusCode>
+            <cbc:UUID schemeName="TED">7ed6775b-e7a8-4806-bbdc-acd1eaeab0ea</cbc:UUID>
+            <cac-place-ext:LocatedContractingParty>
+                <cac:Party>
+                    <cac:PartyIdentification>
+                        <cbc:ID schemeName="DIR3">A09999001</cbc:ID>
+                    </cac:PartyIdentification>
+                    <cac:PartyIdentification>
+                        <cbc:ID schemeName="ID_OC_PLAT">EJEMPLO</cbc:ID>
+                    </cac:PartyIdentification>
+                    <cac:PartyName>
+                        <cbc:Name>Agencia de Emergencias de Ejemplo</cbc:Name>
+                    </cac:PartyName>
+                    <cac:AgentParty>
+                        <cac:PartyIdentification>
+                            <cbc:ID>661</cbc:ID>
+                        </cac:PartyIdentification>
+                        <cac:PartyName>
+                            <cbc:Name>Junta de Ejemplo</cbc:Name>
+                        </cac:PartyName>
+                    </cac:AgentParty>
+                </cac:Party>
+                <cac-place-ext:ParentLocatedParty>
+                    <cac:PartyName>
+                        <cbc:Name>Junta de Ejemplo</cbc:Name>
+                    </cac:PartyName>
+                    <cac-place-ext:ParentLocatedParty/>
+                </cac-place-ext:ParentLocatedParty>
+            </cac-place-ext:LocatedContractingParty>
+            <cac:ProcurementProject>
+                <cbc:Name>servicio de maquinaria pesada de apoyo a trabajos. plan forestal. 2027-2030</cbc:Name>
+                <cbc:TypeCode listURI="http://contrataciondelestado.es/codice/cl/2.08/ContractCode-2.08.gc">2</cbc:TypeCode>
+                <cbc:MixContractIndicator>false</cbc:MixContractIndicator>
+                <cac:BudgetAmount>
+                    <cbc:EstimatedOverallContractAmount currencyID="EUR">2658071.96</cbc:EstimatedOverallContractAmount>
+                    <cbc:TaxExclusiveAmount currencyID="EUR">2658071.96</cbc:TaxExclusiveAmount>
+                </cac:BudgetAmount>
+                <cac:RequiredCommodityClassification>
+                    <cbc:ItemClassificationCode listURI="http://contrataciondelestado.es/codice/cl/2.04/CPV2008-2.04.gc">75251120</cbc:ItemClassificationCode>
+                </cac:RequiredCommodityClassification>
+                <cac:RealizedLocation>
+                    <cbc:CountrySubentityCode listURI="http://contrataciondelestado.es/codice/cl/2.08/NUTS-2021.gc">ES61</cbc:CountrySubentityCode>
+                </cac:RealizedLocation>
+                <cac:PlannedPeriod>
+                    <cbc:DurationMeasure unitCode="MON">46</cbc:DurationMeasure>
+                </cac:PlannedPeriod>
+            </cac:ProcurementProject>
+            <cac:ProcurementProjectLot>
+                <cbc:ID schemeName="ID_LOTE">1</cbc:ID>
+                <cac:ProcurementProject>
+                    <cbc:Name>l1_servicio maquinaria plan forestal. periodo 2027-2030 provincia huelva</cbc:Name>
+                </cac:ProcurementProject>
+            </cac:ProcurementProjectLot>
+            <cac:ProcurementProjectLot>
+                <cbc:ID schemeName="ID_LOTE">2</cbc:ID>
+                <cac:ProcurementProject>
+                    <cbc:Name>l2_servicio maquinaria plan forestal. periodo 2027-2030 provincias al,gr</cbc:Name>
+                </cac:ProcurementProject>
+            </cac:ProcurementProjectLot>
+            <cac:ProcurementProjectLot>
+                <cbc:ID schemeName="ID_LOTE">3</cbc:ID>
+                <cac:ProcurementProject>
+                    <cbc:Name>l3_ servicio maquinaria plan forestal periodo 2027-2030 provincias ca, m</cbc:Name>
+                </cac:ProcurementProject>
+            </cac:ProcurementProjectLot>
+            <cac:ProcurementProjectLot>
+                <cbc:ID schemeName="ID_LOTE">4</cbc:ID>
+                <cac:ProcurementProject>
+                    <cbc:Name>l4_servicio maquinaria plan forestal periodo 2027-2030 provincia cordoba</cbc:Name>
+                </cac:ProcurementProject>
+            </cac:ProcurementProjectLot>
+            <cac:TenderingTerms>
+                <cbc:FundingProgramCode name="No hay financiación con fondos de la UE" listURI="http://contrataciondelestado.es/codice/cl/2.08/FundingProgramCode-2.08.gc">NO-EU</cbc:FundingProgramCode>
+                <cbc:ProcurementNationalLegislationCode listURI="https://contrataciondelestado.es/codice/cl/2.08/ProcurementNationalLegislationCode-2.08.gc">3</cbc:ProcurementNationalLegislationCode>
+            </cac:TenderingTerms>
+            <cac:TenderingProcess>
+                <cbc:ProcedureCode listURI="https://contrataciondelestado.es/codice/cl/2.07/SyndicationTenderingProcessCode-2.07.gc">1</cbc:ProcedureCode>
+                <cbc:UrgencyCode listURI="http://contrataciondelestado.es/codice/cl/1.04/DiligenceTypeCode-1.04.gc">1</cbc:UrgencyCode>
+                <cbc:ContractingSystemCode listURI="http://contrataciondelestado.es/codice/cl/2.08/ContractingSystemTypeCode-2.08.gc">0</cbc:ContractingSystemCode>
+                <cbc:SubmissionMethodCode listURI="http://contrataciondelestado.es/codice/cl/1.04/TenderDeliveryCode-1.04.gc">1</cbc:SubmissionMethodCode>
+                <cbc:OverThresholdIndicator>true</cbc:OverThresholdIndicator>
+                <cac:TenderSubmissionDeadlinePeriod>
+                    <cbc:EndDate>2026-10-15</cbc:EndDate>
+                    <cbc:EndTime>18:00:00</cbc:EndTime>
+                </cac:TenderSubmissionDeadlinePeriod>
+                <cac:AuctionTerms>
+                    <cbc:AuctionConstraintIndicator>false</cbc:AuctionConstraintIndicator>
+                </cac:AuctionTerms>
+            </cac:TenderingProcess>
+            <cac-place-ext:ValidNoticeInfo>
+                <cbc-place-ext:NoticeTypeCode listURI="http://contrataciondelestado.es/codice/cl/2.11/TenderingNoticeTypeCode-2.11.gc">DOC_CN</cbc-place-ext:NoticeTypeCode>
+                <cac-place-ext:AdditionalPublicationStatus>
+                    <cbc-place-ext:PublicationMediaName>Perfil del contratante</cbc-place-ext:PublicationMediaName>
+                    <cac-place-ext:AdditionalPublicationDocumentReference>
+                        <cbc:IssueDate>2026-10-01</cbc:IssueDate>
+                    </cac-place-ext:AdditionalPublicationDocumentReference>
+                </cac-place-ext:AdditionalPublicationStatus>
+            </cac-place-ext:ValidNoticeInfo>
+        </cac-place-ext:ContractFolderStatus>
+    </entry>
+</feed>

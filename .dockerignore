@@ -1,0 +1,16 @@
+# El contexto del build es la raíz del repo: solo hace falta el código y los package.json.
+**/node_modules
+**/dist
+**/*.tsbuildinfo
+**/.env
+**/.env.*
+**/hermes-vault.config.json
+.git
+.github
+*.md
+tmp
+deploy
+apps/*/tests
+apps/web/e2e
+**/test-results
+**/playwright-report

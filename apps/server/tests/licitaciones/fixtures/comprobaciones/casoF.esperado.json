@@ -1,0 +1,13 @@
+{
+  "veredicto": "descartada",
+  "impide": [
+    "medios:-:auditoria_de_accesibilidad_web_o_evaluacion_de_usabilidad",
+    "medios:-:pruebas_de_usabilidad_analitica_web",
+    "precio:-",
+    "decisiones_falta:-",
+    "empresa:-:domicilio",
+    "dato_anexo:-:impuesto"
+  ],
+  "tu": [],
+  "primer_bloqueo": "medios:-:auditoria_de_accesibilidad_web_o_evaluacion_de_usabilidad"
+}

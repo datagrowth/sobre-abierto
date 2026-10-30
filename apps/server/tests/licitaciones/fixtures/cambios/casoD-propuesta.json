@@ -1,0 +1,248 @@
+{
+  "_origen": "Fixture sintético del caso D (p-91000880): /oferta/decisiones y propuesta_decisiones de /oferta para una licitación inventada. Persona A/B…, sin NIF, correo, teléfono ni importes ofertados.",
+  "licitacion": {
+    "id": "p-91000880",
+    "titulo": "Servicios para la ejecución del Programa de Capacitación en Conservación y Gestión Documental dirigido al personal de archivos y bibliotecas de las entidades locales de la isla.",
+    "expediente": "CP-0417/2027",
+    "organo": "Consorcio Insular de Archivos y Patrimonio de Isla Muestra, S.A.",
+    "presupuesto_sin_iva": 42610.86,
+    "lotes": [
+      {
+        "id": "1",
+        "nombre": "Diseño, impartición y logística de las dos jornadas presenciales de la edición 2027 del programa de capacitación en conservación y gestión documental.",
+        "presupuesto_sin_iva": 35864.85
+      },
+      {
+        "id": "2",
+        "nombre": "Puesta en marcha de un campus virtual de aprendizaje para la formación continua del personal de archivos y bibliotecas.",
+        "presupuesto_sin_iva": 6746.01
+      }
+    ]
+  },
+  "guion_id": 17,
+  "criterios": [],
+  "decisiones": {
+    "guion_id": 15,
+    "actualizada_en": "2027-10-13T10:20:02.261Z",
+    "datos": {
+      "lotes": [
+        "2"
+      ],
+      "equipo": [
+        {
+          "persona_id": 1005,
+          "rol_en_la_oferta": "Instalación, administración y mantenimiento del campus virtual Chamilo (lote 2)",
+          "dedicacion": "Parcial: implantación y ocho meses de mantenimiento",
+          "lotes": []
+        },
+        {
+          "persona_id": 1001,
+          "rol_en_la_oferta": "Formación al personal designado por la entidad contratante e itinerarios de autoformación (lote 2)",
+          "dedicacion": "Parcial: 16 horas de formación y elaboración de itinerarios",
+          "lotes": []
+        }
+      ],
+      "automaticos": [
+        {
+          "criterio": "2B1.- Personalización del kit de bienvenida y de la documentación entregada a las personas participantes descritos en el epígrafe 3.2.4 del Pliego de Condiciones Técnicas sin coste adicional",
+          "lote": null,
+          "nos_acogemos": false,
+          "tramo": null,
+          "nota": "Personalización a color de los elementos indicados. Lote 1, máximo: cuaderno, lápiz, carpeta y cordón identificativo, 40 unidades de cada uno con la imagen de la entidad contratante (PCAP.pdf, pág. 14; Anexo II). Confirmar proveedor y coste antes de guardar."
+        },
+        {
+          "criterio": "2B2.- Incorporación de ediciones impresas adicionales a las descritas en el epígrafe 3.2.4 del Pliego de Condiciones Técnicas sin coste adicional",
+          "lote": null,
+          "nos_acogemos": false,
+          "tramo": null,
+          "nota": "Dos ediciones impresas adicionales (guía de conservación y póster de buenas prácticas) a color, al menos 40 unidades de cada una. Lote 1, tramo máximo de 10 puntos, sin coste adicional (PCAP.pdf, págs. 14-15; Anexo III). Verificar el suministro."
+        },
+        {
+          "criterio": "2B3.- Oferta de prácticas formativas vinculadas al taller de digitalización de fondos sin coste adicional",
+          "lote": null,
+          "nos_acogemos": false,
+          "tramo": null,
+          "nota": "Ocho prácticas o ejercicios guiados. Lote 1, máximo de 30 puntos (PCAP.pdf, pág. 16; Anexo IV). Ocho piezas independientes del dossier básico, validadas con las dos personas formadoras."
+        },
+        {
+          "criterio": "2B1. – Mantenimiento adicional del campus virtual",
+          "lote": null,
+          "nos_acogemos": true,
+          "tramo": null,
+          "nota": "Ocho meses de mantenimiento desde la puesta en marcha"
+        },
+        {
+          "criterio": "2B2. – Itinerarios de autoformación",
+          "lote": null,
+          "nos_acogemos": true,
+          "tramo": null,
+          "nota": "Seis itinerarios de autoformación"
+        },
+        {
+          "criterio": "2B3. – Ampliación de las sesiones de formación",
+          "lote": null,
+          "nos_acogemos": true,
+          "tramo": null,
+          "nota": "Ocho horas adicionales de formación"
+        }
+      ],
+      "herramientas": [
+        "Chamilo 1.11"
+      ],
+      "enfoque": "Solo lote 2: puesta en marcha de un campus virtual Chamilo para la formación del personal de archivos y bibliotecas, con mantenimiento, itinerarios de autoformación y formación al personal de la entidad contratante. No hay memoria valorable: todo se oferta en los anexos.",
+      "ofertas": [
+        {
+          "lote": "2",
+          "pendiente": true,
+          "importe": null,
+          "unitarios": []
+        }
+      ]
+    }
+  },
+  "propuesta": {
+    "guion_id": 17,
+    "creada_en": "2027-10-13T11:11:11.444Z",
+    "agente": "oferta-licitaciones",
+    "avisos": [],
+    "datos": {
+      "lotes": [
+        "2"
+      ],
+      "equipo": [
+        {
+          "persona_id": 1005,
+          "rol_en_la_oferta": "Responsable técnico de instalación, configuración y mantenimiento del campus virtual",
+          "dedicacion": "Parcial durante la implantación y el periodo de mantenimiento ofertado",
+          "motivo": "Persona K, dirección técnica, más de diez años en ingeniería de datos e infraestructuras (CV, págs. 1-3); disponibilidad parcial. No constan proyectos con Chamilo ni cobertura del acuerdo de nivel de servicio: confirmar antes de guardar."
+        },
+        {
+          "persona_id": 1001,
+          "rol_en_la_oferta": "Responsable de la formación inicial y del traspaso al personal designado por la entidad contratante",
+          "dedicacion": "Parcial, para formación, documentación e itinerarios",
+          "motivo": "Persona F tiene docencia en programas tecnológicos y dirección académica, y está disponible (CV, págs. 1-2). No consta experiencia con Chamilo; comprobarla antes de asignarle la formación sobre el LMS."
+        }
+      ],
+      "automaticos": [
+        {
+          "criterio": "Mantenimiento adicional del campus virtual",
+          "lote": null,
+          "tipo": "compromiso",
+          "nos_acogemos": true,
+          "tramo": null,
+          "nivel": "Periodo de mantenimiento de ocho (8) meses, a contar desde el 28 de diciembre de 2027",
+          "motivo": "Tramo máximo de 16 puntos (PCAP.pdf, pág. 23; Anexo V, pág. 1). Exige mantenimiento real después del obligatorio hasta el 27/12/2027, con copias y atención de incidencias; confirmar cobertura y coste de ocho meses, incluida la intervención crítica en 4 h y la resolución en 48 h (PCT, págs. 24-25)."
+        },
+        {
+          "criterio": "Itinerarios de autoformación",
+          "lote": null,
+          "tipo": "compromiso",
+          "nos_acogemos": true,
+          "tramo": null,
+          "nivel": "Oferta de seis (6) itinerarios de autoformación",
+          "motivo": "Tramo máximo de 18 puntos (PCAP.pdf, pág. 24; Anexo VI, pág. 1). Seis itinerarios diferenciados: primeros pasos, gestión de cursos, evaluación, comunicación con el alumnado, informes y buenas prácticas, distintos del manual de administración obligatorio (PCT, pág. 22)."
+        },
+        {
+          "criterio": "Ampliación de las sesiones de formación",
+          "lote": null,
+          "tipo": "compromiso",
+          "nos_acogemos": true,
+          "tramo": null,
+          "nivel": "Ampliación de ocho (8) horas de formación",
+          "motivo": "Tramo máximo de 11 puntos (PCAP.pdf, pág. 25; Anexo VII, pág. 1): ocho horas más sobre las ocho mínimas (PCT, pág. 22). Confirmar formador y agenda antes del 27/12/2027."
+        }
+      ],
+      "herramientas": [],
+      "enfoque": "El lote 2 pide poner en marcha un LMS Chamilo o equivalente abierto en el servidor de la entidad contratante, con usuarios, cursos, evaluación, mensajería y formación; no incluye elaborar contenidos (PCT.pdf, págs. 16-17). El guion 17 no tiene memoria: las prestaciones y los tramos se revisan en el Sobre Único y los Anexos V-VII. Plantear configuración de roles y cursos, pruebas de uso con 40 usuarios, seguridad, copias, accesibilidad y aceptación con un curso de prueba antes del 27/12/2027 (PCT, págs. 19-28), y un traspaso para que el cliente administre el campus con autonomía. No prometer alojamiento externo, contenidos didácticos, un campus ya implantado, experiencia acreditada con Chamilo ni el acuerdo de nivel de servicio sin validarlo.",
+      "resumen": "Solo lote 2; guion 17 sin memoria, dos personas propuestas y tres compromisos al tramo máximo, sin precio. Antes de guardar, confirmar la experiencia de Persona K en implantación de LMS y la formación práctica de Persona F, además del coste del mantenimiento de ocho meses, los seis itinerarios y las ocho horas extra. Frente a las decisiones del guion 15, se quitan los criterios del lote 1, se ajustan los nombres y periodos de los tres criterios del lote 2 y se dejan vacías las herramientas: Chamilo 1.11 no consta como herramienta ya utilizada."
+    }
+  },
+  "personas": [
+    {
+      "persona_id": 1005,
+      "nombre": "Persona K",
+      "tipo": "interno",
+      "rol": "Dirección; Ingeniería de datos",
+      "titulaciones": [
+        "Grado de área general",
+        "Curso en ciencia de datos",
+        "Curso en marketing y comunicación",
+        "Curso en economía y empresa"
+      ],
+      "certificaciones": [
+        "Curso de inteligencia artificial (IA)",
+        "Certificación Azure de inteligencia artificial (IA)",
+        "Certificación Azure"
+      ],
+      "anios_experiencia": 10,
+      "sectores": [
+        "tecnología de datos",
+        "inteligencia artificial",
+        "comercio y turismo",
+        "salud"
+      ],
+      "cpv": [],
+      "tecnologias": [
+        "Python",
+        "Apache Spark",
+        "SQL",
+        "AWS",
+        "Snowflake",
+        "ETL",
+        "Machine Learning",
+        "NLP"
+      ],
+      "idiomas": [
+        {
+          "idioma": "Español",
+          "nivel": "nativo"
+        },
+        {
+          "idioma": "Inglés",
+          "nivel": "C1"
+        }
+      ],
+      "disponibilidad": "parcial",
+      "activo": true
+    },
+    {
+      "persona_id": 1001,
+      "nombre": "Persona F",
+      "tipo": "interno",
+      "rol": "Dirección; Ciencia de datos",
+      "titulaciones": [
+        "Máster en matemáticas",
+        "Curso en economía y empresa",
+        "Grado en matemáticas"
+      ],
+      "certificaciones": [
+        "Curso de inteligencia artificial (IA)",
+        "Certificado de inglés B2",
+        "Certificación Azure de inteligencia artificial (IA)",
+        "Certificación Azure"
+      ],
+      "anios_experiencia": 5,
+      "sectores": [
+        "comercio y turismo",
+        "servicios financieros",
+        "industria y logística",
+        "salud y seguridad",
+        "administración pública"
+      ],
+      "cpv": [],
+      "tecnologias": [
+        "R",
+        "Python",
+        "Machine Learning",
+        "Deep Learning",
+        "Data Science",
+        "Data Analytics",
+        "cuadros de mando",
+        "KPIs"
+      ],
+      "idiomas": [],
+      "disponibilidad": "disponible",
+      "activo": true
+    }
+  ]
+}

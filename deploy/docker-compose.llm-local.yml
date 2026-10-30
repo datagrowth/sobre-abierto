@@ -1,0 +1,9 @@
+# Para un modelo local en el propio servidor (Ollama, LM Studio): Hermes lo alcanza como
+# host.docker.internal. Se suma al Compose principal; solo con LLM_PROVEEDOR=local, porque deja a
+# Hermes llegar a los servicios del host:
+#   docker compose -f docker-compose.yml -f deploy/docker-compose.llm-local.yml up -d
+# o, en el .env: COMPOSE_PATH_SEPARATOR=: y COMPOSE_FILE=docker-compose.yml:deploy/docker-compose.llm-local.yml
+services:
+  hermes:
+    extra_hosts:
+      - 'host.docker.internal:host-gateway'

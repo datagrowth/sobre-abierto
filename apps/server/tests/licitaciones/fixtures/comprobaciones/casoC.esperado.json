@@ -1,0 +1,21 @@
+{
+  "veredicto": "no_presentable",
+  "impide": [
+    "medios:3:topografia",
+    "medios:3:jardineria_arbolado",
+    "obligatorio_condicionado:-:a3_d2",
+    "precio:3",
+    "empresa:-:domicilio"
+  ],
+  "tu": [
+    "obligatorio_condicionado:-:a3_d2",
+    "precio:3",
+    "empresa:-:domicilio",
+    "medios:3:comunicacion_institucional",
+    "medios:3:administracion_electronica",
+    "compromiso_caro:-:sesion_recurrente_consulta",
+    "compromiso_caro:-:frecuencia_alta_informe",
+    "compromiso_caro:-:frecuencia_alta_boletin"
+  ],
+  "primer_bloqueo": "medios:3:topografia"
+}

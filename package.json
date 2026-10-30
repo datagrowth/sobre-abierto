@@ -1,0 +1,74 @@
+{
+  "name": "sobre-abierto",
+  "private": true,
+  "type": "module",
+  "description": "Sobre Abierto: plataforma de licitaciones públicas y conocimiento de empresa sobre Hermes Agent.",
+  "license": "AGPL-3.0-or-later",
+  "author": "Datagrowth",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/datagrowth/sobre-abierto.git"
+  },
+  "workspaces": [
+    "apps/*"
+  ],
+  "scripts": {
+    "dev:server": "npm run dev -w @sobre-abierto/server",
+    "dev:web": "npm run dev -w @sobre-abierto/web",
+    "build": "npm run build --workspaces --if-present",
+    "test": "npm test --workspaces --if-present && node --test \"scripts/*.test.mjs\"",
+    "typecheck": "npm run typecheck --workspaces --if-present",
+    "lint": "eslint . --max-warnings 0",
+    "licencias": "node scripts/licencias.mjs",
+    "format": "prettier --write .",
+    "format:check": "prettier --check ."
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.4",
+    "eslint": "^9.39.5",
+    "eslint-plugin-react": "^7.37.5",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.5.2",
+    "globals": "^17.13.0",
+    "prettier": "^3.9.10",
+    "typescript-eslint": "^8.72.1"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "trailingComma": "all",
+    "endOfLine": "lf"
+  },
+  "knip": {
+    "ignoreBinaries": [
+      "mkfifo"
+    ],
+    "workspaces": {
+      ".": {
+        "entry": [
+          "scripts/*.mjs",
+          "deploy/generar.mjs"
+        ]
+      },
+      "apps/server": {
+        "entry": [
+          "src/recuperarAcceso.ts",
+          "src/**/worker.ts",
+          "scripts/*.ts",
+          "tests/**/*.test.ts",
+          "tests/licitaciones/fixtures/*.mjs"
+        ]
+      },
+      "apps/web": {
+        "entry": [
+          "src/**/*.test.mjs",
+          "e2e/*.{js,mjs}"
+        ]
+      }
+    },
+    "ignoreExportsUsedInFile": true
+  }
+}

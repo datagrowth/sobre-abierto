@@ -1,0 +1,416 @@
+@import 'tailwindcss';
+
+/* ============================================================
+ * Sobre Abierto — tema claro neutro.
+ *
+ * Lienzo y paneles en blanco, texto en tinta, el verde para tu acción y lo
+ * decidido, el índigo para lo que hace Hermes, y rojo y ámbar solo para
+ * «Impide» y «Riesgo». Los mismos valores que PALETA en src/lib/tema.js (un
+ * test lo comprueba): los componentes usan los nombres de tema.js. Cada
+ * instalación los cambia en Ajustes › Marca; el servidor los pone en la página.
+ * ============================================================ */
+
+:root {
+  --so-lienzo: #ffffff;
+  --so-superficie-2: #f3f4f6;
+  --so-borde: #e5e7eb;
+  --so-borde-control: #6b7280;
+  --so-tinta: #1f2937;
+  --so-tinta-2: #4b5563;
+  --so-accion: #a7f3d0;
+  --so-accion-hover: #6ee7b7;
+  --so-accion-suave: #ecfdf5;
+  --so-accion-borde: #34d399;
+  --so-ok-texto: #047857;
+  --so-hermes: #c7d2fe;
+  --so-hermes-suave: #eef2ff;
+  --so-hermes-punto: #6366f1;
+  --so-impide: #b42318;
+  --so-impide-suave: #fef3f2;
+  --so-riesgo: #b54708;
+  --so-riesgo-suave: #fffaeb;
+  --so-radius: 8px;
+  --so-radius-panel: 12px;
+  --so-font-sans: 'DM Sans', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --so-font-mono: 'JetBrains Mono', ui-monospace, Consolas, monospace;
+  color-scheme: light;
+}
+
+/* Tailwind 4 sobre los mismos tokens: lo nuevo se escribe con clases (bg-lienzo,
+ * text-tinta-2, border-borde, rounded-tarjeta, text-cuerpo, shadow-capa…). Sin los colores de
+ * Tailwind: solo existen los de la paleta. */
+@theme inline {
+  --color-*: initial;
+  --color-transparent: transparent;
+  --color-current: currentColor;
+  --color-lienzo: var(--so-lienzo);
+  --color-superficie-2: var(--so-superficie-2);
+  --color-borde: var(--so-borde);
+  --color-borde-control: var(--so-borde-control);
+  --color-tinta: var(--so-tinta);
+  --color-tinta-2: var(--so-tinta-2);
+  --color-accion: var(--so-accion);
+  --color-accion-hover: var(--so-accion-hover);
+  --color-accion-suave: var(--so-accion-suave);
+  --color-accion-borde: var(--so-accion-borde);
+  --color-ok: var(--so-ok-texto);
+  --color-hermes: var(--so-hermes);
+  --color-hermes-suave: var(--so-hermes-suave);
+  --color-hermes-punto: var(--so-hermes-punto);
+  --color-impide: var(--so-impide);
+  --color-impide-suave: var(--so-impide-suave);
+  --color-riesgo: var(--so-riesgo);
+  --color-riesgo-suave: var(--so-riesgo-suave);
+  --font-sans: var(--so-font-sans);
+  --font-mono: var(--so-font-mono);
+  --radius-control: 8px;
+  --radius-tarjeta: 12px;
+  --shadow-capa: 0 8px 24px color-mix(in srgb, var(--so-tinta) 12%, transparent);
+  --text-leyenda: 12px;
+  --text-tabla: 13px;
+  --text-cuerpo: 14px;
+  --text-bloque: 16px;
+  --text-pagina: 20px;
+  --text-cifra: 28px;
+}
+
+/* ==================== RESET ==================== */
+/* En la capa base, como el preflight de Tailwind: fuera de capa ganaría a las utilidades (p-4, px-3…). */
+@layer base {
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body,
+  #root {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  body {
+    background: var(--so-lienzo);
+    color: var(--so-tinta);
+    font-family: var(--so-font-sans);
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-size: 14px;
+    line-height: 1.55;
+    font-weight: 400;
+  }
+
+  ::selection {
+    background: var(--so-accion);
+    color: var(--so-tinta);
+  }
+
+  /* El foco en tinta: el verde sobre blanco no llega al 3:1 que pide WCAG 1.4.11. */
+  *:focus-visible {
+    outline: 2px solid var(--so-tinta);
+    outline-offset: 2px;
+  }
+}
+
+/* ==================== SUPERFICIES ==================== */
+
+.panel-surface {
+  background: var(--so-lienzo);
+  border: 1px solid var(--so-borde);
+  border-radius: var(--so-radius-panel);
+}
+
+.panel-graph {
+  background: var(--so-lienzo);
+  border: 1px solid var(--so-borde);
+  border-radius: var(--so-radius-panel);
+}
+
+.panel-inset {
+  background: var(--so-superficie-2);
+  border: 1px solid var(--so-borde);
+  border-radius: var(--so-radius);
+}
+
+.panel-bottom {
+  background: var(--so-lienzo);
+  border-top: 1px solid var(--so-borde);
+}
+
+/* ==================== SCROLLBARS ==================== */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--so-borde);
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--so-borde-control);
+}
+
+/* ==================== TYPOGRAPHY ==================== */
+/* Etiquetas de sección: mayúsculas solo en textos cortos. */
+.brand-text {
+  font-family: var(--so-font-sans);
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.heading-display {
+  font-family: var(--so-font-sans);
+  font-weight: 600;
+  letter-spacing: -0.01em;
+}
+
+.label-xs {
+  font-family: var(--so-font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--so-tinta-2);
+}
+
+.label-sm {
+  font-family: var(--so-font-sans);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--so-tinta-2);
+}
+
+.log-text {
+  font-family: var(--so-font-mono);
+  font-size: 12px;
+  line-height: 1.65;
+}
+
+/* ==================== ANIMATIONS ==================== */
+@keyframes breathe {
+  0%,
+  100% {
+    opacity: 0.4;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 0.65;
+    transform: scale(1.015);
+  }
+}
+
+@keyframes pulse-ring {
+  0% {
+    transform: scale(0.97);
+    opacity: 0.6;
+  }
+  50% {
+    transform: scale(1.03);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.97);
+    opacity: 0.6;
+  }
+}
+
+@keyframes rotate-slow {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes flow-dash {
+  to {
+    stroke-dashoffset: -20;
+  }
+}
+
+@keyframes fade-in-up {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-breathe {
+  animation: breathe 3s ease-in-out infinite;
+}
+.animate-pulse-ring {
+  animation: pulse-ring 1.5s ease-in-out infinite;
+}
+.animate-rotate-slow {
+  animation: rotate-slow 8s linear infinite;
+}
+
+/* En directo: capacidad en uso (halo) y arista activa (trazo que avanza). */
+.so-pulse {
+  animation: breathe 1.6s ease-in-out infinite;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.so-flow {
+  animation: flow-dash 0.8s linear infinite;
+}
+.so-spin {
+  animation: rotate-slow 1s linear infinite;
+}
+
+/* Diálogos y menú del móvil: el velo se funde, el diálogo baja un poco y el menú se desliza. */
+@keyframes so-fundido {
+  from {
+    opacity: 0;
+  }
+}
+@keyframes so-baja {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+}
+@keyframes so-desde-izquierda {
+  from {
+    transform: translateX(-100%);
+  }
+}
+.so-fundido {
+  animation: so-fundido 0.15s ease-out;
+}
+.so-fundido-sale {
+  animation: so-fundido 0.15s ease-out reverse forwards;
+}
+.so-baja {
+  animation: so-baja 0.2s ease-out;
+}
+.so-cajon-entra {
+  animation: so-desde-izquierda 0.2s ease-out;
+}
+.so-cajon-sale {
+  animation: so-desde-izquierda 0.2s ease-out reverse forwards;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* ==================== INTERACTIVE ==================== */
+.input-field {
+  background: var(--so-lienzo);
+  border: 1px solid var(--so-borde-control);
+  border-radius: var(--so-radius);
+  padding: 10px 14px;
+  font-size: 13px;
+  color: var(--so-tinta);
+  font-family: var(--so-font-sans);
+  transition:
+    border-color 0.12s ease,
+    box-shadow 0.12s ease;
+  outline: none;
+}
+
+.input-field:focus {
+  border-color: var(--so-tinta);
+  box-shadow: 0 0 0 3px var(--so-accion-suave);
+}
+
+.input-field::placeholder {
+  color: var(--so-tinta-2);
+}
+
+/* ==================== SIDEBAR ==================== */
+.so-nav-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 8px 10px;
+  border-radius: var(--so-radius);
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--so-tinta);
+  background: transparent;
+  text-align: left;
+  cursor: pointer;
+  transition:
+    background-color 0.12s ease,
+    color 0.12s ease;
+}
+.so-nav-item:hover {
+  background: var(--so-superficie-2);
+}
+/* El ítem activo: claro y en negrita, con el punto verde de la marca a la izquierda. */
+.so-nav-item[aria-current='page'] {
+  background: var(--so-superficie-2);
+  font-weight: 700;
+  box-shadow: inset 3px 0 0 var(--so-accion);
+}
+.so-nav-item:active {
+  transform: scale(0.98);
+}
+
+/* ==================== HORIZONTAL HAIRLINES ==================== */
+.hairline-top {
+  border-top: 1px solid var(--so-borde);
+}
+.hairline-bottom {
+  border-bottom: 1px solid var(--so-borde);
+}
+.hairline-left {
+  border-left: 1px solid var(--so-borde);
+}
+.hairline-right {
+  border-right: 1px solid var(--so-borde);
+}
+
+/* Rueda de los botones ocupados. */
+@keyframes so-giro {
+  to {
+    transform: rotate(360deg);
+  }
+}
+.so-girando {
+  animation: so-giro 0.9s linear infinite;
+}
+@media (prefers-reduced-motion: reduce) {
+  .so-girando {
+    animation: none;
+  }
+}
+
+/* En pantallas táctiles, todo lo que se pulsa mide al menos 44 px de alto. */
+@media (max-width: 767px) {
+  button,
+  select,
+  .input-field {
+    min-height: 44px;
+  }
+}
+
+/* Títulos largos (hay licitaciones de cinco líneas) recortados a tres en listas y en Hoy. */
+.so-tres-lineas {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}

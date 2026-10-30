@@ -1,0 +1,464 @@
+{
+  "_origen": "Fixture sintético: licitación inventada de formación continua para personal municipal, con textos inventados; Persona A/B…, sin NIF, correo, teléfono, notas ni importes ofertados.",
+  "oferta": "casoC",
+  "licitacion_id": "p-91000770",
+  "capturado_en": "2027-10-13T20:34:54+00:00",
+  "licitacion": {
+    "titulo": "Servicio, por lotes, de formación continua para el personal de los ayuntamientos y mancomunidades de la provincia de Villaejemplo",
+    "estado": "en_preparacion",
+    "fecha_limite": "2027-10-14T23:59:00",
+    "presupuesto": 127281,
+    "lotes": [
+      {
+        "id": "1",
+        "nombre": "Lote 1: Prevención de riesgos laborales para el personal de servicios operativos municipales",
+        "importe": 57596
+      },
+      {
+        "id": "2",
+        "nombre": "Lote 2: Atención a la ciudadanía y gestión del registro en oficinas municipales",
+        "importe": 51128
+      },
+      {
+        "id": "3",
+        "nombre": "Lote 3: Teleformación en competencias digitales y técnicas para el personal administrativo y técnico",
+        "importe": 18557
+      }
+    ],
+    "lotes_interes": [
+      "3"
+    ]
+  },
+  "pliegos": [
+    {
+      "nombre": "PCAP.pdf",
+      "clase": "pcap"
+    },
+    {
+      "nombre": "PPT.pdf",
+      "clase": "ppt"
+    },
+    {
+      "nombre": "ANEXO VII.docx",
+      "clase": "adicional"
+    },
+    {
+      "nombre": "ANEXO VI.docx",
+      "clase": "adicional"
+    },
+    {
+      "nombre": "Memoria justificativa.pdf",
+      "clase": "adicional"
+    },
+    {
+      "nombre": "ANEXO VIII.docx",
+      "clase": "adicional"
+    },
+    {
+      "nombre": "Acuerdo de contratación.pdf",
+      "clase": "adicional"
+    },
+    {
+      "nombre": "ANEXO V.docx",
+      "clase": "adicional"
+    },
+    {
+      "nombre": "Deuc.xml",
+      "clase": "adicional"
+    },
+    {
+      "nombre": "ANEXO III.docx",
+      "clase": "adicional"
+    },
+    {
+      "nombre": "ANEXO IV.docx",
+      "clase": "adicional"
+    },
+    {
+      "nombre": "ANEXO IX.docx",
+      "clase": "adicional"
+    },
+    {
+      "nombre": "Anuncio de Licitación 29-09-2027 0731.pdf",
+      "clase": "anuncio"
+    },
+    {
+      "nombre": "Pliego 29-09-2027 0734.pdf",
+      "clase": "anuncio"
+    }
+  ],
+  "guiones_anteriores": [
+    {
+      "id": 8,
+      "version": 2
+    }
+  ],
+  "respuesta_oferta": {
+    "guion": {
+      "id": 16,
+      "version": 3,
+      "ficha_id": 233,
+      "datos": {
+        "archivos": [
+          {
+            "nombre": "Sobre “A”",
+            "contenido": "Documentación Administrativa",
+            "prohibiciones": [],
+            "firma": "Cada archivo o sobre electrónico debe llevar la firma electrónica de quien representa a la empresa licitadora, y cada documento incluido debe firmarse antes de subirlo al sobre correspondiente.",
+            "documentos": [
+              {
+                "tipo": "deuc",
+                "nombre": "DOCUMENTO EUROPEO ÚNICO DE CONTRATACIÓN (DEUC)",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO II (instrucciones para cumplimentar el DEUC)",
+                  "documento": "PCAP.pdf",
+                  "pagina": 11
+                }
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "DECLARACIÓN RESPONSABLE SOBRE PROHIBICIONES DE CONTRATAR Y PERTENENCIA A GRUPO EMPRESARIAL",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "Anexo VI",
+                  "documento": "PCAP.pdf",
+                  "pagina": 112
+                }
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "COMPROMISO DE ADSCRIPCIÓN DE LOS MEDIOS PERSONALES Y MATERIALES AL CONTRATO",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "Anexo VII",
+                  "documento": "PCAP.pdf",
+                  "pagina": 114
+                }
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "COMPROMISO DE CONSTITUIR UNA UNIÓN TEMPORAL DE EMPRESAS, SI PROCEDE",
+                "obligatorio": false,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "ANEXO II (declaración responsable de cada empresa integrante)",
+                  "documento": "PCAP.pdf",
+                  "pagina": 12
+                }
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "DOCUMENTACIÓN DE EMPRESAS EXTRANJERAS",
+                "obligatorio": false,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "Anexo VI",
+                  "documento": "PCAP.pdf",
+                  "pagina": 112
+                }
+              }
+            ],
+            "documento": "PCAP.pdf",
+            "pagina": 11
+          },
+          {
+            "nombre": "Sobre “B”",
+            "contenido": "Criterios de juicio de valor. Documentación del Anexo IV de este pliego, con todos los elementos que la componen.",
+            "prohibiciones": [
+              "Aviso: quien describa esta propuesta didáctica no puede citar ningún aspecto que puntúe en los criterios automáticos; si lo hace, se excluye la oferta del lote afectado."
+            ],
+            "firma": "Cada archivo o sobre electrónico debe llevar la firma electrónica de quien representa a la empresa licitadora, y cada documento incluido debe firmarse antes de subirlo al sobre correspondiente.",
+            "documentos": [
+              {
+                "tipo": "memoria",
+                "nombre": "PROPUESTA DIDÁCTICA DE LOS CURSOS DE TELEFORMACIÓN",
+                "obligatorio": true,
+                "produce": "hermes",
+                "origen": {
+                  "modelo": "Anexo IV, LOTE 3",
+                  "documento": "PCAP.pdf",
+                  "pagina": 97
+                }
+              },
+              {
+                "tipo": "otro",
+                "nombre": "índice numerado del contenido, firmado",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "Anexo IV",
+                  "documento": "PCAP.pdf",
+                  "pagina": 94
+                }
+              }
+            ],
+            "documento": "PCAP.pdf",
+            "pagina": 13
+          },
+          {
+            "nombre": "Sobre “C”",
+            "contenido": "Criterios evaluables mediante fórmulas: proposición económica y oferta sobre los criterios de adjudicación que se valoran con cifras o porcentajes.",
+            "prohibiciones": [],
+            "firma": "Cada archivo o sobre electrónico debe llevar la firma electrónica de quien representa a la empresa licitadora, y cada documento incluido debe firmarse antes de subirlo al sobre correspondiente.",
+            "documentos": [
+              {
+                "tipo": "oferta_economica",
+                "nombre": "ANEXO V.- PROPOSICIÓN ECONÓMICA Y CRITERIOS VALORABLES MEDIANTE FÓRMULAS",
+                "obligatorio": true,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "Anexo V, LOTE 3",
+                  "documento": "PCAP.pdf",
+                  "pagina": 108
+                }
+              },
+              {
+                "tipo": "declaracion",
+                "nombre": "DECLARACIÓN RESPONSABLE SOBRE LA GRABACIÓN DE LAS TUTORÍAS DEL PERSONAL PARTICIPANTE",
+                "obligatorio": false,
+                "produce": "persona",
+                "origen": {
+                  "modelo": "Anexo V, LOTE 3, apartado 2 (si se ofrece la grabación)",
+                  "documento": "PCAP.pdf",
+                  "pagina": 108
+                }
+              }
+            ],
+            "documento": "PCAP.pdf",
+            "pagina": 13
+          }
+        ],
+        "memoria": {
+          "archivo": "Sobre “B”",
+          "titulo_documento": "PROPUESTA DIDÁCTICA DE LOS CURSOS DE TELEFORMACIÓN",
+          "limite_paginas": null,
+          "formato": {
+            "otros": "Lugar, fecha y firma del proponente"
+          },
+          "apartados": [
+            {
+              "titulo": "Plan de impartición y calendario de las acciones de teleformación",
+              "puntos": 10,
+              "se_valorara": [
+                "La coherencia del calendario semanal: reparto de contenidos, precisión de cada semana y equilibrio de la carga horaria",
+                "La organización de la formación en línea: claridad de la programación en el campus virtual, dinámicas de trabajo y actividades previstas",
+                "El seguimiento de la participación, la evaluación continua y la atención al personal: registro de actividad, pruebas de evaluación, canales de consulta, compromisos de tutoría y plazos de respuesta",
+                "La respuesta a imprevistos: sustitución de docentes, reajuste del calendario y recuperación de sesiones perdidas"
+              ],
+              "puntos_se_valorara": [
+                3.5,
+                3.5,
+                1.5,
+                1.5
+              ],
+              "escala": [],
+              "documento": "PCAP.pdf",
+              "pagina": 78
+            },
+            {
+              "titulo": "Enfoque didáctico, recursos y entorno virtual de aprendizaje",
+              "puntos": 15,
+              "se_valorara": [
+                "El planteamiento pedagógico: actividades prácticas, trabajo con casos de la administración local, sistema de tutorías y tiempos de respuesta",
+                "Los recursos didácticos: contenidos digitales interactivos para estudiar y autoevaluarse, y su uso a lo largo del itinerario",
+                "El campus virtual: herramientas de comunicación y seguimiento que integra, y el canal de asistencia técnica para incidencias de acceso y uso"
+              ],
+              "puntos_se_valorara": [
+                4.5,
+                4.5,
+                6
+              ],
+              "escala": [],
+              "documento": "PCAP.pdf",
+              "pagina": 78
+            },
+            {
+              "titulo": "Medidas de transferencia del aprendizaje al puesto de trabajo",
+              "puntos": 15,
+              "se_valorara": [
+                "Ejercicios de aplicación sobre procedimientos reales del ayuntamiento: temario, horas adicionales y productos finales",
+                "Guías de uso y plantillas reutilizables que cada participante puede aplicar en su servicio al terminar el curso",
+                "Sesiones de apoyo posteriores al curso para resolver las dudas que surjan al aplicar lo aprendido",
+                "Comunidad de práctica entre participantes de distintos ayuntamientos, con un boletín de novedades normativas y la difusión de buenas prácticas"
+              ],
+              "puntos_se_valorara": [
+                5,
+                5,
+                2.5,
+                2.5
+              ],
+              "escala": [],
+              "documento": "PCAP.pdf",
+              "pagina": 79
+            }
+          ],
+          "advertencias": [
+            "La propuesta didáctica debe recoger los siguientes contenidos mínimos; si falta alguno, SE EXCLUIRÁ POR INCOMPLETA para este lote.",
+            "Aviso: quien describa esta propuesta didáctica no puede citar ningún aspecto que puntúe en los criterios automáticos; si lo hace, se excluye la oferta del lote afectado.",
+            "Se valorará la precisión, la claridad y la extensión suficiente de la información sobre cada aspecto que puntúa.",
+            "La Mesa pedirá un informe técnico para valorar el contenido del sobre «B»; la valoración atenderá a la adecuación de cada propuesta a la ejecución del contrato y deberá estar motivada."
+          ],
+          "documento": "PCAP.pdf",
+          "pagina": 77
+        },
+        "automaticos": [
+          {
+            "criterio": "Ofrecer la grabación de las tutorías por videoconferencia y ponerla a disposición del participante, con su consentimiento previo, para que pueda repasarla",
+            "puntos": 3,
+            "como_se_acredita": "Si se ofrece: 3 puntos; si no se ofrece: 0 puntos. No se admiten otras opciones. Quien la ofrezca debe aportar, firmada, la declaración responsable del Anexo V en la que conste que las grabaciones solo se usarán para el repaso individual del participante, con su consentimiento previo, y se suprimirán a los treinta días.",
+            "casilla_en": "Anexo V, LOTE 3, apartado 2: «Sí, se ofrece» / «No se ofrece» y modelo de declaración responsable",
+            "archivo": "Sobre “C”",
+            "marcas": [
+              "grabación de las tutorías",
+              "consentimiento previo del participante"
+            ],
+            "documento": "PCAP.pdf",
+            "pagina": 75
+          },
+          {
+            "criterio": "Incorporar participantes por encima del mínimo exigido por el Pliego de Prescripciones Técnicas para los cursos de este lote, sin coste adicional para la Diputación de Villaejemplo",
+            "puntos": 6,
+            "como_se_acredita": "Por cada participante adicional sobre el mínimo: 0,20 puntos; si no se ofrece ninguno: 0 puntos. No se admiten otras opciones. Anexo V, LOTE 3, apartado 3: marcar la opción que corresponda entre «Ofrece 1 participante adicional» y «Ofrece 30 participantes adicionales» o «No ofrece participantes adicionales».",
+            "casilla_en": "Anexo V, LOTE 3, apartado 3: «Ofrece [1-30] participantes adicionales» / «No ofrece participantes adicionales»",
+            "archivo": "Sobre “C”",
+            "marcas": [
+              "participantes adicionales",
+              "participante adicional al número mínimo"
+            ],
+            "documento": "PCAP.pdf",
+            "pagina": 76
+          },
+          {
+            "criterio": "Incorporar docentes por encima del mínimo del Pliego de Prescripciones Técnicas, que cumplan los requisitos curriculares fijados en él",
+            "puntos": 6,
+            "como_se_acredita": "Por cada docente adicional sobre el mínimo de cada curso del lote: 2 puntos; sin docentes adicionales: 0 puntos. No se admiten otras opciones. Anexo V, LOTE 3, apartado 4: «Ofrece 1 docente adicional», «Ofrece 2 docentes adicionales», «Ofrece 3 docentes adicionales» o «No ofrece docentes adicionales». Los docentes adicionales los acredita la empresa propuesta como adjudicataria antes de la adjudicación, con su identificación, titulación o experiencia exigida y formación de al menos 30 horas o experiencia de al menos 60 horas de impartición en teleformación y TIC, mediante título, certificados o declaraciones responsables e informes de vida laboral.",
+            "casilla_en": "Anexo V, LOTE 3, apartado 4: «Ofrece [1-3] docente(s) adicional(es)» / «No ofrece docentes adicionales»",
+            "archivo": "Sobre “C”",
+            "marcas": [
+              "tutores/as docentes adicionales",
+              "tutores adicionales",
+              "tutor adicional"
+            ],
+            "documento": "PCAP.pdf",
+            "pagina": 76
+          }
+        ],
+        "oferta_economica": {
+          "formula": "Puntos = X*((A-B) /(A-C))\nSiendo:\n- X, la puntuación máxima del criterio de precio.\n- A, el presupuesto base de licitación.\n- B, el precio ofertado que se valora.\n- C, el menor de estos dos valores:\nEl precio más bajo ofertado, sin contar las ofertas rechazadas por anormalmente bajas.\nEl precio límite para no incurrir en presunción de anormalidad, según el apartado sobre ofertas anormales.",
+          "presupuesto_base": 18557,
+          "impuesto_aparte": "exento",
+          "precio_unitario": {
+            "unidad": "hora",
+            "maximo": 1.54
+          },
+          "umbral_anormalidad": "a) Un solo licitador: su oferta, si baja del presupuesto base de licitación más de 35 puntos porcentuales. PL= PBL-PBL*35/100. b) Dos licitadores: la oferta que baje más de 30 puntos porcentuales de la otra. PL= PMAO-PMAO*30/100. c) Tres o más licitadores: las ofertas que bajen más de 30 puntos porcentuales de la media aritmética de las presentadas. PL= MAPO-MAPO*30/100. Con independencia de lo dicho sobre el precio, si hay más criterios también se presumirán anormales las ofertas que alcancen más del 95% de los puntos máximos de todos los criterios de adjudicación. Como el presupuesto base de licitación es un precio unitario, en ambos casos la referencia son los precios unitarios máximos de licitación.",
+          "modelo": "Anexo V, LOTE 3, apartado 1",
+          "archivo": "Sobre “C”",
+          "documento": "PCAP.pdf",
+          "pagina": 73
+        },
+        "plazo": {
+          "fecha_limite": "2027-10-14T23:59",
+          "canal": "Presentación electrónica a través de la Plataforma de Contratación del Sector Público (herramienta de preparación de ofertas)"
+        },
+        "lotes": [
+          "3"
+        ]
+      }
+    },
+    "lotes_cambiados": false,
+    "guion_cambiado": false,
+    "decisiones": {
+      "guion_id": 16,
+      "datos": {
+        "lotes": [
+          "3"
+        ],
+        "equipo": [
+          {
+            "persona_id": 1001,
+            "rol_en_la_oferta": "Rol 1 de la oferta",
+            "lotes": []
+          },
+          {
+            "persona_id": 1005,
+            "rol_en_la_oferta": "Rol 2 de la oferta",
+            "lotes": []
+          },
+          {
+            "persona_id": 1001,
+            "rol_en_la_oferta": "Rol 3 de la oferta",
+            "lotes": []
+          }
+        ],
+        "automaticos": [
+          {
+            "criterio": "Ofrecer la grabación de las tutorías por videoconferencia y ponerla a disposición del participante, con su consentimiento previo, para que pueda repasarla",
+            "lote": null,
+            "nos_acogemos": true,
+            "tramo": "Ofrecer la grabación de las tutorías por videoconferencia y ponerla a disposición del participante, con su consentimiento previo, para que pueda repasarla"
+          },
+          {
+            "criterio": "Incorporar participantes por encima del mínimo exigido por el Pliego de Prescripciones Técnicas para los cursos de este lote, sin coste adicional para la Diputación de Villaejemplo",
+            "lote": null,
+            "nos_acogemos": true,
+            "tramo": "Incorporar participantes por encima del mínimo exigido por el Pliego de Prescripciones Técnicas para los cursos de este lote, sin coste adicional para la Diputación de Villaejemplo"
+          },
+          {
+            "criterio": "Incorporar docentes por encima del mínimo del Pliego de Prescripciones Técnicas, que cumplan los requisitos curriculares fijados en él",
+            "lote": null,
+            "nos_acogemos": false,
+            "tramo": null
+          }
+        ],
+        "ofertas": [
+          {
+            "lote": "3",
+            "pendiente": true,
+            "importe": null,
+            "unitarios": []
+          }
+        ]
+      }
+    },
+    "memorias": [
+      {
+        "id": 17,
+        "version": 3,
+        "guion_id": 16,
+        "estado": "ensamblada",
+        "ensayo": false,
+        "guion_cambiado": false,
+        "borrador": {
+          "estado": "pendiente"
+        }
+      },
+      {
+        "id": 15,
+        "version": 2,
+        "guion_id": 8,
+        "estado": "ensamblada",
+        "ensayo": false,
+        "guion_cambiado": true,
+        "borrador": {
+          "estado": "descartada"
+        }
+      },
+      {
+        "id": 14,
+        "version": 1,
+        "guion_id": 8,
+        "estado": "ensamblada",
+        "ensayo": false,
+        "guion_cambiado": true,
+        "borrador": {
+          "estado": "descartada"
+        }
+      }
+    ]
+  }
+}
