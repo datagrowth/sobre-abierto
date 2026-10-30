@@ -706,7 +706,8 @@ function referenciaRegistro(
       0,
     );
   const propia = lote !== null && oe?.lotes.length === 1 && oe.lotes[0] === lote ? oe.presupuesto_base : null;
-  return propia ?? (lote !== null ? (presupuestos[lote] ?? null) : null) ?? oe?.presupuesto_base ?? null;
+  const delLote = lote !== null ? (presupuestos[lote] ?? null) : null;
+  return propia ?? delLote ?? oe?.presupuesto_base ?? null;
 }
 
 function registroDe(db: Db, plan: Plan): FilaRegistro[] {
