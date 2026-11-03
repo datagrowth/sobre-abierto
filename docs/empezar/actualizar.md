@@ -46,9 +46,12 @@ quieta.
 4. **Comprueba.** Entra en la web. Si estaba abierta, avisará «Hay una versión nueva de la plataforma» y pedirá
    recargar. Las sesiones siguen abiertas.
 
-5. **Reinicia Hermes si hace falta.** Hermes carga sus skills y la lista de herramientas solo al arrancar. Si la
-   versión las cambia, los trabajos de IA esperarán con «herramientas desfasadas» hasta que lo reinicies, con la cola
-   quieta: `docker compose restart hermes` (ver [Reiniciar Hermes](../operar/reiniciar-hermes.md)).
+5. **Hermes se reinicia si hace falta.** Hermes carga sus skills y la lista de herramientas solo al arrancar. Si la
+   versión las cambia, `install.sh` espera a que no haya runs de IA en marcha (hasta 15 minutos;
+   `REINICIO_ESPERA_MIN` lo cambia) y reinicia Hermes. Si la cola no se queda quieta, no lo reinicia para no cortar
+   nada y avisa: los trabajos de IA esperarán con «herramientas desfasadas» hasta que lo reinicies tú, con la cola
+   quieta: `docker compose restart hermes` (ver [Reiniciar Hermes](../operar/reiniciar-hermes.md)). Con un clon,
+   `docker compose up -d` no reinicia Hermes: hazlo a mano o ejecuta `bash install.sh` después.
 
 ## Qué pasa con los datos
 

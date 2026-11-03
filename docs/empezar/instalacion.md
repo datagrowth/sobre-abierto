@@ -41,7 +41,7 @@ LLM_PROVEEDOR=anthropic LLM_API_KEY=sk-ant-... bash install.sh
 ```
 
 Puedes ejecutarlo otra vez cuando quieras: **no cambia ningún valor que ya esté en el `.env`** y solo reinicia Hermes si
-algo de los perfiles cambió. Si no llega a GHCR, sigue con las imágenes que ya tenga. `bash install.sh --ayuda` lista
+algo de los perfiles cambió o si tiene herramientas de una versión anterior (con la cola de IA quieta). Si no llega a GHCR, sigue con las imágenes que ya tenga. `bash install.sh --ayuda` lista
 todas las variables y opciones; para pasar a otra versión, ver [Actualizar](actualizar.md).
 
 ## Con Compose a mano
