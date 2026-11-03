@@ -10,6 +10,10 @@ afectados esperan con «Hermes tiene la lista de herramientas de antes del despl
 (`herramientas_desfasadas`), sin gastar intentos ni cupo. Cambiar solo variables del monitor no
 lo pide: basta `$DC up -d $MON`.
 
+Tras una actualización con `install.sh`, el instalador lo hace solo: si algún perfil tiene la lista vieja, espera a
+que la cola esté quieta y reinicia Hermes. Para saber a mano si hace falta y cuántos runs cortaría:
+`$DC exec $MON node apps/server/dist/reinicioHermes.js` (escribe `desfasados=<perfiles>` y `en_marcha=<n>`).
+
 1. **Con la cola quieta.** Cada reinicio mata los runs en curso de todos los perfiles: comprueba
    en la pastilla **Hermes** o en **Ajustes › Hermes** que no haya nada en marcha, y no lo hagas
    cerca de un plazo de presentación.

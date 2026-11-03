@@ -152,4 +152,37 @@ mkdir -p "$U/.git"
 (cd "$U" && env SOBRE_ABIERTO_RAW="$(url_local "$RAW")" bash ./install.sh --solo-env --actualizar > "$RAIZ/act.txt" 2>&1 < /dev/null)
 falso should_refuse_to_update_a_git_clone test $? -eq 0
 
+# Reinicio de Hermes tras actualizar: las funciones de install.sh con un `compose` de mentira que
+# responde por el monitor con los estados de $ESTADOS (uno por llamada) y anota cada reinicio.
+reinicio() {
+  ESTADOS="$1" REINICIO_ESPERA_MIN="${2:-15}" bash -c '
+    set -euo pipefail
+    # El contador va en un archivo: cada llamada corre en un $(…), que no devuelve variables.
+    echo 0 > "$REGISTRO.n"
+    compose() {
+      case "$*" in
+        "exec -T monitor"*)
+          n=$(($(cat "$REGISTRO.n") + 1)); echo "$n" > "$REGISTRO.n"
+          printf "%b\n" "$(printf "%s" "$ESTADOS" | cut -d"|" -f"$n")" ;;
+        "restart hermes") echo reiniciado >> "$REGISTRO" ;;
+      esac
+    }
+    msg() { :; }; aviso() { echo aviso >> "$REGISTRO"; }; sleep() { :; }
+    eval "$(sed -n "/^estado_reinicio()/,/^}$/p" "$1")"
+    reiniciar_hermes_si_hace_falta
+    echo "pendiente=${HERMES_PENDIENTE:-0}" >> "$REGISTRO"
+  ' _ "$REPO/install.sh"
+}
+export REGISTRO="$RAIZ/reinicio.txt"
+
+: > "$REGISTRO"; reinicio 'desfasados=\nen_marcha=3'
+falso should_not_restart_hermes_when_its_tools_are_current grep -q reiniciado "$REGISTRO"
+
+: > "$REGISTRO"; reinicio 'desfasados=licitaciones\nen_marcha=2|desfasados=licitaciones\nen_marcha=1|desfasados=licitaciones\nen_marcha=0'
+cierto should_restart_hermes_once_the_queue_is_quiet test "$(grep -c reiniciado "$REGISTRO")" = 1
+
+: > "$REGISTRO"; reinicio 'desfasados=licitaciones\nen_marcha=1|desfasados=licitaciones\nen_marcha=1|desfasados=licitaciones\nen_marcha=1|desfasados=licitaciones\nen_marcha=1|desfasados=licitaciones\nen_marcha=1' 1
+falso should_not_cut_running_jobs_when_the_queue_never_quiets grep -q reiniciado "$REGISTRO"
+cierto should_leave_the_restart_pending_when_the_queue_never_quiets grep -q pendiente=1 "$REGISTRO"
+
 [ "$fallos" -eq 0 ] && echo "todas las pruebas pasan" || { echo "$fallos pruebas fallidas"; exit 1; }

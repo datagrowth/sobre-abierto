@@ -311,14 +311,47 @@ crear_perfiles() {
   if [ -n "$cambios" ]; then
     compose run --rm hermes-init > /dev/null
     compose restart hermes > /dev/null
+    HERMES_REINICIADO=1
   fi
   PROVEEDOR_ELEGIDO="$proveedor"
+}
+
+# Estado que el monitor da para decidir el reinicio: «desfasados=a,b» y «en_marcha=N».
+estado_reinicio() { compose exec -T monitor node apps/server/dist/reinicioHermes.js 2> /dev/null; }
+
+# Hermes carga la lista de herramientas solo al arrancar: si la versión nueva las cambia, sus
+# trabajos esperan hasta reiniciarlo. Se reinicia solo entonces y con la cola quieta, porque un
+# reinicio corta los runs en curso. Un run que arranque justo entre la comprobación y el reinicio
+# se corta y se reintenta a los 10 minutos.
+reiniciar_hermes_si_hace_falta() {
+  [ "${HERMES_REINICIADO:-0}" = 0 ] || return 0
+  local estado desfasados en_marcha i espera_min="${REINICIO_ESPERA_MIN:-15}"
+  estado="$(estado_reinicio)" || { aviso "No pude saber si Hermes tiene las herramientas al día: si la IA espera, reinícialo (docs/operar/reiniciar-hermes.md)."; return 0; }
+  desfasados="$(printf '%s\n' "$estado" | sed -n 's/^desfasados=//p')"
+  [ -n "$desfasados" ] || return 0
+  msg "Hermes tiene herramientas de antes de esta versión ($desfasados): hay que reiniciarlo."
+  for i in $(seq 1 $((espera_min * 4))); do
+    en_marcha="$(estado_reinicio | sed -n 's/^en_marcha=//p' || true)"
+    if [ "${en_marcha:-1}" = 0 ]; then
+      compose restart hermes > /dev/null
+      HERMES_REINICIADO=1
+      msg "  Hermes reiniciado."
+      return 0
+    fi
+    [ "$i" = 1 ] && msg "  Espero a que acaben los $en_marcha runs de IA en marcha (hasta $espera_min min)…"
+    sleep 15
+  done
+  HERMES_PENDIENTE=1
+  aviso "Siguen runs de IA en marcha tras $espera_min min: no reinicio Hermes para no cortarlos. Cuando la cola esté quieta: docker compose restart hermes (docs/operar/reiniciar-hermes.md)."
 }
 
 # Hermes (ya reiniciado) llega al MCP del monitor con el token de un perfil. Un fallo aquí no
 # deshace nada: se avisa y se sigue, porque Hermes puede tardar en estar listo.
 comprobar_mcp() {
   local i
+  # `mcp test` anota la lista nueva como cargada aunque el gateway siga con la vieja: con el
+  # reinicio pendiente, los trabajos dejarían de esperar y fallarían por falta de herramienta.
+  [ "${HERMES_PENDIENTE:-0}" = 0 ] || return 0
   msg "Comprobando que Hermes llega a la plataforma…"
   for i in $(seq 1 15); do
     if compose exec -T -u hermes hermes /opt/hermes/.venv/bin/hermes -p licitaciones mcp test plataforma > /dev/null 2>&1; then
@@ -371,6 +404,7 @@ main() {
   compose up -d || fallo "No se pudo arrancar. Si dice «denied» o «not found» al bajar las imágenes, aún no están publicadas: usa «docker compose -f docker-compose.yml -f deploy/docker-compose.build.yml up -d» (compila en este servidor)."
   esperar_monitor
   crear_perfiles
+  reiniciar_hermes_si_hace_falta
   comprobar_mcp
   resumen
 }

@@ -91,6 +91,11 @@ export function agentePorToken(dir: string, token: string, env: NodeJS.ProcessEn
   return encontrado;
 }
 
+/** Los agentes con token en archivo: Hermes y sus perfiles (los crea hermes-init), no los de fuera. */
+export function agentesDeHermes(dir: string): string[] {
+  return [...desdeArchivos(dir).keys()];
+}
+
 export function olvidarAgentes(): void {
   cache = null;
 }
