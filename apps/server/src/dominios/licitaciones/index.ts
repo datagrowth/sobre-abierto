@@ -9,7 +9,7 @@ import { alertasIa } from '../../nucleo/colaAlertas.js';
 import { fijarEventoTrabajos, fijarNombreTrabajos, registrarTipoTrabajo } from '../../nucleo/colaTipos.js';
 import { fijarLimitador } from '../../nucleo/colaOrden.js';
 import { encolar } from '../../nucleo/trabajos.js';
-import { reactivarTipo } from '../../nucleo/colaFrenos.js';
+import { reactivadoEn, reanudarTipo } from '../../nucleo/colaFrenos.js';
 import type { DestinoHermes } from '../../nucleo/hermes/runs.js';
 import { anadirHerramientas } from '../../nucleo/mcp/servidor.js';
 import { registrarEstado } from '../../nucleo/estado.js';
@@ -192,7 +192,8 @@ export function programarCriba(forzar = false): number[] {
   liberarLotesFallidos(dbLic);
   retirarCandidatasCerradas(dbLic);
   if (!hayPerfilCriba(raicesActuales().conocimiento)) return [];
-  if (forzar) reactivarTipo(db, TIPO_CRIBA);
+  // «Cribar ahora» también saca de la espera a los lotes que esperaban una herramienta de Hermes.
+  if (forzar) reanudarTipo(db, TIPO_CRIBA);
   const { loteCriba, cribasDia } = config.licitaciones;
   if (!forzar && !tocaCribar(dbLic, loteCriba, cribasDia)) return [];
   const lotes = crearLotes(dbLic, loteCriba);
@@ -240,13 +241,18 @@ export function alDiaHasta(db: Db): string | null {
   return ms.length ? new Date(Math.max(...ms)).toISOString() : null;
 }
 
-function cribaConFallos(db: Db, ahoraMs: number): AlertaOperacion | null {
+// Cuenta los lotes que terminaron en los últimos 7 días y después del último «Cribar ahora»: quien
+// lo pulsa ya ha visto el aviso, y solo vuelve si la criba falla otra vez. Los lotes anteriores a
+// guardar la hora del cierre (cribado_en) cuentan por su creación.
+function cribaConFallos(db: Db, ahoraMs: number, pedidaEn: string | null): AlertaOperacion | null {
+  const semana = new Date(ahoraMs - SEMANA_MS).toISOString();
+  const desde = pedidaEn && pedidaEn > semana ? pedidaEn : semana;
   const f = db
     .prepare(
       `SELECT COALESCE(SUM(estado = 'fallido'), 0) AS fallidos, COUNT(*) AS total FROM lotes_criba
-    WHERE estado IN ('cribado', 'fallido') AND creado_en >= ?`,
+    WHERE estado IN ('cribado', 'fallido') AND COALESCE(cribado_en, creado_en) >= ?`,
     )
-    .get(new Date(ahoraMs - SEMANA_MS).toISOString()) as { fallidos: number; total: number };
+    .get(desde) as { fallidos: number; total: number };
   return f.total > 0 && f.fallidos / f.total > MAX_FALLO_CRIBA ? { motivo: 'criba_con_fallos', ...f } : null;
 }
 
@@ -268,9 +274,14 @@ function fuentesSinNovedades(db: Db, ahoraMs: number): HastaFuente[] {
 /**
  * Avisos de operación: cada fuente de la ingesta en marcha que lleva más de su umbral sin
  * novedades (con las que siguen al día, para ver que es la PLACSP) y más de un 20 % de lotes
- * de criba fallidos en 7 días.
+ * de criba fallidos en 7 días (desde el último «Cribar ahora», `cribaPedidaEn`, si es posterior).
  */
-export function alertasOperacion(db: Db, ingestaActiva: boolean, ahoraMs = Date.now()): AlertaOperacion[] {
+export function alertasOperacion(
+  db: Db,
+  ingestaActiva: boolean,
+  ahoraMs = Date.now(),
+  cribaPedidaEn: string | null = null,
+): AlertaOperacion[] {
   const fuentes = ingestaActiva ? fuentesSinNovedades(db, ahoraMs) : [];
   const alDia = fuentes.filter((f) => !f.parada).map((f) => FUENTES[f.fuente].corto);
   const out: AlertaOperacion[] = fuentes
@@ -283,7 +294,7 @@ export function alertasOperacion(db: Db, ingestaActiva: boolean, ahoraMs = Date.
       horas: FUENTES[f.fuente].sinNovedadesHoras,
       al_dia: alDia,
     }));
-  const criba = cribaConFallos(db, ahoraMs);
+  const criba = cribaConFallos(db, ahoraMs, cribaPedidaEn);
   return criba ? [...out, criba] : out;
 }
 
@@ -312,7 +323,12 @@ export function estadoLicitaciones(): Record<string, unknown> {
     alertas_ia: alertasIa(nucleo().db, 'licitaciones'),
     ingesta: estadoIngesta(),
     al_dia_hasta: alDiaHasta(dbLicitaciones()),
-    alertas_operacion: alertasOperacion(dbLicitaciones(), config.licitaciones.activo && estadoIngesta().activa),
+    alertas_operacion: alertasOperacion(
+      dbLicitaciones(),
+      config.licitaciones.activo && estadoIngesta().activa,
+      Date.now(),
+      reactivadoEn(nucleo().db, TIPO_CRIBA),
+    ),
     oportunidades: contar('SELECT estado AS k, COUNT(*) AS n FROM oportunidades GROUP BY estado'),
     pliegos: contar('SELECT estado AS k, COUNT(*) AS n FROM pliegos GROUP BY estado'),
     pliegos_ilegibles: pliegosIlegibles(dbLicitaciones()),

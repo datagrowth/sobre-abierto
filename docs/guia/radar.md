@@ -51,6 +51,9 @@ El rango de importe vale también para lo ya cribado: lo que pasó sin importe p
   se vuelven a cribar. Si el perfil no está (o está vacío), ni se le pide: las candidatas
   esperan en **Sin cribar**, todas las vistas de Licitaciones avisan de que falta,
   **Programado** da la criba por parada y **Cribar ahora** lo dice en vez de enviarla.
+  **Cribar ahora** también vuelve a lanzar los lotes que esperaban una herramienta de Hermes y
+  quita los avisos de la criba (el de herramienta y el de «más del 20 % de lotes fallidos»):
+  si la criba vuelve a fallar, el aviso vuelve a salir.
 
 ## Idioma
 
@@ -66,7 +69,7 @@ de tipo **idioma** (perfil lingüístico, atención en catalán…); si es exclu
 lo cumplimos, la oportunidad pasa sola a Descartadas. Los avisos de lo
 que impide que llegue trabajo (ingesta apagada o con error, Hermes sin conectar o
 frenado) salen en todas las vistas, plegados en una línea. Cada fuente de la PLACSP se
-vigila por separado y a su ritmo: si **perfiles de contratante** lleva más de 6 h sin
+vigila por separado y a su ritmo: si **perfiles de contratante** lleva más de 24 h sin
 entradas nuevas, o **plataformas agregadas** (que publica un lote de madrugada) más de
 30 h, el aviso nombra la fuente y, si la otra sigue al día, dice que es la PLACSP y no
 nuestra ingesta. La lista va ordenada por

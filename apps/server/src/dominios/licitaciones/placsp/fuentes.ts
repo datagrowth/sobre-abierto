@@ -16,7 +16,8 @@ export type Fuente = {
   // Nombre corto para los avisos.
   corto: string;
   // Horas sin entradas nuevas a partir de las cuales la fuente se da por parada. Cada una
-  // publica a su ritmo: perfiles, varias veces por hora; agregadas, un lote de madrugada.
+  // publica a su ritmo: perfiles, varias veces por hora, pero con parones de una tarde a la mañana
+  // siguiente que no son una caída (con 6 h el aviso salía casi a diario); agregadas, un lote de madrugada.
   sinNovedadesHoras: number;
 };
 
@@ -33,7 +34,7 @@ export const FUENTES: Record<FuenteId, Fuente> = {
     primerAnio: 2012,
     prefijo: 'p',
     corto: 'Perfiles de contratante (Estado y organismos adheridos)',
-    sinNovedadesHoras: 6,
+    sinNovedadesHoras: 24,
   },
   agregadas: {
     id: 'agregadas',
