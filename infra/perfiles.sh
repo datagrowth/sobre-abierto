@@ -13,12 +13,13 @@
 #   LLM_API_KEY    la clave del proveedor (no hace falta con local)
 #   LLM_URL        la dirección de un servidor compatible con OpenAI (solo con local)
 #   MODELO_LICITACIONES, MODELO_OFERTA, MODELO_CRITICO   el modelo de cada perfil
-#   MONITOR_MCP_URL  por defecto http://hermes-monitor:3110/mcp
+#   MONITOR_MCP_URL  por defecto http://monitor:3110/mcp (el nombre del servicio: los paneles
+#                    como Dokploy, en despliegue aislado, quitan los alias de red)
 set -eu
 
 HB="${HB:-/opt/hermes/.venv/bin/hermes}"
 DATA="${HERMES_HOME:-/opt/data}"
-MCP_URL="${MONITOR_MCP_URL:-http://hermes-monitor:3110/mcp}"
+MCP_URL="${MONITOR_MCP_URL:-http://monitor:3110/mcp}"
 PROVEEDOR="${LLM_PROVEEDOR:-ninguno}"
 TOOLS='[licitaciones_*, biblioteca_*, salidas_leer, colaboradores_*, competidores_*, organismos_*, plataforma_estado, plataforma_empresa]'
 

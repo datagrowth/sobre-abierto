@@ -122,7 +122,11 @@ export function liberarLotesFallidos(db: Db): number {
   db.transaction(() => {
     for (const { id } of lotes) {
       db.prepare("UPDATE oportunidades SET lote_criba = NULL WHERE lote_criba = ? AND estado = 'candidata'").run(id);
-      db.prepare("UPDATE lotes_criba SET estado = 'fallido' WHERE id = ?").run(id);
+      // cribado_en guarda también cuándo se cerró como fallido: el aviso de fallos cuenta desde «Cribar ahora».
+      db.prepare("UPDATE lotes_criba SET estado = 'fallido', cribado_en = ? WHERE id = ?").run(
+        new Date().toISOString(),
+        id,
+      );
     }
   })();
   return lotes.length;

@@ -18,7 +18,7 @@ barra lateral y en **Ajustes › Hermes**; un agente la lee con `plataforma_trab
 |---|---|
 | `pausa_limite` | el proveedor dio límite de uso (429); la cola sigue sola a la hora de `pausa_hasta` |
 | `freno` | su tipo falló tres veces seguidas: arregla la causa y relanza a mano (una versión nueva del monitor también lo levanta; un reinicio, no) |
-| `espera_herramienta` | Hermes tiene las herramientas de antes del despliegue: «Reiniciar Hermes» |
+| `espera_herramienta` | Hermes no tiene una herramienta de la plataforma (lista de antes del despliegue, o el perfil no llega al MCP: mira en sus registros «name resolution» o «failed initial connection»). [Reinicia Hermes](reiniciar-hermes.md): en cuanto el perfil vuelve a pedir la lista, sus trabajos salen solos; «Cribar ahora» o pedirlo a mano también los reanuda. Si el perfil sí usó el MCP durante el run, el «no está disponible» es del modelo y cuenta como un fallo normal |
 | `reintento` | espera su próximo intento (2, 4 y 8 minutos) |
 | `tope_oferta` | la oferta agotó sus runs de 24 h: mira qué se repite o sube el tope |
 | `sin_perfil` | falta el perfil de Hermes de ese tipo (`HERMES_*_URL` y `_KEY`) |

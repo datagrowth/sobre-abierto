@@ -41,7 +41,7 @@ const lote = (estado: string, creado: string) =>
 const PERFILES = 'Perfiles de contratante (Estado y organismos adheridos)';
 const AGREGADAS = 'Plataformas agregadas (comunidades autónomas y entidades locales)';
 
-test('should_warn_per_source_when_perfiles_brings_nothing_for_6_hours_even_if_agregadas_published', () => {
+test('should_warn_per_source_when_perfiles_brings_nothing_for_24_hours_even_if_agregadas_published', () => {
   // Arrange: la última vuelta es de hace 5 min; perfiles no trae nada desde el lunes por la tarde
   // y agregadas publicó su lote de madrugada (PLACSP, 19-21/10/2026).
   sync('perfiles', '2026-10-13T20:08:00+02:00');
@@ -59,7 +59,7 @@ test('should_warn_per_source_when_perfiles_brings_nothing_for_6_hours_even_if_ag
       desde: '2026-10-13T18:08:00.000Z',
       fuente: 'perfiles',
       nombre: PERFILES,
-      horas: 6,
+      horas: 24,
       al_dia: [AGREGADAS],
     },
   ]);
@@ -104,4 +104,24 @@ test('should_warn_when_screening_failures_exceed_20_percent', () => {
 test('should_not_warn_when_screening_failures_are_at_most_20_percent', () => {
   lote('cribado', '2026-10-13T10:00:00Z');
   assert.deepEqual(alertasOperacion(db, true, AHORA), [], '1 de 5: el 20 % justo no avisa');
+});
+
+test('should_hide_screening_failures_after_cribar_ahora_until_a_later_lot_fails', () => {
+  // Arrange: la semana va 1 de 5 (sin aviso); dos fallidos más lo superan.
+  db.prepare('DELETE FROM lotes_criba').run();
+  for (const e of ['cribado', 'cribado', 'fallido', 'fallido']) lote(e, '2026-10-14T10:00:00Z');
+  const pulsado = '2026-10-15T08:00:00.000Z';
+  assert.equal(alertasOperacion(db, true, AHORA)[0]?.motivo, 'criba_con_fallos', 'antes de pulsar, avisa');
+
+  // Act: se pulsa «Cribar ahora»; después, un lote creado antes falla y otro sale bien.
+  const tras = alertasOperacion(db, true, AHORA, pulsado);
+  db.prepare("INSERT INTO lotes_criba (ids, estado, creado_en, cribado_en) VALUES ('[]', 'fallido', ?, ?)").run(
+    '2026-10-14T12:00:00Z',
+    '2026-10-15T09:00:00.000Z',
+  );
+  const vuelve = alertasOperacion(db, true, AHORA, pulsado);
+
+  // Assert
+  assert.deepEqual(tras, [], 'al pulsar, el aviso se va');
+  assert.deepEqual(vuelve, [{ motivo: 'criba_con_fallos', fallidos: 1, total: 1 }], 'vuelve si falla otra vez');
 });

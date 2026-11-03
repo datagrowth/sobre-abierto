@@ -82,3 +82,24 @@ test('should_queue_the_criba_once_the_company_profile_exists', () => {
   assert.equal(estadoLicitaciones()['aviso_hermes'], null);
   assert.equal(automatismoCriba()?.estado, 'activo');
 });
+
+test('should_resume_the_criba_waiting_for_a_hermes_tool_when_cribar_ahora_is_pressed', () => {
+  // Arrange: el lote de la prueba anterior espera una herramienta 24 h (código sin_herramienta).
+  const db = nucleo().db;
+  db.prepare(
+    "UPDATE trabajos_ia SET error = 'Falta una herramienta en Hermes (de la plataforma): reinicia Hermes', proximo_intento_en = ? WHERE tipo = ?",
+  ).run(new Date(Date.now() + 86_400_000).toISOString(), TIPO_CRIBA);
+  const alertas = () => (estadoLicitaciones()['alertas_ia'] as { motivo: string }[]).map((a) => a.motivo);
+  assert.deepEqual(alertas(), ['herramienta'], 'antes de pulsar, el aviso está');
+
+  // Act: no hay candidatas nuevas que mandar, pero se pulsa «Cribar ahora».
+  const r = pedirCriba();
+
+  // Assert
+  assert.deepEqual(r.data?.lotes, []);
+  const espera = db.prepare('SELECT proximo_intento_en AS p FROM trabajos_ia WHERE tipo = ?').get(TIPO_CRIBA) as {
+    p: string | null;
+  };
+  assert.equal(espera.p, null, 'el lote vuelve a la cola ya');
+  assert.deepEqual(alertas(), [], 'el aviso se va; vuelve si falla otra vez');
+});

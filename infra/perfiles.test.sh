@@ -54,7 +54,7 @@ est1="$(dentro "$verificar")"
 cierto should_give_each_profile_its_own_key sh -c "printf '%s\n' '$est1' | grep -q '^API_SERVER_KEY=clave-ofe$'"
 cierto should_set_each_profile_its_model sh -c "printf '%s\n' '$est1' | grep -q '^modelo-a$' && printf '%s\n' '$est1' | grep -q '^modelo-b$' && printf '%s\n' '$est1' | grep -q '^modelo-c$'"
 cierto should_write_the_provider_key_in_the_profile_env sh -c "printf '%s\n' '$est1' | grep -q '^ANTHROPIC_API_KEY=…$'"
-cierto should_connect_the_monitor_mcp sh -c "printf '%s\n' '$est1' | grep -q 'http://hermes-monitor:3110/mcp'"
+cierto should_connect_the_monitor_mcp sh -c "printf '%s\n' '$est1' | grep -q 'http://monitor:3110/mcp'"
 cierto should_serve_the_profiles_from_the_main_gateway sh -c "printf '%s\n' '$est1' | grep -qi '^true$'"
 # Ni la clave del proveedor ni el token van a config.yaml: están en el .env del perfil.
 fuga="$(dentro 'grep -l -E "sk-prueba|clave-lic" /data/profiles/*/config.yaml /data/config.yaml; true')"

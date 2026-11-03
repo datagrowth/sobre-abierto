@@ -46,7 +46,7 @@ $DC exec hermes sh -c "printf 'API_SERVER_KEY=%s\n' '$KEY' >> $P/.env"
 $DC exec hermes $HB config set multiplex_profiles true                          # los perfiles en /p/<perfil>
 $DC exec hermes $HB -p licitaciones config set model.provider anthropic
 $DC exec hermes $HB -p licitaciones config set model.default claude-sonnet-5-5
-$DC exec hermes $HB -p licitaciones config set mcp_servers.plataforma.url http://hermes-monitor:3110/mcp
+$DC exec hermes $HB -p licitaciones config set mcp_servers.plataforma.url http://monitor:3110/mcp
 $DC exec hermes $HB -p licitaciones config set mcp_servers.plataforma.headers.Authorization 'Bearer ${PLATAFORMA_TOKEN}'
 $DC exec hermes $HB -p licitaciones config set mcp_servers.plataforma.tools.include '[licitaciones_*, biblioteca_*, salidas_leer, colaboradores_*, competidores_*, organismos_*, plataforma_estado, plataforma_empresa]'
 ```
