@@ -4,6 +4,23 @@ Todos los cambios importantes de Sobre Abierto se anotan aquí. El formato sigue
 [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/) y el proyecto usa
 [versionado semántico](https://semver.org/lang/es/).
 
+## [0.1.1] - 2026-11-03
+
+### Cambiado
+
+- **`install.sh` reinicia Hermes tras actualizar** cuando la versión nueva cambia sus herramientas: espera a que no
+  haya runs de IA en marcha (hasta 15 minutos, `REINICIO_ESPERA_MIN`) y, si no se quedan quietos, avisa sin cortar
+  nada. Ya no hace falta reiniciarlo a mano después de `install.sh --actualizar`.
+- `reinicioHermes.js`, dentro del monitor, dice qué perfiles de Hermes tienen herramientas viejas y cuántos runs
+  cortaría un reinicio.
+- El aviso «falta una herramienta en Hermes» nombra la herramienta y ya no repite el mismo consejo dos veces.
+
+### Corregido
+
+- Tras actualizar, la comprobación final del instalador (`hermes mcp test`) daba por cargada la lista nueva de
+  herramientas aunque Hermes siguiera con la vieja: los trabajos dejaban de esperar y fallaban por falta de
+  herramienta. Ahora no se hace mientras el reinicio esté pendiente.
+
 ## [0.1.0] - 2026-10-28
 
 Primera versión pública, con licencia AGPL-3.0-or-later. Es una versión temprana: funciona, pero aún tiene detalles por pulir antes de una 1.0.
@@ -27,4 +44,5 @@ Primera versión pública, con licencia AGPL-3.0-or-later. Es una versión tempr
   Easypanel.
 - **Primeros pasos** en el Pipeline vacío: perfil de la empresa, filtros, IA y Drive (opcional).
 
+[0.1.1]: https://github.com/datagrowth/sobre-abierto/releases/tag/v0.1.1
 [0.1.0]: https://github.com/datagrowth/sobre-abierto/releases/tag/v0.1.0
