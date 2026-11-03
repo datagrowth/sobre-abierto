@@ -284,7 +284,16 @@ test('should_tell_to_restart_hermes_when_it_lacks_a_platform_tool', () => {
   });
   assert.match(
     t,
-    /^«Guion de la oferta» espera: Hermes no tiene una herramienta de la plataforma .* Reinicia Hermes y vuelve a pedirlo a mano/,
+    /^«Guion de la oferta» espera: Hermes no tiene la herramienta licitaciones_guion .* Reinicia Hermes y vuelve a pedirlo a mano/,
+  );
+  assert.doesNotMatch(t, /Falta una herramienta/, 'el error del servidor no se repite tras el consejo');
+  assert.match(
+    textoAlertaIa({
+      motivo: 'herramienta',
+      tipo: 'licitaciones.cribar',
+      error: 'Falta una herramienta en Hermes (de la plataforma): reinicia Hermes…',
+    }),
+    /no tiene una herramienta de la plataforma .*pulsar «Cribar ahora»; mientras, no se gastan intentos\.$/,
   );
   assert.match(
     textoAlertaIa({
