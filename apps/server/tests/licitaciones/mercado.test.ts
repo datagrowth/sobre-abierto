@@ -46,7 +46,7 @@ test('should_name_quarters_and_list_them_without_gaps', () => {
 test('should_sum_our_market_by_quarter_band_organ_and_winner_with_our_share', () => {
   const { db, dbNucleo } = base();
   assert.equal(guardarPerfilEmpresa(dbNucleo, { nif: 'A00000075', nombre: 'Analítica Ejemplo SL' }).error, null);
-  guardarOrganizacion(dbNucleo, { nif: 'B12345674', nombre: 'SISTEMAS EJEMPLO SA', tipo: 'empresa' });
+  guardarOrganizacion(dbNucleo, { nif: 'B00765438', nombre: 'SISTEMAS EJEMPLO SA', tipo: 'empresa' });
   const adj = (id: string, dias: number, nif: string, importe: number, ofertas: number, cpv = '72267000') =>
     guardarLicitacion(
       db,
@@ -60,12 +60,12 @@ test('should_sum_our_market_by_quarter_band_organ_and_winner_with_our_share', ()
         ],
       }),
     );
-  adj('p-1', 30, 'B12345674', 90_000, 3);
-  adj('p-2', 40, 'B12345674', 80_000, 1);
+  adj('p-1', 30, 'B00765438', 90_000, 3);
+  adj('p-2', 40, 'B00765438', 80_000, 1);
   adj('p-3', 200, 'A00000075', 30_000, 3);
-  adj('p-4', 50, 'B12345674', 50_000, 0);
-  adj('p-5', 60, 'B12345674', 500_000, 2, '45000000');
-  adj('p-6', 900, 'B12345674', 70_000, 2);
+  adj('p-4', 50, 'B00765438', 50_000, 0);
+  adj('p-5', 60, 'B00765438', 500_000, 2, '45000000');
+  adj('p-6', 900, 'B00765438', 70_000, 2);
 
   const p = panorama(db, OpcionesPanorama.parse({}), AHORA);
 
@@ -194,9 +194,9 @@ test('should_leave_out_of_the_market_amount_the_ceiling_of_a_framework_agreement
       organo: ORGANO,
       actualizada_en: `${hace(30)}T10:00:00Z`,
       resultados: [
-        ganadora('B12345674', 5_000_000),
+        ganadora('B00765438', 5_000_000),
         ganadora('A00000075', 5_000_000),
-        ganadora('B12345674', 60_000, '2'),
+        ganadora('B00765438', 60_000, '2'),
         ganadora('A00000075', 40_000, '2'),
       ],
     }),

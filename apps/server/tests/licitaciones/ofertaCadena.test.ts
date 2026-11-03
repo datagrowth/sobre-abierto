@@ -843,7 +843,7 @@ test('should_not_relaunch_endlessly_nor_lift_the_brake_nor_touch_waiting_jobs', 
 
 // Lo que las comprobaciones piden de la empresa para el DEUC y los anexos (datos ficticios).
 const PERFIL_COMPLETO = {
-  nif: 'B12345674',
+  nif: 'B00765438',
   nombre: 'Empresa de prueba SL',
   domicilio: 'Calle Mayor 1, 38001 Puerto de Ejemplo',
   representante: { nombre: 'Persona R', nif: '12345678Z', cargo: 'Administrador' },

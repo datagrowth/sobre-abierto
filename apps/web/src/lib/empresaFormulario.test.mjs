@@ -148,7 +148,7 @@ test('should_show_what_an_agent_proposal_changes_before_and_after', async () => 
     volumen_negocio: [VOLUMEN_2024, VOLUMEN_2025],
   });
   assert.deepEqual(d, [
-    { campo: 'Volumen de negocio', antes: '2025: 268.420,15 €', despues: '2024: 152.310,72 €; 2025: 268.420,15 €' },
+    { campo: 'Volumen de negocio', antes: '2025: 196.275,85 €', despues: '2024: 118.640,55 €; 2025: 196.275,85 €' },
     { campo: 'Plantilla media', antes: '4', despues: '5' },
   ]);
 });
@@ -170,7 +170,7 @@ test('should_keep_amounts_with_cents_when_the_saved_profile_is_saved_again', () 
   let vuelta = perfil;
   for (let i = 0; i < 3; i++) vuelta = formularioAPerfil(perfilAFormulario(vuelta, 2026)).perfil;
   assert.deepEqual(vuelta.volumen_negocio, perfil.volumen_negocio, 'guardar tres veces no cambia nada');
-  assert.equal(vuelta.mayor_contrato_similar, 174905.36);
+  assert.equal(vuelta.mayor_contrato_similar, 132480.35);
   assert.equal(vuelta.seguro_rc, 250000.5);
 });
 
@@ -185,17 +185,17 @@ test('should_show_amounts_the_spanish_way_and_read_them_back_unchanged', () => {
   const f = perfilAFormulario(guardado);
   assert.deepEqual(
     f.volumen.map((v) => v.importe),
-    ['152.310,72', '268.420,15'],
+    ['118.640,55', '196.275,85'],
   );
   assert.equal(f.seguro_rc, '250.000');
-  assert.equal(f.mayor_contrato_similar, '174.905,36');
+  assert.equal(f.mayor_contrato_similar, '132.480,35');
   const { perfil } = formularioAPerfil(f);
   assert.deepEqual(
     perfil.volumen_negocio,
     [VOLUMEN_2024, VOLUMEN_2025],
     'guardar sin tocar nada no cambia los importes',
   );
-  assert.equal(perfil.mayor_contrato_similar, 174905.36);
+  assert.equal(perfil.mayor_contrato_similar, 132480.35);
   assert.equal(perfil.seguro_rc, 250000);
 });
 

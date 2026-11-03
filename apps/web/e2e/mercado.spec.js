@@ -20,7 +20,7 @@ const PANORAMA = {
   ],
   organos: [{ nif: 'P0000002F', nombre: 'Cabildo de Isla Ejemplo', importe: 200000, contratos: 3, cuota: 1 }],
   adjudicatarios: [
-    { nif: 'B12345674', nombre: 'Sistemas Ejemplo', importe: 170000, contratos: 2, cuota: 0.85, nosotros: false },
+    { nif: 'B00765438', nombre: 'Sistemas Ejemplo', importe: 170000, contratos: 2, cuota: 0.85, nosotros: false },
   ],
   nuestra_cuota: {
     nif: 'A00000075',
@@ -46,7 +46,7 @@ const VENCIMIENTOS = {
       url: null,
       organo: 'Ayuntamiento',
       organo_nif: 'P0000004B',
-      adjudicatario_nif: 'B12345674',
+      adjudicatario_nif: 'B00765438',
       adjudicatario: 'Sistemas Ejemplo',
       importe: 74000,
       inicio: '2026-03-01',

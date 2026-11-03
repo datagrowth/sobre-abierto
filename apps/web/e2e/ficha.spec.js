@@ -242,7 +242,7 @@ test('should_answer_the_three_questions_with_market_indices_and_show_them_in_mer
     resumen: '3 ofertas esperadas (2-5) · 1 de cada 4 con un solo licitador · n = 41, CPV 4 dígitos, confianza alta',
     licitadores: [
       {
-        nif: 'B12345674',
+        nif: 'B00765438',
         nombre: 'Sistemas Ejemplo',
         persona_fisica: false,
         evidencia: 'ganó 4 parecidas (2 en este órgano)',
@@ -250,7 +250,7 @@ test('should_answer_the_three_questions_with_market_indices_and_show_them_in_mer
       },
     ],
     concentracion: {
-      primero: { nif: 'B12345674', cuota: 0.38 },
+      primero: { nif: 'B00765438', cuota: 0.38 },
       contratos: 12,
       nombre_primero: 'Sistemas Ejemplo',
       nivel: 'media',

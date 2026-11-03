@@ -6,14 +6,14 @@
 export const NIF_EJEMPLO = 'B00123455';
 export const NOMBRE_EJEMPLO = 'Analítica Ejemplo, S.L.';
 
-export const VOLUMEN_2024 = { anio: 2024, importe: 152_310.72 };
-export const VOLUMEN_2025 = { anio: 2025, importe: 268_420.15 };
+export const VOLUMEN_2024 = { anio: 2024, importe: 118_640.55 };
+export const VOLUMEN_2025 = { anio: 2025, importe: 196_275.85 };
 
 export const EMPRESA_EJEMPLO = {
   nif: NIF_EJEMPLO,
   nombre: NOMBRE_EJEMPLO,
   volumen_negocio: [VOLUMEN_2024, VOLUMEN_2025],
-  mayor_contrato_similar: 174_905.36,
+  mayor_contrato_similar: 132_480.35,
   plantilla_media: 4,
   anios_actividad: 3,
   seguro_rc: 250_000,

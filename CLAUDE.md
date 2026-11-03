@@ -38,6 +38,7 @@ Node 22+, npm workspaces (`apps/server`, `apps/web`). Desde la raíz:
 | `npm run dev:server` / `npm run dev:web` | Server en `:3110` / Vite en `:5173` |
 | `npm run e2e -w @sobre-abierto/web` | Playwright (fixtures, servidor y móvil). Solo en local, antes de cerrar una rama; no va en el CI de GitHub |
 | `npm run e2e:datos -w @sobre-abierto/server` | Regenera los datos de los e2e (`apps/web/e2e/datos`) desde los fixtures de las comprobaciones |
+| `CAPTURAS_DIR=<carpeta> npm run capturas -w @sobre-abierto/web` | Capturas de la documentación y de la web con datos sintéticos (fuera de `npm test` y del e2e) |
 
 Un test suelto: `cd apps/server && npx tsx --test tests/<ruta>.test.ts`.
 Docker no construye desde una carpeta sincronizada (OneDrive, Dropbox) en Windows: usa un clon
