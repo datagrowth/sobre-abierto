@@ -490,8 +490,13 @@ test('should_wait_without_retrying_when_hermes_lacks_a_platform_tool_until_someo
   );
   encolar(d, { tipo: 'prueba', dominio: 'test', clave: 'a-mano', payload: { n: 62 }, aMano: true });
   await vueltaCola(d);
-  assert.equal(obtenerTrabajo(d, t.id)!.estado, 'lanzado', 'pedirlo a mano lo reanuda');
+  const relanzado = obtenerTrabajo(d, t.id)!;
+  assert.equal(relanzado.estado, 'lanzado', 'pedirlo a mano lo reanuda');
   assert.deepEqual(alertasIa(d, 'test'), []);
+  // Con la misma clave, Hermes devolvería el run que dijo no tener la herramienta, sin ejecutarlo.
+  const idems = [...runs.values()].filter((r) => r.idem.startsWith(`${t.clave}#`)).map((r) => r.idem);
+  assert.equal(idems.length, 2, 'dos runs de este trabajo');
+  assert.notEqual(idems[0], idems[1], 'el relanzado lleva clave nueva');
   d.close();
 });
 

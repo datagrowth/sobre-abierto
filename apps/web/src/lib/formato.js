@@ -240,10 +240,12 @@ export function textoAlertaIa(a) {
     return `${quien} espera: Hermes tiene la lista de herramientas de antes del despliegue. Reinicia Hermes y saldrá solo; mientras, no se gastan intentos.${a.error ? ` ${a.error}` : ''}`;
   }
   if (a.motivo === 'herramienta') {
-    // Del error del servidor solo interesa el nombre de la tool: el resto repite este mismo consejo.
-    const tool = /\(([a-z_]+)\)/.exec(a.error ?? '')?.[1];
+    // Del error del servidor solo interesa el nombre de la tool (el primer paréntesis): el resto
+    // repite este mismo consejo o es la respuesta de Hermes, que se ve en Ajustes › Hermes.
+    const tool = /^[^(]*\(([a-z_]+)\)/.exec(a.error ?? '')?.[1];
     const cual = tool ? `la herramienta ${tool}` : 'una herramienta de la plataforma';
-    return `${quien} espera: Hermes no tiene ${cual} (suele pasar tras desplegar sin reiniciarlo). Reinicia Hermes y vuelve a ${antes === 'pedirlo a mano' ? 'pedirlo a mano' : `pulsar ${antes}`}; mientras, no se gastan intentos.`;
+    const boton = antes === 'pedirlo a mano' ? '' : ` (o pulsa ${antes})`;
+    return `${quien} espera: Hermes no tiene ${cual} (suele pasar tras desplegar sin reiniciarlo). Reinicia Hermes: sale solo en cuanto vuelva a cargar las herramientas${boton}; mientras, no se gastan intentos.`;
   }
   const causa = a.error ? ` Último error: ${a.error}` : '';
   return `Hermes ha frenado ${quien} tras tres fallos seguidos para no gastar uso del modelo. Vuelve a intentarlo el ${fechaHora(a.hasta)}, o antes con ${antes}.${causa}`;

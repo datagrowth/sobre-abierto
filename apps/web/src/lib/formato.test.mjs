@@ -284,16 +284,26 @@ test('should_tell_to_restart_hermes_when_it_lacks_a_platform_tool', () => {
   });
   assert.match(
     t,
-    /^«Guion de la oferta» espera: Hermes no tiene la herramienta licitaciones_guion .* Reinicia Hermes y vuelve a pedirlo a mano/,
+    /^«Guion de la oferta» espera: Hermes no tiene la herramienta licitaciones_guion .* Reinicia Hermes: sale solo en cuanto vuelva a cargar las herramientas;/,
   );
   assert.doesNotMatch(t, /Falta una herramienta/, 'el error del servidor no se repite tras el consejo');
+  assert.match(
+    textoAlertaIa({
+      motivo: 'herramienta',
+      tipo: 'licitaciones.leer_acta_mercado',
+      error:
+        'Falta una herramienta en Hermes (licitaciones_acta_mercado): reinicia Hermes… Hermes respondió: «no veo (otra_cosa)»',
+    }),
+    /Hermes no tiene la herramienta licitaciones_acta_mercado .*cargar las herramientas; mientras/,
+    'sin botón no promete uno, y toma el nombre del primer paréntesis',
+  );
   assert.match(
     textoAlertaIa({
       motivo: 'herramienta',
       tipo: 'licitaciones.cribar',
       error: 'Falta una herramienta en Hermes (de la plataforma): reinicia Hermes…',
     }),
-    /no tiene una herramienta de la plataforma .*pulsar «Cribar ahora»; mientras, no se gastan intentos\.$/,
+    /no tiene una herramienta de la plataforma .*cargar las herramientas \(o pulsa «Cribar ahora»\); mientras, no se gastan intentos\.$/,
   );
   assert.match(
     textoAlertaIa({
@@ -302,7 +312,7 @@ test('should_tell_to_restart_hermes_when_it_lacks_a_platform_tool', () => {
       hasta: '2026-10-07T09:00:00Z',
       error: null,
     }),
-    /vuelve a pulsar «Leer actas pendientes»/,
+    /\(o pulsa «Leer actas pendientes»\)/,
   );
   assert.match(
     textoAlertaIa({

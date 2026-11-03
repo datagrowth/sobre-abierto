@@ -17,7 +17,8 @@ export const LIMITE_EN_ERROR =
 export const ESPERA_LIMITE = 'Uso del modelo agotado';
 // Hermes sin una herramienta de la plataforma (se desplegó una nueva y no se reinició): leer
 // los pliegos y reintentar solo gasta uso del modelo en runs que no pueden acabar bien. El
-// trabajo espera sin gastar intento, su tipo se para y una persona lo reanuda pidiéndolo a mano.
+// trabajo espera sin gastar intento y su tipo se para hasta que el perfil vuelve a pedir la lista
+// de herramientas o una persona lo pide a mano.
 export const ESPERA_HERRAMIENTA = 'Falta una herramienta en Hermes';
 const ESPERA_HERRAMIENTA_MS = 24 * 60 * 60_000;
 const SIN_HERRAMIENTA = /herramienta\b[^.]{0,100}?\bno (?:est[aá] (?:disponible|habilitada)|aparece|existe)/i;
@@ -76,23 +77,67 @@ export const pausaIso = (db: Db): string | null => {
   return ms ? new Date(ms).toISOString() : null;
 };
 
+// Margen antes del lanzamiento en el que una llamada del perfil al MCP demuestra que lo tenía conectado.
+const MCP_VIVO_MS = 15 * 60_000;
+
 /** Si la respuesta de Hermes dice que no tiene una herramienta de la plataforma. */
 export const faltaHerramienta = (salida: string | null): salida is string =>
   salida !== null && SIN_HERRAMIENTA.test(salida);
 
-// Espera larga sin gastar intento: hasta que alguien reinicie Hermes y lo pida a mano.
-export function esperarHerramienta(db: Db, t: Trabajo, salida: string): void {
+/**
+ * Si el perfil que ejecuta el tipo llamó al MCP de la plataforma desde poco antes de lanzar el
+ * trabajo. Entonces tenía las herramientas, y un «no está disponible» es del modelo (la llamó con
+ * otro nombre o mal formada): esperar 24 h sin reintentar pararía el tipo entero por un run.
+ */
+export function mcpConectado(db: Db, t: Trabajo): boolean {
+  const agente = tipoDe(t.tipo)?.metricas?.agente;
+  if (!agente || !t.lanzado_en) return false;
+  const desde = new Date(Date.parse(t.lanzado_en) - MCP_VIVO_MS).toISOString();
+  return Boolean(
+    db.prepare('SELECT 1 FROM auditoria_agentes WHERE agente = ? AND creado_en >= ? LIMIT 1').get(agente, desde),
+  );
+}
+
+// Espera sin gastar intento hasta que Hermes vuelva a cargar la lista (liberarEsperasHerramienta)
+// o alguien lo pida a mano; si no, 24 h. Guarda lo que respondió Hermes para ver la causa.
+export function esperarHerramienta(db: Db, t: Trabajo, salida: string, conSalida: boolean): void {
   const herramienta = NOMBRE_HERRAMIENTA.exec(salida)?.[1] ?? 'de la plataforma';
   const hasta = new Date(Date.now() + ESPERA_HERRAMIENTA_MS).toISOString();
+  const respuesta = conSalida ? ` Hermes respondió: «${salida}»` : '';
   actualizar(db, t.id, {
     estado: 'pendiente',
     run_id: null,
     proximo_intento_en: hasta,
     codigo: CODIGO_HERRAMIENTA,
-    error: `${ESPERA_HERRAMIENTA} (${herramienta}): reinicia Hermes para que la cargue y vuelve a pedirlo a mano.`,
+    error: `${ESPERA_HERRAMIENTA} (${herramienta}): reinicia Hermes; sale solo en cuanto vuelva a cargar las herramientas.${respuesta}`,
   });
   log.warn('hermes sin la herramienta: el tipo espera', { id: t.id, tipo: t.tipo, herramienta });
   avisar(db, t, 'esperando', { codigo: CODIGO_HERRAMIENTA, proximo_intento_en: hasta });
+}
+
+/**
+ * En cada vuelta: los trabajos que esperan una herramienta salen en cuanto el perfil que los ejecuta
+ * vuelve a pedir la lista (Hermes reiniciado), sin esperar 24 h ni a que alguien los pida a mano,
+ * algo que no todos los tipos permiten. Devuelve cuántos salen.
+ */
+export function liberarEsperasHerramienta(db: Db): number {
+  const filas = db
+    .prepare(
+      `SELECT id, tipo, actualizado_en FROM trabajos_ia WHERE estado = 'pendiente' AND error LIKE ?
+    AND proximo_intento_en > ?`,
+    )
+    .all(`${ESPERA_HERRAMIENTA}%`, ahora()) as { id: number; tipo: string; actualizado_en: string }[];
+  const listado = db.prepare('SELECT listado_en FROM mcp_listados WHERE agente = ?');
+  const libres = filas.filter((f) => {
+    const agente = tipoDe(f.tipo)?.metricas?.agente;
+    const l = agente ? (listado.get(agente) as { listado_en: string | null } | undefined) : undefined;
+    return Boolean(l?.listado_en && l.listado_en > f.actualizado_en);
+  });
+  const soltar = db.prepare('UPDATE trabajos_ia SET proximo_intento_en = NULL WHERE id = ?');
+  for (const f of libres) soltar.run(f.id);
+  if (libres.length)
+    log.info('hermes volvió a cargar las herramientas: salen los que esperaban', { trabajos: libres.length });
+  return libres.length;
 }
 
 export function esLimite(e: AppError): boolean {

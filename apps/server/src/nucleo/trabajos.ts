@@ -3,13 +3,16 @@
 import { ahora, type Db } from './db.js';
 import {
   CODIGO_DESFASE,
+  CODIGO_HERRAMIENTA,
   esLimite,
   ESPERA_LIMITE,
   esperarHerramienta,
   esperarLimite,
   faltaHerramienta,
+  liberarEsperasHerramienta,
   LIMITE_EN_ERROR,
   marcarDesfases,
+  mcpConectado,
   pausaHastaMs,
 } from './colaEsperas.js';
 import { avisarFrenosNuevos, frenoDeVuelta, reanudarTipo } from './colaFrenos.js';
@@ -249,7 +252,8 @@ async function seguir(db: Db, t: Trabajo): Promise<void> {
       limite: LIMITE_EN_ERROR.test(r.data.error ?? ''),
     });
   }
-  if (faltaHerramienta(r.data.salida)) return esperarHerramienta(db, t, r.data.salida);
+  if (faltaHerramienta(r.data.salida) && !mcpConectado(db, t))
+    return esperarHerramienta(db, t, r.data.salida, !esDominioPersonal(t.dominio));
   fallar(db, t, { codigo: 'sin_resultado', error: sinResultado(t, r.data.salida) });
 }
 
@@ -290,10 +294,13 @@ async function lanzar(db: Db, t: Trabajo): Promise<boolean> {
   const tras = vieneDeLimite(t) || vieneDeDesfase(t) ? `#${t.proximo_intento_en}` : '';
   // Un relanzamiento no gasta intento: sin su número en la clave, Hermes devolvería el run colgado.
   const rel = t.relanzamientos ? `#r${t.relanzamientos}` : '';
+  // Tras esperar una herramienta (sin gastar intento), clave nueva: con la misma, Hermes devuelve el
+  // run que dijo no tenerla, sin volver a ejecutarlo. actualizado_en es cuándo empezó esa espera.
+  const herramienta = t.codigo === CODIGO_HERRAMIENTA ? `#h${t.actualizado_en}` : '';
   const r = await lanzarRun(
     destino,
     await def.instrucciones(JSON.parse(t.payload), t),
-    `${t.clave}#${t.intentos}${rel}${tras}`,
+    `${t.clave}#${t.intentos}${rel}${tras}${herramienta}`,
   );
   if (r.error) {
     fallar(db, t, { codigo: r.error.code, error: `${r.error.code}: ${r.error.message}`, limite: esLimite(r.error) });
@@ -340,6 +347,7 @@ export async function vueltaCola(db: Db, maxEnMarcha = 2): Promise<void> {
   const lanzados = db.prepare("SELECT * FROM trabajos_ia WHERE estado = 'lanzado' ORDER BY id").all() as Trabajo[];
   for (const t of lanzados) await aislado(db, t, () => seguir(db, t));
   const desfases = marcarDesfases(db);
+  liberarEsperasHerramienta(db);
   const frenado = frenoDeVuelta(db);
   const limite = limiteDeVuelta();
   cancelarZombis(db, Date.now(), retenidoEnLaVuelta({ desfases, frenado, limite }));

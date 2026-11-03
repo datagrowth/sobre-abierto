@@ -101,6 +101,11 @@ export function frenadoHasta(db: Db, tipo: string, ahoraMs = Date.now(), recurso
   return global > propio ? global : propio;
 }
 
+/** Cuándo pidió una persona el tipo a mano por última vez (para todo el tipo); null si nunca. */
+export function reactivadoEn(db: Db, tipo: string): string | null {
+  return leerMarca(db, claveReactivado(tipo));
+}
+
 /**
  * Una persona pide la tarea a mano (p. ej. «Cribar ahora»): los fallos anteriores ya no frenan
  * el tipo, o solo esa oferta si se da `recurso`. Queda en cola_marcas: sobrevive a un reinicio.
