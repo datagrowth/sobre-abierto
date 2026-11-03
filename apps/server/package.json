@@ -42,7 +42,7 @@
     "nodemailer": "10.2.1",
     "pdf-lib": "1.17.1",
     "socket.io": "^4.7.5",
-    "unpdf": "^1.9.1",
+    "unpdf": "^2.1.0",
     "zod": "^4.6.5"
   },
   "devDependencies": {
