@@ -14,6 +14,8 @@ Todos los cambios importantes de Sobre Abierto se anotan aquí. El formato sigue
 - `reinicioHermes.js`, dentro del monitor, dice qué perfiles de Hermes tienen herramientas viejas y cuántos runs
   cortaría un reinicio.
 - El aviso «falta una herramienta en Hermes» nombra la herramienta y ya no repite el mismo consejo dos veces.
+- Dependencias al día: imagen base `node:26.13.0-bookworm-slim`, dependencias menores del server y la web, y las
+  actions `checkout` 7, `setup-qemu-action` 4, `metadata-action` 6 y `attest-build-provenance` 4.
 
 ### Corregido
 
