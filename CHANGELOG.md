@@ -4,6 +4,34 @@ Todos los cambios importantes de Sobre Abierto se anotan aquí. El formato sigue
 [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/) y el proyecto usa
 [versionado semántico](https://semver.org/lang/es/).
 
+## [0.1.2] - 2026-11-03
+
+### Corregido
+
+- **Hermes se quedaba sin las herramientas de la plataforma en Dokploy** (despliegue aislado): el panel pasa Hermes a
+  una red sin el alias `hermes-monitor` y el perfil no resolvía la URL del MCP. Los perfiles usan ahora
+  `http://monitor:3110/mcp`, el nombre del servicio, y `hermes-init` cambia la URL vieja en cada arranque, sin tocar
+  ninguna otra.
+- **Un trabajo que esperaba una herramienta no se volvía a ejecutar**: al relanzarlo con la misma clave, Hermes
+  devolvía el run que dijo no tenerla. Ahora sale con clave nueva.
+- **«Cribar ahora» no sacaba de la espera a la criba** que esperaba una herramienta; ahora la relanza y quita los
+  avisos de la criba, que vuelven si falla otra vez (el de «más del 20 % de lotes fallidos» cuenta desde el último
+  «Cribar ahora»).
+
+### Cambiado
+
+- Los trabajos que esperan una herramienta **salen solos** en cuanto el perfil de Hermes vuelve a cargar la lista
+  (al reiniciarlo), sin esperar 24 h ni pedirlos a mano: las actas de expedientes ajenos no tienen botón.
+- Si el perfil sí usó el MCP durante el run, un «la herramienta no está disponible» es un error del modelo (la llamó
+  mal) y cuenta como un fallo normal, en vez de parar el tipo entero 24 h. La espera guarda lo que respondió Hermes.
+- El aviso de **perfiles de contratante sin novedades** sale a las 24 h, no a las 6 h: la PLACSP tiene parones de una
+  tarde a la mañana siguiente que no son una caída.
+
+### Para actualizar
+
+- Con Dokploy en despliegue aislado, basta desplegar: `hermes-init` corrige la URL del MCP al arrancar. Después,
+  reinicia Hermes con la cola quieta para que cargue las herramientas.
+
 ## [0.1.1] - 2026-11-03
 
 ### Cambiado
@@ -46,5 +74,6 @@ Primera versión pública, con licencia AGPL-3.0-or-later. Es una versión tempr
   Easypanel.
 - **Primeros pasos** en el Pipeline vacío: perfil de la empresa, filtros, IA y Drive (opcional).
 
+[0.1.2]: https://github.com/datagrowth/sobre-abierto/releases/tag/v0.1.2
 [0.1.1]: https://github.com/datagrowth/sobre-abierto/releases/tag/v0.1.1
 [0.1.0]: https://github.com/datagrowth/sobre-abierto/releases/tag/v0.1.0
