@@ -21,8 +21,10 @@ MON=monitor                                       # el servicio del monitor
 HB=/opt/hermes/.venv/bin/hermes                   # la orden hermes en su contenedor (no está en el PATH)
 ```
 
-El servicio del monitor se llama `monitor`, con el alias `hermes-monitor` en la red, que es el nombre que usan los
-perfiles de Hermes. Donde una orden de `$DC` dice `hermes-monitor`, el servicio es `monitor`.
+El servicio del monitor se llama `monitor`, y es el nombre con el que los perfiles de Hermes llegan a su MCP
+(`http://monitor:3110/mcp`). Conserva el alias de red `hermes-monitor` por las instalaciones anteriores, pero un panel
+con despliegue aislado (Dokploy) pasa Hermes a una red sin ese alias; `hermes-init` cambia esa URL vieja en cada
+arranque. Donde una orden de `$DC` dice `hermes-monitor`, el servicio es `monitor`.
 
 ## Arquitectura en producción
 

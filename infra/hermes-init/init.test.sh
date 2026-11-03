@@ -45,4 +45,17 @@ printf '%s\n' '../fuera' '..' '' >> "$DATA/skills/.skills-plataforma"
 correr
 cierto should_not_follow_paths_in_the_list test -d "$DATA/fuera"
 
+# La URL del MCP por el alias «hermes-monitor» pasa al nombre del servicio; otra URL no se toca.
+printf 'mcp_servers:\n  plataforma:\n    url: "http://hermes-monitor:3110/mcp"\n' > "$DATA/profiles/licitaciones/config.yaml"
+printf 'mcp_servers:\n  plataforma:\n    url: "http://hermes-monitor:3110/mcp"\n' > "$DATA/config.yaml"
+mkdir -p "$DATA/profiles/propio"
+printf 'mcp_servers:\n  plataforma:\n    url: "https://plataforma.example.com/mcp"\n' > "$DATA/profiles/propio/config.yaml"
+correr
+cierto should_point_each_profile_mcp_to_the_monitor_service grep -q '"http://monitor:3110/mcp"' "$DATA/profiles/licitaciones/config.yaml"
+cierto should_point_the_main_config_mcp_to_the_monitor_service grep -q '"http://monitor:3110/mcp"' "$DATA/config.yaml"
+cierto should_keep_a_custom_mcp_url grep -q 'https://plataforma.example.com/mcp' "$DATA/profiles/propio/config.yaml"
+cierto should_say_it_moved_the_mcp_url grep -q 'apunta ahora a http://monitor:3110/mcp' "$RAIZ/salida.txt"
+correr
+falso should_not_touch_it_again_on_the_next_start grep -q 'apunta ahora' "$RAIZ/salida.txt"
+
 [ "$fallos" -eq 0 ] && echo "todas las pruebas pasan" || { echo "$fallos pruebas fallidas"; exit 1; }

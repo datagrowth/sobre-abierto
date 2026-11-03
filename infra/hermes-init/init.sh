@@ -89,8 +89,22 @@ ensure_env_token() {
   echo "PLATAFORMA_TOKEN añadido a $env_file"
 }
 
+# Instalaciones anteriores apuntaban al MCP por el alias de red «hermes-monitor». Los paneles como
+# Dokploy, en despliegue aislado, pasan Hermes a una red sin ese alias: el perfil no resuelve el
+# nombre, se queda sin las herramientas de la plataforma y cada run falla. El nombre del servicio
+# («monitor») se resuelve en cualquier red que compartan. Solo cambia esa URL exacta.
+migrar_url_mcp() {
+  config="$1"
+  [ -f "$config" ] || return 0
+  es_enlace "$config" && return 0
+  grep -q '//hermes-monitor:3110/mcp' "$config" || return 0
+  sed -i 's#//hermes-monitor:3110/mcp#//monitor:3110/mcp#g' "$config"
+  echo "MCP de la plataforma: $config apunta ahora a http://monitor:3110/mcp"
+}
+
 install_skills "$DATA/skills"
 echo "skills instaladas en Hermes"
+migrar_url_mcp "$DATA/config.yaml"
 
 if [ ! -s "$LEGACY_TOKEN" ]; then
   (umask 077 && new_token > "$LEGACY_TOKEN")
@@ -113,6 +127,7 @@ for profile_dir in "$DATA"/profiles/*/; do
     *[!a-z0-9_-]* | [!a-z0-9]*) echo "perfil $profile ignorado: nombre no válido para un token"; continue ;;
   esac
   install_skills "$profile_dir/skills"
+  migrar_url_mcp "$profile_dir/config.yaml"
   ensure_token "$profile"
   ensure_env_token "$profile_dir/.env" "$AGENTES/$profile.token"
   echo "perfil $profile preparado"
