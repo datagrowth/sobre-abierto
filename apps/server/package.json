@@ -29,7 +29,7 @@
     "@resvg/resvg-js": "^2.6.2",
     "better-sqlite3": "^12.10.0",
     "busboy": "^1.6.0",
-    "chokidar": "^5.0.0",
+    "chokidar": "^6.0.0",
     "compression": "^1.8.2",
     "cors": "^2.8.5",
     "docx": "^9.15.0",
