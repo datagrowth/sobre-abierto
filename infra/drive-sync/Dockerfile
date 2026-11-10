@@ -1,6 +1,6 @@
 # Sincronizador con Google Drive (rclone): carpetas de contenido en ambos
 # sentidos y copia de seguridad diaria (desactivable) de los datos de Hermes.
-FROM rclone/rclone:1.75.2@sha256:2687085f718d3c628f7fdfb77c52a1d344332aed543110bb88088f2c70d43eb5
+FROM rclone/rclone:1.76.0@sha256:7cbeec24a44f206067597c0368be4de90ae19a64d5113c7d1938bd737a81e466
 
 # Etiquetas OCI. El release sustituye `version` por la del tag (metadata-action).
 ARG VERSION=dev
