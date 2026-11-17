@@ -6,7 +6,7 @@
 # better-sqlite3 se compila/descarga para Linux: necesita python3, make y g++.
 # Versión exacta de Node, no la etiqueta flotante: un build que reutiliza la
 # imagen base en caché se quedaría sin los parches de seguridad.
-FROM node:26.13.0-bookworm-slim@sha256:bc0a2afd3b74ce12222fc8bab99271e66257f021078f5f4a5d687a77d280c1d9 AS deps
+FROM node:26.13.1-bookworm-slim@sha256:5df79989ed685e09f0a98019db4cebfb22fb9df1a53c0161664a011f7ff6b0f1 AS deps
 RUN apt-get update \
  && apt-get install -y --no-install-recommends python3 make g++ \
  && rm -rf /var/lib/apt/lists/*
@@ -27,7 +27,7 @@ FROM deps AS prod-deps
 RUN npm ci --omit=dev --no-audit --no-fund -w @sobre-abierto/server
 
 # ── Imagen final ────────────────────────────────────────────────────────────
-FROM node:26.13.0-bookworm-slim@sha256:bc0a2afd3b74ce12222fc8bab99271e66257f021078f5f4a5d687a77d280c1d9
+FROM node:26.13.1-bookworm-slim@sha256:5df79989ed685e09f0a98019db4cebfb22fb9df1a53c0161664a011f7ff6b0f1
 
 # Etiquetas OCI. El release sustituye `version` por la del tag (metadata-action).
 ARG VERSION=dev
