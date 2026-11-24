@@ -4,6 +4,31 @@ Todos los cambios importantes de Sobre Abierto se anotan aquí. El formato sigue
 [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/) y el proyecto usa
 [versionado semántico](https://semver.org/lang/es/).
 
+## [0.1.3] - 2026-11-24
+
+### Corregido
+
+- **La web y el MCP se bloqueaban con ofertas en preparación**: al pintar las listas (Oportunidades, pipeline y
+  Hoy) se comprueban las citas literales de los requisitos de cada oferta en preparación, y cada cita lanzaba una
+  búsqueda por palabras que recorre toda la Biblioteca, filtre o no por los pliegos de la licitación. Con una
+  Biblioteca de cientos de miles de trozos eran segundos por oferta en cada vista, con el servidor sin atender
+  nada más: el healthcheck fallaba y el proxy devolvía 404 a ratos. Ahora las citas se comprueban en los trozos
+  de los pliegos de la licitación, leídos una vez: unas 30 veces menos por oferta en una instalación real (de
+  segundos a décimas) y con las mismas citas comprobadas.
+
+### Cambiado
+
+- Las citas se buscan en todos los trozos de los pliegos, no solo en los 30 que mejor casan con sus palabras:
+  alguna cita que antes salía «no localizada» puede salir ahora «comprobada» (nunca al revés).
+- Si una cita aparece en varios sitios, su documento y su página son los de la primera aparición en orden de
+  lectura, no los del trozo que mejor casaba. Una propuesta de bloqueo de Hermes que cita otra página donde la frase
+  también está se acepta con esa página.
+
+### Para actualizar
+
+- Basta cambiar la versión y desplegar: no cambian las skills ni las herramientas del MCP (no hace falta
+  reiniciar Hermes).
+
 ## [0.1.2] - 2026-11-03
 
 ### Corregido
@@ -74,6 +99,7 @@ Primera versión pública, con licencia AGPL-3.0-or-later. Es una versión tempr
   Easypanel.
 - **Primeros pasos** en el Pipeline vacío: perfil de la empresa, filtros, IA y Drive (opcional).
 
+[0.1.3]: https://github.com/datagrowth/sobre-abierto/releases/tag/v0.1.3
 [0.1.2]: https://github.com/datagrowth/sobre-abierto/releases/tag/v0.1.2
 [0.1.1]: https://github.com/datagrowth/sobre-abierto/releases/tag/v0.1.1
 [0.1.0]: https://github.com/datagrowth/sobre-abierto/releases/tag/v0.1.0
