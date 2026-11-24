@@ -145,7 +145,7 @@ function problemaDeCita(texto: string, c: CitaPropuesta): string | null {
 // Un pliego ya leído en el índice de la Biblioteca se comprueba ahí, sin volver a leer el
 // PDF, y la cita tiene que estar en la página que dice. null: el índice no lo tiene, se lee el archivo.
 function problemaEnIndice(comprobar: Comprobador, ruta: string, c: CitaPropuesta): string | null | undefined {
-  const r = comprobar(c.texto, ruta);
+  const r = comprobar(c.texto, ruta, c.pagina);
   if (r.estado === 'sin_indice') return undefined;
   const inicio = c.texto.length > 40 ? `${c.texto.slice(0, 40)}…` : c.texto;
   if (r.estado === 'no_localizada') return `La cita «${inicio}» no está en «${c.documento}»: copia la frase literal.`;

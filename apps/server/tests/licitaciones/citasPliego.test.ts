@@ -376,3 +376,36 @@ test('should_read_the_pliegos_once_per_checker_and_not_search_per_quote', () => 
   assert.equal(sql.filter((s) => s.includes('MATCH')).length, 0, 'ninguna búsqueda FTS por cita');
   assert.equal(sql.filter((s) => /FROM chunks c JOIN files/.test(s)).length, 1, 'una sola lectura de los trozos');
 });
+
+test('should_accept_a_bloqueo_quote_on_a_later_page_when_the_pliego_repeats_it', async () => {
+  // Arrange: el PCAP repite la frase en las páginas 2 y 9; Hermes cita la 9, que también es correcta.
+  const ID_PAG = 'p-60000006';
+  const frase = 'la garantía definitiva será del cinco por ciento del precio de adjudicación';
+  licitacionConPliegos(ID_PAG, [
+    {
+      ruta: `${carpeta(ID_PAG)}/PCAP.pdf`,
+      trozos: [
+        { page: 2, text: `Resumen de condiciones: ${frase}.` },
+        { page: 9, text: `Cláusula 21. Garantías: ${frase}, excluido el IVA.` },
+      ],
+    },
+  ]);
+  // Act
+  const nueve = await comprobarCitas(
+    db,
+    {} as Raices,
+    ID_PAG,
+    [{ documento: 'PCAP.pdf', pagina: 9, texto: frase }],
+    idx,
+  );
+  const cinco = await comprobarCitas(
+    db,
+    {} as Raices,
+    ID_PAG,
+    [{ documento: 'PCAP.pdf', pagina: 5, texto: frase }],
+    idx,
+  );
+  // Assert
+  assert.deepEqual(nueve, []);
+  assert.match(cinco[0] ?? '', /está en la página 2 .*no en la 5/);
+});

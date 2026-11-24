@@ -21,7 +21,8 @@ Todos los cambios importantes de Sobre Abierto se anotan aquí. El formato sigue
 - Las citas se buscan en todos los trozos de los pliegos, no solo en los 30 que mejor casan con sus palabras:
   alguna cita que antes salía «no localizada» puede salir ahora «comprobada» (nunca al revés).
 - Si una cita aparece en varios sitios, su documento y su página son los de la primera aparición en orden de
-  lectura, no los del trozo que mejor casaba.
+  lectura, no los del trozo que mejor casaba. Una propuesta de bloqueo de Hermes que cita otra página donde la frase
+  también está se acepta con esa página.
 
 ### Para actualizar
 

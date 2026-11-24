@@ -57,27 +57,37 @@ function ventanasDe(idx: indice.BaseDatos, rutas: string[]): Ventana[] {
   }));
 }
 
-export type Comprobador = (cita: string, documento?: string | null) => Comprobacion;
+export type Comprobador = (cita: string, documento?: string | null, pagina?: number | null) => Comprobacion;
+
+// La primera ventana que contiene la cita: el trozo solo, luego con el siguiente y luego con los dos vecinos.
+function primeraCon(en: readonly Ventana[], cita: string): Ventana | undefined {
+  for (const pasada of [0, 1, 2] as const) {
+    const i = localizarCitasEn(
+      en.map((v) => v.textos[pasada]),
+      [cita],
+    )[0];
+    if (i) return en[i - 1];
+  }
+  return undefined;
+}
 
 /**
  * Un comprobador para las citas de una licitación (lee sus pliegos del índice una vez). `documento`:
- * la ruta de un pliego para buscar solo en él; sin ella, en todos.
+ * la ruta de un pliego para buscar solo en él; sin ella, en todos. `pagina`: si la cita también está en
+ * esa página, se da esa (un pliego repite frases y quien cita una aparición posterior no se equivoca);
+ * si no, la primera aparición.
  */
 export function comprobadorDe(dbLic: Db, idx: indice.BaseDatos | null, id: string): Comprobador {
   const rutas = idx ? pliegosIndexados(dbLic, idx, id) : [];
   const ventanas = idx && rutas.length ? ventanasDe(idx, rutas) : [];
-  return (cita, documento = null) => {
+  return (cita, documento = null, pagina = null) => {
     const en = documento ? ventanas.filter((v) => v.path === documento) : ventanas;
     if (!en.length) return { estado: 'sin_indice', documento: null, pagina: null };
-    for (const pasada of [0, 1, 2] as const) {
-      const i = localizarCitasEn(
-        en.map((v) => v.textos[pasada]),
-        [cita],
-      )[0];
-      const v = i ? en[i - 1] : undefined;
-      if (v) return { estado: 'comprobada', documento: v.path, pagina: v.page };
-    }
-    return { estado: 'no_localizada', documento: null, pagina: null };
+    const enPagina = pagina === null ? [] : en.filter((v) => v.page === pagina);
+    const v = (enPagina.length ? primeraCon(enPagina, cita) : undefined) ?? primeraCon(en, cita);
+    return v
+      ? { estado: 'comprobada', documento: v.path, pagina: v.page }
+      : { estado: 'no_localizada', documento: null, pagina: null };
   };
 }
 
