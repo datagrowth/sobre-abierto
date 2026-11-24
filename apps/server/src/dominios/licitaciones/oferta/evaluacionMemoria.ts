@@ -116,7 +116,16 @@ function contiene(texto: string, partes: Fragmento[]): boolean {
 
 /** Para cada cita, el apartado (1-based) cuyo texto la contiene literalmente, o null. */
 export function localizarCitas(textos: string[], citas: string[]): (number | null)[] {
-  const normales = textos.map((t) => ` ${normal(t)} `);
+  return localizarCitasEn(textosParaLocalizar(textos), citas);
+}
+
+/** Los textos preparados para localizarCitasEn: así se normalizan una vez aunque se busquen muchas citas. */
+export function textosParaLocalizar(textos: string[]): string[] {
+  return textos.map((t) => ` ${normal(t)} `);
+}
+
+/** Como localizarCitas, sobre textos ya preparados con textosParaLocalizar. */
+export function localizarCitasEn(normales: string[], citas: string[]): (number | null)[] {
   return citas.map((cita) => {
     const partes = fragmentos(cita);
     if (!partes.length) return null;

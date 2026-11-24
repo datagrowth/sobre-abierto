@@ -239,3 +239,140 @@ test('should_show_each_ficha_requirement_with_its_quote_checked_in_the_tender_de
     ],
   );
 });
+
+// Una licitación sintética con sus pliegos descargados e indexados (en orden de ruta, como se leen).
+function licitacionConPliegos(
+  id: string,
+  archivos: { ruta: string; trozos: { page: number | null; text: string }[] }[],
+) {
+  guardarLicitacion(db, {
+    ...licitacion({ titulo: 'Plataforma', publicada: '2026-10-01' }),
+    id,
+    atom_id: `atom-${id}`,
+  });
+  for (const a of archivos) {
+    indice.reemplazarArchivo(
+      idx,
+      {
+        path: a.ruta,
+        kind: 'document',
+        title: path.posix.basename(a.ruta),
+        mtime_ms: 1,
+        size: 1,
+        pages: a.trozos.length,
+        status: 'ok',
+        error: null,
+        source: null,
+      },
+      a.trozos,
+    );
+    db.prepare(
+      "INSERT INTO pliegos (licitacion_id, url, clase, nombre, estado, ruta, intentos, actualizado_en) VALUES (?, ?, 'ppt', ?, 'descargado', ?, 0, ?)",
+    ).run(id, a.ruta, path.posix.basename(a.ruta), a.ruta, ts);
+  }
+}
+
+const carpeta = (id: string) => `Licitaciones/Ofertas/EXP-${id} (${id})/Pliegos`;
+
+test('should_find_a_quote_even_when_more_than_30_chunks_match_its_words_better', () => {
+  // Arrange: 40 trozos densos en las palabras largas de la cita y la cita literal una sola vez en el 41.
+  const ID_RUIDO = 'p-60000002';
+  // Todas las palabras de la cita, repetidas y desordenadas: casan mejor por bm25 pero no literal.
+  const ruido =
+    'norma UNE cumplirá la de accesible teleformación plataforma UNE norma cumplirá accesible plataforma teleformación';
+  licitacionConPliegos(ID_RUIDO, [
+    {
+      ruta: `${carpeta(ID_RUIDO)}/PPT.pdf`,
+      trozos: [
+        ...Array.from({ length: 40 }, (_, i) => ({ page: i + 1, text: `${ruido} ${i}` })),
+        {
+          page: 41,
+          text: 'Requisitos técnicos del servicio. La plataforma de teleformación accesible cumplirá la norma UNE 139803 durante todo el contrato y en cada una de sus prórrogas.',
+        },
+      ],
+    },
+  ]);
+  // Act
+  const r = comprobadorDe(db, idx, ID_RUIDO)('la plataforma de teleformación accesible cumplirá la norma UNE');
+  // Assert
+  assert.deepEqual(r, { estado: 'comprobada', documento: `${carpeta(ID_RUIDO)}/PPT.pdf`, pagina: 41 });
+});
+
+test('should_give_the_first_appearance_in_reading_order_for_a_repeated_quote', () => {
+  // Arrange: la frase en A (página 2, trozo largo) y en B (página 9, trozo corto que bm25 pone primero).
+  const ID_REP = 'p-60000003';
+  const frase = 'el adjudicatario designará un coordinador técnico del contrato';
+  licitacionConPliegos(ID_REP, [
+    {
+      ruta: `${carpeta(ID_REP)}/A-PCAP.pdf`,
+      trozos: [
+        { page: 1, text: 'Cláusula 1. Objeto.' },
+        {
+          page: 2,
+          text: `Cláusula 14. Organización del servicio, medios materiales y personales: ${frase}, que será el interlocutor con la administración durante la ejecución y responderá de la calidad de los trabajos entregados.`,
+        },
+      ],
+    },
+    { ruta: `${carpeta(ID_REP)}/B-PPT.pdf`, trozos: [{ page: 9, text: frase }] },
+  ]);
+  // Act
+  const r = comprobadorDe(db, idx, ID_REP)(frase);
+  // Assert
+  assert.deepEqual(r, { estado: 'comprobada', documento: `${carpeta(ID_REP)}/A-PCAP.pdf`, pagina: 2 });
+});
+
+test('should_not_join_chunks_of_different_documents', () => {
+  // Arrange
+  const ID_CRUCE = 'p-60000004';
+  licitacionConPliegos(ID_CRUCE, [
+    { ruta: `${carpeta(ID_CRUCE)}/A.pdf`, trozos: [{ page: 1, text: 'Texto de cierre: final del documento primero' }] },
+    { ruta: `${carpeta(ID_CRUCE)}/B.pdf`, trozos: [{ page: 1, text: 'principio del documento segundo y sigue' }] },
+  ]);
+  // Act / Assert
+  assert.equal(
+    comprobadorDe(db, idx, ID_CRUCE)('final del documento primero principio del documento segundo').estado,
+    'no_localizada',
+  );
+});
+
+test('should_check_a_quote_in_a_chunk_without_page_with_page_null', () => {
+  // Arrange: un .docx no tiene páginas en el índice.
+  const ID_DOCX = 'p-60000005';
+  licitacionConPliegos(ID_DOCX, [
+    {
+      ruta: `${carpeta(ID_DOCX)}/Anexo.docx`,
+      trozos: [{ page: null, text: 'El licitador aportará una declaración responsable firmada.' }],
+    },
+  ]);
+  // Act / Assert
+  assert.deepEqual(comprobadorDe(db, idx, ID_DOCX)('aportará una declaración responsable firmada'), {
+    estado: 'comprobada',
+    documento: `${carpeta(ID_DOCX)}/Anexo.docx`,
+    pagina: null,
+  });
+});
+
+test('should_say_not_found_for_an_empty_quote_or_only_an_ellipsis', () => {
+  assert.equal(comprobar('').estado, 'no_localizada');
+  assert.equal(comprobar('…').estado, 'no_localizada');
+});
+
+test('should_read_the_pliegos_once_per_checker_and_not_search_per_quote', () => {
+  // Arrange: contar las sentencias que pide el comprobador al índice.
+  const original = idx.prepare.bind(idx);
+  const sql: string[] = [];
+  idx.prepare = ((s: string) => {
+    sql.push(s);
+    return original(s);
+  }) as typeof idx.prepare;
+  try {
+    // Act
+    const c = comprobadorDe(db, idx, ID);
+    for (let i = 0; i < 20; i++) c(`al menos 150 horas de docencia ${i % 2 ? '' : 'en inteligencia artificial'}`);
+  } finally {
+    idx.prepare = original;
+  }
+  // Assert
+  assert.equal(sql.filter((s) => s.includes('MATCH')).length, 0, 'ninguna búsqueda FTS por cita');
+  assert.equal(sql.filter((s) => /FROM chunks c JOIN files/.test(s)).length, 1, 'una sola lectura de los trozos');
+});
