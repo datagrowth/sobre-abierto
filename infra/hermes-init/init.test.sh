@@ -58,4 +58,21 @@ cierto should_say_it_moved_the_mcp_url grep -q 'apunta ahora a http://monitor:31
 correr
 falso should_not_touch_it_again_on_the_next_start grep -q 'apunta ahora' "$RAIZ/salida.txt"
 
+# Permisos con Hermes en marcha: un temporal suyo desaparece mientras `find` recorre el volumen y
+# `find` sale con error. Se simula como root con un `id` falso y un `find` que falla una sola vez.
+FALSOS="$RAIZ/falsos"
+mkdir -p "$FALSOS"
+printf '#!/bin/sh\n[ "$1" = -u ] && echo 0 && exit 0\nexec %s "$@"\n' "$(command -v id)" > "$FALSOS/id"
+printf '#!/bin/sh\nif [ ! -e "%s/ya-fallo" ]; then : > "%s/ya-fallo"; echo "find: .gateway_state.tmp: No such file or directory" >&2; exit 1; fi\nexec %s "$@"\n' \
+  "$RAIZ" "$RAIZ" "$(command -v find)" > "$FALSOS/find"
+chmod +x "$FALSOS/id" "$FALSOS/find"
+YO="$(id -u):$(id -g)"
+como_root() { PATH="$FALSOS:$PATH" HERMES_OWNER="$YO" correr; }
+como_root
+cierto should_finish_when_a_file_vanishes_while_checking_permissions grep -q 'permisos de .* revisados' "$RAIZ/salida.txt"
+
+# Un error que no se va (no es una carrera) sigue parando el arranque.
+printf '#!/bin/sh\necho "find: fallo de verdad" >&2\nexit 1\n' > "$FALSOS/find"
+falso should_fail_when_find_keeps_failing como_root
+
 [ "$fallos" -eq 0 ] && echo "todas las pruebas pasan" || { echo "$fallos pruebas fallidas"; exit 1; }

@@ -141,7 +141,12 @@ if [ "$(id -u)" != "0" ]; then
 fi
 uid="${OWNER%%:*}"
 gid="${OWNER#*:}"
-find "$DATA" \( ! -user "$uid" -o ! -group "$gid" \) -exec chown -h "$OWNER" {} +
-find "$DATA" -type d ! -perm -700 -exec chmod u+rwx {} +
-find "$DATA" -type f ! -perm -600 -exec chmod u+rw {} +
+# Hermes sigue en marcha y borra sus temporales mientras `find` recorre el volumen: el que desaparece
+# a medias hace salir a `find` con error. Otra pasada ya no lo ve; un error que se repite sí para.
+reintentar() {
+  "$@" || { sleep 1; "$@"; } || { sleep 1; "$@"; }
+}
+reintentar find "$DATA" \( ! -user "$uid" -o ! -group "$gid" \) -exec chown -h "$OWNER" {} +
+reintentar find "$DATA" -type d ! -perm -700 -exec chmod u+rwx {} +
+reintentar find "$DATA" -type f ! -perm -600 -exec chmod u+rw {} +
 echo "permisos de $DATA revisados"
