@@ -4,6 +4,26 @@ Todos los cambios importantes de Sobre Abierto se anotan aquí. El formato sigue
 [Keep a Changelog](https://keepachangelog.com/es-ES/1.1.0/) y el proyecto usa
 [versionado semántico](https://semver.org/lang/es/).
 
+## [0.1.4] - 2026-11-25
+
+### Corregido
+
+- **Un despliegue podía dejar la plataforma parada**: `hermes-init` revisa los permisos del volumen de Hermes con
+  Hermes en marcha, y si Hermes borraba un temporal suyo justo mientras `find` lo recorría, `find` salía con error,
+  `hermes-init` acababa en fallo y el monitor y la sincronización con Drive, que esperan a que termine bien, se
+  quedaban sin arrancar. Ahora cada revisión se repite hasta dos veces más antes de dar el error por bueno: el temporal
+  que desapareció ya no sale en la siguiente pasada, y un error que se repite sigue parando el arranque.
+
+### Cambiado
+
+- Dependencias al día: imagen base `node:26.13.1-bookworm-slim`, `rclone` 1.76.0, `chokidar` 6, `dotenv` 18,
+  `fast-xml-parser` 5.12.0 y la action `docker/login-action` 4.8.0.
+
+### Para actualizar
+
+- Basta cambiar la versión y desplegar: no cambian las skills ni las herramientas del MCP (no hace falta
+  reiniciar Hermes).
+
 ## [0.1.3] - 2026-11-24
 
 ### Corregido
@@ -99,6 +119,7 @@ Primera versión pública, con licencia AGPL-3.0-or-later. Es una versión tempr
   Easypanel.
 - **Primeros pasos** en el Pipeline vacío: perfil de la empresa, filtros, IA y Drive (opcional).
 
+[0.1.4]: https://github.com/datagrowth/sobre-abierto/releases/tag/v0.1.4
 [0.1.3]: https://github.com/datagrowth/sobre-abierto/releases/tag/v0.1.3
 [0.1.2]: https://github.com/datagrowth/sobre-abierto/releases/tag/v0.1.2
 [0.1.1]: https://github.com/datagrowth/sobre-abierto/releases/tag/v0.1.1
